@@ -1,0 +1,481 @@
+2021/07/18 09:34:00 [Server-1] Starting 
+2021/07/18 09:34:00 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 09:34:01 [Server-1] Started 
+2021/07/18 09:34:02 [Server-1] Stoping 
+2021/07/18 09:34:02 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 09:34:03 [Server-1] Stoped 
+2021/07/18 09:34:03 [AutoSet-7] Stop 
+2021/07/18 09:34:07 [Server-1] Starting 
+2021/07/18 09:34:07 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 09:34:07 [Server-1] Started 
+2021/07/18 09:34:07 [AutoSet-7] Start 
+2021/07/18 09:34:54 [TcpAccept-3] 192.168.1.104:64795 
+2021/07/18 09:34:54 [TcpAccept-3] 192.168.1.104:64807 
+2021/07/18 09:35:15 [TcpAccept-3] 192.168.1.104:64838 
+2021/07/18 09:35:15 [TcpAccept-3] 192.168.1.104:64840 
+2021/07/18 09:35:16 [TcpAccept-3] 127.0.0.1:64846 
+2021/07/18 09:35:16 [TcpAccept-3] 127.0.0.1:64848 
+2021/07/18 09:43:55 [TcpAccept-3] 127.0.0.1:65289 
+2021/07/18 09:43:55 [TcpAccept-3] 127.0.0.1:65292 
+2021/07/18 09:49:22 [Server-1] Stoping 
+2021/07/18 09:49:22 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 09:49:23 [Server-1] Stoped 
+2021/07/18 09:49:23 [AutoSet-7] Stop 
+2021/07/18 09:49:34 [Server-1] Starting 
+2021/07/18 09:49:34 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 09:49:34 [Server-1] Started 
+2021/07/18 09:49:34 [AutoSet-7] Start 
+2021/07/18 09:55:14 [Server-1] Stoping 
+2021/07/18 09:55:14 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 09:55:15 [Server-1] Stoped 
+2021/07/18 09:55:15 [AutoSet-7] Stop 
+2021/07/18 09:55:24 [Server-1] Starting 
+2021/07/18 09:55:24 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 09:55:24 [Server-1] Started 
+2021/07/18 09:55:24 [AutoSet-7] Start 
+2021/07/18 09:57:36 [Server-1] Stoping 
+2021/07/18 09:57:36 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 09:57:37 [Server-1] Stoped 
+2021/07/18 09:57:37 [AutoSet-7] Stop 
+2021/07/18 09:57:45 [Server-1] Starting 
+2021/07/18 09:57:45 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 09:57:45 [Server-1] Started 
+2021/07/18 09:57:45 [AutoSet-7] Start 
+2021/07/18 10:12:24 [WebSocketAccept-15] 127.0.0.1:59980 
+2021/07/18 10:12:25 [7aabcf0d-fb73-4e2f-8250-08831ebbfc94-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":1536,"height":666},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 10:14:06 [WebSocketAccept-9] 192.168.1.104:60015 
+2021/07/18 10:14:06 [5af1f8c5-e7b1-4925-8556-d2b025a6e960-192.168.1.104-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":1536,"height":666},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 10:16:27 [Server-1] Stoping 
+2021/07/18 10:16:27 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 10:16:27 [7aabcf0d-fb73-4e2f-8250-08831ebbfc94-1] Stop-StopServer-True-- 
+2021/07/18 10:16:27 [5af1f8c5-e7b1-4925-8556-d2b025a6e960-1] Stop-StopServer-True-- 
+2021/07/18 10:16:28 [Server-1] Stoped 
+2021/07/18 10:16:28 [AutoSet-7] Stop 
+2021/07/18 10:18:20 [Server-1] Starting 
+2021/07/18 10:18:20 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 10:18:20 [Server-1] Started 
+2021/07/18 10:18:20 [AutoSet-7] Start 
+2021/07/18 10:18:22 [Server-1] Stoping 
+2021/07/18 10:18:22 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 10:18:23 [Server-1] Stoped 
+2021/07/18 10:18:23 [AutoSet-7] Stop 
+2021/07/18 10:18:41 [Server-1] Starting 
+2021/07/18 10:18:41 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 10:18:41 [Server-1] Started 
+2021/07/18 10:18:41 [AutoSet-7] Start 
+2021/07/18 10:18:44 [TcpAccept-3] 192.168.1.104:60326 
+2021/07/18 10:18:44 [TcpAccept-8] 192.168.1.104:60327 
+2021/07/18 10:18:46 [TcpAccept-8] 192.168.1.104:60329 
+2021/07/18 10:18:46 [861951044423780-192.168.1.104-3] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:19:49 [TcpAccept-8] 192.168.1.104:60346 
+2021/07/18 10:19:49 [TcpAccept-8] 192.168.1.104:60347 
+2021/07/18 10:20:05 [TcpAccept-8] 192.168.1.104:60350 
+2021/07/18 10:20:05 [c229ab53fcb43fd3abdd403f509ae3d5-192.168.1.104-13] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2208},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:21:45 [TcpAccept-14] 192.168.1.104:60372 
+2021/07/18 10:21:45 [TcpAccept-14] 192.168.1.104:60373 
+2021/07/18 10:24:17 [TcpAccept-14] 192.168.1.104:60426 
+2021/07/18 10:24:17 [TcpAccept-14] 192.168.1.104:60427 
+2021/07/18 10:24:18 [TcpAccept-14] 192.168.1.104:60430 
+2021/07/18 10:24:18 [TcpAccept-14] 192.168.1.104:60431 
+2021/07/18 10:24:20 [TcpAccept-14] 192.168.1.104:60435 
+2021/07/18 10:24:20 [TcpAccept-14] 192.168.1.104:60436 
+2021/07/18 10:24:20 [TcpAccept-14] 192.168.1.104:60437 
+2021/07/18 10:24:27 [TcpAccept-14] 192.168.1.104:60442 
+2021/07/18 10:24:30 [TcpAccept-14] 192.168.1.104:60447 
+2021/07/18 10:24:36 [TcpAccept-14] 192.168.1.104:60450 
+2021/07/18 10:24:37 [TcpAccept-14] 192.168.1.104:60451 
+2021/07/18 10:24:37 [861951044423780-192.168.1.104-10] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:25:35 [TcpAccept-10] 192.168.1.104:60462 
+2021/07/18 10:25:36 [TcpAccept-10] 192.168.1.104:60463 
+2021/07/18 10:25:36 [861951044423780-192.168.1.104-10] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:25:59 [TcpAccept-10] 192.168.1.104:60466 
+2021/07/18 10:25:59 [861951044423780-192.168.1.104-10] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:26:40 [TcpAccept-10] 192.168.1.104:60473 
+2021/07/18 10:26:40 [TcpAccept-10] 192.168.1.104:60474 
+2021/07/18 10:26:40 [TcpAccept-10] 192.168.1.104:60475 
+2021/07/18 10:26:41 [TcpAccept-10] 192.168.1.104:60478 
+2021/07/18 10:26:41 [TcpAccept-10] 192.168.1.104:60479 
+2021/07/18 10:26:46 [TcpAccept-10] 192.168.1.104:60482 
+2021/07/18 10:27:29 [TcpAccept-10] 192.168.1.104:60491 
+2021/07/18 10:27:29 [861951044423780-192.168.1.104-21] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:27:45 [TcpAccept-10] 192.168.1.104:60494 
+2021/07/18 10:28:49 [TcpAccept-21] 192.168.1.104:60509 
+2021/07/18 10:28:49 [861951044423780-192.168.1.104-22] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:28:50 [TcpAccept-21] 192.168.1.104:60510 
+2021/07/18 10:28:50 [861951044423780-192.168.1.104-21] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 10:28:50 [TcpAccept-21] 192.168.1.104:60511 
+2021/07/18 10:29:24 [TcpAccept-22] 192.168.1.104:60520 
+2021/07/18 10:30:29 [TcpAccept-14] 192.168.1.104:60554 
+2021/07/18 10:31:34 [TcpAccept-14] 192.168.1.104:60573 
+2021/07/18 10:31:50 [Server-1] Stoping 
+2021/07/18 10:31:50 [861951044423780-1] Stop-StopServer-True-- 
+2021/07/18 10:31:50 [c229ab53fcb43fd3abdd403f509ae3d5-1] Stop-StopServer-True-- 
+2021/07/18 10:31:50 [TcpAccept-EX-19] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 10:31:51 [Server-1] Stoped 
+2021/07/18 10:31:51 [AutoSet-7] Stop 
+2021/07/18 20:51:02 [Server-1] Starting 
+2021/07/18 20:51:02 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 20:51:02 [Server-1] Started 
+2021/07/18 20:51:02 [AutoSet-7] Start 
+2021/07/18 20:51:05 [WebSocketAccept-9] 127.0.0.1:52221 
+2021/07/18 20:51:05 [6afaa122-8423-474d-8a27-e13c83db6b50-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":2048,"height":963},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:55:59 [Server-1] Stoping 
+2021/07/18 20:55:59 [TcpAccept-EX-10] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 20:55:59 [6afaa122-8423-474d-8a27-e13c83db6b50-1] Stop-StopServer-True-- 
+2021/07/18 20:56:00 [Server-1] Stoped 
+2021/07/18 20:56:00 [AutoSet-7] Stop 
+2021/07/18 20:56:10 [Server-1] Starting 
+2021/07/18 20:56:10 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 20:56:10 [Server-1] Started 
+2021/07/18 20:56:10 [AutoSet-7] Start 
+2021/07/18 20:56:12 [WebSocketAccept-10] 127.0.0.1:52346 
+2021/07/18 20:56:12 [6afaa122-8423-474d-8a27-e13c83db6b50-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":1534,"height":957},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:56:39 [WebSocketAccept-12] 127.0.0.1:52387 
+2021/07/18 20:56:39 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-16] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":4608,"height":2870},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:56:52 [WebSocketAccept-12] 127.0.0.1:52396 
+2021/07/18 20:56:52 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-16] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":6144,"height":2890},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:00 [Server-1] Stoping 
+2021/07/18 20:57:00 [TcpAccept-EX-11] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 20:57:00 [6afaa122-8423-474d-8a27-e13c83db6b50-1] Stop-StopServer-True-- 
+2021/07/18 20:57:00 [7e426298-67fc-4f99-88fb-0ff813df1067-1] Stop-StopServer-True-- 
+2021/07/18 20:57:01 [Server-1] Stoped 
+2021/07/18 20:57:01 [AutoSet-7] Stop 
+2021/07/18 20:57:09 [Server-1] Starting 
+2021/07/18 20:57:09 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 20:57:09 [Server-1] Started 
+2021/07/18 20:57:09 [AutoSet-7] Start 
+2021/07/18 20:57:11 [WebSocketAccept-9] 127.0.0.1:52416 
+2021/07/18 20:57:11 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":6144,"height":2890},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:22 [WebSocketAccept-11] 127.0.0.1:52430 
+2021/07/18 20:57:22 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":307,"height":144},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:26 [WebSocketAccept-10] 127.0.0.1:52434 
+2021/07/18 20:57:26 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":307,"height":144},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:27 [WebSocketAccept-9] 127.0.0.1:52435 
+2021/07/18 20:57:27 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":307,"height":144},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:27 [WebSocketAccept-9] 127.0.0.1:52436 
+2021/07/18 20:57:27 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":307,"height":144},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:27 [WebSocketAccept-9] 127.0.0.1:52437 
+2021/07/18 20:57:27 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":307,"height":144},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:27 [WebSocketAccept-11] 127.0.0.1:52438 
+2021/07/18 20:57:27 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":307,"height":144},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:57:42 [Server-1] Stoping 
+2021/07/18 20:57:42 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 20:57:42 [7e426298-67fc-4f99-88fb-0ff813df1067-1] Stop-StopServer-True-- 
+2021/07/18 20:57:43 [Server-1] Stoped 
+2021/07/18 20:57:43 [AutoSet-7] Stop 
+2021/07/18 20:57:53 [Server-1] Starting 
+2021/07/18 20:57:53 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 20:57:53 [Server-1] Started 
+2021/07/18 20:57:53 [AutoSet-7] Start 
+2021/07/18 20:57:56 [WebSocketAccept-9] 127.0.0.1:52472 
+2021/07/18 20:57:56 [7e426298-67fc-4f99-88fb-0ff813df1067-127.0.0.1-3] {"deviceOS":"Web","deviceOSVersion":"unkonw","deviceModel":"unkonw","screenSize":{"width":307,"height":144},"density":1,"version":"1.0.0","coreVersion":"6.0.0","autoBuild":false,"isCompany":false,"extraInfo":{"package_name":"unknow","display_name":"Smobiler","plugin_msg":null,"low_memory":true,"authPlugins":["sm_wxApi","sm_wxEnterpriseApi","neil_videoplayer","sm_vlcplayer","neil_circle","sm_speech","sm_pdf","sm_html","sm_echarts"]}} 
+2021/07/18 20:58:12 [Server-1] Stoping 
+2021/07/18 20:58:12 [7e426298-67fc-4f99-88fb-0ff813df1067-1] Stop-StopServer-True-- 
+2021/07/18 20:58:12 [TcpAccept-EX-11] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 20:58:13 [Server-1] Stoped 
+2021/07/18 20:58:13 [AutoSet-7] Stop 
+2021/07/18 21:13:00 [Server-1] Starting 
+2021/07/18 21:13:00 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 21:13:00 [Server-1] Started 
+2021/07/18 21:13:00 [AutoSet-7] Start 
+2021/07/18 21:13:02 [Server-1] Stoping 
+2021/07/18 21:13:02 [TcpAccept-EX-8] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 21:13:03 [Server-1] Stoped 
+2021/07/18 21:13:03 [AutoSet-7] Stop 
+2021/07/18 22:26:03 [Server-1] Starting 
+2021/07/18 22:26:04 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 22:26:04 [Server-1] Started 
+2021/07/18 22:26:04 [AutoSet-7] Start 
+2021/07/18 22:26:30 [TcpAccept-3] 192.168.1.2:45982 
+2021/07/18 22:26:31 [861951044423780-192.168.1.2-8] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 22:26:53 [Server-1] Stoping 
+2021/07/18 22:26:53 [861951044423780-1] Stop-StopServer-True-- 
+2021/07/18 22:26:53 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 22:26:54 [Server-1] Stoped 
+2021/07/18 22:26:54 [AutoSet-7] Stop 
+2021/07/18 22:59:16 [Server-1] Starting 
+2021/07/18 22:59:16 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 22:59:16 [Server-1] Started 
+2021/07/18 22:59:16 [AutoSet-7] Start 
+2021/07/18 22:59:30 [TcpAccept-3] 192.168.1.2:36068 
+2021/07/18 22:59:30 [861951044423780-192.168.1.2-11] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:00:07 [Server-1] Stoping 
+2021/07/18 23:00:07 [861951044423780-1] Stop-StopServer-True-- 
+2021/07/18 23:00:07 [TcpAccept-EX-10] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 23:00:08 [Server-1] Stoped 
+2021/07/18 23:00:08 [AutoSet-7] Stop 
+2021/07/18 23:11:42 [Server-1] Starting 
+2021/07/18 23:11:42 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 23:11:42 [Server-1] Started 
+2021/07/18 23:11:42 [AutoSet-7] Start 
+2021/07/18 23:11:50 [TcpAccept-3] 192.168.1.2:36232 
+2021/07/18 23:11:50 [861951044423780-192.168.1.2-11] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:12:54 [Server-1] Stoping 
+2021/07/18 23:12:54 [861951044423780-1] Stop-StopServer-True-- 
+2021/07/18 23:12:54 [TcpAccept-EX-11] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 23:12:55 [Server-1] Stoped 
+2021/07/18 23:12:55 [AutoSet-7] Stop 
+2021/07/18 23:17:05 [Server-1] Starting 
+2021/07/18 23:17:05 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 23:17:05 [Server-1] Started 
+2021/07/18 23:17:05 [AutoSet-7] Start 
+2021/07/18 23:17:10 [TcpAccept-3] 192.168.1.2:36272 
+2021/07/18 23:17:10 [861951044423780-192.168.1.2-11] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:18:47 [Server-1] Stoping 
+2021/07/18 23:18:47 [861951044423780-1] Stop-StopServer-True-- 
+2021/07/18 23:18:47 [TcpAccept-EX-10] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 23:18:48 [Server-1] Stoped 
+2021/07/18 23:18:48 [AutoSet-7] Stop 
+2021/07/18 23:30:14 [Server-1] Starting 
+2021/07/18 23:30:14 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: False, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug
+        DefaultImagePath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Media
+        DefaultWebPath: D:\C++Project\SmobilerAppTEST7.17\bin\Debug\Resources\Web
+ 
+2021/07/18 23:30:15 [Server-1] Started 
+2021/07/18 23:30:17 [TcpAccept-3] 192.168.1.104:55808 
+2021/07/18 23:30:18 [TcpAccept-3] 192.168.1.104:55811 
+2021/07/18 23:31:22 [TcpAccept-3] 192.168.1.104:55835 
+2021/07/18 23:31:24 [TcpAccept-3] 192.168.1.104:55837 
+2021/07/18 23:31:24 [861951044423780-192.168.1.104-3] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:31:53 [TcpAccept-3] 192.168.1.2:54682 
+2021/07/18 23:32:02 [TcpAccept-3] 192.168.1.2:54690 
+2021/07/18 23:32:02 [861951044423780-192.168.1.2-14] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:32:15 [TcpAccept-3] 192.168.1.104:55852 
+2021/07/18 23:32:15 [861951044423780-192.168.1.104-3] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:32:27 [TcpAccept-3] 192.168.1.104:55860 
+2021/07/18 23:32:41 [TcpAccept-3] 192.168.1.2:54712 
+2021/07/18 23:32:41 [861951044423780-192.168.1.2-15] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:32:50 [TcpAccept-3] 192.168.1.104:55866 
+2021/07/18 23:32:50 [861951044423780-192.168.1.104-3] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:32:53 [TcpAccept-3] 192.168.1.2:54724 
+2021/07/18 23:32:53 [861951044423780-192.168.1.2-3] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:33:15 [TcpAccept-3] 192.168.1.104:55893 
+2021/07/18 23:33:15 [TcpAccept-3] 192.168.1.104:55895 
+2021/07/18 23:33:16 [TcpAccept-3] 192.168.1.104:55934 
+2021/07/18 23:33:16 [TcpAccept-3] 192.168.1.104:55935 
+2021/07/18 23:33:16 [TcpAccept-3] 192.168.1.104:55953 
+2021/07/18 23:33:16 [TcpAccept-3] 192.168.1.104:55961 
+2021/07/18 23:33:16 [TcpAccept-14] 192.168.1.104:55962 
+2021/07/18 23:33:16 [TcpAccept-14] 192.168.1.104:55964 
+2021/07/18 23:33:17 [TcpAccept-14] 192.168.1.104:55984 
+2021/07/18 23:33:17 [TcpAccept-14] 192.168.1.104:55985 
+2021/07/18 23:33:32 [TcpAccept-14] 192.168.1.104:55998 
+2021/07/18 23:33:52 [TcpAccept-15] 192.168.1.104:56013 
+2021/07/18 23:33:52 [TcpAccept-15] 192.168.1.104:56015 
+2021/07/18 23:34:03 [TcpAccept-15] 192.168.1.104:56023 
+2021/07/18 23:34:03 [TcpAccept-15] 192.168.1.104:56024 
+2021/07/18 23:34:03 [TcpAccept-15] 192.168.1.104:56027 
+2021/07/18 23:34:03 [TcpAccept-15] 192.168.1.104:56028 
+2021/07/18 23:34:11 [TcpAccept-15] 192.168.1.104:56032 
+2021/07/18 23:34:11 [TcpAccept-15] 192.168.1.104:56033 
+2021/07/18 23:34:57 [TcpAccept-15] 192.168.1.104:56059 
+2021/07/18 23:35:37 [TcpAccept-15] 192.168.1.104:56071 
+2021/07/18 23:35:37 [861951044423780-192.168.1.104-25] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:35:38 [TcpAccept-15] 192.168.1.104:56072 
+2021/07/18 23:35:38 [861951044423780-192.168.1.104-15] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:36:02 [TcpAccept-15] 192.168.1.104:56082 
+2021/07/18 23:36:46 [TcpAccept-33] 192.168.1.104:56096 
+2021/07/18 23:36:46 [861951044423780-192.168.1.104-33] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:37:07 [TcpAccept-33] 192.168.1.104:56103 
+2021/07/18 23:38:10 [TcpAccept-30] 192.168.1.104:56119 
+2021/07/18 23:38:11 [861951044423780-192.168.1.104-30] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:38:12 [TcpAccept-30] 192.168.1.104:56120 
+2021/07/18 23:39:23 [TcpAccept-15] 192.168.1.104:56154 
+2021/07/18 23:39:23 [TcpAccept-15] 192.168.1.104:56158 
+2021/07/18 23:39:25 [TcpAccept-15] 192.168.1.104:56166 
+2021/07/18 23:39:25 [TcpAccept-15] 192.168.1.104:56168 
+2021/07/18 23:39:25 [TcpAccept-15] 192.168.1.104:56170 
+2021/07/18 23:39:25 [TcpAccept-15] 192.168.1.104:56172 
+2021/07/18 23:39:25 [TcpAccept-15] 192.168.1.104:56174 
+2021/07/18 23:39:28 [TcpAccept-15] 192.168.1.104:56177 
+2021/07/18 23:39:28 [TcpAccept-15] 192.168.1.104:56179 
+2021/07/18 23:40:18 [TcpAccept-15] 192.168.1.104:56188 
+2021/07/18 23:40:18 [TcpAccept-15] 192.168.1.104:56190 
+2021/07/18 23:40:20 [TcpAccept-15] 192.168.1.104:56191 
+2021/07/18 23:40:20 [861951044423780-192.168.1.104-15] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:40:21 [TcpAccept-15] 192.168.1.104:56192 
+2021/07/18 23:40:21 [861951044423780-192.168.1.104-19] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:40:23 [TcpAccept-15] 192.168.1.104:56193 
+2021/07/18 23:40:23 [861951044423780-192.168.1.104-15] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:40:23 [TcpAccept-15] 192.168.1.104:56194 
+2021/07/18 23:40:23 [TcpAccept-15] 192.168.1.104:56196 
+2021/07/18 23:41:28 [TcpAccept-15] 192.168.1.104:56211 
+2021/07/18 23:42:33 [TcpAccept-15] 192.168.1.104:56237 
+2021/07/18 23:43:38 [TcpAccept-11] 192.168.1.104:56312 
+2021/07/18 23:44:43 [TcpAccept-12] 192.168.1.104:56464 
+2021/07/18 23:45:04 [TcpAccept-11] 192.168.1.104:56477 
+2021/07/18 23:45:04 [861951044423780-192.168.1.104-11] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:45:15 [TcpAccept-11] 192.168.1.104:56484 
+2021/07/18 23:45:16 [d2e6c8f2c05b35a8910177da99e962f2-192.168.1.104-11] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2208},"density":3.0,"version":"4.9.0","coreVersion":"4.9.0","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/07/18 23:45:48 [TcpAccept-11] 192.168.1.104:56503 
+2021/07/18 23:46:29 [TcpAccept-13] 192.168.1.104:56566 
+2021/07/18 23:46:29 [TcpAccept-13] 192.168.1.104:56583 
+2021/07/18 23:46:53 [TcpAccept-13] 192.168.1.104:56643 
+2021/07/18 23:47:43 [TcpAccept-15] 192.168.1.104:56703 
+2021/07/18 23:47:43 [TcpAccept-15] 192.168.1.104:56705 
+2021/07/18 23:48:48 [TcpAccept-15] 192.168.1.104:56732 
+2021/07/18 23:49:53 [TcpAccept-11] 192.168.1.104:56817 
+2021/07/18 23:50:58 [TcpAccept-15] 192.168.1.104:56837 
+2021/07/18 23:52:03 [TcpAccept-19] 192.168.1.104:56855 
+2021/07/18 23:53:08 [TcpAccept-11] 192.168.1.104:57024 
+2021/07/18 23:54:13 [TcpAccept-12] 192.168.1.104:57047 
+2021/07/18 23:55:18 [TcpAccept-12] 192.168.1.104:57151 
+2021/07/18 23:55:28 [TcpAccept-12] 192.168.1.104:57155 
+2021/07/18 23:55:28 [TcpAccept-12] 192.168.1.104:57157 
+2021/07/18 23:56:33 [TcpAccept-12] 192.168.1.104:57215 
+2021/07/18 23:56:52 [Server-1] Stoping 
+2021/07/18 23:56:52 [861951044423780-1] Stop-StopServer-True-- 
+2021/07/18 23:56:52 [d2e6c8f2c05b35a8910177da99e962f2-1] Stop-StopServer-True-- 
+2021/07/18 23:56:52 [TcpAccept-EX-15] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/07/18 23:56:53 [Server-1] Stoped 
+2021/07/18 23:56:53 [AutoSet-7] Stop 
