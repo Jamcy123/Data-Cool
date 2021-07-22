@@ -28,11 +28,13 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem6 = new Smobiler.Core.Controls.IconMenuViewItem();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.iconMenuView1 = new Smobiler.Core.Controls.IconMenuView();
+            this.button1 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.iconMenuView1});
+            this.iconMenuView1,
+            this.button1});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(92, 271);
             this.panel1.Name = "panel1";
@@ -82,9 +84,16 @@ namespace SmobilerAppTEST7._17
             iconMenuViewItem6});
             this.iconMenuView1.Groups.AddRange(new Smobiler.Core.Controls.IconMenuViewGroup[] {
             iconMenuViewGroup1});
-            this.iconMenuView1.Location = new System.Drawing.Point(0, 126);
+            this.iconMenuView1.Location = new System.Drawing.Point(5, 147);
             this.iconMenuView1.Name = "iconMenuView1";
             this.iconMenuView1.Size = new System.Drawing.Size(300, 300);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(100, 120);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.Text = "button1";
             // 
             // SmobilerForm2
             // 
@@ -99,5 +108,6 @@ namespace SmobilerAppTEST7._17
 
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.IconMenuView iconMenuView1;
+        private Smobiler.Core.Controls.Button button1;
     }
 }
