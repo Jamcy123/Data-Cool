@@ -31,6 +31,7 @@ namespace SmobilerAppTEST7._17
             this.button1 = new Smobiler.Core.Controls.Button();
             this.button2 = new Smobiler.Core.Controls.Button();
             this.button3 = new Smobiler.Core.Controls.Button();
+            this.button4 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
@@ -38,7 +39,8 @@ namespace SmobilerAppTEST7._17
             this.iconMenuView1,
             this.button1,
             this.button2,
-            this.button3});
+            this.button3,
+            this.button4});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(92, 271);
             this.panel1.Name = "panel1";
@@ -113,6 +115,13 @@ namespace SmobilerAppTEST7._17
             this.button3.Size = new System.Drawing.Size(100, 35);
             this.button3.Text = "button3";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(100, 362);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(100, 35);
+            this.button4.Text = "button4";
+            // 
             // SmobilerForm2
             // 
             this.BackgroundImage = "white.png";
@@ -129,5 +138,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Button button2;
         private Smobiler.Core.Controls.Button button3;
+        private Smobiler.Core.Controls.Button button4;
     }
 }
