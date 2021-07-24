@@ -149,6 +149,12 @@
     <Compile Include="SmobilerForm2.Designer.cs">
       <DependentUpon>SmobilerForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="SmobilerForm3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SmobilerForm3.Designer.cs">
+      <DependentUpon>SmobilerForm3.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmGenerateQRcode.resx">
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SmobilerForm2.resx">
       <DependentUpon>SmobilerForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmobilerForm3.resx">
+      <DependentUpon>SmobilerForm3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
