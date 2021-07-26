@@ -133,7 +133,7 @@ namespace SmobilerAppTEST7._17
             // 
             // SmobilerForm1
             // 
-            this.BackgroundImage = "D:\\网课\\大二下\\数据库\\课程设计\\bluee.png";
+            this.BackgroundImage = "bluee";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
