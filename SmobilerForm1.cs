@@ -101,8 +101,9 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press(object sender, EventArgs e)
         {
-            SmobilerForm2 smobilerForm2 = new SmobilerForm2();
-            this.Show(smobilerForm2);
+            moive_select moive_Select = new moive_select();
+            this.Show(moive_Select);
         }
+
     }
 }
