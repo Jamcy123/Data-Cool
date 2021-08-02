@@ -128,10 +128,11 @@ D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\frmMain.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\frmSetting.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Properties.Resources.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.SmobilerForm1.resources
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.SmobilerForm2.resources
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.SmobilerForm3.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.GenerateResource.cache
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.CoreCompileInputs.cache
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.CopyComplete
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.exe
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.pdb
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_select.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.moive_select.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.user.resources
