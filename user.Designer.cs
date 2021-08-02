@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace SmobilerAppTEST7._17
 {
-    partial class User : Smobiler.Core.Controls.MobileForm
+    partial class user : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -23,7 +23,8 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.ToolBarItem toolBarItem5 = new Smobiler.Core.Controls.ToolBarItem();
             Smobiler.Core.Controls.ToolBarItem toolBarItem6 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
-            this.label1 = new Smobiler.Core.Controls.Label();
+            this.panel1 = new Smobiler.Core.Controls.Panel();
+            this.image1 = new Smobiler.Core.Controls.Image();
             // 
             // toolBar1
             // 
@@ -56,24 +57,35 @@ namespace SmobilerAppTEST7._17
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
             this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick);
             // 
-            // label1
+            // panel1
             // 
-            this.label1.Location = new System.Drawing.Point(192, 337);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 35);
-            this.label1.Text = "用户界面";
+            this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.image1});
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(8, 111);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(300, 100);
+            // 
+            // image1
+            // 
+            this.image1.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dashed;
+            this.image1.Location = new System.Drawing.Point(21, 25);
+            this.image1.Name = "image1";
+            this.image1.Size = new System.Drawing.Size(45, 45);
             // 
             // user
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
-            this.label1});
+            this.panel1});
+            this.Name = "user";
             this.Name = "user";
 
         }
         #endregion
 
         private Smobiler.Core.Controls.ToolBar toolBar1;
-        private Smobiler.Core.Controls.Label label1;
+        private Smobiler.Core.Controls.Panel panel1;
+        private Smobiler.Core.Controls.Image image1;
     }
 }

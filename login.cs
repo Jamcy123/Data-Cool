@@ -105,5 +105,10 @@ namespace SmobilerAppTEST7._17
             this.Show(moive_Select);
         }
 
+        private void btnregister_Press(object sender, EventArgs e)
+        {
+            register register= new register();
+            this.Show(register);
+        }
     }
 }
