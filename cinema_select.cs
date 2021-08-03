@@ -7,9 +7,9 @@ using Smobiler.Core.Controls;
 
 namespace SmobilerAppTEST7._17
 {
-    partial class Cinema_select : Smobiler.Core.Controls.MobileForm
+    partial class cinema_select : Smobiler.Core.Controls.MobileForm
     {
-        public Cinema_select() : base()
+        public cinema_select() : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();

@@ -27,7 +27,7 @@ namespace SmobilerAppTEST7._17
                     toolBar1.SelectedIndex = 1;
                     break;
                 case "cinema-icon":
-                    Cinema_select cinema_Select = new Cinema_select();
+                    cinema_select cinema_Select = new cinema_select();
                     cinema_Select.setToolbarIndex(0);
                     Show(cinema_Select, (obj, args) => { ShowForm(cinema_Select.ToolBarItemName); });
                     break;
