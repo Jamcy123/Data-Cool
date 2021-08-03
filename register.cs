@@ -42,7 +42,7 @@ namespace SmobilerAppTEST7._17
                 string insert = "Insert into userinf (Uphoneno,Upassword,Ublance,Usex) values(" + txtUserphone.Text + ',' + txtPassword.Text + ',' + sex + ") ";
                 Toast("注册成功");
             }
-
+            con.Close();
         }
     }
 }

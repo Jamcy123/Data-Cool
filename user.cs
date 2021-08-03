@@ -32,7 +32,17 @@ namespace SmobilerAppTEST7._17
                     break;
             }
         }
- 
 
+        private void button1_Press(object sender, EventArgs e)
+        {
+            this.Client.ClearCache();
+
+        }
+
+        private void button2_Press(object sender, EventArgs e)
+        {
+            Alterpassword alterpassword = new Alterpassword();
+            this.Show(alterpassword);
+        }
     }
 }
