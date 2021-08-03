@@ -35,8 +35,7 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press(object sender, EventArgs e)
         {
-            this.Client.ClearCache();
-
+            this.Form.Client.ReStart();
         }
 
         private void button2_Press(object sender, EventArgs e)
