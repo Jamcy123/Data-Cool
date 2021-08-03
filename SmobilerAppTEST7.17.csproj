@@ -148,12 +148,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs" />
-    <Compile Include="SmobilerForm1.cs">
+    <Compile Include="register.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SmobilerForm1.Designer.cs">
-      <DependentUpon>SmobilerForm1.cs</DependentUpon>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="login.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Moive_Control.cs">
       <SubType>Component</SubType>
@@ -194,8 +200,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SmobilerForm1.resx">
-      <DependentUpon>SmobilerForm1.cs</DependentUpon>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>

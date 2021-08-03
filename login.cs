@@ -23,6 +23,11 @@ namespace SmobilerAppTEST7._17
             {
                 string userID = txtUserName.Text.Trim();
                 string PassWord = txtPassword.Text.Trim();
+                if (userID.Length != 11)
+                {
+                    txtUserName.Text = "";
+                    throw new Exception("请输入11位的账号");
+                }
                 if (string.IsNullOrEmpty(userID))
                     throw new Exception("请输入用户名");
                 if (string.IsNullOrEmpty(PassWord))
@@ -53,27 +58,27 @@ namespace SmobilerAppTEST7._17
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet);
                 con.Close();
-                //*************************************************
-                //string sql = "select*from Users where ID ='" + txtUserName.Text + "'";//查询语句
 
-                //MySqlDataAdapter find = new MySqlDataAdapter(sql, con);
-                //DataSet save = new DataSet();//缓存
-                //find.Fill(save,"tt");//Fill(DataSet)	在 DataSet 中添加或刷新行。
+                string sql = "select*from Users where ID ='" + txtUserName.Text + "'";//查询语句
 
-                //if (save.Tables[0].Rows.Count <= 0)
-                //    throw new Exception("用户不存在，请重新输入！");
+                MySqlDataAdapter find = new MySqlDataAdapter(sql, con);
+                DataSet save = new DataSet();//缓存
+                find.Fill(save, "tt");//Fill(DataSet)	在 DataSet 中添加或刷新行。
 
-                //string pwd = save.Tables[0].Rows[0][1].ToString();
+                if (save.Tables[0].Rows.Count <= 0)
+                    throw new Exception("用户不存在，请重新输入！");
 
-                //if (pwd == txtPassword.Text)
-                //{
-                //    MessageBox.Show("密码正确");
-                //}
-                //else
-                //{
-                //    throw new Exception("密码不正确，请重新输入！");
-                //}
-                //con.Close();
+                string pwd = save.Tables[0].Rows[0][1].ToString();
+
+                if (pwd == txtPassword.Text)
+                {
+                    MessageBox.Show("密码正确");
+                }
+                else
+                {
+                    throw new Exception("密码不正确，请重新输入！");
+                }
+                con.Close();
             }
             catch (Exception ex)
             {
@@ -105,5 +110,10 @@ namespace SmobilerAppTEST7._17
             this.Show(moive_Select);
         }
 
+        private void btnregister_Press(object sender, EventArgs e)
+        {
+            register register= new register();
+            this.Show(register);
+        }
     }
 }

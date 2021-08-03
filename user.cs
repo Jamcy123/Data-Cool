@@ -7,9 +7,9 @@ using Smobiler.Core.Controls;
 
 namespace SmobilerAppTEST7._17
 {
-    partial class User : Smobiler.Core.Controls.MobileForm
+    partial class user : Smobiler.Core.Controls.MobileForm
     {
-        public User() : base()
+        public user() : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();

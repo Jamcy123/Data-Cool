@@ -32,7 +32,7 @@ namespace SmobilerAppTEST7._17
                     Show(cinema_Select, (obj, args) => { ShowForm(cinema_Select.ToolBarItemName); });
                     break;
                 case "user-icon":
-                    User user = new User();
+                    user user = new user();
                     user.setToolbarIndex(2);
                     Show(user, (obj, args) => { ShowForm(user.ToolBarItemName); });
                     break;
