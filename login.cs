@@ -23,6 +23,11 @@ namespace SmobilerAppTEST7._17
             {
                 string userID = txtUserName.Text.Trim();
                 string PassWord = txtPassword.Text.Trim();
+                if (userID.Length != 11)
+                {
+                    txtUserName.Text = "";
+                    throw new Exception("请输入11位的账号");
+                }
                 if (string.IsNullOrEmpty(userID))
                     throw new Exception("请输入用户名");
                 if (string.IsNullOrEmpty(PassWord))

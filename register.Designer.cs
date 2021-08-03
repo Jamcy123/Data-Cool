@@ -23,7 +23,7 @@ namespace SmobilerAppTEST7._17
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.txtPassword = new Smobiler.Core.Controls.TextBox();
             this.txtUserphone = new Smobiler.Core.Controls.TextBox();
-            this.textBox2 = new Smobiler.Core.Controls.TextBox();
+            this.txtsure = new Smobiler.Core.Controls.TextBox();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.label3 = new Smobiler.Core.Controls.Label();
@@ -39,7 +39,7 @@ namespace SmobilerAppTEST7._17
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.txtPassword,
             this.txtUserphone,
-            this.textBox2,
+            this.txtsure,
             this.label1,
             this.label2,
             this.label3,
@@ -56,6 +56,7 @@ namespace SmobilerAppTEST7._17
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(85, 256);
+            this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.SecurityMode = true;
             this.txtPassword.Size = new System.Drawing.Size(200, 30);
@@ -64,16 +65,19 @@ namespace SmobilerAppTEST7._17
             // txtUserphone
             // 
             this.txtUserphone.Location = new System.Drawing.Point(85, 209);
+            this.txtUserphone.MaxLength = 11;
             this.txtUserphone.Name = "txtUserphone";
             this.txtUserphone.Size = new System.Drawing.Size(200, 30);
             this.txtUserphone.WaterMarkText = "请输入手机号";
             // 
-            // textBox2
+            // txtsure
             // 
-            this.textBox2.Location = new System.Drawing.Point(85, 300);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 30);
-            this.textBox2.WaterMarkText = "确认密码";
+            this.txtsure.Location = new System.Drawing.Point(85, 300);
+            this.txtsure.MaxLength = 20;
+            this.txtsure.Name = "txtsure";
+            this.txtsure.SecurityMode = true;
+            this.txtsure.Size = new System.Drawing.Size(200, 30);
+            this.txtsure.WaterMarkText = "确认密码";
             // 
             // label1
             // 
@@ -150,7 +154,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.TextBox txtPassword;
         private Smobiler.Core.Controls.TextBox txtUserphone;
-        private Smobiler.Core.Controls.TextBox textBox2;
+        private Smobiler.Core.Controls.TextBox txtsure;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Label label2;
         private Smobiler.Core.Controls.Label label3;

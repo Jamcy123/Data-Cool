@@ -82,8 +82,6 @@ D:\github\XYZ\Data-Cool\obj\Debug\frmMain.resources
 D:\github\XYZ\Data-Cool\obj\Debug\frmSetting.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Properties.Resources.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.SmobilerForm1.resources
-D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.SmobilerForm2.resources
-D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.SmobilerForm3.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.GenerateResource.cache
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.CoreCompileInputs.cache
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.CopyComplete
@@ -136,3 +134,7 @@ D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.pdb
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_select.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.moive_select.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.user.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Cinema_select.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.moive_select.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.register.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.user.resources

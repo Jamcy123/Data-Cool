@@ -78,6 +78,7 @@ namespace SmobilerAppTEST7._17
             // txtUserName
             // 
             this.txtUserName.Location = new System.Drawing.Point(72, 235);
+            this.txtUserName.MaxLength = 11;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(200, 30);
             this.txtUserName.WaterMarkText = "账号";
@@ -85,6 +86,7 @@ namespace SmobilerAppTEST7._17
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(72, 293);
+            this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.SecurityMode = true;
             this.txtPassword.Size = new System.Drawing.Size(200, 30);
@@ -144,7 +146,7 @@ namespace SmobilerAppTEST7._17
             // 
             // SmobilerForm1
             // 
-            this.BackgroundImage = "bluee";
+            this.BackgroundImage = "bluee.png";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
