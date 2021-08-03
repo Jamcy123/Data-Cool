@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace SmobilerAppTEST7._17
 {
-    partial class Cinema_select : Smobiler.Core.Controls.MobileForm
+    partial class cinema_select : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -19,37 +19,37 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem7 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem8 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem9 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.label1 = new Smobiler.Core.Controls.Label();
             // 
             // toolBar1
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
-            toolBarItem7.IconID = "video-camera";
-            toolBarItem7.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem7.Name = "cinema-icon";
-            toolBarItem7.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem7.SelectIconID = "video-camera";
-            toolBarItem7.Text = "影院";
-            toolBarItem8.IconID = "youtube-play";
-            toolBarItem8.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem8.Name = "moive-icon";
-            toolBarItem8.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem8.SelectIconID = "youtube-play";
-            toolBarItem8.Text = "电影";
-            toolBarItem9.IconID = "user";
-            toolBarItem9.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem9.Name = "user-icon";
-            toolBarItem9.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem9.SelectIconID = "user";
-            toolBarItem9.Text = "我的";
+            toolBarItem1.IconID = "video-camera";
+            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem1.Name = "cinema-icon";
+            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconID = "video-camera";
+            toolBarItem1.Text = "影院";
+            toolBarItem2.IconID = "youtube-play";
+            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem2.Name = "moive-icon";
+            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconID = "youtube-play";
+            toolBarItem2.Text = "电影";
+            toolBarItem3.IconID = "user";
+            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem3.Name = "user-icon";
+            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconID = "user";
+            toolBarItem3.Text = "我的";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem7,
-            toolBarItem8,
-            toolBarItem9});
+            toolBarItem1,
+            toolBarItem2,
+            toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(59, 477);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.SelectForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -68,6 +68,7 @@ namespace SmobilerAppTEST7._17
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
             this.label1});
+            this.Name = "cinema_select";
             this.Name = "cinema_select";
 
         }

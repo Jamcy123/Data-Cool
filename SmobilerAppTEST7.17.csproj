@@ -161,6 +161,12 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Moive_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Moive_Control.Designer.cs">
+      <DependentUpon>Moive_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moive_Control.resx">
+      <DependentUpon>Moive_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Moive_select.resx">
       <DependentUpon>Moive_select.cs</DependentUpon>
