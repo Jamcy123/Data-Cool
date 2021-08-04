@@ -28,7 +28,7 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
-                string sex, password;
+                string sex=null, password;
                 MySqlConnection con = new MySqlConnection();
                 con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
                 con.Open();
@@ -61,25 +61,33 @@ namespace SmobilerAppTEST7._17
                         }
                         else
                         {
-                            if (checkBox1.Checked == true)
-                                sex = "男";
-                            else
-                                sex = "女";
-                            string insert = "Insert into Userinf (Uphoneno,Upassword,Ublance,Usex) values(\"" + txtUserphone.Text + "\",\"" + txtPassword.Text + "\",\"" + "0" + "\",\"" + sex + "\")";
-                            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(insert, con);
-                            DataSet dataSet = new DataSet();
-                            mySqlDataAdapter.Fill(dataSet);
-                            string select = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;
-                            MySqlDataAdapter find = new MySqlDataAdapter(select, con);
-                            DataSet save = new DataSet();//缓存
-                            find.Fill(save);//Fill(DataSet)	在 DataSet 中添加或刷新行。
-                            if (save.Tables[0].Rows.Count <= 0)
-                                Toast("注册失败！");
+                            if (checkBox1.Checked == true && checkBox2.Checked == true)
+                                Toast("请只选择一个性别！");
+                            else if(checkBox1.Checked == false && checkBox2.Checked == false)
+                                Toast("请选择性别！");
                             else
                             {
-                                Toast("注册成功！");
-                                this.Close();
+                                if (checkBox1.Checked == true)
+                                    sex = "男";
+                                else if (checkBox2.Checked == true)
+                                    sex = "女";
+                                string insert = "Insert into Userinf (Uphoneno,Upassword,Ublance,Usex) values(\"" + txtUserphone.Text + "\",\"" + txtPassword.Text + "\",\"" + "0" + "\",\"" + sex + "\")";
+                                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(insert, con);
+                                DataSet dataSet = new DataSet();
+                                mySqlDataAdapter.Fill(dataSet);
+                                string select = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;
+                                MySqlDataAdapter find = new MySqlDataAdapter(select, con);
+                                DataSet save = new DataSet();//缓存
+                                find.Fill(save);//Fill(DataSet)	在 DataSet 中添加或刷新行。
+                                if (save.Tables[0].Rows.Count <= 0)
+                                    Toast("注册失败！");
+                                else
+                                {
+                                    Toast("注册成功！");
+                                    this.Close();
+                                }
                             }
+                           
                         }
                          con.Close();
                     }
