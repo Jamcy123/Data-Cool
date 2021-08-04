@@ -12,9 +12,12 @@ namespace SmobilerAppTEST7._17
 {
     partial class SmobilerForm1 : Smobiler.Core.Controls.MobileForm
     {
+
+      
         public SmobilerForm1() : base()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+           
         }
 
         private void btnLogon_Press(object sender, EventArgs e)
@@ -46,33 +49,30 @@ namespace SmobilerAppTEST7._17
                          }
                      });
                 }
-                //连接数据库
                 MySqlConnection con = new MySqlConnection();
-                con.ConnectionString = "server=127.0.0.1;Database=SStudents;uid=root;pwd=;";
+                con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
                 con.Open();
-                //增加数据并更新同步到数据库
-                string insert = "Insert into Users (ID, Pwd) values("+ txtUserName.Text + ',' + txtPassword.Text + ") ";
-                string delete = "Delete from Users where ID='" + txtUserName.Text + "'";
-                string update = "Update Users set Pwd='" + txtPassword.Text + "' where ID='" + txtUserName.Text + "'";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(update,con);
-                DataSet dataSet = new DataSet();
-                mySqlDataAdapter.Fill(dataSet);
-                con.Close();
-
-                string sql = "select*from Users where ID ='" + txtUserName.Text + "'";//查询语句
-
-                MySqlDataAdapter find = new MySqlDataAdapter(sql, con);
+                string select = "Select Upassword from Userinf where Uphoneno=" + txtUserName.Text;
+                MySqlDataAdapter find = new MySqlDataAdapter(select, con);
                 DataSet save = new DataSet();//缓存
-                find.Fill(save, "tt");//Fill(DataSet)	在 DataSet 中添加或刷新行。
+                find.Fill(save);//Fill(DataSet)	在 DataSet 中添加或刷新行。
 
                 if (save.Tables[0].Rows.Count <= 0)
+                {
+                    txtUserName.Text = "";
+                    txtPassword.Text = "";
                     throw new Exception("用户不存在，请重新输入！");
+                }
+                   
 
-                string pwd = save.Tables[0].Rows[0][1].ToString();
+                string pwd = save.Tables[0].Rows[0][0].ToString();
 
                 if (pwd == txtPassword.Text)
                 {
                     MessageBox.Show("密码正确");
+                    string a = txtUserName.Text;
+                    moive_select moive_Select = new moive_select(a);
+                    this.Show(moive_Select);
                 }
                 else
                 {
@@ -106,7 +106,8 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press(object sender, EventArgs e)
         {
-            moive_select moive_Select = new moive_select();
+            string a = txtUserName.Text;
+            moive_select moive_Select = new moive_select(a);
             this.Show(moive_Select);
         }
 

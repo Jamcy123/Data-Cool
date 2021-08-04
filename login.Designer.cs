@@ -77,6 +77,8 @@ namespace SmobilerAppTEST7._17
             // 
             // txtUserName
             // 
+            this.txtUserName.BackColor = System.Drawing.Color.Transparent;
+            this.txtUserName.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dotted;
             this.txtUserName.Location = new System.Drawing.Point(72, 235);
             this.txtUserName.MaxLength = 11;
             this.txtUserName.Name = "txtUserName";
@@ -104,7 +106,7 @@ namespace SmobilerAppTEST7._17
             // 
             // checkRemb
             // 
-            this.checkRemb.Location = new System.Drawing.Point(11, 343);
+            this.checkRemb.Location = new System.Drawing.Point(18, 343);
             this.checkRemb.Name = "checkRemb";
             this.checkRemb.Size = new System.Drawing.Size(27, 19);
             // 

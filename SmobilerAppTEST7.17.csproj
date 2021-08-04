@@ -99,6 +99,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alterpassword.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Alterpassword.Designer.cs">
+      <DependentUpon>Alterpassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cinema_select.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -135,6 +141,24 @@
     </Compile>
     <Compile Include="Moive_select.Designer.cs">
       <DependentUpon>Moive_select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myblance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Myblance.Designer.cs">
+      <DependentUpon>Myblance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mymessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mymessage.Designer.cs">
+      <DependentUpon>Mymessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Myorder.Designer.cs">
+      <DependentUpon>Myorder.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -175,6 +199,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Alterpassword.resx">
+      <DependentUpon>Alterpassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cinema_select.resx">
       <DependentUpon>Cinema_select.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +222,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Moive_select.resx">
       <DependentUpon>Moive_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myblance.resx">
+      <DependentUpon>Myblance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mymessage.resx">
+      <DependentUpon>Mymessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myorder.resx">
+      <DependentUpon>Myorder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

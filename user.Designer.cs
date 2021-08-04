@@ -32,6 +32,8 @@ namespace SmobilerAppTEST7._17
             this.title1 = new Smobiler.Core.Controls.Title();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.iconMenuView1 = new Smobiler.Core.Controls.IconMenuView();
+            this.button1 = new Smobiler.Core.Controls.Button();
+            this.button2 = new Smobiler.Core.Controls.Button();
             // 
             // toolBar1
             // 
@@ -70,7 +72,9 @@ namespace SmobilerAppTEST7._17
             this.image1,
             this.title1,
             this.label1,
-            this.iconMenuView1});
+            this.iconMenuView1,
+            this.button1,
+            this.button2});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(8, 111);
             this.panel1.Name = "panel1";
@@ -82,7 +86,7 @@ namespace SmobilerAppTEST7._17
             this.image1.Location = new System.Drawing.Point(15, 53);
             this.image1.Name = "image1";
             this.image1.ResourceID = "sansan";
-            this.image1.Size = new System.Drawing.Size(60, 60);
+            this.image1.Size = new System.Drawing.Size(69, 80);
             // 
             // title1
             // 
@@ -90,29 +94,37 @@ namespace SmobilerAppTEST7._17
             this.title1.FontSize = 20F;
             this.title1.Location = new System.Drawing.Point(132, 12);
             this.title1.Name = "title1";
+            this.title1.SelfAlign = Smobiler.Core.Controls.LayoutSelfAlign.FlexStart;
             this.title1.Size = new System.Drawing.Size(100, 30);
+            this.title1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Default;
             this.title1.Text = "我的";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(92, 61);
+            this.label1.FontSize = 16F;
+            this.label1.Location = new System.Drawing.Point(99, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 35);
+            this.label1.Size = new System.Drawing.Size(104, 35);
             this.label1.Text = "label1";
             // 
             // iconMenuView1
             // 
+            this.iconMenuView1.ColumnNum = 3;
+            this.iconMenuView1.GroupBackColor = System.Drawing.Color.Transparent;
             iconMenuViewGroup1.FontSize = 16F;
             iconMenuViewGroup1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Left;
             iconMenuViewGroup1.IconBorderRadius = 0;
             iconMenuViewGroup1.ItemHeight = 0;
             iconMenuViewItem1.Icon = "file-text-o";
+            iconMenuViewItem1.ID = "order";
             iconMenuViewItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             iconMenuViewItem1.Text = "我的订单";
             iconMenuViewItem2.Icon = "credit-card-alt";
+            iconMenuViewItem2.ID = "blance";
             iconMenuViewItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             iconMenuViewItem2.Text = "我的余额";
             iconMenuViewItem3.Icon = "user";
+            iconMenuViewItem3.ID = "message";
             iconMenuViewItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             iconMenuViewItem3.Text = "我的资料";
             iconMenuViewGroup1.Items.AddRange(new Smobiler.Core.Controls.IconMenuViewItem[] {
@@ -123,13 +135,33 @@ namespace SmobilerAppTEST7._17
             iconMenuViewGroup1.Text = "我的";
             this.iconMenuView1.Groups.AddRange(new Smobiler.Core.Controls.IconMenuViewGroup[] {
             iconMenuViewGroup1});
-            this.iconMenuView1.Location = new System.Drawing.Point(0, 161);
+            this.iconMenuView1.Location = new System.Drawing.Point(0, 163);
             this.iconMenuView1.Name = "iconMenuView1";
-            this.iconMenuView1.Size = new System.Drawing.Size(300, 90);
+            this.iconMenuView1.Size = new System.Drawing.Size(300, 104);
+            this.iconMenuView1.ItemPress += new Smobiler.Core.Controls.IconMenuViewItemPressClickHandler(this.iconMenuView1_ItemPress);
+            // 
+            // button1
+            // 
+            this.button1.FontSize = 16F;
+            this.button1.Location = new System.Drawing.Point(92, 402);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 40);
+            this.button1.Text = "退出登录";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // button2
+            // 
+            this.button2.FontSize = 16F;
+            this.button2.Location = new System.Drawing.Point(92, 352);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 40);
+            this.button2.Text = "修改密码";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
             // user
             // 
             this.BackgroundImage = "bluee";
+            this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
             this.panel1});
@@ -144,5 +176,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Title title1;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.IconMenuView iconMenuView1;
+        private Smobiler.Core.Controls.Button button1;
+        private Smobiler.Core.Controls.Button button2;
     }
 }

@@ -9,13 +9,17 @@ using MySql.Data.MySqlClient;
 
 namespace SmobilerAppTEST7._17
 {
+    
     partial class moive_select : Smobiler.Core.Controls.MobileForm
     {
-        public moive_select() : base()
+        string Uno;
+        public moive_select(string a) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
-        }
+            Uno = a;
+        } 
+       
         private void moive_select_Load(object sender, EventArgs e)//界面加载事件
         {
             toolBar1.SelectedIndex = 1;//底部栏默认选项
@@ -40,12 +44,12 @@ namespace SmobilerAppTEST7._17
                     toolBar1.SelectedIndex = 1;
                     break;
                 case "cinema-icon":
-                    cinema_select cinema_Select = new cinema_select();
+                    cinema_select cinema_Select = new cinema_select(Uno);
                     cinema_Select.setToolbarIndex(0);
                     Show(cinema_Select, (obj, args) => { ShowForm(cinema_Select.ToolBarItemName); });
                     break;
                 case "user-icon":
-                    user user = new user();
+                    user user = new user(Uno);
                     user.setToolbarIndex(2);
                     Show(user, (obj, args) => { ShowForm(user.ToolBarItemName); });
                     break;
