@@ -19,9 +19,9 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem4 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem5 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem6 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.title1 = new Smobiler.Core.Controls.Title();
             this.panel1 = new Smobiler.Core.Controls.Panel();
@@ -33,28 +33,28 @@ namespace SmobilerAppTEST7._17
             // toolBar1
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
-            toolBarItem4.IconID = "video-camera";
-            toolBarItem4.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem4.Name = "cinema-icon";
-            toolBarItem4.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem4.SelectIconID = "video-camera";
-            toolBarItem4.Text = "影院";
-            toolBarItem5.IconID = "youtube-play";
-            toolBarItem5.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem5.Name = "moive-icon";
-            toolBarItem5.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem5.SelectIconID = "youtube-play";
-            toolBarItem5.Text = "电影";
-            toolBarItem6.IconID = "user";
-            toolBarItem6.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem6.Name = "user-icon";
-            toolBarItem6.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem6.SelectIconID = "user";
-            toolBarItem6.Text = "我的";
+            toolBarItem1.IconID = "video-camera";
+            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem1.Name = "cinema-icon";
+            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconID = "video-camera";
+            toolBarItem1.Text = "影院";
+            toolBarItem2.IconID = "youtube-play";
+            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem2.Name = "moive-icon";
+            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconID = "youtube-play";
+            toolBarItem2.Text = "电影";
+            toolBarItem3.IconID = "user";
+            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem3.Name = "user-icon";
+            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconID = "user";
+            toolBarItem3.Text = "我的";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem4,
-            toolBarItem5,
-            toolBarItem6});
+            toolBarItem1,
+            toolBarItem2,
+            toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(59, 477);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.SelectForeColor = System.Drawing.Color.DeepSkyBlue;

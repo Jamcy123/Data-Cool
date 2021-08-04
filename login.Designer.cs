@@ -53,6 +53,7 @@ namespace SmobilerAppTEST7._17
             // 
             // image1
             // 
+            this.image1.BorderRadius = 360;
             this.image1.Location = new System.Drawing.Point(98, 57);
             this.image1.Name = "image1";
             this.image1.ResourceID = "sansan1.png";

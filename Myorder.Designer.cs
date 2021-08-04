@@ -20,26 +20,40 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.panel1 = new Smobiler.Core.Controls.Panel();
+            this.title1 = new Smobiler.Core.Controls.Title();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
             // 
-            // panel1
+            // title1
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(183, 323);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 100);
+            this.title1.BackColor = System.Drawing.Color.SkyBlue;
+            this.title1.Location = new System.Drawing.Point(117, 10);
+            this.title1.Name = "title1";
+            this.title1.Size = new System.Drawing.Size(100, 30);
+            this.title1.Text = "我的订单";
+            // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(0, 30);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.ShowSplitLine = true;
+            this.listView1.Size = new System.Drawing.Size(300, 470);
+            this.listView1.SplitLineColor = System.Drawing.Color.Silver;
+            this.listView1.TemplateControlName = "orderTemplate";
             // 
             // Myorder
             // 
             this.BackgroundImage = "bluee";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.panel1});
+            this.title1,
+            this.listView1});
+            this.Load += new System.EventHandler(this.Myorder_Load);
             this.Name = "Myorder";
 
         }
         #endregion
-
-        private Smobiler.Core.Controls.Panel panel1;
+        private Smobiler.Core.Controls.Title title1;
+        private Smobiler.Core.Controls.ListView listView1;
     }
 }
