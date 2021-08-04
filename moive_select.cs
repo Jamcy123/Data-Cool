@@ -63,7 +63,43 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press(object sender, EventArgs e)
         {
-
+            gps1.GetGps();//获取位置信息
+        }
+        private string address(string location)//输入地址，返回城市
+        {
+            //直辖市，省，自治区
+            //市，自治州，地区，盟
+            string city = "";
+            if (location.Contains("省"))
+                city = location.Substring(location.IndexOf("省") + 1, location.IndexOf("市") - location.IndexOf("省"));
+            else
+            {
+                if (location.Contains("自治区"))
+                    city = location.Substring(location.IndexOf("区") + 1, location.IndexOf("市") - location.IndexOf("区"));
+                else
+                    city = location.Substring(0, location.IndexOf("市") + 1);
+            }
+            return city;
+        }
+        private void gps1_GotLocation(object sender, GPSResultArgs e)
+        {
+            //是否获取到了位置信息
+            if ((e.isError).Equals(false))
+            {
+                if (e.Longitude != 0 & e.Latitude != 0)
+                {
+                    //lblAddress.Text = e.Location;  //位置信息
+                    lblAddress.Text = address(e.Location);
+                }
+                else
+                {
+                    lblAddress.Text = "定位失败";
+                }
+            }
+            else
+            {
+                lblAddress.Text = "定位失败";
+            }
         }
     }
 }
