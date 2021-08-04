@@ -29,6 +29,8 @@ namespace SmobilerAppTEST7._17
             MySqlCommand da = new MySqlCommand(judge, con);
             MySqlDataReader dr = da.ExecuteReader();
             bool b = dr.Read();
+            con.Close();
+            con.Open();
             if (b)
             {
                 Toast("该电话号码已注册");

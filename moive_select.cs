@@ -61,6 +61,9 @@ namespace SmobilerAppTEST7._17
             ShowForm(e.Name);//e:单击的图标
         }
 
+        private void button1_Press(object sender, EventArgs e)
+        {
 
+        }
     }
 }

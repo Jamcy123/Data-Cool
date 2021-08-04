@@ -26,6 +26,8 @@ namespace SmobilerAppTEST7._17
             this.title1 = new Smobiler.Core.Controls.Title();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.button1 = new Smobiler.Core.Controls.Button();
+            this.label1 = new Smobiler.Core.Controls.Label();
             // 
             // toolBar1
             // 
@@ -67,7 +69,8 @@ namespace SmobilerAppTEST7._17
             // panel1
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView1});
+            this.listView1,
+            this.label1});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(76, 239);
             this.panel1.Name = "panel1";
@@ -82,12 +85,28 @@ namespace SmobilerAppTEST7._17
             this.listView1.Size = new System.Drawing.Size(300, 330);
             this.listView1.TemplateControlName = "Moive_Control";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(14, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.Text = "button1";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(74, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 35);
+            this.label1.Text = "label1";
+            // 
             // moive_select
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
             this.title1,
-            this.panel1});
+            this.panel1,
+            this.button1});
             this.Load += new System.EventHandler(this.moive_select_Load);
             this.Name = "moive_select";
 
@@ -98,5 +117,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Title title1;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.ListView listView1;
+        private Smobiler.Core.Controls.Button button1;
+        private Smobiler.Core.Controls.Label label1;
     }
 }
