@@ -55,7 +55,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.image1.Location = new System.Drawing.Point(98, 57);
             this.image1.Name = "image1";
-            this.image1.ResourceID = "sansan1";
+            this.image1.ResourceID = "sansan1.png";
             this.image1.Size = new System.Drawing.Size(122, 80);
             // 
             // fontIcon1

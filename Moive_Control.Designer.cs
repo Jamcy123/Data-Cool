@@ -19,12 +19,12 @@ namespace SmobilerAppTEST7._17
         private void InitializeComponent()
         {
             this.panel1 = new Smobiler.Core.Controls.Panel();
+            this.image1 = new Smobiler.Core.Controls.Image();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.label4 = new Smobiler.Core.Controls.Label();
             this.label5 = new Smobiler.Core.Controls.Label();
-            this.image1 = new Smobiler.Core.Controls.Image();
             // 
             // panel1
             // 
@@ -40,9 +40,20 @@ namespace SmobilerAppTEST7._17
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 100);
             // 
+            // image1
+            // 
+            this.image1.BorderRadius = 7;
+            this.image1.DisplayMember = "Mpicadress";
+            this.image1.Location = new System.Drawing.Point(8, 9);
+            this.image1.Name = "image1";
+            this.image1.ResourceID = global::SmobilerAppTEST7._17.Properties.Settings.Default.Mpicadress;
+            this.image1.Size = new System.Drawing.Size(70, 82);
+            // 
             // label1
             // 
             this.label1.Bold = true;
+            this.label1.DataMember = "Mno";
+            this.label1.DisplayMember = "Mname";
             this.label1.FontSize = 15F;
             this.label1.Location = new System.Drawing.Point(94, 9);
             this.label1.Name = "label1";
@@ -80,15 +91,6 @@ namespace SmobilerAppTEST7._17
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 17);
             this.label5.Text = "label5";
-            // 
-            // image1
-            // 
-            this.image1.BorderRadius = 7;
-            this.image1.DisplayMember = "Mpicadress";
-            this.image1.Location = new System.Drawing.Point(8, 9);
-            this.image1.Name = "image1";
-            this.image1.ResourceID = global::SmobilerAppTEST7._17.Properties.Settings.Default.Mpicadress;
-            this.image1.Size = new System.Drawing.Size(70, 82);
             // 
             // Moive_Control
             // 
