@@ -53,7 +53,7 @@ namespace SmobilerAppTEST7._17
                 //增加数据并更新同步到数据库
                 string insert = "Insert into Users (ID, Pwd) values("+ txtUserName.Text + ',' + txtPassword.Text + ") ";
                 string delete = "Delete from Users where ID='" + txtUserName.Text + "'";
-                string update= "Update Users set Pwd='" + txtPassword.Text + "' where ID='" + txtUserName.Text + "'";
+                string update = "Update Users set Pwd='" + txtPassword.Text + "' where ID='" + txtUserName.Text + "'";
                 MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(update,con);
                 DataSet dataSet = new DataSet();
                 mySqlDataAdapter.Fill(dataSet);

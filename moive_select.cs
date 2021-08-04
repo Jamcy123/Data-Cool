@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace SmobilerAppTEST7._17
 {
@@ -17,6 +19,17 @@ namespace SmobilerAppTEST7._17
         private void moive_select_Load(object sender, EventArgs e)//界面加载事件
         {
             toolBar1.SelectedIndex = 1;//底部栏默认选项
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = "server=127.0.0.1;Database=Movie_ticket;uid=root;pwd=;";
+            con.Open();
+            //增加数据并更新同步到数据库
+            string select = "SELECT * FROM Movie_ticket.Movie;";
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(select, con);
+            DataSet dataSet = new DataSet();
+            mySqlDataAdapter.Fill(dataSet);
+            listView1.DataSource = dataSet;
+            listView1.DataBind();
+            con.Close();
         }
 
         private void ShowForm(string name)//界面选择
