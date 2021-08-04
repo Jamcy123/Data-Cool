@@ -33,6 +33,7 @@ namespace SmobilerAppTEST7._17
             // 
             // panel1
             // 
+            this.panel1.BorderColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.txtUserphone,
             this.txtPassword,
@@ -122,6 +123,7 @@ namespace SmobilerAppTEST7._17
             // Alterpassword
             // 
             this.BackgroundImage = "bluee";
+            this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
             this.Name = "Alterpassword";

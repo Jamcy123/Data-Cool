@@ -94,7 +94,9 @@ namespace SmobilerAppTEST7._17
             this.title1.FontSize = 20F;
             this.title1.Location = new System.Drawing.Point(132, 12);
             this.title1.Name = "title1";
+            this.title1.SelfAlign = Smobiler.Core.Controls.LayoutSelfAlign.FlexStart;
             this.title1.Size = new System.Drawing.Size(100, 30);
+            this.title1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Default;
             this.title1.Text = "我的";
             // 
             // label1
@@ -114,12 +116,15 @@ namespace SmobilerAppTEST7._17
             iconMenuViewGroup1.IconBorderRadius = 0;
             iconMenuViewGroup1.ItemHeight = 0;
             iconMenuViewItem1.Icon = "file-text-o";
+            iconMenuViewItem1.ID = "order";
             iconMenuViewItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             iconMenuViewItem1.Text = "我的订单";
             iconMenuViewItem2.Icon = "credit-card-alt";
+            iconMenuViewItem2.ID = "blance";
             iconMenuViewItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             iconMenuViewItem2.Text = "我的余额";
             iconMenuViewItem3.Icon = "user";
+            iconMenuViewItem3.ID = "message";
             iconMenuViewItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             iconMenuViewItem3.Text = "我的资料";
             iconMenuViewGroup1.Items.AddRange(new Smobiler.Core.Controls.IconMenuViewItem[] {
@@ -133,6 +138,7 @@ namespace SmobilerAppTEST7._17
             this.iconMenuView1.Location = new System.Drawing.Point(0, 163);
             this.iconMenuView1.Name = "iconMenuView1";
             this.iconMenuView1.Size = new System.Drawing.Size(300, 104);
+            this.iconMenuView1.ItemPress += new Smobiler.Core.Controls.IconMenuViewItemPressClickHandler(this.iconMenuView1_ItemPress);
             // 
             // button1
             // 

@@ -55,7 +55,7 @@ namespace SmobilerAppTEST7._17
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(85, 256);
+            this.txtPassword.Location = new System.Drawing.Point(84, 281);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.SecurityMode = true;
@@ -64,7 +64,7 @@ namespace SmobilerAppTEST7._17
             // 
             // txtUserphone
             // 
-            this.txtUserphone.Location = new System.Drawing.Point(85, 209);
+            this.txtUserphone.Location = new System.Drawing.Point(84, 234);
             this.txtUserphone.MaxLength = 11;
             this.txtUserphone.Name = "txtUserphone";
             this.txtUserphone.Size = new System.Drawing.Size(200, 30);
@@ -72,7 +72,7 @@ namespace SmobilerAppTEST7._17
             // 
             // txtsure
             // 
-            this.txtsure.Location = new System.Drawing.Point(85, 300);
+            this.txtsure.Location = new System.Drawing.Point(84, 325);
             this.txtsure.MaxLength = 20;
             this.txtsure.Name = "txtsure";
             this.txtsure.SecurityMode = true;
@@ -81,61 +81,61 @@ namespace SmobilerAppTEST7._17
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(15, 209);
+            this.label1.Location = new System.Drawing.Point(14, 234);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 30);
             this.label1.Text = "用户名";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(30, 256);
+            this.label2.Location = new System.Drawing.Point(29, 281);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 30);
             this.label2.Text = "密码";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(7, 300);
+            this.label3.Location = new System.Drawing.Point(6, 325);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 30);
             this.label3.Text = "确认密码";
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(30, 347);
+            this.label4.Location = new System.Drawing.Point(29, 372);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 28);
             this.label4.Text = "性别";
             // 
             // checkBox1
             // 
-            this.checkBox1.Location = new System.Drawing.Point(136, 355);
+            this.checkBox1.Location = new System.Drawing.Point(135, 380);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(20, 20);
             // 
             // checkBox2
             // 
-            this.checkBox2.Location = new System.Drawing.Point(240, 355);
+            this.checkBox2.Location = new System.Drawing.Point(239, 380);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(19, 20);
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(107, 348);
+            this.label5.Location = new System.Drawing.Point(106, 373);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(21, 28);
             this.label5.Text = "男";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(208, 348);
+            this.label6.Location = new System.Drawing.Point(207, 373);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 28);
             this.label6.Text = "女";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(95, 403);
+            this.button1.Location = new System.Drawing.Point(95, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.Text = "注册";

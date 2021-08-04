@@ -142,6 +142,24 @@
     <Compile Include="Moive_select.Designer.cs">
       <DependentUpon>Moive_select.cs</DependentUpon>
     </Compile>
+    <Compile Include="Myblance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Myblance.Designer.cs">
+      <DependentUpon>Myblance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mymessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mymessage.Designer.cs">
+      <DependentUpon>Mymessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Myorder.Designer.cs">
+      <DependentUpon>Myorder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -204,6 +222,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Moive_select.resx">
       <DependentUpon>Moive_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myblance.resx">
+      <DependentUpon>Myblance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mymessage.resx">
+      <DependentUpon>Mymessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myorder.resx">
+      <DependentUpon>Myorder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

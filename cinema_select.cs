@@ -9,7 +9,7 @@ namespace SmobilerAppTEST7._17
 {
     partial class cinema_select : Smobiler.Core.Controls.MobileForm
     {
-        public cinema_select() : base()
+        public cinema_select(string a) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
