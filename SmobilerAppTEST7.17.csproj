@@ -99,11 +99,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alterpassword.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Alterpassword.Designer.cs">
+      <DependentUpon>Alterpassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cinema_select.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Cinema_select.Designer.cs">
       <DependentUpon>Cinema_select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="city_select.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="city_select.Designer.cs">
+      <DependentUpon>city_select.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGenerateQRcode.cs">
       <SubType>Form</SubType>
@@ -136,6 +148,24 @@
     <Compile Include="Moive_select.Designer.cs">
       <DependentUpon>Moive_select.cs</DependentUpon>
     </Compile>
+    <Compile Include="Myblance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Myblance.Designer.cs">
+      <DependentUpon>Myblance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mymessage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Mymessage.Designer.cs">
+      <DependentUpon>Mymessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myorder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Myorder.Designer.cs">
+      <DependentUpon>Myorder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -148,12 +178,24 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs" />
-    <Compile Include="SmobilerForm1.cs">
+    <Compile Include="register.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SmobilerForm1.Designer.cs">
-      <DependentUpon>SmobilerForm1.cs</DependentUpon>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="login.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moive_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Moive_Control.Designer.cs">
+      <DependentUpon>Moive_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
       <SubType>Component</SubType>
@@ -163,8 +205,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Alterpassword.resx">
+      <DependentUpon>Alterpassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cinema_select.resx">
       <DependentUpon>Cinema_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="city_select.resx">
+      <DependentUpon>city_select.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
@@ -178,15 +226,30 @@
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Moive_Control.resx">
+      <DependentUpon>Moive_Control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Moive_select.resx">
       <DependentUpon>Moive_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myblance.resx">
+      <DependentUpon>Myblance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mymessage.resx">
+      <DependentUpon>Mymessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Myorder.resx">
+      <DependentUpon>Myorder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SmobilerForm1.resx">
-      <DependentUpon>SmobilerForm1.cs</DependentUpon>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>

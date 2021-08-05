@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace SmobilerAppTEST7._17
 {
-    partial class Cinema_select : Smobiler.Core.Controls.MobileForm
+    partial class cinema_select : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -24,6 +24,7 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.ToolBarItem toolBarItem9 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.label1 = new Smobiler.Core.Controls.Label();
+            this.title1 = new Smobiler.Core.Controls.Title();
             // 
             // toolBar1
             // 
@@ -63,11 +64,20 @@ namespace SmobilerAppTEST7._17
             this.label1.Size = new System.Drawing.Size(100, 35);
             this.label1.Text = "选影院的";
             // 
+            // title1
+            // 
+            this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.title1.Location = new System.Drawing.Point(38, 47);
+            this.title1.Name = "title1";
+            this.title1.ResourceID = "map-marker";
+            this.title1.Size = new System.Drawing.Size(100, 30);
+            // 
             // cinema_select
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
-            this.label1});
+            this.label1,
+            this.title1});
             this.Name = "cinema_select";
 
         }
@@ -75,5 +85,6 @@ namespace SmobilerAppTEST7._17
 
         private Smobiler.Core.Controls.ToolBar toolBar1;
         private Smobiler.Core.Controls.Label label1;
+        private Smobiler.Core.Controls.Title title1;
     }
 }
