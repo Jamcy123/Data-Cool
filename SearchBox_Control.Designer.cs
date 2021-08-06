@@ -40,6 +40,7 @@ namespace SmobilerAppTEST7._17
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(237, 28);
             this.textBox1.WaterMarkText = "输入查询内容";
+            this.textBox1.SubmitEditing += new System.EventHandler(this.textBox1_SubmitEditing);
             // 
             // panel2
             // 
@@ -49,6 +50,8 @@ namespace SmobilerAppTEST7._17
             this.panel2.Location = new System.Drawing.Point(254, 6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(28, 28);
+            this.panel2.Touchable = true;
+            this.panel2.Press += new System.EventHandler(this.panel2_Press);
             // 
             // fontIcon1
             // 

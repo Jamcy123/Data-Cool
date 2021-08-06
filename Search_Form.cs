@@ -19,5 +19,10 @@ namespace SmobilerAppTEST7._17
         {
             this.Close();
         }
+
+        private void searchBox_Control1_SearchButtonPress(object sender, EventArgs e)
+        {
+            label3.Text=searchBox_Control1.TextBox_Text;
+        }
     }
 }
