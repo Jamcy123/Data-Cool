@@ -24,6 +24,9 @@ namespace SmobilerAppTEST7._17
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 1F);
+            this.panel1.BorderColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.label1,
             this.label4});
@@ -31,6 +34,7 @@ namespace SmobilerAppTEST7._17
             this.panel1.Location = new System.Drawing.Point(111, 312);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 100);
+            this.panel1.Touchable = true;
             // 
             // label1
             // 

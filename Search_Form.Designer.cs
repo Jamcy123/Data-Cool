@@ -19,86 +19,78 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.panel1 = new Smobiler.Core.Controls.Panel();
-            this.label3 = new Smobiler.Core.Controls.Label();
-            this.searchBox_Control1 = new SmobilerAppTEST7._17.SearchBox_Control();
+            this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
+            this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
+            this.listView2 = new Smobiler.Core.Controls.ListView();
             this.panel2 = new Smobiler.Core.Controls.Panel();
-            this.movie_checkBox = new Smobiler.Core.Controls.CheckBox();
-            this.label1 = new Smobiler.Core.Controls.Label();
-            this.cinema_checkBox = new Smobiler.Core.Controls.CheckBox();
-            this.label2 = new Smobiler.Core.Controls.Label();
+            this.panel1 = new Smobiler.Core.Controls.Panel();
             this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
+            this.searchBox_Control1 = new SmobilerAppTEST7._17.SearchBox_Control();
+            // 
+            // tabPageView1
+            // 
+            this.tabPageView1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.tabPageControl1,
+            this.tabPageControl2});
+            this.tabPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPageView1.Name = "tabPageView1";
+            this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
+            this.tabPageView1.Size = new System.Drawing.Size(300, 300);
+            this.tabPageView1.Titles = new string[] {
+        "查询电影",
+        "查询影院"};
+            this.tabPageView1.TitleStyle = new Smobiler.Core.Controls.TabPageViewTitleStyle(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129))))), System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(140)))), ((int)(((byte)(255))))), 14F);
+            // 
+            // tabPageControl1
+            // 
+            this.tabPageControl1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.listView1});
+            this.tabPageControl1.Name = "tabPageControl1";
+            // 
+            // listView1
+            // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 73);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.Size = new System.Drawing.Size(300, 300);
+            this.listView1.TemplateControlName = "Movie_Control";
+            // 
+            // tabPageControl2
+            // 
+            this.tabPageControl2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.listView2});
+            this.tabPageControl2.Name = "tabPageControl2";
+            // 
+            // listView2
+            // 
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView2.Location = new System.Drawing.Point(59, 219);
+            this.listView2.Name = "listView2";
+            this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView2.Size = new System.Drawing.Size(300, 300);
+            this.listView2.TemplateControlName = "Cinema_Control";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.tabPageView1});
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 53);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 100);
             // 
             // panel1
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.label3,
             this.searchBox_Control1,
             this.panel2});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(149, 246);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 100);
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(78, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 35);
-            this.label3.Text = "label3";
-            // 
-            // searchBox_Control1
-            // 
-            this.searchBox_Control1.BackColor = System.Drawing.Color.White;
-            this.searchBox_Control1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.searchBox_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.searchBox_Control1.Location = new System.Drawing.Point(0, 98);
-            this.searchBox_Control1.Name = "searchBox_Control1";
-            this.searchBox_Control1.Size = new System.Drawing.Size(300, 40);
-            this.searchBox_Control1.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.movie_checkBox,
-            this.label1,
-            this.cinema_checkBox,
-            this.label2});
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 75);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 38);
-            // 
-            // movie_checkBox
-            // 
-            this.movie_checkBox.Checked = true;
-            this.movie_checkBox.Location = new System.Drawing.Point(30, 5);
-            this.movie_checkBox.Name = "movie_checkBox";
-            this.movie_checkBox.Size = new System.Drawing.Size(22, 22);
-            this.movie_checkBox.TintColor = System.Drawing.Color.DeepSkyBlue;
-            this.movie_checkBox.CheckedChanged += new System.EventHandler(this.movie_checkBox_CheckedChanged);
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(54, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 22);
-            this.label1.Text = "查询电影";
-            // 
-            // cinema_checkBox
-            // 
-            this.cinema_checkBox.Location = new System.Drawing.Point(167, 5);
-            this.cinema_checkBox.Name = "cinema_checkBox";
-            this.cinema_checkBox.Size = new System.Drawing.Size(22, 22);
-            this.cinema_checkBox.TintColor = System.Drawing.Color.DeepSkyBlue;
-            this.cinema_checkBox.CheckedChanged += new System.EventHandler(this.cinema_checkBox_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(189, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 22);
-            this.label2.Text = "查询影院";
             // 
             // title_Control1
             // 
@@ -112,6 +104,17 @@ namespace SmobilerAppTEST7._17
             this.title_Control1.Text = "搜索";
             this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress_1);
             // 
+            // searchBox_Control1
+            // 
+            this.searchBox_Control1.BackColor = System.Drawing.Color.White;
+            this.searchBox_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchBox_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.searchBox_Control1.Location = new System.Drawing.Point(0, 98);
+            this.searchBox_Control1.Name = "searchBox_Control1";
+            this.searchBox_Control1.Size = new System.Drawing.Size(300, 40);
+            this.searchBox_Control1.TextBox_Text = "";
+            this.searchBox_Control1.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
+            // 
             // Search_Form
             // 
             this.BackColor = System.Drawing.Color.White;
@@ -124,13 +127,13 @@ namespace SmobilerAppTEST7._17
         #endregion
 
         private Title_Control title_Control1;
-        private Smobiler.Core.Controls.Panel panel1;
-        private Smobiler.Core.Controls.Label label3;
-        private SearchBox_Control searchBox_Control1;
+        private Smobiler.Core.Controls.TabPageView tabPageView1;
+        private Smobiler.Core.Controls.TabPageControl tabPageControl1;
+        private Smobiler.Core.Controls.ListView listView1;
+        private Smobiler.Core.Controls.TabPageControl tabPageControl2;
+        private Smobiler.Core.Controls.ListView listView2;
         private Smobiler.Core.Controls.Panel panel2;
-        private Smobiler.Core.Controls.CheckBox movie_checkBox;
-        private Smobiler.Core.Controls.Label label1;
-        private Smobiler.Core.Controls.CheckBox cinema_checkBox;
-        private Smobiler.Core.Controls.Label label2;
+        private SearchBox_Control searchBox_Control1;
+        private Smobiler.Core.Controls.Panel panel1;
     }
 }
