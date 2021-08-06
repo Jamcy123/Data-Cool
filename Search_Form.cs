@@ -24,5 +24,21 @@ namespace SmobilerAppTEST7._17
         {
             label3.Text=searchBox_Control1.TextBox_Text;
         }
+
+        private void movie_checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if(movie_checkBox.Checked == false)
+                cinema_checkBox.Checked = true;
+            else
+                cinema_checkBox.Checked = false;
+        }
+
+        private void cinema_checkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cinema_checkBox.Checked == false)
+                movie_checkBox.Checked = true;
+            else
+                movie_checkBox.Checked = false;
+        }
     }
 }

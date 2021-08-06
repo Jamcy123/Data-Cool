@@ -19,9 +19,9 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem10 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem11 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem12 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.listView1 = new Smobiler.Core.Controls.ListView();
@@ -34,28 +34,28 @@ namespace SmobilerAppTEST7._17
             // toolBar1
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
-            toolBarItem10.IconID = "video-camera";
-            toolBarItem10.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem10.Name = "cinema-icon";
-            toolBarItem10.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem10.SelectIconID = "video-camera";
-            toolBarItem10.Text = "影院";
-            toolBarItem11.IconID = "youtube-play";
-            toolBarItem11.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem11.Name = "moive-icon";
-            toolBarItem11.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem11.SelectIconID = "youtube-play";
-            toolBarItem11.Text = "电影";
-            toolBarItem12.IconID = "user";
-            toolBarItem12.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem12.Name = "user-icon";
-            toolBarItem12.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem12.SelectIconID = "user";
-            toolBarItem12.Text = "我的";
+            toolBarItem1.IconID = "video-camera";
+            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem1.Name = "cinema-icon";
+            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconID = "video-camera";
+            toolBarItem1.Text = "影院";
+            toolBarItem2.IconID = "youtube-play";
+            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem2.Name = "moive-icon";
+            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconID = "youtube-play";
+            toolBarItem2.Text = "电影";
+            toolBarItem3.IconID = "user";
+            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem3.Name = "user-icon";
+            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconID = "user";
+            toolBarItem3.Text = "我的";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem10,
-            toolBarItem11,
-            toolBarItem12});
+            toolBarItem1,
+            toolBarItem2,
+            toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(59, 477);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.SelectForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -78,7 +78,7 @@ namespace SmobilerAppTEST7._17
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.Size = new System.Drawing.Size(300, 330);
-            this.listView1.TemplateControlName = "Moive_Control";
+            this.listView1.TemplateControlName = "Movie_Control";
             // 
             // fontIcon1
             // 
