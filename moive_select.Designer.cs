@@ -19,9 +19,9 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem10 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem11 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem12 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.listView1 = new Smobiler.Core.Controls.ListView();
@@ -29,32 +29,33 @@ namespace SmobilerAppTEST7._17
             this.city_label = new Smobiler.Core.Controls.Label();
             this.title1 = new Smobiler.Core.Controls.Title();
             this.city_btn = new Smobiler.Core.Controls.Button();
+            this.search_control1 = new SmobilerAppTEST7._17.Search_control();
             // 
             // toolBar1
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
-            toolBarItem1.IconID = "video-camera";
-            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem1.Name = "cinema-icon";
-            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem1.SelectIconID = "video-camera";
-            toolBarItem1.Text = "影院";
-            toolBarItem2.IconID = "youtube-play";
-            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem2.Name = "moive-icon";
-            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem2.SelectIconID = "youtube-play";
-            toolBarItem2.Text = "电影";
-            toolBarItem3.IconID = "user";
-            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem3.Name = "user-icon";
-            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem3.SelectIconID = "user";
-            toolBarItem3.Text = "我的";
+            toolBarItem10.IconID = "video-camera";
+            toolBarItem10.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem10.Name = "cinema-icon";
+            toolBarItem10.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem10.SelectIconID = "video-camera";
+            toolBarItem10.Text = "影院";
+            toolBarItem11.IconID = "youtube-play";
+            toolBarItem11.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem11.Name = "moive-icon";
+            toolBarItem11.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem11.SelectIconID = "youtube-play";
+            toolBarItem11.Text = "电影";
+            toolBarItem12.IconID = "user";
+            toolBarItem12.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem12.Name = "user-icon";
+            toolBarItem12.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem12.SelectIconID = "user";
+            toolBarItem12.Text = "我的";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem1,
-            toolBarItem2,
-            toolBarItem3});
+            toolBarItem10,
+            toolBarItem11,
+            toolBarItem12});
             this.toolBar1.Location = new System.Drawing.Point(59, 477);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.SelectForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -81,9 +82,10 @@ namespace SmobilerAppTEST7._17
             // 
             // fontIcon1
             // 
+            this.fontIcon1.Location = new System.Drawing.Point(3, 3);
             this.fontIcon1.Name = "fontIcon1";
             this.fontIcon1.ResourceID = "map-marker";
-            this.fontIcon1.Size = new System.Drawing.Size(39, 30);
+            this.fontIcon1.Size = new System.Drawing.Size(25, 25);
             // 
             // city_label
             // 
@@ -95,6 +97,8 @@ namespace SmobilerAppTEST7._17
             // 
             // title1
             // 
+            this.title1.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 1F);
+            this.title1.BorderColor = System.Drawing.Color.LightGray;
             this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             this.title1.Location = new System.Drawing.Point(47, 32);
             this.title1.Name = "title1";
@@ -107,6 +111,13 @@ namespace SmobilerAppTEST7._17
             this.city_btn.Size = new System.Drawing.Size(89, 30);
             this.city_btn.Press += new System.EventHandler(this.city_btn_Press);
             // 
+            // search_control1
+            // 
+            this.search_control1.BorderRadius = 15;
+            this.search_control1.Location = new System.Drawing.Point(124, 6);
+            this.search_control1.Name = "search_control1";
+            this.search_control1.Size = new System.Drawing.Size(130, 20);
+            // 
             // moive_select
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -115,7 +126,8 @@ namespace SmobilerAppTEST7._17
             this.panel1,
             this.fontIcon1,
             this.city_label,
-            this.city_btn});
+            this.city_btn,
+            this.search_control1});
             this.Load += new System.EventHandler(this.moive_select_Load);
             this.Name = "moive_select";
 
@@ -129,5 +141,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label city_label;
         private Smobiler.Core.Controls.Title title1;
         private Smobiler.Core.Controls.Button city_btn;
+        private Search_control search_control1;
     }
 }
