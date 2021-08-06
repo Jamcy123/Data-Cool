@@ -18,6 +18,18 @@ namespace SmobilerAppTEST7._17
             InitializeComponent();
         }
 
+        private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
+        {
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = "server=127.0.0.1;Database=" + dabatase + ";uid=root;pwd=;";//连接数据库
+            con.Open();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(sql, con);//执行sql语句
+            DataSet dataSet = new DataSet();
+            mySqlDataAdapter.Fill(dataSet);
+            con.Close();
+            return dataSet;
+        }
+
         private void button1_Press(object sender, EventArgs e)
         {
             string userID = txtUserphone.Text.Trim();
@@ -29,17 +41,12 @@ namespace SmobilerAppTEST7._17
             else
             {
                 string sex=null, password;
-                MySqlConnection con = new MySqlConnection();
-                con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
-                con.Open();
                 password = txtPassword.Text.Trim();
                 string judge = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;
-                MySqlCommand da = new MySqlCommand(judge, con);
-                MySqlDataReader dr = da.ExecuteReader();
-                bool b = dr.Read();
-                con.Close();
-                con.Open();
-                if (b)
+                string database = "Movie_ticket";
+                DataSet da = Databaseconnect(database, judge);
+
+                if (da.Tables[0].Rows.Count > 0)
                 {
                     Toast("该电话号码已注册");
                     this.Close();
@@ -72,13 +79,9 @@ namespace SmobilerAppTEST7._17
                                 else if (checkBox2.Checked == true)
                                     sex = "女";
                                 string insert = "Insert into Userinf (Uphoneno,Upassword,Ublance,Usex) values(\"" + txtUserphone.Text + "\",\"" + txtPassword.Text + "\",\"" + "0" + "\",\"" + sex + "\")";
-                                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(insert, con);
-                                DataSet dataSet = new DataSet();
-                                mySqlDataAdapter.Fill(dataSet);
-                                string select = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;
-                                MySqlDataAdapter find = new MySqlDataAdapter(select, con);
-                                DataSet save = new DataSet();//缓存
-                                find.Fill(save);//Fill(DataSet)	在 DataSet 中添加或刷新行。
+                                Databaseconnect(database, insert);
+                                string select = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;                              
+                                DataSet save = Databaseconnect(database, select);
                                 if (save.Tables[0].Rows.Count <= 0)
                                     Toast("注册失败！");
                                 else
@@ -89,7 +92,7 @@ namespace SmobilerAppTEST7._17
                             }
                            
                         }
-                         con.Close();
+              
                     }
                 }
             

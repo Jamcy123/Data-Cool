@@ -14,6 +14,18 @@ namespace SmobilerAppTEST7._17
         string Uno;
         string number;
         int check=0;
+
+        private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
+        {
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = "server=127.0.0.1;Database=" + dabatase + ";uid=root;pwd=;";//连接数据库
+            con.Open();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(sql, con);//执行sql语句
+            DataSet dataSet = new DataSet();
+            mySqlDataAdapter.Fill(dataSet);
+            con.Close();
+            return dataSet;
+        }
         public Myblance(string a) : base()
         {
             //This call is required by the SmobilerForm.
@@ -24,15 +36,12 @@ namespace SmobilerAppTEST7._17
 
         public void showlabel(string a)
         {
-            MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
-            con.Open();
+
             string txt2 = "select Ublance from Userinf where Uphoneno=" + a;
-            MySqlDataAdapter nname = new MySqlDataAdapter(txt2, con);
-            DataSet name = new DataSet();//缓存
-            nname.Fill(name);//Fill(DataSet)	在 DataSet 中添加或刷新行。
+            string database = "Movie_ticket";
+            DataSet name = Databaseconnect(database, txt2);
             label2.Text = name.Tables[0].Rows[0][0].ToString();
-            con.Close();
+
         }
 
         private void button1_Press(object sender, EventArgs e)
@@ -44,14 +53,9 @@ namespace SmobilerAppTEST7._17
             {
                 if (!string.IsNullOrEmpty(money) && check == 0)
                     number = textBox1.Text;
-                MySqlConnection con = new MySqlConnection();
-                con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
-                con.Open();
                 string update = "Update Userinf set Ublance=Ublance+'" + number + "' where Uphoneno='" + Uno + "'";
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(update, con);
-                DataSet dataSet = new DataSet();
-                mySqlDataAdapter.Fill(dataSet);
-                con.Close();
+                string database = "Movie_ticket";
+                Databaseconnect(database, update);
                 number = "0";
                 showlabel(Uno);
             }
