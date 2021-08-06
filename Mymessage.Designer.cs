@@ -21,25 +21,249 @@ namespace SmobilerAppTEST7._17
         private void InitializeComponent()
         {
             this.panel1 = new Smobiler.Core.Controls.Panel();
+            this.label1 = new Smobiler.Core.Controls.Label();
+            this.title1 = new Smobiler.Core.Controls.Title();
+            this.panel2 = new Smobiler.Core.Controls.Panel();
+            this.label3 = new Smobiler.Core.Controls.Label();
+            this.textBox2 = new Smobiler.Core.Controls.TextBox();
+            this.panel3 = new Smobiler.Core.Controls.Panel();
+            this.label5 = new Smobiler.Core.Controls.Label();
+            this.textBox3 = new Smobiler.Core.Controls.TextBox();
+            this.panel5 = new Smobiler.Core.Controls.Panel();
+            this.label9 = new Smobiler.Core.Controls.Label();
+            this.textBox5 = new Smobiler.Core.Controls.TextBox();
+            this.panel6 = new Smobiler.Core.Controls.Panel();
+            this.label11 = new Smobiler.Core.Controls.Label();
+            this.image1 = new Smobiler.Core.Controls.Image();
+            this.panel4 = new Smobiler.Core.Controls.Panel();
+            this.label7 = new Smobiler.Core.Controls.Label();
+            this.textBox4 = new Smobiler.Core.Controls.TextBox();
+            this.button1 = new Smobiler.Core.Controls.Button();
+            this.textBox1 = new Smobiler.Core.Controls.TextBox();
             // 
             // panel1
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(150, 349);
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label1});
+            this.panel1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.panel1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 100);
+            this.panel1.Scrollable = true;
+            this.panel1.Size = new System.Drawing.Size(300, 44);
+            // 
+            // label1
+            // 
+            this.label1.FontSize = 16F;
+            this.label1.Name = "label1";
+            this.label1.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
+            this.label1.Size = new System.Drawing.Size(100, 0);
+            this.label1.Text = "用户名";
+            // 
+            // title1
+            // 
+            this.title1.BackColor = System.Drawing.Color.SkyBlue;
+            this.title1.Location = new System.Drawing.Point(71, 18);
+            this.title1.Name = "title1";
+            this.title1.Size = new System.Drawing.Size(100, 30);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label3,
+            this.textBox2});
+            this.panel2.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.panel2.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel2.Location = new System.Drawing.Point(0, 114);
+            this.panel2.Name = "panel2";
+            this.panel2.Scrollable = true;
+            this.panel2.Size = new System.Drawing.Size(300, 44);
+            // 
+            // label3
+            // 
+            this.label3.FontSize = 16F;
+            this.label3.Name = "label3";
+            this.label3.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
+            this.label3.Size = new System.Drawing.Size(100, 0);
+            this.label3.Text = "用户昵称";
+            // 
+            // textBox2
+            // 
+            this.textBox2.DisplayMember = "Unickname";
+            this.textBox2.FontSize = 16F;
+            this.textBox2.MaxLength = 20;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 0);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label5,
+            this.textBox3});
+            this.panel3.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.panel3.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel3.Location = new System.Drawing.Point(0, 244);
+            this.panel3.Name = "panel3";
+            this.panel3.Scrollable = true;
+            this.panel3.Size = new System.Drawing.Size(300, 44);
+            // 
+            // label5
+            // 
+            this.label5.FontSize = 16F;
+            this.label5.Name = "label5";
+            this.label5.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
+            this.label5.Size = new System.Drawing.Size(100, 0);
+            this.label5.Text = "性别";
+            // 
+            // textBox3
+            // 
+            this.textBox3.DisplayMember = "Usex";
+            this.textBox3.FontSize = 16F;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(200, 0);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label9,
+            this.textBox5});
+            this.panel5.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.panel5.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel5.Location = new System.Drawing.Point(0, 332);
+            this.panel5.Name = "panel5";
+            this.panel5.Scrollable = true;
+            this.panel5.Size = new System.Drawing.Size(300, 44);
+            // 
+            // label9
+            // 
+            this.label9.FontSize = 16F;
+            this.label9.Name = "label9";
+            this.label9.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
+            this.label9.Size = new System.Drawing.Size(100, 0);
+            this.label9.Text = "出生日期";
+            // 
+            // textBox5
+            // 
+            this.textBox5.DisplayMember = "Ubirth";
+            this.textBox5.FontSize = 16F;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(200, 0);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label11,
+            this.image1});
+            this.panel6.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.panel6.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel6.Location = new System.Drawing.Point(0, 158);
+            this.panel6.Name = "panel6";
+            this.panel6.Scrollable = true;
+            this.panel6.Size = new System.Drawing.Size(300, 86);
+            // 
+            // label11
+            // 
+            this.label11.FontSize = 16F;
+            this.label11.Name = "label11";
+            this.label11.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
+            this.label11.Size = new System.Drawing.Size(224, 0);
+            this.label11.Text = "用户头像";
+            // 
+            // image1
+            // 
+            this.image1.Name = "image1";
+            this.image1.Size = new System.Drawing.Size(76, 0);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label7,
+            this.textBox4});
+            this.panel4.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.panel4.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.panel4.Location = new System.Drawing.Point(0, 288);
+            this.panel4.Name = "panel4";
+            this.panel4.Scrollable = true;
+            this.panel4.Size = new System.Drawing.Size(300, 44);
+            // 
+            // label7
+            // 
+            this.label7.FontSize = 16F;
+            this.label7.Name = "label7";
+            this.label7.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
+            this.label7.Size = new System.Drawing.Size(100, 0);
+            this.label7.Text = "所在城市";
+            // 
+            // textBox4
+            // 
+            this.textBox4.DisplayMember = "Ucity";
+            this.textBox4.FontSize = 16F;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(200, 0);
+            // 
+            // button1
+            // 
+            this.button1.FontSize = 16F;
+            this.button1.Location = new System.Drawing.Point(66, 427);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(168, 32);
+            this.button1.Text = "保存";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // textBox1
+            // 
+            this.textBox1.DisplayMember = "Uphoneno ";
+            this.textBox1.FontSize = 16F;
+            this.textBox1.Location = new System.Drawing.Point(100, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(200, 44);
             // 
             // Mymessage
             // 
             this.BackgroundImage = "bluee";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.panel1});
+            this.panel1,
+            this.title1,
+            this.panel2,
+            this.panel3,
+            this.panel4,
+            this.panel5,
+            this.panel6,
+            this.button1,
+            this.textBox1});
             this.Name = "Mymessage";
 
         }
         #endregion
 
         private Smobiler.Core.Controls.Panel panel1;
+        private Smobiler.Core.Controls.Label label1;
+        private Smobiler.Core.Controls.Title title1;
+        private Smobiler.Core.Controls.Panel panel2;
+        private Smobiler.Core.Controls.Label label3;
+        private Smobiler.Core.Controls.Panel panel3;
+        private Smobiler.Core.Controls.Label label5;
+        private Smobiler.Core.Controls.Panel panel5;
+        private Smobiler.Core.Controls.Label label9;
+        private Smobiler.Core.Controls.Panel panel6;
+        private Smobiler.Core.Controls.Label label11;
+        private Smobiler.Core.Controls.Image image1;
+        private Smobiler.Core.Controls.Panel panel4;
+        private Smobiler.Core.Controls.Label label7;
+        private Smobiler.Core.Controls.Button button1;
+        private Smobiler.Core.Controls.TextBox textBox2;
+        private Smobiler.Core.Controls.TextBox textBox3;
+        private Smobiler.Core.Controls.TextBox textBox5;
+        private Smobiler.Core.Controls.TextBox textBox4;
+        private Smobiler.Core.Controls.TextBox textBox1;
     }
 }

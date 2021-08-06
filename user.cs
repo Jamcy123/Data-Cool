@@ -13,6 +13,18 @@ namespace SmobilerAppTEST7._17
     partial class user : Smobiler.Core.Controls.MobileForm
     {
         string Uno;
+
+        private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
+        {
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = "server=127.0.0.1;Database=" + dabatase + ";uid=root;pwd=;";//连接数据库
+            con.Open();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(sql, con);//执行sql语句
+            DataSet dataSet = new DataSet();
+            mySqlDataAdapter.Fill(dataSet);
+            con.Close();
+            return dataSet;
+        }
         public user(string a) : base()
         {
             //This call is required by the SmobilerForm.
@@ -23,15 +35,11 @@ namespace SmobilerAppTEST7._17
 
         public void showlabel(string a)
         {
-            MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
-            con.Open();
             string txt2 = "select Unickname from Userinf where Uphoneno=" + a;
-            MySqlDataAdapter nname = new MySqlDataAdapter(txt2, con);
-            DataSet name = new DataSet();//缓存
-            nname.Fill(name);//Fill(DataSet)	在 DataSet 中添加或刷新行。
+            string database = "Movie_ticket";
+            DataSet name=Databaseconnect(database, txt2);
             label1.Text = name.Tables[0].Rows[0][0].ToString();
-            con.Close();
+
         }
 
         public void setToolbarIndex(int i)

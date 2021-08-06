@@ -20,6 +20,17 @@ namespace SmobilerAppTEST7._17
            
         }
 
+        private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
+        {
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = "server=127.0.0.1;Database=" + dabatase + ";uid=root;pwd=;";//连接数据库
+            con.Open();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(sql, con);//执行sql语句
+            DataSet dataSet = new DataSet();
+            mySqlDataAdapter.Fill(dataSet);
+            con.Close();
+            return dataSet;
+        }
         private void btnLogon_Press(object sender, EventArgs e)
         {
             try
@@ -49,13 +60,11 @@ namespace SmobilerAppTEST7._17
                          }
                      });
                 }
-                MySqlConnection con = new MySqlConnection();
-                con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
-                con.Open();
+
                 string select = "Select Upassword from Userinf where Uphoneno=" + txtUserName.Text;
-                MySqlDataAdapter find = new MySqlDataAdapter(select, con);
-                DataSet save = new DataSet();//缓存
-                find.Fill(save);//Fill(DataSet)	在 DataSet 中添加或刷新行。
+                string database = "Movie_ticket";
+                DataSet save= Databaseconnect(database, select);
+
 
                 if (save.Tables[0].Rows.Count <= 0)
                 {
@@ -78,7 +87,7 @@ namespace SmobilerAppTEST7._17
                 {
                     throw new Exception("密码不正确，请重新输入！");
                 }
-                con.Close();
+               
             }
             catch (Exception ex)
             {

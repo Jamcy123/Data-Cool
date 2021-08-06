@@ -105,6 +105,12 @@
     <Compile Include="Alterpassword.Designer.cs">
       <DependentUpon>Alterpassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cinema_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cinema_Control.Designer.cs">
+      <DependentUpon>Cinema_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cinema_select.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -172,6 +178,12 @@
     <Compile Include="Myorder.Designer.cs">
       <DependentUpon>Myorder.cs</DependentUpon>
     </Compile>
+    <Compile Include="orderTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="orderTemplate.Designer.cs">
+      <DependentUpon>orderTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -190,6 +202,24 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchBox_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchBox_Control.Designer.cs">
+      <DependentUpon>SearchBox_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Search_control.Designer.cs">
+      <DependentUpon>Search_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Search_Form.Designer.cs">
+      <DependentUpon>Search_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="login.cs">
       <SubType>Component</SubType>
@@ -203,6 +233,12 @@
     <Compile Include="Moive_Control.Designer.cs">
       <DependentUpon>Moive_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Title_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Title_Control.Designer.cs">
+      <DependentUpon>Title_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -213,6 +249,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Alterpassword.resx">
       <DependentUpon>Alterpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema_Control.resx">
+      <DependentUpon>Cinema_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cinema_select.resx">
       <DependentUpon>Cinema_select.cs</DependentUpon>
@@ -250,6 +289,9 @@
     <EmbeddedResource Include="Myorder.resx">
       <DependentUpon>Myorder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="orderTemplate.resx">
+      <DependentUpon>orderTemplate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -259,6 +301,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBox_Control.resx">
+      <DependentUpon>SearchBox_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_control.resx">
+      <DependentUpon>Search_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Form.resx">
+      <DependentUpon>Search_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Title_Control.resx">
+      <DependentUpon>Title_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
