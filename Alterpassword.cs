@@ -17,16 +17,24 @@ namespace SmobilerAppTEST7._17
             InitializeComponent();
         }
 
-        private void button1_Press(object sender, EventArgs e)
+        private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
             MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
+            con.ConnectionString = "server=127.0.0.1;Database=" + dabatase + ";uid=root;pwd=;";//连接数据库
             con.Open();
-            //string password = txtPassword.Text.Trim();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(sql, con);//执行sql语句
+            DataSet dataSet = new DataSet();
+            mySqlDataAdapter.Fill(dataSet);
+            con.Close();
+            return dataSet;
+        }
+        private void button1_Press(object sender, EventArgs e)
+        {
+            
             string select = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;
-            MySqlDataAdapter find = new MySqlDataAdapter(select, con);
-            DataSet save = new DataSet();//缓存
-            find.Fill(save);//Fill(DataSet)	在 DataSet 中添加或刷新行。
+            string database = "Movie_ticket";
+            DataSet save = Databaseconnect(database, select);
+          
 
             if (save.Tables[0].Rows.Count <= 0)
             {
@@ -45,13 +53,10 @@ namespace SmobilerAppTEST7._17
                 if (txtPassword.Text != txtnewpassword.Text)
                 {
                     string update = "Update Userinf set Upassword='" + txtnewpassword.Text + "' where Uphoneno='" + txtUserphone.Text + "'";
-                    MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(update, con);
-                    DataSet dataSet = new DataSet();
-                    mySqlDataAdapter.Fill(dataSet);
+                    Databaseconnect(database, update);
                     string sure = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;
-                    MySqlDataAdapter right = new MySqlDataAdapter(sure, con);
-                    DataSet ta = new DataSet();//缓存
-                    right.Fill(ta);//Fill(DataSet)	在 DataSet 中添加或刷新行。
+                    DataSet ta = Databaseconnect(database, sure);
+                    
                     if (ta.Tables[0].Rows.Count <= 0)
                         Toast("修改失败！");
                     else
