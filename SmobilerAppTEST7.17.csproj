@@ -105,6 +105,12 @@
     <Compile Include="Alterpassword.Designer.cs">
       <DependentUpon>Alterpassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cinema_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cinema_Control.Designer.cs">
+      <DependentUpon>Cinema_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cinema_select.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -207,6 +213,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Alterpassword.resx">
       <DependentUpon>Alterpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema_Control.resx">
+      <DependentUpon>Cinema_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cinema_select.resx">
       <DependentUpon>Cinema_select.cs</DependentUpon>

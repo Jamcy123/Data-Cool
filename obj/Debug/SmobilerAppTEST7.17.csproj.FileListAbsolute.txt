@@ -119,7 +119,6 @@ D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\System.Buffers.xml
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\System.Memory.xml
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\System.Numerics.Vectors.xml
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csprojAssemblyReference.cache
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\frmGenerateQRcode.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\frmHelp.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\frmMain.resources
@@ -150,3 +149,4 @@ D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.My
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Myorder.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.register.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.city_select.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Cinema_Control.resources
