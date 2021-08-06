@@ -12,28 +12,46 @@ namespace SmobilerAppTEST7._17
     
     partial class moive_select : Smobiler.Core.Controls.MobileForm
     {
-        string Uno;
+        string Uno;//当前登录用户手机号
         public moive_select(string a) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
             Uno = a;
-        } 
-       
-        private void moive_select_Load(object sender, EventArgs e)//界面加载事件
+        }
+        private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
-            toolBar1.SelectedIndex = 1;//底部栏默认选项
             MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "server=127.0.0.1;Database=Movie_ticket;uid=root;pwd=;";
+            con.ConnectionString = "server=127.0.0.1;Database="+dabatase+";uid=root;pwd=;";//连接数据库
             con.Open();
-            //增加数据并更新同步到数据库
-            string select = "SELECT * FROM Movie_ticket.Movie;";
-            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(select, con);
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(sql, con);//执行sql语句
             DataSet dataSet = new DataSet();
             mySqlDataAdapter.Fill(dataSet);
+            con.Close();
+            return dataSet;
+        }
+
+        private void moive_select_Load(object sender, EventArgs e)//界面加载事件
+        {
+            //加载电影信息
+            toolBar1.SelectedIndex = 1;//底部栏默认选项
+            string select = "SELECT * FROM Movie_ticket.Movie";
+            string database = "Movie_ticket";
+            DataSet dataSet = Databaseconnect(database, select);
             listView1.DataSource = dataSet;
             listView1.DataBind();
-            con.Close();
+            //初始化"定位城市"数据
+            select = "select Ucity from Movie_ticket.Userinf where Uphoneno='" + Uno + "'";
+            database = "Movie_ticket";
+            dataSet = Databaseconnect(database, select);
+            if (dataSet.Tables[0].Rows.Count <= 0)
+            {
+                city_label.Text = "定位城市";
+            }
+            else
+            {
+                city_label.Text = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();
+            }
         }
 
         private void ShowForm(string name)//界面选择
@@ -46,7 +64,7 @@ namespace SmobilerAppTEST7._17
                 case "cinema-icon":
                     cinema_select cinema_Select = new cinema_select(Uno);
                     cinema_Select.setToolbarIndex(0);
-                    Show(cinema_Select, (obj, args) => { ShowForm(cinema_Select.ToolBarItemName); });
+                    Show(cinema_Select, (obj, args) => { city_label.Text = cinema_Select.City_Now; ShowForm(cinema_Select.ToolBarItemName); });
                     break;
                 case "user-icon":
                     user user = new user(Uno);
@@ -61,45 +79,10 @@ namespace SmobilerAppTEST7._17
             ShowForm(e.Name);//e:单击的图标
         }
 
-        private void button1_Press(object sender, EventArgs e)
+        private void city_btn_Press(object sender, EventArgs e)//选择左上定位图标
         {
-            gps1.GetGps();//获取位置信息
-        }
-        private string address(string location)//输入地址，返回城市
-        {
-            //直辖市，省，自治区
-            //市，自治州，地区，盟
-            string city = "";
-            if (location.Contains("省"))
-                city = location.Substring(location.IndexOf("省") + 1, location.IndexOf("市") - location.IndexOf("省"));
-            else
-            {
-                if (location.Contains("自治区"))
-                    city = location.Substring(location.IndexOf("区") + 1, location.IndexOf("市") - location.IndexOf("区"));
-                else
-                    city = location.Substring(0, location.IndexOf("市") + 1);
-            }
-            return city;
-        }
-        private void gps1_GotLocation(object sender, GPSResultArgs e)
-        {
-            //是否获取到了位置信息
-            if ((e.isError).Equals(false))
-            {
-                if (e.Longitude != 0 & e.Latitude != 0)
-                {
-                    //lblAddress.Text = e.Location;  //位置信息
-                    lblAddress.Text = address(e.Location);
-                }
-                else
-                {
-                    lblAddress.Text = "定位失败";
-                }
-            }
-            else
-            {
-                lblAddress.Text = "定位失败";
-            }
+            city_select city_Select = new city_select(Uno);
+            this.Form.ShowDialog(city_Select, (obj, args) => { city_label.Text = city_Select.Address; });
         }
     }
 }

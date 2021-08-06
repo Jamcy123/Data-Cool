@@ -23,12 +23,12 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
             Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
-            this.title1 = new Smobiler.Core.Controls.Title();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.listView1 = new Smobiler.Core.Controls.ListView();
-            this.lblAddress = new Smobiler.Core.Controls.Label();
-            this.button1 = new Smobiler.Core.Controls.Button();
-            this.gps1 = new Smobiler.Core.Controls.GPS();
+            this.fontIcon1 = new Smobiler.Core.Controls.FontIcon();
+            this.city_label = new Smobiler.Core.Controls.Label();
+            this.title1 = new Smobiler.Core.Controls.Title();
+            this.city_btn = new Smobiler.Core.Controls.Button();
             // 
             // toolBar1
             // 
@@ -61,17 +61,10 @@ namespace SmobilerAppTEST7._17
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
             this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick);
             // 
-            // title1
-            // 
-            this.title1.Location = new System.Drawing.Point(47, 32);
-            this.title1.Name = "title1";
-            this.title1.Size = new System.Drawing.Size(100, 30);
-            // 
             // panel1
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView1,
-            this.lblAddress});
+            this.listView1});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(76, 239);
             this.panel1.Name = "panel1";
@@ -86,37 +79,43 @@ namespace SmobilerAppTEST7._17
             this.listView1.Size = new System.Drawing.Size(300, 330);
             this.listView1.TemplateControlName = "Moive_Control";
             // 
-            // lblAddress
+            // fontIcon1
             // 
-            this.lblAddress.Location = new System.Drawing.Point(74, 87);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(171, 35);
-            this.lblAddress.Text = "label1";
+            this.fontIcon1.Name = "fontIcon1";
+            this.fontIcon1.ResourceID = "map-marker";
+            this.fontIcon1.Size = new System.Drawing.Size(39, 30);
             // 
-            // button1
+            // city_label
             // 
-            this.button1.Location = new System.Drawing.Point(14, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.Text = "button1";
-            this.button1.Press += new System.EventHandler(this.button1_Press);
+            this.city_label.FontSize = 14F;
+            this.city_label.Location = new System.Drawing.Point(33, 0);
+            this.city_label.Name = "city_label";
+            this.city_label.Size = new System.Drawing.Size(77, 30);
+            this.city_label.Text = "定位城市";
             // 
-            // gps1
+            // title1
             // 
-            this.gps1.GPSSource = Smobiler.Core.Controls.GPSSource.Amap;
-            this.gps1.Name = "gps1";
-            this.gps1.RequestLocation = true;
-            this.gps1.GotLocation += new Smobiler.Core.Controls.GpsCallBackHandler(this.gps1_GotLocation);
+            this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.title1.Location = new System.Drawing.Point(47, 32);
+            this.title1.Name = "title1";
+            this.title1.Size = new System.Drawing.Size(100, 30);
+            // 
+            // city_btn
+            // 
+            this.city_btn.BackColor = System.Drawing.Color.Transparent;
+            this.city_btn.Name = "city_btn";
+            this.city_btn.Size = new System.Drawing.Size(89, 30);
+            this.city_btn.Press += new System.EventHandler(this.city_btn_Press);
             // 
             // moive_select
             // 
-            this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
-            this.gps1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
             this.title1,
             this.panel1,
-            this.button1});
+            this.fontIcon1,
+            this.city_label,
+            this.city_btn});
             this.Load += new System.EventHandler(this.moive_select_Load);
             this.Name = "moive_select";
 
@@ -124,11 +123,11 @@ namespace SmobilerAppTEST7._17
         #endregion
 
         private Smobiler.Core.Controls.ToolBar toolBar1;
-        private Smobiler.Core.Controls.Title title1;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.ListView listView1;
-        private Smobiler.Core.Controls.Button button1;
-        private Smobiler.Core.Controls.Label lblAddress;
-        private Smobiler.Core.Controls.GPS gps1;
+        private Smobiler.Core.Controls.FontIcon fontIcon1;
+        private Smobiler.Core.Controls.Label city_label;
+        private Smobiler.Core.Controls.Title title1;
+        private Smobiler.Core.Controls.Button city_btn;
     }
 }

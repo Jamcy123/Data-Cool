@@ -23,7 +23,13 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
             Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
+            this.title1 = new Smobiler.Core.Controls.Title();
+            this.panel1 = new Smobiler.Core.Controls.Panel();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
             this.label1 = new Smobiler.Core.Controls.Label();
+            this.fontIcon1 = new Smobiler.Core.Controls.FontIcon();
+            this.city_label = new Smobiler.Core.Controls.Label();
+            this.city_btn = new Smobiler.Core.Controls.Button();
             // 
             // toolBar1
             // 
@@ -56,25 +62,84 @@ namespace SmobilerAppTEST7._17
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
             this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick);
             // 
+            // title1
+            // 
+            this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.title1.Location = new System.Drawing.Point(38, 47);
+            this.title1.Name = "title1";
+            this.title1.Size = new System.Drawing.Size(100, 30);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.listView1,
+            this.label1});
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 154);
+            this.panel1.Name = "panel1";
+            this.panel1.Scrollable = true;
+            this.panel1.Size = new System.Drawing.Size(300, 100);
+            // 
+            // listView1
+            // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.Size = new System.Drawing.Size(300, 300);
+            // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(58, 130);
+            this.label1.Bold = true;
+            this.label1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.label1.Location = new System.Drawing.Point(0, 154);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 35);
-            this.label1.Text = "选影院的";
+            this.label1.Size = new System.Drawing.Size(300, 35);
+            this.label1.Text = "暂无此地影院信息，请检查定位信息是否准确。";
+            this.label1.Visible = false;
+            // 
+            // fontIcon1
+            // 
+            this.fontIcon1.Name = "fontIcon1";
+            this.fontIcon1.ResourceID = "map-marker";
+            this.fontIcon1.Size = new System.Drawing.Size(39, 30);
+            // 
+            // city_label
+            // 
+            this.city_label.FontSize = 14F;
+            this.city_label.Location = new System.Drawing.Point(33, 0);
+            this.city_label.Name = "city_label";
+            this.city_label.Size = new System.Drawing.Size(77, 30);
+            this.city_label.Text = "定位城市";
+            // 
+            // city_btn
+            // 
+            this.city_btn.BackColor = System.Drawing.Color.Transparent;
+            this.city_btn.Name = "city_btn";
+            this.city_btn.Size = new System.Drawing.Size(89, 30);
+            this.city_btn.Press += new System.EventHandler(this.city_btn_Press);
             // 
             // cinema_select
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
-            this.label1});
-            this.Name = "cinema_select";
+            this.title1,
+            this.panel1,
+            this.fontIcon1,
+            this.city_label,
+            this.city_btn});
+            this.Load += new System.EventHandler(this.cinema_select_Load);
             this.Name = "cinema_select";
 
         }
         #endregion
 
         private Smobiler.Core.Controls.ToolBar toolBar1;
+        private Smobiler.Core.Controls.Title title1;
+        private Smobiler.Core.Controls.Panel panel1;
+        private Smobiler.Core.Controls.ListView listView1;
+        private Smobiler.Core.Controls.FontIcon fontIcon1;
+        private Smobiler.Core.Controls.Label city_label;
+        private Smobiler.Core.Controls.Button city_btn;
         private Smobiler.Core.Controls.Label label1;
     }
 }
