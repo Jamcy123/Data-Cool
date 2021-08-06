@@ -9,22 +9,12 @@ namespace SmobilerAppTEST7._17
 {
     ////ToolboxItem用于控制是否添加自定义控件到工具箱，true添加，false不添加
     //[System.ComponentModel.ToolboxItem(true)]
-    partial class Moive_Control : Smobiler.Core.Controls.MobileUserControl
+    partial class Search_Form : Smobiler.Core.Controls.MobileUserControl
     {
-        public Moive_Control() : base()
+        public Search_Form() : base()
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
-        }
-
-        private void panel1_Press(object sender, EventArgs e)
-        {
-            MessageBox.Show("电影编号为" + Mname_lbl.BindDataValue.ToString());               
-        }
-
-        private void Moive_Control_Load(object sender, EventArgs e)
-        {
-            Mgrade_lbl.Text = Mgrade_lbl.Text + "分";
         }
     }
 }
