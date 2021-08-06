@@ -19,7 +19,9 @@ namespace SmobilerAppTEST7._17
 
         private void panel1_Press(object sender, EventArgs e)
         {
-            MessageBox.Show("弹出查询界面");
+            //MessageBox.Show("弹出查询界面");
+            Search_Form search_Form = new Search_Form();//查询界面
+            this.Form.Show(search_Form);
         }
     }
 }
