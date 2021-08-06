@@ -148,11 +148,11 @@
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="MobileGlobal.cs" />
-    <Compile Include="Moive_select.cs">
+    <Compile Include="Movie_select.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Moive_select.Designer.cs">
-      <DependentUpon>Moive_select.cs</DependentUpon>
+    <Compile Include="Movie_select.Designer.cs">
+      <DependentUpon>Movie_select.cs</DependentUpon>
     </Compile>
     <Compile Include="Myblance.cs">
       <SubType>Component</SubType>
@@ -221,11 +221,11 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Moive_Control.cs">
+    <Compile Include="Movie_Control.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Moive_Control.Designer.cs">
-      <DependentUpon>Moive_Control.cs</DependentUpon>
+    <Compile Include="Movie_Control.Designer.cs">
+      <DependentUpon>Movie_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="Title_Control.cs">
       <SubType>Component</SubType>
@@ -265,11 +265,11 @@
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Moive_Control.resx">
-      <DependentUpon>Moive_Control.cs</DependentUpon>
+    <EmbeddedResource Include="Movie_Control.resx">
+      <DependentUpon>Movie_Control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Moive_select.resx">
-      <DependentUpon>Moive_select.cs</DependentUpon>
+    <EmbeddedResource Include="Movie_select.resx">
+      <DependentUpon>Movie_select.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Myblance.resx">
       <DependentUpon>Myblance.cs</DependentUpon>

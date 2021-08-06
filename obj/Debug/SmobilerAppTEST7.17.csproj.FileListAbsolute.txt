@@ -142,7 +142,6 @@ D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Myblance.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Mymessage.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Myorder.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Alterpassword.resources
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Myblance.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Mymessage.resources
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Myorder.resources
@@ -161,3 +160,5 @@ D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.SearchBox_Control.resourc
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Search_control.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Search_Form.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Title_Control.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csprojAssemblyReference.cache
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Movie_Control.resources
