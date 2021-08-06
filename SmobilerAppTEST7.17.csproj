@@ -172,6 +172,12 @@
     <Compile Include="Myorder.Designer.cs">
       <DependentUpon>Myorder.cs</DependentUpon>
     </Compile>
+    <Compile Include="orderTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="orderTemplate.Designer.cs">
+      <DependentUpon>orderTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -261,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Myorder.resx">
       <DependentUpon>Myorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderTemplate.resx">
+      <DependentUpon>orderTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
