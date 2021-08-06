@@ -148,6 +148,12 @@
     <Compile Include="Moive_select.Designer.cs">
       <DependentUpon>Moive_select.cs</DependentUpon>
     </Compile>
+    <Compile Include="movie_information.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="movie_information.Designer.cs">
+      <DependentUpon>movie_information.cs</DependentUpon>
+    </Compile>
     <Compile Include="Myblance.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Moive_select.resx">
       <DependentUpon>Moive_select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_information.resx">
+      <DependentUpon>movie_information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Myblance.resx">
       <DependentUpon>Myblance.cs</DependentUpon>
