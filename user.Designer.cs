@@ -19,47 +19,47 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem7 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem8 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem9 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.IconMenuViewGroup iconMenuViewGroup3 = new Smobiler.Core.Controls.IconMenuViewGroup();
-            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem7 = new Smobiler.Core.Controls.IconMenuViewItem();
-            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem8 = new Smobiler.Core.Controls.IconMenuViewItem();
-            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem9 = new Smobiler.Core.Controls.IconMenuViewItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem4 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem5 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem6 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.IconMenuViewGroup iconMenuViewGroup2 = new Smobiler.Core.Controls.IconMenuViewGroup();
+            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem4 = new Smobiler.Core.Controls.IconMenuViewItem();
+            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem5 = new Smobiler.Core.Controls.IconMenuViewItem();
+            Smobiler.Core.Controls.IconMenuViewItem iconMenuViewItem6 = new Smobiler.Core.Controls.IconMenuViewItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.image1 = new Smobiler.Core.Controls.Image();
-            this.title1 = new Smobiler.Core.Controls.Title();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.iconMenuView1 = new Smobiler.Core.Controls.IconMenuView();
             this.button1 = new Smobiler.Core.Controls.Button();
             this.button2 = new Smobiler.Core.Controls.Button();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // toolBar1
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
-            toolBarItem7.IconID = "video-camera";
-            toolBarItem7.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem7.Name = "cinema-icon";
-            toolBarItem7.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem7.SelectIconID = "video-camera";
-            toolBarItem7.Text = "影院";
-            toolBarItem8.IconID = "youtube-play";
-            toolBarItem8.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem8.Name = "moive-icon";
-            toolBarItem8.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem8.SelectIconID = "youtube-play";
-            toolBarItem8.Text = "电影";
-            toolBarItem9.IconID = "user";
-            toolBarItem9.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem9.Name = "user-icon";
-            toolBarItem9.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem9.SelectIconID = "user";
-            toolBarItem9.Text = "我的";
+            toolBarItem4.IconID = "video-camera";
+            toolBarItem4.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem4.Name = "cinema-icon";
+            toolBarItem4.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem4.SelectIconID = "video-camera";
+            toolBarItem4.Text = "影院";
+            toolBarItem5.IconID = "youtube-play";
+            toolBarItem5.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem5.Name = "moive-icon";
+            toolBarItem5.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem5.SelectIconID = "youtube-play";
+            toolBarItem5.Text = "电影";
+            toolBarItem6.IconID = "user";
+            toolBarItem6.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem6.Name = "user-icon";
+            toolBarItem6.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem6.SelectIconID = "user";
+            toolBarItem6.Text = "我的";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem7,
-            toolBarItem8,
-            toolBarItem9});
+            toolBarItem4,
+            toolBarItem5,
+            toolBarItem6});
             this.toolBar1.Location = new System.Drawing.Point(59, 477);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.SelectForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -70,7 +70,6 @@ namespace SmobilerAppTEST7._17
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.image1,
-            this.title1,
             this.label1,
             this.iconMenuView1,
             this.button1,
@@ -89,17 +88,6 @@ namespace SmobilerAppTEST7._17
             this.image1.ResourceID = "wanzi";
             this.image1.Size = new System.Drawing.Size(80, 80);
             // 
-            // title1
-            // 
-            this.title1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.title1.FontSize = 20F;
-            this.title1.Location = new System.Drawing.Point(132, 12);
-            this.title1.Name = "title1";
-            this.title1.SelfAlign = Smobiler.Core.Controls.LayoutSelfAlign.FlexStart;
-            this.title1.Size = new System.Drawing.Size(100, 30);
-            this.title1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Default;
-            this.title1.Text = "我的";
-            // 
             // label1
             // 
             this.label1.FontSize = 16F;
@@ -112,30 +100,30 @@ namespace SmobilerAppTEST7._17
             // 
             this.iconMenuView1.ColumnNum = 3;
             this.iconMenuView1.GroupBackColor = System.Drawing.Color.Transparent;
-            iconMenuViewGroup3.FontSize = 16F;
-            iconMenuViewGroup3.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Left;
-            iconMenuViewGroup3.IconBorderRadius = 0;
-            iconMenuViewGroup3.ItemHeight = 0;
-            iconMenuViewItem7.Icon = "file-text-o";
-            iconMenuViewItem7.ID = "order";
-            iconMenuViewItem7.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            iconMenuViewItem7.Text = "我的订单";
-            iconMenuViewItem8.Icon = "credit-card-alt";
-            iconMenuViewItem8.ID = "blance";
-            iconMenuViewItem8.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            iconMenuViewItem8.Text = "我的余额";
-            iconMenuViewItem9.Icon = "user";
-            iconMenuViewItem9.ID = "message";
-            iconMenuViewItem9.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            iconMenuViewItem9.Text = "我的资料";
-            iconMenuViewGroup3.Items.AddRange(new Smobiler.Core.Controls.IconMenuViewItem[] {
-            iconMenuViewItem7,
-            iconMenuViewItem8,
-            iconMenuViewItem9});
-            iconMenuViewGroup3.ShowTitle = true;
-            iconMenuViewGroup3.Text = "我的";
+            iconMenuViewGroup2.FontSize = 16F;
+            iconMenuViewGroup2.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Left;
+            iconMenuViewGroup2.IconBorderRadius = 0;
+            iconMenuViewGroup2.ItemHeight = 0;
+            iconMenuViewItem4.Icon = "file-text-o";
+            iconMenuViewItem4.ID = "order";
+            iconMenuViewItem4.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            iconMenuViewItem4.Text = "我的订单";
+            iconMenuViewItem5.Icon = "credit-card-alt";
+            iconMenuViewItem5.ID = "blance";
+            iconMenuViewItem5.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            iconMenuViewItem5.Text = "我的余额";
+            iconMenuViewItem6.Icon = "user";
+            iconMenuViewItem6.ID = "message";
+            iconMenuViewItem6.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            iconMenuViewItem6.Text = "我的资料";
+            iconMenuViewGroup2.Items.AddRange(new Smobiler.Core.Controls.IconMenuViewItem[] {
+            iconMenuViewItem4,
+            iconMenuViewItem5,
+            iconMenuViewItem6});
+            iconMenuViewGroup2.ShowTitle = true;
+            iconMenuViewGroup2.Text = "我的";
             this.iconMenuView1.Groups.AddRange(new Smobiler.Core.Controls.IconMenuViewGroup[] {
-            iconMenuViewGroup3});
+            iconMenuViewGroup2});
             this.iconMenuView1.Location = new System.Drawing.Point(0, 163);
             this.iconMenuView1.Name = "iconMenuView1";
             this.iconMenuView1.Size = new System.Drawing.Size(300, 104);
@@ -159,13 +147,26 @@ namespace SmobilerAppTEST7._17
             this.button2.Text = "修改密码";
             this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Location = new System.Drawing.Point(83, 22);
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(100, 36);
+            this.title_Control1.Text = "我的";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
+            // 
             // user
             // 
             this.BackgroundImage = "bluee";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
-            this.panel1});
+            this.panel1,
+            this.title_Control1});
             this.Name = "user";
 
         }
@@ -174,10 +175,10 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.ToolBar toolBar1;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Image image1;
-        private Smobiler.Core.Controls.Title title1;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.IconMenuView iconMenuView1;
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Button button2;
+        private Title_Control title_Control1;
     }
 }

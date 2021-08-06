@@ -38,8 +38,8 @@ namespace SmobilerAppTEST7._17
             textBox3.Text = showlabel("Usex", Uno);
             textBox4.Text = showlabel("Ucity", Uno);
             four = textBox4.Text;
-            textBox5.Text = showlabel("Ubirth", Uno);
-            five = textBox5.Text;
+            datePicker1.BindDisplayValue = showlabel("Ubirth", Uno);
+            //five = (string)datePicker1.BindDisplayValue;
 
         }
 
@@ -66,13 +66,22 @@ namespace SmobilerAppTEST7._17
                 string database = "Movie_ticket";
                 Databaseconnect(database, update);
             }
-            if (five != textBox5.Text)
-            {
-                string update = "Update Userinf set Ubirth='" + textBox5.Text + "' where Uphoneno=" + Uno;
-                string database = "Movie_ticket";
-                Databaseconnect(database, update);
-            }
+
         }
 
+        private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void datePicker1_ValueChanged(object sender, EventArgs e)
+        {
+        
+
+                string update = "Update Userinf set Ubirth='" + datePicker1.BindDisplayValue + "' where Uphoneno=" + Uno;
+                string database = "Movie_ticket";
+                Databaseconnect(database, update);
+            
+        }
     }
 }
