@@ -22,7 +22,6 @@ namespace SmobilerAppTEST7._17
         {
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.label1 = new Smobiler.Core.Controls.Label();
-            this.title1 = new Smobiler.Core.Controls.Title();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.textBox2 = new Smobiler.Core.Controls.TextBox();
@@ -31,7 +30,7 @@ namespace SmobilerAppTEST7._17
             this.textBox3 = new Smobiler.Core.Controls.TextBox();
             this.panel5 = new Smobiler.Core.Controls.Panel();
             this.label9 = new Smobiler.Core.Controls.Label();
-            this.textBox5 = new Smobiler.Core.Controls.TextBox();
+            this.datePicker1 = new Smobiler.Core.Controls.DatePicker();
             this.panel6 = new Smobiler.Core.Controls.Panel();
             this.label11 = new Smobiler.Core.Controls.Label();
             this.image1 = new Smobiler.Core.Controls.Image();
@@ -40,6 +39,7 @@ namespace SmobilerAppTEST7._17
             this.textBox4 = new Smobiler.Core.Controls.TextBox();
             this.button1 = new Smobiler.Core.Controls.Button();
             this.textBox1 = new Smobiler.Core.Controls.TextBox();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // panel1
             // 
@@ -60,13 +60,6 @@ namespace SmobilerAppTEST7._17
             this.label1.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
             this.label1.Size = new System.Drawing.Size(100, 0);
             this.label1.Text = "用户名";
-            // 
-            // title1
-            // 
-            this.title1.BackColor = System.Drawing.Color.SkyBlue;
-            this.title1.Location = new System.Drawing.Point(71, 18);
-            this.title1.Name = "title1";
-            this.title1.Size = new System.Drawing.Size(100, 30);
             // 
             // panel2
             // 
@@ -131,7 +124,7 @@ namespace SmobilerAppTEST7._17
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.label9,
-            this.textBox5});
+            this.datePicker1});
             this.panel5.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
             this.panel5.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.panel5.Location = new System.Drawing.Point(0, 332);
@@ -147,12 +140,16 @@ namespace SmobilerAppTEST7._17
             this.label9.Size = new System.Drawing.Size(100, 0);
             this.label9.Text = "出生日期";
             // 
-            // textBox5
+            // datePicker1
             // 
-            this.textBox5.DisplayMember = "Ubirth";
-            this.textBox5.FontSize = 16F;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 0);
+            this.datePicker1.DisplayMember = "Ubirth";
+            this.datePicker1.FontSize = 16F;
+            this.datePicker1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Left;
+            this.datePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.datePicker1.MinDate = new System.DateTime(1940, 1, 1, 0, 0, 0, 0);
+            this.datePicker1.Name = "datePicker1";
+            this.datePicker1.Size = new System.Drawing.Size(200, 0);
+            this.datePicker1.ValueChanged += new System.EventHandler(this.datePicker1_ValueChanged);
             // 
             // panel6
             // 
@@ -226,20 +223,32 @@ namespace SmobilerAppTEST7._17
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(200, 44);
             // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Location = new System.Drawing.Point(121, 6);
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(100, 36);
+            this.title_Control1.Text = "我的资料";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
+            // 
             // Mymessage
             // 
             this.BackgroundImage = "bluee";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1,
-            this.title1,
             this.panel2,
             this.panel3,
             this.panel4,
             this.panel5,
             this.panel6,
             this.button1,
-            this.textBox1});
+            this.textBox1,
+            this.title_Control1});
             this.Name = "Mymessage";
 
         }
@@ -247,7 +256,6 @@ namespace SmobilerAppTEST7._17
 
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Label label1;
-        private Smobiler.Core.Controls.Title title1;
         private Smobiler.Core.Controls.Panel panel2;
         private Smobiler.Core.Controls.Label label3;
         private Smobiler.Core.Controls.Panel panel3;
@@ -262,8 +270,9 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.TextBox textBox2;
         private Smobiler.Core.Controls.TextBox textBox3;
-        private Smobiler.Core.Controls.TextBox textBox5;
         private Smobiler.Core.Controls.TextBox textBox4;
         private Smobiler.Core.Controls.TextBox textBox1;
+        private Title_Control title_Control1;
+        private Smobiler.Core.Controls.DatePicker datePicker1;
     }
 }
