@@ -196,6 +196,12 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchBox_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchBox_Control.Designer.cs">
+      <DependentUpon>SearchBox_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Search_control.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -220,6 +226,12 @@
     </Compile>
     <Compile Include="Moive_Control.Designer.cs">
       <DependentUpon>Moive_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Title_Control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Title_Control.Designer.cs">
+      <DependentUpon>Title_Control.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
       <SubType>Component</SubType>
@@ -281,8 +293,17 @@
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SearchBox_Control.resx">
+      <DependentUpon>SearchBox_Control.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Search_control.resx">
       <DependentUpon>Search_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Form.resx">
+      <DependentUpon>Search_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Title_Control.resx">
+      <DependentUpon>Title_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>

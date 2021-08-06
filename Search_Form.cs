@@ -7,14 +7,17 @@ using Smobiler.Core.Controls;
 
 namespace SmobilerAppTEST7._17
 {
-    ////ToolboxItem用于控制是否添加自定义控件到工具箱，true添加，false不添加
-    //[System.ComponentModel.ToolboxItem(true)]
-    partial class Search_Form : Smobiler.Core.Controls.MobileUserControl
+    partial class Search_Form : Smobiler.Core.Controls.MobileForm
     {
         public Search_Form() : base()
         {
-            //This call is required by the SmobilerUserControl.
+            //This call is required by the SmobilerForm.
             InitializeComponent();
+        }
+
+        private void title_Control1_ExitButtonpPress_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
