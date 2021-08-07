@@ -65,6 +65,8 @@ namespace SmobilerAppTEST7._17
             // 
             // title1
             // 
+            this.title1.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 1F);
+            this.title1.BorderColor = System.Drawing.Color.LightGray;
             this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             this.title1.Location = new System.Drawing.Point(38, 47);
             this.title1.Name = "title1";

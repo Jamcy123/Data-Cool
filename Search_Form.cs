@@ -37,38 +37,45 @@ namespace SmobilerAppTEST7._17
         }
         private void searchBox_Control1_SearchButtonPress(object sender, EventArgs e)
         {
-            string database = "Movie_ticket";
-            string sql = "";
-            DataSet dataSet = new DataSet();
-            switch (tabPageView1.PageIndex)
+            try
             {
-                case 0://查询电影
-                    sql = "select * from Movie_ticket.Movie where Mname like '%" + searchBox_Control1.TextBox_Text + "%'";
-                    dataSet=Databaseconnect(database, sql);
-                    if (dataSet.Tables[0].Rows.Count <= 0)
-                    {
-                        Toast("此处暂无符合要求的电影");
-                    }
-                    else
-                    {
-                        listView1.DataSource = dataSet;
-                        listView1.DataBind();
-                    }
-                    break;
-                case 1://查询用户所在地的影院
-                    sql = "select Cno,Cname,Caddress from Cinema,Userinf where Ucity=Ccity and Cname like '%" + searchBox_Control1.TextBox_Text + "%' and Uphoneno='" + Uno + "'";
-                    searchBox_Control1.TextBox_Text = sql;
-                    dataSet = Databaseconnect(database, sql);
-                    if (dataSet.Tables[0].Rows.Count <= 0)
-                    {
-                        Toast("此处暂无符合要求的影院");
-                    }
-                    else
-                    {
-                        listView2.DataSource = dataSet;
-                        listView2.DataBind();
-                    }
-                    break;
+                string database = "Movie_ticket";
+                string sql = "";
+                DataSet dataSet = new DataSet();
+                switch (tabPageView1.PageIndex)
+                {
+                    case 0://查询电影
+                        sql = "select * from Movie_ticket.Movie where Mname like '%" + searchBox_Control1.TextBox_Text + "%'";
+                        dataSet = Databaseconnect(database, sql);
+                        if (dataSet.Tables[0].Rows.Count <= 0)
+                        {
+                            Toast("此处暂无符合要求的电影");
+                        }
+                        else
+                        {
+                            listView1.DataSource = dataSet;
+                            listView1.DataBind();
+                        }
+                        break;
+                    case 1://查询用户所在地的影院
+                        sql = "select Cno,Cname,Caddress from Cinema,Userinf where Ucity=Ccity and Cname like '%" + searchBox_Control1.TextBox_Text + "%' and Uphoneno='" + Uno + "'";
+                        searchBox_Control1.TextBox_Text = sql;
+                        dataSet = Databaseconnect(database, sql);
+                        if (dataSet.Tables[0].Rows.Count <= 0)
+                        {
+                            Toast("此处暂无符合要求的影院");
+                        }
+                        else
+                        {
+                            listView2.DataSource = dataSet;
+                            listView2.DataBind();
+                        }
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
             }
 
         }
