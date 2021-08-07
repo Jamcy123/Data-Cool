@@ -81,7 +81,6 @@ namespace SmobilerAppTEST7._17
             {
                 Toast(ex.Message);
             }
-
         }
     }
 }
