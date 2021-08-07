@@ -67,7 +67,7 @@ namespace SmobilerAppTEST7._17
                         {
                             listView2.DataSource = dataSet;
                             listView2.DataBind();
-                            throw new Exception("此处暂无符合要求的电影");
+                            throw new Exception("此处暂无符合要求的影院");
                         }
                         else
                         {
