@@ -207,6 +207,7 @@ namespace SmobilerAppTEST7._17
 
         }
         #endregion
+
         private Title_Control title_Control1;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Label label4;
