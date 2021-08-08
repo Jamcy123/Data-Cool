@@ -16,5 +16,21 @@ namespace SmobilerAppTEST7._17
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
+        public event EventHandler SearchButtonPress;
+        public string TextBox_Text//textBox1的属性
+        {
+            get { return textBox1.Text; }
+            set { textBox1.Text = value; }
+        }
+        private void panel2_Press(object sender, EventArgs e)//点击搜索按钮时发生
+        {
+            if (SearchButtonPress != null)
+                SearchButtonPress.Invoke(this, EventArgs.Empty);
+        }
+        private void textBox1_SubmitEditing(object sender, EventArgs e)//软键盘确认/提交按钮点击时发生
+        {
+            if (SearchButtonPress != null)
+                SearchButtonPress.Invoke(this, EventArgs.Empty);
+        }
     }
 }
