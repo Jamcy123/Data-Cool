@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace SmobilerAppTEST7._17
 {
-    partial class Moive_Control : Smobiler.Core.Controls.MobileUserControl
+    partial class Movie_Control : Smobiler.Core.Controls.MobileUserControl
     {
         #region "SmobilerUserControl generated code "
 

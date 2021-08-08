@@ -36,7 +36,7 @@ namespace SmobilerAppTEST7._17
             if (userID.Length != 11)
             {
                 txtUserphone.Text = "";
-                throw new Exception("请输入11位的账号");
+                Toast("请输入11位的账号");
             }
             else
             {

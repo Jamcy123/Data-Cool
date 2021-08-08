@@ -16,5 +16,10 @@ namespace SmobilerAppTEST7._17
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
+
+        private void panel1_Press(object sender, EventArgs e)
+        {
+            MessageBox.Show("影院编号为"+Cname_lbl.BindDataValue);
+        }
     }
 }

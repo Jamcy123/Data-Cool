@@ -84,5 +84,11 @@ namespace SmobilerAppTEST7._17
             city_select city_Select = new city_select(Uno);
             this.Form.ShowDialog(city_Select, (obj, args) => { city_label.Text = city_Select.Address; });
         }
+
+        private void search_control1_Search_control_Press(object sender, EventArgs e)
+        {
+            Search_Form search_Form = new Search_Form(Uno);//查询界面
+            this.Form.Show(search_Form);
+        }
     }
 }

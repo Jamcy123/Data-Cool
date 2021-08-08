@@ -44,5 +44,10 @@ namespace SmobilerAppTEST7._17
             //listView1.DataBind();
 
         }
+
+        private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

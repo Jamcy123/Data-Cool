@@ -9,9 +9,9 @@ namespace SmobilerAppTEST7._17
 {
     ////ToolboxItem用于控制是否添加自定义控件到工具箱，true添加，false不添加
     //[System.ComponentModel.ToolboxItem(true)]
-    partial class Moive_Control : Smobiler.Core.Controls.MobileUserControl
+    partial class Movie_Control : Smobiler.Core.Controls.MobileUserControl
     {
-        public Moive_Control() : base()
+        public Movie_Control() : base()
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();

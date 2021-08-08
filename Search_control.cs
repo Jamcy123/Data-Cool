@@ -16,12 +16,11 @@ namespace SmobilerAppTEST7._17
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
-
+        public event EventHandler Search_control_Press;
         private void panel1_Press(object sender, EventArgs e)
         {
-            //MessageBox.Show("弹出查询界面");
-            Search_Form search_Form = new Search_Form();//查询界面
-            this.Form.Show(search_Form);
+            if (Search_control_Press != null)
+                Search_control_Press.Invoke(this, EventArgs.Empty);
         }
     }
 }
