@@ -65,6 +65,8 @@ namespace SmobilerAppTEST7._17
             // 
             // title1
             // 
+            this.title1.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 1F);
+            this.title1.BorderColor = System.Drawing.Color.LightGray;
             this.title1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             this.title1.Location = new System.Drawing.Point(38, 47);
             this.title1.Name = "title1";
@@ -79,14 +81,15 @@ namespace SmobilerAppTEST7._17
             this.panel1.Location = new System.Drawing.Point(0, 154);
             this.panel1.Name = "panel1";
             this.panel1.Scrollable = true;
-            this.panel1.Size = new System.Drawing.Size(300, 100);
+            this.panel1.Size = new System.Drawing.Size(300, 300);
             // 
             // listView1
             // 
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 300);
+            this.listView1.Size = new System.Drawing.Size(300, 500);
+            this.listView1.TemplateControlName = "Cinema_Control";
             // 
             // label1
             // 
@@ -126,6 +129,7 @@ namespace SmobilerAppTEST7._17
             this.search_control1.Location = new System.Drawing.Point(124, 6);
             this.search_control1.Name = "search_control1";
             this.search_control1.Size = new System.Drawing.Size(130, 20);
+            this.search_control1.Search_control_Press += new System.EventHandler(this.search_control1_Search_control_Press);
             // 
             // cinema_select
             // 

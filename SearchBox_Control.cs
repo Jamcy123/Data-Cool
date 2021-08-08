@@ -27,7 +27,6 @@ namespace SmobilerAppTEST7._17
             if (SearchButtonPress != null)
                 SearchButtonPress.Invoke(this, EventArgs.Empty);
         }
-
         private void textBox1_SubmitEditing(object sender, EventArgs e)//软键盘确认/提交按钮点击时发生
         {
             if (SearchButtonPress != null)

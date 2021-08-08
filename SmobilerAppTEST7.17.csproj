@@ -105,6 +105,18 @@
     <Compile Include="Alterpassword.Designer.cs">
       <DependentUpon>Alterpassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="ccTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ccTemplate.Designer.cs">
+      <DependentUpon>ccTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cinema_confirm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cinema_confirm.Designer.cs">
+      <DependentUpon>cinema_confirm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cinema_Control.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -147,7 +159,25 @@
     <Compile Include="frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="mcTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mcTemplate.Designer.cs">
+      <DependentUpon>mcTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="MobileGlobal.cs" />
+    <Compile Include="movie_confirm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="movie_confirm.Designer.cs">
+      <DependentUpon>movie_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movie_information.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="movie_information.Designer.cs">
+      <DependentUpon>movie_information.cs</DependentUpon>
+    </Compile>
     <Compile Include="Movie_select.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -244,6 +274,12 @@
     <EmbeddedResource Include="Alterpassword.resx">
       <DependentUpon>Alterpassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ccTemplate.resx">
+      <DependentUpon>ccTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cinema_confirm.resx">
+      <DependentUpon>cinema_confirm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cinema_Control.resx">
       <DependentUpon>Cinema_Control.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,8 +301,17 @@
     <EmbeddedResource Include="frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mcTemplate.resx">
+      <DependentUpon>mcTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_confirm.resx">
+      <DependentUpon>movie_confirm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Movie_Control.resx">
       <DependentUpon>Movie_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movie_information.resx">
+      <DependentUpon>movie_information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Movie_select.resx">
       <DependentUpon>Movie_select.cs</DependentUpon>

@@ -117,6 +117,7 @@ namespace SmobilerAppTEST7._17
             this.search_control1.Location = new System.Drawing.Point(124, 6);
             this.search_control1.Name = "search_control1";
             this.search_control1.Size = new System.Drawing.Size(130, 20);
+            this.search_control1.Search_control_Press += new System.EventHandler(this.search_control1_Search_control_Press);
             // 
             // moive_select
             // 
