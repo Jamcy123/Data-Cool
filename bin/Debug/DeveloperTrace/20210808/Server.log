@@ -937,3 +937,169 @@
 对象名:“System.Net.Sockets.Socket”。 
 2021/08/08 17:39:04 [Server-1] Stoped 
 2021/08/08 17:39:04 [AutoSet-7] Stop 
+2021/08/08 19:59:13 [Server-1] Starting 
+2021/08/08 19:59:13 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 19:59:13 [Server-1] Started 
+2021/08/08 19:59:13 [AutoSet-7] Start 
+2021/08/08 19:59:22 [TcpAccept-3] 192.168.10.8:60554 
+2021/08/08 19:59:22 [7704675e037b349e95175d2cb63d7871-192.168.10.8-10] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/08 19:59:59 [Server-1] Stoping 
+2021/08/08 19:59:59 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/08 20:00:00 [Server-1] Stoped 
+2021/08/08 20:00:00 [AutoSet-7] Stop 
+2021/08/08 20:00:36 [Server-1] Starting 
+2021/08/08 20:00:36 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:00:36 [Server-1] Started 
+2021/08/08 20:00:38 [TcpAccept-3] 192.168.10.8:60584 
+2021/08/08 20:01:00 [Server-1] Stoping 
+2021/08/08 20:01:00 [TcpAccept-EX-11] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/08 20:01:00 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/08 20:01:01 [Server-1] Stoped 
+2021/08/08 20:01:01 [AutoSet-7] Stop 
+2021/08/08 20:10:00 [Server-1] Starting 
+2021/08/08 20:10:00 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:10:00 [Server-1] Started 
+2021/08/08 20:10:00 [TcpAccept-3] 192.168.10.8:60758 
+2021/08/08 20:14:51 [Server-1] Starting 
+2021/08/08 20:14:51 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:14:51 [Server-1] Started 
+2021/08/08 20:14:51 [TcpAccept-3] 192.168.10.8:60878 
+2021/08/08 20:15:15 [Server-1] Stoping 
+2021/08/08 20:15:15 [TcpAccept-EX-12] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/08 20:15:15 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/08 20:15:16 [Server-1] Stoped 
+2021/08/08 20:15:16 [AutoSet-7] Stop 
+2021/08/08 20:16:19 [Server-1] Starting 
+2021/08/08 20:16:19 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:16:19 [Server-1] Started 
+2021/08/08 20:16:19 [AutoSet-7] Start 
+2021/08/08 20:16:22 [TcpAccept-3] 192.168.10.8:60906 
+2021/08/08 20:16:58 [Server-1] Stoping 
+2021/08/08 20:16:58 [TcpAccept-EX-14] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/08 20:16:58 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/08 20:16:59 [Server-1] Stoped 
+2021/08/08 20:16:59 [AutoSet-7] Stop 
+2021/08/08 20:18:24 [Server-1] Starting 
+2021/08/08 20:18:25 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:18:25 [Server-1] Started 
+2021/08/08 20:18:25 [AutoSet-7] Start 
+2021/08/08 20:18:25 [TcpAccept-3] 192.168.10.8:32846 
+2021/08/08 20:18:51 [TcpAccept-11] 192.168.10.8:32854 
+2021/08/08 20:21:31 [Server-1] Starting 
+2021/08/08 20:21:31 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:21:31 [Server-1] Started 
+2021/08/08 20:21:31 [AutoSet-7] Start 
+2021/08/08 20:21:37 [TcpAccept-3] 192.168.10.8:32922 
+2021/08/08 20:26:30 [Server-1] Starting 
+2021/08/08 20:26:30 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:26:31 [Server-1] Started 
+2021/08/08 20:26:31 [AutoSet-7] Start 
+2021/08/08 20:26:33 [TcpAccept-3] 192.168.10.8:32946 
+2021/08/08 20:27:10 [Server-1] Starting 
+2021/08/08 20:27:10 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:27:10 [Server-1] Started 
+2021/08/08 20:27:10 [AutoSet-7] Start 
+2021/08/08 20:27:13 [TcpAccept-3] 192.168.10.8:32952 
+2021/08/08 20:27:31 [Server-1] Starting 
+2021/08/08 20:27:31 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:27:31 [Server-1] Started 
+2021/08/08 20:27:31 [AutoSet-7] Start 
+2021/08/08 20:27:39 [TcpAccept-3] 192.168.10.8:32960 
+2021/08/08 20:29:50 [Server-1] Starting 
+2021/08/08 20:29:50 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/08 20:29:50 [Server-1] Started 
+2021/08/08 20:29:50 [AutoSet-7] Start 
+2021/08/08 20:29:52 [TcpAccept-3] 192.168.10.8:33010 
+2021/08/08 20:30:14 [TcpAccept-10] 192.168.10.8:33038 
+2021/08/08 20:30:14 [7704675e037b349e95175d2cb63d7871-192.168.10.8-9] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
