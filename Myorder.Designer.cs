@@ -22,6 +22,7 @@ namespace SmobilerAppTEST7._17
         {
             this.listView1 = new Smobiler.Core.Controls.ListView();
             this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
+            this.label1 = new Smobiler.Core.Controls.Label();
             // 
             // listView1
             // 
@@ -45,13 +46,23 @@ namespace SmobilerAppTEST7._17
             this.title_Control1.Text = "我的订单";
             this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             // 
+            // label1
+            // 
+            this.label1.Bold = true;
+            this.label1.FontSize = 16F;
+            this.label1.Location = new System.Drawing.Point(34, 216);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 53);
+            this.label1.Text = "暂无订单，快去购票！";
+            // 
             // Myorder
             // 
             this.BackgroundImage = "bluee";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.listView1,
-            this.title_Control1});
+            this.title_Control1,
+            this.label1});
             this.Load += new System.EventHandler(this.Myorder_Load);
             this.Name = "Myorder";
 
@@ -59,5 +70,6 @@ namespace SmobilerAppTEST7._17
         #endregion
         private Smobiler.Core.Controls.ListView listView1;
         private Title_Control title_Control1;
+        private Smobiler.Core.Controls.Label label1;
     }
 }
