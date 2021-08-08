@@ -10,24 +10,14 @@ using MySql.Data.MySqlClient;
 
 namespace SmobilerAppTEST7._17
 {
-    partial class movie_information : Smobiler.Core.Controls.MobileForm
+    partial class movie_confirm : Smobiler.Core.Controls.MobileForm
     {
-        public movie_information() : base()
+        public movie_confirm() : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
         }
 
-        private void button1_Press(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Press(object sender, EventArgs e)
-        {
-            movie_confirm movie_Confirm = new movie_confirm();
-            this.Show(movie_Confirm);
-        }
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
             MySqlConnection con = new MySqlConnection();
@@ -39,7 +29,7 @@ namespace SmobilerAppTEST7._17
             con.Close();
             return dataSet;
         }
-        private void movie_information_Load(object sender, EventArgs e)
+        private void movie_confirm_Load(object sender, EventArgs e)
         {
             string database = "movie_ticket";
             string select = "SELECT * FROM movie_ticket.movie where Mno = 1";
@@ -48,19 +38,29 @@ namespace SmobilerAppTEST7._17
             Mlanguage_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[2].ToString();
             Mtype_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[3].ToString();
             Mduration_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[5].ToString();
-            Mdetail_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[6].ToString();
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
+
+            string select1 = "SELECT cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Ptime FROM movie_ticket.project,movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket where project.Mno = 1 and project.Cno = cinema.Cno and project.Cno = ticket.Cno and project.Mno = ticket.Mno and projection.Cno = project.Cno and projection.Mno = project.Mno;";
+
+            DataSet dataSet1 = Databaseconnect(database, select1);
+            
+            DataTable table = new DataTable();
+            table = dataSet1.Tables[0];
+            listView1.Rows.Clear();     //清除数据
+            if (table.Rows.Count > 0)    //绑定数据源
+            {
+                listView1.DataSource = table;
+                listView1.DataBind();
+                listView2.DataSource = table;
+                listView2.DataBind();
+                listView3.DataSource = table;
+                listView3.DataBind();
+            }
+
+            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(30).ToShortDateString().ToString(), DateTime.Now.AddDays(59).ToShortDateString().ToString() };
+            tabPageView1.Titles = a;
         }
 
-        private void title_Control1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void title_Control1_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
