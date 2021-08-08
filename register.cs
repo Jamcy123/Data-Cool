@@ -99,5 +99,21 @@ namespace SmobilerAppTEST7._17
             }
             
         }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == false)
+                checkBox2.Checked = true;
+            else
+                checkBox2.Checked = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == false)
+                checkBox1.Checked = true;
+            else
+                checkBox1.Checked = false;
+        }
     }
 }
