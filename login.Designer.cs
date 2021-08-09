@@ -36,6 +36,7 @@ namespace SmobilerAppTEST7._17
             this.label4 = new Smobiler.Core.Controls.Label();
             this.checkBox1 = new Smobiler.Core.Controls.CheckBox();
             this.checkBox2 = new Smobiler.Core.Controls.CheckBox();
+            this.button3 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
@@ -55,7 +56,8 @@ namespace SmobilerAppTEST7._17
             this.label3,
             this.label4,
             this.checkBox1,
-            this.checkBox2});
+            this.checkBox2,
+            this.button3});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(120, 313);
             this.panel1.Name = "panel1";
@@ -197,6 +199,14 @@ namespace SmobilerAppTEST7._17
             this.checkBox2.Size = new System.Drawing.Size(20, 20);
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(30, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 35);
+            this.button3.Text = "button3";
+            this.button3.Press += new System.EventHandler(this.button3_Press);
+            // 
             // SmobilerForm1
             // 
             this.BackgroundImage = "bluee.png";
@@ -225,5 +235,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.CheckBox checkBox1;
         private Smobiler.Core.Controls.CheckBox checkBox2;
+        private Smobiler.Core.Controls.Button button3;
     }
 }
