@@ -430,3 +430,17 @@
 2021/08/09 17:00:45 [Server-1] Started 
 2021/08/09 17:00:45 [AutoSet-7] Start 
 2021/08/09 17:00:48 [TcpAccept-3] 192.168.0.103:53160 
+2021/08/09 19:10:46 [Server-1] Starting 
+2021/08/09 19:10:46 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\网课\大二下\数据库\课程设计\Data-Cool\bin\Debug
+        DefaultImagePath: D:\网课\大二下\数据库\课程设计\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\网课\大二下\数据库\课程设计\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\网课\大二下\数据库\课程设计\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\网课\大二下\数据库\课程设计\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\网课\大二下\数据库\课程设计\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\网课\大二下\数据库\课程设计\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/09 19:10:46 [Server-1] Started 
+2021/08/09 19:10:46 [AutoSet-7] Start 
+2021/08/09 19:11:05 [TcpAccept-3] 192.168.1.2:34130 
+2021/08/09 19:11:05 [861951044423780-192.168.1.2-10] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
