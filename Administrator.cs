@@ -11,11 +11,11 @@ namespace SmobilerAppTEST7._17
 {
     partial class Administrator : Smobiler.Core.Controls.MobileForm
     {
-        string Uno;//当前登录管理员id
+        string Aid;//当前登录管理员id
         string Cno;
         public Administrator(string a) : base()
         {
-            Uno = a;
+            Aid = a;
             //This call is required by the SmobilerForm.
             InitializeComponent();
             showlabel(a);
@@ -77,40 +77,54 @@ namespace SmobilerAppTEST7._17
                 string database = "Movie_ticket";
                 string sql = "";
                 DataSet dataSet = new DataSet();
-                string BoxText = searchBox_Control1.TextBox_Text.Replace("'", "''");//使数据库能正确识别字符串
+                string BoxText = searchBox_Control.TextBox_Text.Replace("'", "''");//使数据库能正确识别字符串
                 switch (tabPageView1.PageIndex)
                 {
                     case 0://正在热映
-                        sql = "select * from Movie_ticket.Project where Mname like '%" + BoxText + "%'and Cno='"+Cno+"'";
+                        sql = "alter table Movie_ticket.Movie add column Cno varchar(10) default '"+ Cno +"'; " +
+                        "select * from Movie_ticket.Movie " +
+                        "where exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno='" + Cno + "') and  Mname like '%" + BoxText + "%'"; 
                         dataSet = Databaseconnect(database, sql);
                         if (dataSet.Tables[0].Rows.Count <= 0)
                         {
                             
-                            listView2.DataSource = dataSet;
-                            listView2.DataBind();
+                            listView1.DataSource = dataSet;
+                            listView1.DataBind();
+                            sql = "alter table Movie_ticket.Movie drop column Cno";
+                            Databaseconnect(database, sql);
                             throw new Exception("此处暂无符合要求的电影");
                         }
                         else
                         {
-                            listView2.DataSource = dataSet;
-                            listView2.DataBind();
+                            listView1.DataSource = dataSet;
+                            listView1.DataBind();
+                            sql = "alter table Movie_ticket.Movie drop column Cno";
+                            Databaseconnect(database, sql);
                         }
+                        
                         break;
                     case 1://可上映
-                        sql = "select * from Movie_ticket.Movie where Mname like '%" + BoxText + "%'and not exists( select* from Projection where Movie.Mname=Projection.Mname";
+                        sql = "alter table Movie_ticket.Movie add column Cno varchar(10) default '" + Cno + "'; " +
+                        "select * from Movie_ticket.Movie" +
+                        " where not exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno = '" + Cno + "') and Mname like '%" + BoxText + "%'";  
                         dataSet = Databaseconnect(database, sql);
 
                         if (dataSet.Tables[0].Rows.Count <= 0)
                         {
                             listView2.DataSource = dataSet;
                             listView2.DataBind();
+                            sql = "alter table Movie_ticket.Movie drop column Cno";
+                            Databaseconnect(database, sql);
                             throw new Exception("此处暂无符合要求的电影");
                         }
                         else
                         {
                             listView2.DataSource = dataSet;
                             listView2.DataBind();
+                            sql = "alter table Movie_ticket.Movie drop column Cno";
+                            Databaseconnect(database, sql);
                         }
+                       
                         break;
                 }
             }

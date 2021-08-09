@@ -60,15 +60,7 @@ namespace SmobilerAppTEST7._17
                         string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";                     
                         Databaseconnect(database, update);
 
-                        //LoadClientData("PWD", PassWord);
-                        ////读取密码
-                        //ReadClientData("PWD", (object s, ClientDataResultHandlerArgs args) =>
-                        //{
-                        //    if (string.IsNullOrEmpty(args.error))
-                        //    {
-                        //        Toast("密码为" + args.Value);
-                        //    }
-                        //});
+
                     }
 
                     string select1 = "Select Upassword from Userinf where Uphoneno=" + txtUserName.Text;
@@ -153,15 +145,6 @@ namespace SmobilerAppTEST7._17
                         string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
                         Databaseconnect(database, update);
 
-                        //LoadClientData("PWD", PassWord);
-                        ////读取密码
-                        //ReadClientData("PWD", (object s, ClientDataResultHandlerArgs args) =>
-                        //{
-                        //    if (string.IsNullOrEmpty(args.error))
-                        //    {
-                        //        Toast("密码为" + args.Value);
-                        //    }
-                        //});
                     }
 
                     string select = "Select Apassword from Cinema where Aid=" + txtUserName.Text;
