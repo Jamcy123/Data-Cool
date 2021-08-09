@@ -86,7 +86,7 @@ namespace SmobilerAppTEST7._17
             this.label1.Location = new System.Drawing.Point(262, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 20);
-            this.label1.Text = "元";
+            this.label1.Text = "元起";
             // 
             // label2
             // 

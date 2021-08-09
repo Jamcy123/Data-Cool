@@ -212,7 +212,6 @@ C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\frmMain.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\frmSetting.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.mcTemplate.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_confirm.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Movie_Control.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_information.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.moive_select.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Myblance.resources
@@ -232,3 +231,6 @@ C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.CopyComplete
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17.exe
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17.pdb
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_movie.resources
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cmTemplate.resources
