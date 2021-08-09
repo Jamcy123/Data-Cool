@@ -73,6 +73,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.BindMode = Smobiler.Core.Controls.DataBindMode.BindUpdate;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 8);
             this.listView1.Name = "listView1";

@@ -19,7 +19,7 @@ namespace SmobilerAppTEST7._17
 
         private void panel1_Press(object sender, EventArgs e)
         {
-            //MessageBox.Show("电影编号为" + Mname_lbl.BindDataValue.ToString());
+            MessageBox.Show("电影编号为" + Mname_lbl.BindDataValue.ToString());
             movie_information movie_Information = new movie_information();
             this.Form.Show(movie_Information);
         }
