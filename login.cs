@@ -259,5 +259,10 @@ namespace SmobilerAppTEST7._17
             }
             
         }
+
+        private void button3_Press(object sender, EventArgs e)
+        {
+            image1.ResourceID = "sansan1.png";
+        }
     }
 }

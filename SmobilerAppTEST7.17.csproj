@@ -99,18 +99,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="AddControl.Designer.cs">
-      <DependentUpon>AddControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Administrator.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Administrator.Designer.cs">
-      <DependentUpon>Administrator.cs</DependentUpon>
-    </Compile>
     <Compile Include="Alterpassword.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -122,12 +110,6 @@
     </Compile>
     <Compile Include="ccTemplate.Designer.cs">
       <DependentUpon>ccTemplate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cinema.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Cinema.Designer.cs">
-      <DependentUpon>Cinema.cs</DependentUpon>
     </Compile>
     <Compile Include="cinema_confirm.cs">
       <SubType>Component</SubType>
@@ -141,6 +123,12 @@
     <Compile Include="Cinema_Control.Designer.cs">
       <DependentUpon>Cinema_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="cinema_movie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cinema_movie.Designer.cs">
+      <DependentUpon>cinema_movie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cinema_select.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -153,11 +141,11 @@
     <Compile Include="city_select.Designer.cs">
       <DependentUpon>city_select.cs</DependentUpon>
     </Compile>
-    <Compile Include="DelControl.cs">
+    <Compile Include="cmTemplate.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="DelControl.Designer.cs">
-      <DependentUpon>DelControl.cs</DependentUpon>
+    <Compile Include="cmTemplate.Designer.cs">
+      <DependentUpon>cmTemplate.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGenerateQRcode.cs">
       <SubType>Form</SubType>
@@ -190,12 +178,6 @@
       <DependentUpon>mcTemplate.cs</DependentUpon>
     </Compile>
     <Compile Include="MobileGlobal.cs" />
-    <Compile Include="Movieincrease.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Movieincrease.Designer.cs">
-      <DependentUpon>Movieincrease.cs</DependentUpon>
-    </Compile>
     <Compile Include="movie_confirm.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -256,12 +238,6 @@
     <Compile Include="register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sale.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Sale.Designer.cs">
-      <DependentUpon>Sale.cs</DependentUpon>
-    </Compile>
     <Compile Include="SearchBox_Control.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -307,20 +283,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddControl.resx">
-      <DependentUpon>AddControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrator.resx">
-      <DependentUpon>Administrator.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Alterpassword.resx">
       <DependentUpon>Alterpassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ccTemplate.resx">
       <DependentUpon>ccTemplate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cinema.resx">
-      <DependentUpon>Cinema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cinema_confirm.resx">
       <DependentUpon>cinema_confirm.cs</DependentUpon>
@@ -328,14 +295,17 @@
     <EmbeddedResource Include="Cinema_Control.resx">
       <DependentUpon>Cinema_Control.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cinema_movie.resx">
+      <DependentUpon>cinema_movie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cinema_select.resx">
       <DependentUpon>Cinema_select.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="city_select.resx">
       <DependentUpon>city_select.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DelControl.resx">
-      <DependentUpon>DelControl.cs</DependentUpon>
+    <EmbeddedResource Include="cmTemplate.resx">
+      <DependentUpon>cmTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
@@ -385,9 +355,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sale.resx">
-      <DependentUpon>Sale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchBox_Control.resx">
       <DependentUpon>SearchBox_Control.cs</DependentUpon>

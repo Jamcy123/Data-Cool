@@ -3,7 +3,7 @@ using System;
 
 namespace SmobilerAppTEST7._17
 {
-    partial class movie_confirm : Smobiler.Core.Controls.MobileForm
+    partial class cinema_movie : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm generated code "
 
@@ -21,43 +21,84 @@ namespace SmobilerAppTEST7._17
         private void InitializeComponent()
         {
             this.panel1 = new Smobiler.Core.Controls.Panel();
+            this.Cname_lbl = new Smobiler.Core.Controls.Label();
+            this.Caddress_lbl = new Smobiler.Core.Controls.Label();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
+            this.panel2 = new Smobiler.Core.Controls.Panel();
             this.Mpicadress_image = new Smobiler.Core.Controls.Image();
             this.Mname_lbl = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.Mgrade_lbl = new Smobiler.Core.Controls.Label();
-            this.label3 = new Smobiler.Core.Controls.Label();
-            this.Mtype_lbl = new Smobiler.Core.Controls.Label();
-            this.label1 = new Smobiler.Core.Controls.Label();
             this.Mlanguage_lbl = new Smobiler.Core.Controls.Label();
+            this.label1 = new Smobiler.Core.Controls.Label();
+            this.Mtype_lbl = new Smobiler.Core.Controls.Label();
+            this.label3 = new Smobiler.Core.Controls.Label();
             this.label4 = new Smobiler.Core.Controls.Label();
             this.Mduration_lbl = new Smobiler.Core.Controls.Label();
             this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
-            this.listView1 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
-            this.listView2 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.listView2 = new Smobiler.Core.Controls.ListView();
             this.listView3 = new Smobiler.Core.Controls.ListView();
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Border = new Smobiler.Core.Controls.Border(1F);
             this.panel1.BorderColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.Cname_lbl,
+            this.Caddress_lbl});
+            this.panel1.Location = new System.Drawing.Point(0, 36);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(300, 63);
+            // 
+            // Cname_lbl
+            // 
+            this.Cname_lbl.Bold = true;
+            this.Cname_lbl.FontSize = 20F;
+            this.Cname_lbl.Location = new System.Drawing.Point(10, 1);
+            this.Cname_lbl.Name = "Cname_lbl";
+            this.Cname_lbl.Size = new System.Drawing.Size(280, 27);
+            this.Cname_lbl.Text = "label1";
+            // 
+            // Caddress_lbl
+            // 
+            this.Caddress_lbl.Location = new System.Drawing.Point(10, 28);
+            this.Caddress_lbl.Name = "Caddress_lbl";
+            this.Caddress_lbl.Size = new System.Drawing.Size(280, 32);
+            this.Caddress_lbl.Text = "label1";
+            // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(319, 36);
+            this.title_Control1.Text = "特惠购票";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Border = new Smobiler.Core.Controls.Border(1F);
+            this.panel2.BorderColor = System.Drawing.Color.LightGray;
+            this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.Mpicadress_image,
             this.Mname_lbl,
             this.label2,
             this.Mgrade_lbl,
-            this.label3,
-            this.Mtype_lbl,
-            this.label1,
             this.Mlanguage_lbl,
+            this.label1,
+            this.Mtype_lbl,
+            this.label3,
             this.label4,
             this.Mduration_lbl});
-            this.panel1.Location = new System.Drawing.Point(0, 36);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 131);
+            this.panel2.Location = new System.Drawing.Point(0, 106);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 125);
             // 
             // Mpicadress_image
             // 
@@ -97,21 +138,13 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl.Size = new System.Drawing.Size(50, 17);
             this.Mgrade_lbl.Text = "label4";
             // 
-            // label3
+            // Mlanguage_lbl
             // 
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(132, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 17);
-            this.label3.Text = "电影类型";
-            // 
-            // Mtype_lbl
-            // 
-            this.Mtype_lbl.DisplayMember = "Mtype";
-            this.Mtype_lbl.Location = new System.Drawing.Point(204, 68);
-            this.Mtype_lbl.Name = "Mtype_lbl";
-            this.Mtype_lbl.Size = new System.Drawing.Size(76, 17);
-            this.Mtype_lbl.Text = "label5";
+            this.Mlanguage_lbl.DisplayMember = "Mlanguage";
+            this.Mlanguage_lbl.Location = new System.Drawing.Point(204, 85);
+            this.Mlanguage_lbl.Name = "Mlanguage_lbl";
+            this.Mlanguage_lbl.Size = new System.Drawing.Size(76, 17);
+            this.Mlanguage_lbl.Text = "label5";
             // 
             // label1
             // 
@@ -121,13 +154,21 @@ namespace SmobilerAppTEST7._17
             this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.Text = "电影语言";
             // 
-            // Mlanguage_lbl
+            // Mtype_lbl
             // 
-            this.Mlanguage_lbl.DisplayMember = "Mlanguage";
-            this.Mlanguage_lbl.Location = new System.Drawing.Point(204, 85);
-            this.Mlanguage_lbl.Name = "Mlanguage_lbl";
-            this.Mlanguage_lbl.Size = new System.Drawing.Size(76, 17);
-            this.Mlanguage_lbl.Text = "label5";
+            this.Mtype_lbl.DisplayMember = "Mtype";
+            this.Mtype_lbl.Location = new System.Drawing.Point(204, 68);
+            this.Mtype_lbl.Name = "Mtype_lbl";
+            this.Mtype_lbl.Size = new System.Drawing.Size(76, 17);
+            this.Mtype_lbl.Text = "label5";
+            // 
+            // label3
+            // 
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(132, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 17);
+            this.label3.Text = "电影类型";
             // 
             // label4
             // 
@@ -149,16 +190,16 @@ namespace SmobilerAppTEST7._17
             // 
             // tabPageView1
             // 
+            this.tabPageView1.BackColor = System.Drawing.Color.White;
+            this.tabPageView1.Border = new Smobiler.Core.Controls.Border(0F, 1F, 0F, 1F);
             this.tabPageView1.BorderColor = System.Drawing.Color.LightGray;
             this.tabPageView1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.tabPageControl1,
             this.tabPageControl2,
             this.tabPageControl3});
-            this.tabPageView1.Location = new System.Drawing.Point(0, 176);
+            this.tabPageView1.Location = new System.Drawing.Point(0, 244);
             this.tabPageView1.Name = "tabPageView1";
-            this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
-            this.tabPageView1.Size = new System.Drawing.Size(300, 324);
-            this.tabPageView1.TitleStyle = new Smobiler.Core.Controls.TabPageViewTitleStyle(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129))))), System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(140)))), ((int)(((byte)(255))))), 13F, System.Drawing.Color.Silver, 2);
+            this.tabPageView1.Size = new System.Drawing.Size(300, 247);
             // 
             // tabPageControl1
             // 
@@ -166,28 +207,11 @@ namespace SmobilerAppTEST7._17
             this.listView1});
             this.tabPageControl1.Name = "tabPageControl1";
             // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(0, 26);
-            this.listView1.Name = "listView1";
-            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 274);
-            this.listView1.TemplateControlName = "mcTemplate";
-            // 
             // tabPageControl2
             // 
             this.tabPageControl2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.listView2});
             this.tabPageControl2.Name = "tabPageControl2";
-            // 
-            // listView2
-            // 
-            this.listView2.BorderColor = System.Drawing.Color.Transparent;
-            this.listView2.Location = new System.Drawing.Point(0, 10);
-            this.listView2.Name = "listView2";
-            this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView2.Size = new System.Drawing.Size(300, 274);
-            this.listView2.TemplateControlName = "mcTemplate";
             // 
             // tabPageControl3
             // 
@@ -195,52 +219,64 @@ namespace SmobilerAppTEST7._17
             this.listView3});
             this.tabPageControl3.Name = "tabPageControl3";
             // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(0, 31);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.Size = new System.Drawing.Size(300, 203);
+            this.listView1.TemplateControlName = "cmTemplate";
+            // 
+            // listView2
+            // 
+            this.listView2.Location = new System.Drawing.Point(0, 31);
+            this.listView2.Name = "listView2";
+            this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView2.Size = new System.Drawing.Size(300, 203);
+            this.listView2.TemplateControlName = "cmTemplate";
+            // 
             // listView3
             // 
-            this.listView3.Location = new System.Drawing.Point(0, 10);
+            this.listView3.Location = new System.Drawing.Point(0, 31);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView3.Size = new System.Drawing.Size(300, 274);
-            this.listView3.TemplateControlName = "mcTemplate";
+            this.listView3.Size = new System.Drawing.Size(300, 203);
+            this.listView3.TemplateControlName = "cmTemplate";
             // 
-            // title_Control1
-            // 
-            this.title_Control1.BackColor = System.Drawing.Color.Gray;
-            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
-            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.title_Control1.Name = "title_Control1";
-            this.title_Control1.Size = new System.Drawing.Size(300, 36);
-            this.title_Control1.Text = "特惠购票";
-            // 
-            // movie_confirm
+            // cinema_movie
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.tabPageView1,
             this.panel1,
-            this.title_Control1});
-            this.Load += new System.EventHandler(this.movie_confirm_Load);
-            this.Name = "movie_confirm";
+            this.panel2,
+            this.title_Control1,
+            this.tabPageView1});
+            this.Load += new System.EventHandler(this.cinema_movie_Load);
+            this.Name = "cinema_movie";
 
         }
         #endregion
+
         private Smobiler.Core.Controls.Panel panel1;
+        private Smobiler.Core.Controls.Label Cname_lbl;
+        private Smobiler.Core.Controls.Label Caddress_lbl;
+        private Title_Control title_Control1;
+        private Smobiler.Core.Controls.Panel panel2;
         private Smobiler.Core.Controls.Image Mpicadress_image;
         private Smobiler.Core.Controls.Label Mname_lbl;
         private Smobiler.Core.Controls.Label label2;
         private Smobiler.Core.Controls.Label Mgrade_lbl;
-        private Smobiler.Core.Controls.Label label3;
-        private Smobiler.Core.Controls.Label Mtype_lbl;
-        private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Label Mlanguage_lbl;
+        private Smobiler.Core.Controls.Label label1;
+        private Smobiler.Core.Controls.Label Mtype_lbl;
+        private Smobiler.Core.Controls.Label label3;
         private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.Label Mduration_lbl;
-        private Title_Control title_Control1;
         private Smobiler.Core.Controls.TabPageView tabPageView1;
         private Smobiler.Core.Controls.TabPageControl tabPageControl1;
-        private Smobiler.Core.Controls.ListView listView1;
         private Smobiler.Core.Controls.TabPageControl tabPageControl2;
-        private Smobiler.Core.Controls.ListView listView2;
         private Smobiler.Core.Controls.TabPageControl tabPageControl3;
+        private Smobiler.Core.Controls.ListView listView1;
+        private Smobiler.Core.Controls.ListView listView2;
         private Smobiler.Core.Controls.ListView listView3;
     }
 }
