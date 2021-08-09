@@ -12,12 +12,12 @@ namespace SmobilerAppTEST7._17
 {
     partial class movie_information : Smobiler.Core.Controls.MobileForm
     {
-        //string Mno;//当前页面电影编号
-        public movie_information( ) : base()
+        string Mno;//当前页面电影编号
+        public movie_information(string mno ) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
-            //Mno = mno;
+            Mno = mno;
         }
 
         private void button1_Press(object sender, EventArgs e)
