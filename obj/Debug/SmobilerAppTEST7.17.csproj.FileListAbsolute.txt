@@ -248,3 +248,6 @@ C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._1
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.AssemblyReference.cache
 >>>>>>> b9fc89779cadf44b3b6572fc45a3c6d2b47f0681
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_movie.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cmTemplate.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources
