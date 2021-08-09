@@ -198,7 +198,6 @@ C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\System.Buffers.xml
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\System.Memory.xml
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.AssemblyReference.cache
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Alterpassword.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.ccTemplate.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_confirm.resources
@@ -211,7 +210,6 @@ C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\frmMain.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\frmSetting.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.mcTemplate.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_confirm.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Movie_Control.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_information.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.moive_select.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Myblance.resources
@@ -237,4 +235,19 @@ D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.mcTemplate.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_confirm.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Movie_Control.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_information.resources
+<<<<<<< HEAD
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Administrator.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.AddControl.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.DelControl.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Cinema.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Sale.resources
+=======
 D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csprojAssemblyReference.cache
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_movie.resources
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cmTemplate.resources
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.AssemblyReference.cache
+>>>>>>> b9fc89779cadf44b3b6572fc45a3c6d2b47f0681
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_movie.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cmTemplate.resources
+D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources

@@ -2,7 +2,7 @@
 using Smobiler.Core;
 namespace SmobilerAppTEST7._17
 {
-    partial class Movie_Control : Smobiler.Core.Controls.MobileUserControl
+    partial class Moive_Control : Smobiler.Core.Controls.MobileUserControl
     {
         #region "SmobilerUserControl generated code "
 
@@ -126,7 +126,7 @@ namespace SmobilerAppTEST7._17
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.BorderRadius = 15;
             this.button1.FontSize = 15F;
-            this.button1.Location = new System.Drawing.Point(244, 41);
+            this.button1.Location = new System.Drawing.Point(242, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 22);
             this.button1.Text = "购票";
@@ -136,6 +136,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
+            this.Name = "Moive_Control";
             this.Size = new System.Drawing.Size(300, 100);
             this.Load += new System.EventHandler(this.Moive_Control_Load);
             this.Name = "Moive_Control";
