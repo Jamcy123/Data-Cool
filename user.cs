@@ -59,7 +59,6 @@ namespace SmobilerAppTEST7._17
                     break;
             }
         }
-
         private void button1_Press(object sender, EventArgs e)
         {
             this.Form.Client.ReStart();

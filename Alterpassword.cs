@@ -61,6 +61,7 @@ namespace SmobilerAppTEST7._17
                         Toast("修改失败！");
                     else
                     {
+                        string update1 = "Update Userinf set Uip='" + 123456 + "' where Uphoneno='" + txtUserphone.Text + "'";
                         Toast("修改成功！");
                         this.Close();
                     }

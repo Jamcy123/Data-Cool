@@ -31,6 +31,12 @@ namespace SmobilerAppTEST7._17
             this.btnForget = new Smobiler.Core.Controls.Button();
             this.button1 = new Smobiler.Core.Controls.Button();
             this.button2 = new Smobiler.Core.Controls.Button();
+            this.label2 = new Smobiler.Core.Controls.Label();
+            this.label3 = new Smobiler.Core.Controls.Label();
+            this.label4 = new Smobiler.Core.Controls.Label();
+            this.checkBox1 = new Smobiler.Core.Controls.CheckBox();
+            this.checkBox2 = new Smobiler.Core.Controls.CheckBox();
+            this.button3 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
@@ -45,7 +51,13 @@ namespace SmobilerAppTEST7._17
             this.label1,
             this.btnForget,
             this.button1,
-            this.button2});
+            this.button2,
+            this.label2,
+            this.label3,
+            this.label4,
+            this.checkBox1,
+            this.checkBox2,
+            this.button3});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(120, 313);
             this.panel1.Name = "panel1";
@@ -63,7 +75,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.fontIcon1.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.fontIcon1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.fontIcon1.Location = new System.Drawing.Point(31, 235);
+            this.fontIcon1.Location = new System.Drawing.Point(25, 194);
             this.fontIcon1.Name = "fontIcon1";
             this.fontIcon1.ResourceID = "user";
             this.fontIcon1.Size = new System.Drawing.Size(25, 26);
@@ -71,7 +83,7 @@ namespace SmobilerAppTEST7._17
             // fontIcon2
             // 
             this.fontIcon2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.fontIcon2.Location = new System.Drawing.Point(31, 296);
+            this.fontIcon2.Location = new System.Drawing.Point(25, 255);
             this.fontIcon2.Name = "fontIcon2";
             this.fontIcon2.ResourceID = "lock";
             this.fontIcon2.Size = new System.Drawing.Size(25, 25);
@@ -80,15 +92,16 @@ namespace SmobilerAppTEST7._17
             // 
             this.txtUserName.BackColor = System.Drawing.Color.Transparent;
             this.txtUserName.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dotted;
-            this.txtUserName.Location = new System.Drawing.Point(72, 235);
+            this.txtUserName.Location = new System.Drawing.Point(66, 194);
             this.txtUserName.MaxLength = 11;
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(200, 30);
             this.txtUserName.WaterMarkText = "账号";
+            this.txtUserName.TouchLeave += new System.EventHandler(this.txtUserName_TouchLeave);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(72, 293);
+            this.txtPassword.Location = new System.Drawing.Point(66, 252);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.SecurityMode = true;
@@ -99,7 +112,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.btnLogon.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnLogon.FontSize = 15F;
-            this.btnLogon.Location = new System.Drawing.Point(72, 391);
+            this.btnLogon.Location = new System.Drawing.Point(70, 429);
             this.btnLogon.Name = "btnLogon";
             this.btnLogon.Size = new System.Drawing.Size(170, 35);
             this.btnLogon.Text = "登录";
@@ -107,14 +120,14 @@ namespace SmobilerAppTEST7._17
             // 
             // checkRemb
             // 
-            this.checkRemb.Location = new System.Drawing.Point(18, 343);
+            this.checkRemb.Location = new System.Drawing.Point(12, 302);
             this.checkRemb.Name = "checkRemb";
             this.checkRemb.Size = new System.Drawing.Size(27, 19);
             // 
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(45, 343);
+            this.label1.Location = new System.Drawing.Point(39, 302);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 25);
             this.label1.Text = "记住密码";
@@ -123,7 +136,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.btnForget.BackColor = System.Drawing.Color.White;
             this.btnForget.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnForget.Location = new System.Drawing.Point(124, 343);
+            this.btnForget.Location = new System.Drawing.Point(118, 302);
             this.btnForget.Name = "btnForget";
             this.btnForget.Size = new System.Drawing.Size(80, 25);
             this.btnForget.Text = "清除密码";
@@ -131,7 +144,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(111, 177);
+            this.button1.Location = new System.Drawing.Point(104, 137);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.Text = "button1";
@@ -141,11 +154,58 @@ namespace SmobilerAppTEST7._17
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.Location = new System.Drawing.Point(211, 343);
+            this.button2.Location = new System.Drawing.Point(205, 302);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 25);
             this.button2.Text = "注册";
             this.button2.Press += new System.EventHandler(this.btnregister_Press);
+            // 
+            // label2
+            // 
+            this.label2.Bold = true;
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(12, 334);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 26);
+            this.label2.Text = "请选择您的身份：";
+            // 
+            // label3
+            // 
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(50, 375);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 35);
+            this.label3.Text = "用户";
+            // 
+            // label4
+            // 
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(157, 375);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 35);
+            this.label4.Text = "管理员";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.Location = new System.Drawing.Point(114, 385);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(22, 22);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.Location = new System.Drawing.Point(240, 385);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(20, 20);
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(30, 18);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 35);
+            this.button3.Text = "button3";
+            this.button3.Press += new System.EventHandler(this.button3_Press);
             // 
             // SmobilerForm1
             // 
@@ -170,5 +230,11 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Button btnForget;
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Button button2;
+        private Smobiler.Core.Controls.Label label2;
+        private Smobiler.Core.Controls.Label label3;
+        private Smobiler.Core.Controls.Label label4;
+        private Smobiler.Core.Controls.CheckBox checkBox1;
+        private Smobiler.Core.Controls.CheckBox checkBox2;
+        private Smobiler.Core.Controls.Button button3;
     }
 }
