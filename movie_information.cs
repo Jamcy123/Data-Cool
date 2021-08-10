@@ -44,7 +44,7 @@ namespace SmobilerAppTEST7._17
         private void movie_information_Load(object sender, EventArgs e)
         {
             string database = "movie_ticket";
-            string select = "SELECT * FROM movie_ticket.movie where Mno =1 " ;
+            string select = "SELECT * FROM movie_ticket.movie where Mno =" + Mno +";" ;
             DataSet dataSet = Databaseconnect(database, select);
             Mname_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[1].ToString();
             Mlanguage_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[2].ToString();
