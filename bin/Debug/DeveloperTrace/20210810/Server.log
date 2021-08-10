@@ -56,3 +56,164 @@
 对象名:“System.Net.Sockets.Socket”。 
 2021/08/10 20:02:41 [Server-1] Stoped 
 2021/08/10 20:02:41 [AutoSet-7] Stop 
+2021/08/10 20:07:07 [Server-1] Starting 
+2021/08/10 20:07:07 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:07:07 [Server-1] Started 
+2021/08/10 20:07:08 [AutoSet-7] Start 
+2021/08/10 20:07:35 [TcpAccept-3] 192.168.0.102:43920 
+2021/08/10 20:07:48 [Server-1] Stoping 
+2021/08/10 20:07:48 [d2e6c8f2c05b35a8910177da99e962f2-1] Stop-StopServer-True-- 
+2021/08/10 20:07:49 [Server-1] Stoped 
+2021/08/10 20:07:49 [AutoSet-7] Stop 
+2021/08/10 20:11:46 [Server-1] Starting 
+2021/08/10 20:11:46 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:11:46 [Server-1] Started 
+2021/08/10 20:12:09 [TcpAccept-3] 192.168.0.102:43982 
+2021/08/10 20:12:09 [d2e6c8f2c05b35a8910177da99e962f2-192.168.0.102-8] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2208},"density":3.0,"version":"4.9.0","coreVersion":"4.9.0","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/10 20:12:58 [Server-1] Stoping 
+2021/08/10 20:12:58 [TcpAccept-EX-16] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/10 20:12:58 [d2e6c8f2c05b35a8910177da99e962f2-1] Stop-StopServer-True-- 
+2021/08/10 20:12:59 [Server-1] Stoped 
+2021/08/10 20:12:59 [AutoSet-7] Stop 
+2021/08/10 20:13:46 [Server-1] Starting 
+2021/08/10 20:13:46 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:13:46 [Server-1] Started 
+2021/08/10 20:13:46 [AutoSet-7] Start 
+2021/08/10 20:13:52 [TcpAccept-3] 192.168.0.102:44008 
+2021/08/10 20:16:58 [Server-1] Starting 
+2021/08/10 20:16:58 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:16:58 [Server-1] Started 
+2021/08/10 20:16:58 [TcpAccept-3] 192.168.0.102:44146 
+2021/08/10 20:18:48 [Server-1] Stoping 
+2021/08/10 20:18:48 [TcpAccept-EX-15] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/10 20:18:48 [d2e6c8f2c05b35a8910177da99e962f2-1] Stop-StopServer-True-- 
+2021/08/10 20:18:49 [Server-1] Stoped 
+2021/08/10 20:18:49 [AutoSet-7] Stop 
+2021/08/10 20:27:17 [Server-1] Starting 
+2021/08/10 20:27:17 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:27:17 [Server-1] Started 
+2021/08/10 20:27:24 [TcpAccept-3] 192.168.0.102:44496 
+2021/08/10 20:27:36 [Server-1] Stoping 
+2021/08/10 20:27:36 [TcpAccept-EX-16] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/10 20:27:36 [d2e6c8f2c05b35a8910177da99e962f2-1] Stop-StopServer-True-- 
+2021/08/10 20:27:37 [Server-1] Stoped 
+2021/08/10 20:27:37 [AutoSet-7] Stop 
+2021/08/10 20:32:27 [Server-1] Starting 
+2021/08/10 20:32:27 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:32:27 [Server-1] Started 
+2021/08/10 20:32:33 [TcpAccept-3] 192.168.0.102:44596 
+2021/08/10 20:32:40 [Server-1] Stoping 
+2021/08/10 20:32:40 [TcpAccept-EX-10] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/10 20:32:40 [d2e6c8f2c05b35a8910177da99e962f2-1] Stop-StopServer-True-- 
+2021/08/10 20:32:41 [Server-1] Stoped 
+2021/08/10 20:32:41 [AutoSet-7] Stop 
+2021/08/10 20:34:54 [Server-1] Starting 
+2021/08/10 20:34:54 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:34:54 [Server-1] Started 
+2021/08/10 20:34:55 [AutoSet-7] Start 
+2021/08/10 20:35:00 [TcpAccept-3] 192.168.0.102:44656 
+2021/08/10 20:35:51 [Server-1] Starting 
+2021/08/10 20:35:51 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:35:51 [Server-1] Started 
+2021/08/10 20:35:51 [AutoSet-7] Start 
+2021/08/10 20:35:52 [TcpAccept-3] 192.168.0.102:44676 
+2021/08/10 20:37:47 [Server-1] Starting 
+2021/08/10 20:37:47 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:37:47 [Server-1] Started 
+2021/08/10 20:37:47 [AutoSet-7] Start 
+2021/08/10 20:37:49 [TcpAccept-3] 192.168.0.102:44800 
+2021/08/10 20:37:57 [Server-1] Starting 
+2021/08/10 20:37:57 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug
+        DefaultImagePath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\Patrick\Desktop\数据库课设\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:37:58 [Server-1] Started 
+2021/08/10 20:37:58 [AutoSet-7] Start 
+2021/08/10 20:38:00 [TcpAccept-3] 192.168.0.102:44834 
+2021/08/10 20:38:12 [Server-1] Stoping 
+2021/08/10 20:38:12 [d2e6c8f2c05b35a8910177da99e962f2-1] Stop-StopServer-True-- 
+2021/08/10 20:38:12 [TcpAccept-EX-3] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/10 20:38:13 [Server-1] Stoped 
+2021/08/10 20:38:13 [AutoSet-7] Stop 
