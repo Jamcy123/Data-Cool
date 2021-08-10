@@ -41,6 +41,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
             this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
             this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.title_Control1.Name = "title_Control1";
             this.title_Control1.Size = new System.Drawing.Size(300, 36);
@@ -171,7 +172,7 @@ namespace SmobilerAppTEST7._17
             this.Mdetail_lbl.DisplayMember = "Mdetail";
             this.Mdetail_lbl.Location = new System.Drawing.Point(12, 47);
             this.Mdetail_lbl.Name = "Mdetail_lbl";
-            this.Mdetail_lbl.Size = new System.Drawing.Size(265, 151);
+            this.Mdetail_lbl.Size = new System.Drawing.Size(265, 153);
             this.Mdetail_lbl.VerticalAlignment = Smobiler.Core.Controls.VerticalAlignment.Top;
             // 
             // button3
