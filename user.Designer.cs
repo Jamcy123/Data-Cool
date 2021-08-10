@@ -30,9 +30,9 @@ namespace SmobilerAppTEST7._17
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.image1 = new Smobiler.Core.Controls.Image();
             this.label1 = new Smobiler.Core.Controls.Label();
-            this.iconMenuView1 = new Smobiler.Core.Controls.IconMenuView();
             this.button1 = new Smobiler.Core.Controls.Button();
             this.button2 = new Smobiler.Core.Controls.Button();
+            this.iconMenuView1 = new Smobiler.Core.Controls.IconMenuView();
             // 
             // toolBar1
             // 
@@ -70,9 +70,9 @@ namespace SmobilerAppTEST7._17
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.image1,
             this.label1,
-            this.iconMenuView1,
             this.button1,
-            this.button2});
+            this.button2,
+            this.iconMenuView1});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(8, 111);
             this.panel1.Name = "panel1";
@@ -94,6 +94,24 @@ namespace SmobilerAppTEST7._17
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 35);
             this.label1.Text = "label1";
+            // 
+            // button1
+            // 
+            this.button1.FontSize = 16F;
+            this.button1.Location = new System.Drawing.Point(92, 402);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 40);
+            this.button1.Text = "退出登录";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // button2
+            // 
+            this.button2.FontSize = 16F;
+            this.button2.Location = new System.Drawing.Point(92, 352);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 40);
+            this.button2.Text = "修改密码";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
             // iconMenuView1
             // 
@@ -128,24 +146,6 @@ namespace SmobilerAppTEST7._17
             this.iconMenuView1.Size = new System.Drawing.Size(300, 104);
             this.iconMenuView1.ItemPress += new Smobiler.Core.Controls.IconMenuViewItemPressClickHandler(this.iconMenuView1_ItemPress);
             // 
-            // button1
-            // 
-            this.button1.FontSize = 16F;
-            this.button1.Location = new System.Drawing.Point(92, 402);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.Text = "退出登录";
-            this.button1.Press += new System.EventHandler(this.button1_Press);
-            // 
-            // button2
-            // 
-            this.button2.FontSize = 16F;
-            this.button2.Location = new System.Drawing.Point(92, 352);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 40);
-            this.button2.Text = "修改密码";
-            this.button2.Press += new System.EventHandler(this.button2_Press);
-            // 
             // user
             // 
             this.BackgroundImage = "bluee";
@@ -162,8 +162,8 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Image image1;
         private Smobiler.Core.Controls.Label label1;
-        private Smobiler.Core.Controls.IconMenuView iconMenuView1;
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Button button2;
+        private Smobiler.Core.Controls.IconMenuView iconMenuView1;
     }
 }

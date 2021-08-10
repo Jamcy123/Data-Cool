@@ -235,7 +235,6 @@ D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.mcTemplate.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_confirm.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Movie_Control.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.movie_information.resources
-<<<<<<< HEAD
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Administrator.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.AddControl.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.DelControl.resources
@@ -251,8 +250,11 @@ C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_movie.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cmTemplate.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.AddControl.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Administrator.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Cinema.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.DelControl.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Sale.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.AddControl.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Administrator.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Cinema.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cinema_movie.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.cmTemplate.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.DelControl.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Moive_Control.resources
+D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Sale.resources

@@ -1,8 +1,9 @@
-﻿using System;
-using Smobiler.Core;
+﻿using Smobiler.Core;
+using System;
+
 namespace SmobilerAppTEST7._17
 {
-    partial class Moive_Control : Smobiler.Core.Controls.MobileUserControl
+    partial class SaleControl : Smobiler.Core.Controls.MobileUserControl
     {
         #region "SmobilerUserControl generated code "
 
@@ -132,13 +133,12 @@ namespace SmobilerAppTEST7._17
             this.button1.Text = "购票";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
-            // Moive_Control
+            // SaleControl
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
             this.Size = new System.Drawing.Size(300, 100);
-            this.Load += new System.EventHandler(this.Moive_Control_Load);
-            this.Name = "Moive_Control";
+            this.Name = "SaleControl";
 
         }
         #endregion

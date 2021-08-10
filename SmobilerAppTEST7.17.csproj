@@ -274,6 +274,12 @@
     <Compile Include="Sale.Designer.cs">
       <DependentUpon>Sale.cs</DependentUpon>
     </Compile>
+    <Compile Include="SaleControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SaleControl.Designer.cs">
+      <DependentUpon>SaleControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchBox_Control.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -406,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sale.resx">
       <DependentUpon>Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleControl.resx">
+      <DependentUpon>SaleControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchBox_Control.resx">
       <DependentUpon>SearchBox_Control.cs</DependentUpon>

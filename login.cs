@@ -126,7 +126,6 @@ namespace SmobilerAppTEST7._17
                         {
                             Toast("密码不正确，请重新输入！");
                         }
-
                     }
             
             
@@ -239,13 +238,7 @@ namespace SmobilerAppTEST7._17
                 {
                     txtPassword.Text = pass.Tables[0].Rows[0][1].ToString();
                 }
-            }
-            
-        }
-
-        private void button3_Press(object sender, EventArgs e)
-        {
-            image1.ResourceID = "sansan1.png";
+            }            
         }
     }
 }
