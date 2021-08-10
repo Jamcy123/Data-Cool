@@ -12,12 +12,12 @@ namespace SmobilerAppTEST7._17
 {
     partial class movie_information : Smobiler.Core.Controls.MobileForm
     {
-        string Mno;//当前页面电影编号
-        public movie_information(string mno) : base()
+        string movie_no;//当前页面电影编号
+        public movie_information(string a) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
-            Mno = mno;
+            movie_no = a;
         }
 
         private void button1_Press(object sender, EventArgs e)
@@ -27,7 +27,8 @@ namespace SmobilerAppTEST7._17
 
         private void button3_Press(object sender, EventArgs e)
         {
-            movie_confirm movie_Confirm = new movie_confirm();
+            string a = Mno_lbl.Text;
+            movie_confirm movie_Confirm = new movie_confirm(a);
             this.Show(movie_Confirm);
         }
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -44,7 +45,7 @@ namespace SmobilerAppTEST7._17
         private void movie_information_Load(object sender, EventArgs e)
         {
             string database = "movie_ticket";
-            string select = "SELECT * FROM movie_ticket.movie where Mno = 1";
+            string select = "SELECT * FROM movie_ticket.movie where Mno =" + movie_no + ";" ;
             DataSet dataSet = Databaseconnect(database, select);
             Mname_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[1].ToString();
             Mlanguage_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[2].ToString();
@@ -53,6 +54,7 @@ namespace SmobilerAppTEST7._17
             Mdetail_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[6].ToString();
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
+            Mno_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();//不可见
         }
 
         private void title_Control1_Load(object sender, EventArgs e)

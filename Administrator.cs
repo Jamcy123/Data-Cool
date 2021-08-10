@@ -134,6 +134,7 @@ namespace SmobilerAppTEST7._17
             }
         }
 
+
         private void listView1_Refresh(object sender, EventArgs e)
         {
             showmovie();
@@ -157,7 +158,7 @@ namespace SmobilerAppTEST7._17
                     Show(sale, (obj, args) => { ShowForm(sale.ToolBarItemName); });
                     break;
                 case "cinema":
-                    Cinema cinema=new Cinema();
+                    Cinema cinema=new Cinema(Cno);
                     cinema.setToolbarIndex(2);
                     Show(cinema, (obj, args) => { ShowForm(cinema.ToolBarItemName); });
                     break;

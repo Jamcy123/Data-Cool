@@ -12,10 +12,12 @@ namespace SmobilerAppTEST7._17
 {
     partial class movie_confirm : Smobiler.Core.Controls.MobileForm
     {
-        public movie_confirm() : base()
+        string movie_no;//当前页面电影编号
+        public movie_confirm(string a) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
+            movie_no = a;
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -32,7 +34,7 @@ namespace SmobilerAppTEST7._17
         private void movie_confirm_Load(object sender, EventArgs e)
         {
             string database = "movie_ticket";
-            string select = "SELECT * FROM movie_ticket.movie where Mno = 1";
+            string select = "SELECT * FROM movie_ticket.movie where Mno like '" + movie_no + "';";
             DataSet dataSet = Databaseconnect(database, select);
             Mname_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[1].ToString();
             Mlanguage_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[2].ToString();
@@ -41,7 +43,9 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
-            string select1 = "SELECT cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Ptime FROM movie_ticket.project,movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket where project.Mno = 1 and project.Cno = cinema.Cno and project.Cno = ticket.Cno and project.Mno = ticket.Mno and projection.Cno = project.Cno and projection.Mno = project.Mno;";
+            string select1 = "SELECT cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Ptime " +
+                "FROM movie_ticket.project,movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
+                "where project.Mno like '" + movie_no + "' and project.Cno like cinema.Cno and project.Cno like ticket.Cno and project.Mno like ticket.Mno and projection.Cno like project.Cno and projection.Mno like project.Mno;";
 
             DataSet dataSet1 = Databaseconnect(database, select1);
             
