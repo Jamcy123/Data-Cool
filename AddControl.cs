@@ -48,7 +48,7 @@ namespace SmobilerAppTEST7._17
 
         private void panel1_Press(object sender, EventArgs e)
         {
-
+         
         }
 
         private void AddControl_Load(object sender, EventArgs e)
