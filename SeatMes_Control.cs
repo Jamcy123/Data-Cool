@@ -20,12 +20,12 @@ namespace SmobilerAppTEST7._17
         public string Seat_Text//座位属性
         {
             get { return seat_Text.Text; }
-            set { Seat_Text = value; }
+            set { seat_Text.Text = value; }
         }
         public string Money_Text//价格属性
         {
             get { return money_Text.Text; }
-            set { Money_Text = value; }
+            set { money_Text.Text = value; }
         }
         private void delete_btn_Press(object sender, EventArgs e)//单击事件
         {

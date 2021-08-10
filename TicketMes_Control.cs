@@ -33,20 +33,25 @@ namespace SmobilerAppTEST7._17
         }
         public void Choice_ed(int num,string []mes,string mon)//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
         {
-            SeatMes_Control[] seatMes = new SeatMes_Control[4] { seatMes_Control1,seatMes_Control2,seatMes_Control3,seatMes_Control4};
-            for (int i=0; i < 4; i++)
-            {
-                if (i >= num)//多余的小票不显示
+            try {
+                SeatMes_Control[] seatMes = new SeatMes_Control[4] { seatMes_Control1, seatMes_Control2, seatMes_Control3, seatMes_Control4 };
+                for (int i = 0; i < 4; i++)
                 {
-                    seatMes[i].Visible = false;
-                }
-                else//显示选座信息
-                {
-                    seatMes[i].Money_Text = "¥"+mon;//显示价格
-                    //读取座位信息
-                    seatMes[i].Seat_Text = mes[2*i]+"排"+mes[2*i+1]+"座";
+                    if (i >= num)//多余的小票不显示
+                    {
+                        seatMes[i].Visible = false;
+                    }
+                    else//显示选座信息
+                    {
+                        seatMes[i].Money_Text = "¥" + mon;//显示价格
+                                                          //读取座位信息
+                        seatMes[i].Seat_Text = mes[2 * i] + "排" + mes[2 * i + 1] + "座";
+                    }
                 }
             }
+            catch (Exception ex )
+            { Toast(ex.Message); }
+            
         }
     }
 }

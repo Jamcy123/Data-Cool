@@ -304,12 +304,6 @@
     <Compile Include="Search_Form.Designer.cs">
       <DependentUpon>Search_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="SeatChoice_Form.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="SeatChoice_Form.Designer.cs">
-      <DependentUpon>SeatChoice_Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="SeatMes_Control.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -457,9 +451,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Search_Form.resx">
       <DependentUpon>Search_Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SeatChoice_Form.resx">
-      <DependentUpon>SeatChoice_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SeatMes_Control.resx">
       <DependentUpon>SeatMes_Control.cs</DependentUpon>
