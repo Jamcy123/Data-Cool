@@ -42,8 +42,7 @@ namespace SmobilerAppTEST7._17
 
         private void panel1_Press(object sender, EventArgs e)
         {
-            //movie_information movie_Information = new movie_information();
-            //this.Form.Show(movie_Information);
+            
         }
 
         private void goupiao_button_Press(object sender, EventArgs e)
