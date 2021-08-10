@@ -32,16 +32,7 @@ namespace SmobilerAppTEST7._17
 
         private void mcTemplate_Load(object sender, EventArgs e)
         {
-            string database = "movie_ticket";
-            string select1 = "SELECT cinema.Cname FROM movie_ticket.project,movie_ticket.cinema where project.Mno = 1 and project.Cno = cinema.Cno";
-            string select2 = "SELECT ticket.Pprice FROM movie_ticket.project,movie_ticket.ticket where project.Mno = 1 and project.Cno = ticket.Cno and project.Mno = ticket.Mno";
-            string select3 = "SELECT cinema.Caddress FROM movie_ticket.project,movie_ticket.cinema where project.Mno = 1 and project.Cno = cinema.Cno";
-            string select4 = "SELECT projection.Ptime FROM movie_ticket.project,movie_ticket.projection where project.Mno = 1 and projection.Cno = project.Cno and projection.Mno = project.Mno";
 
-            DataSet Cname = Databaseconnect(database, select1);
-            DataSet Pprice = Databaseconnect(database, select2);
-            DataSet Caddress = Databaseconnect(database, select3);
-            DataSet Ptime = Databaseconnect(database, select4);
         }
 
         private void panel1_Press(object sender, EventArgs e)

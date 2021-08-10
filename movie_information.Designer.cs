@@ -204,7 +204,6 @@ namespace SmobilerAppTEST7._17
             this.Mno_lbl.Name = "Mno_lbl";
             this.Mno_lbl.Size = new System.Drawing.Size(100, 35);
             this.Mno_lbl.Text = "label5";
-            this.Mno_lbl.Visible = false;
             // 
             // movie_information
             // 

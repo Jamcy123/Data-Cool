@@ -54,7 +54,7 @@ namespace SmobilerAppTEST7._17
             Mdetail_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[6].ToString();
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
-            Mno_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[1].ToString();//不可见
+            Mno_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();//不可见
         }
 
         private void title_Control1_Load(object sender, EventArgs e)
