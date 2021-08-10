@@ -16,7 +16,6 @@ namespace SmobilerAppTEST7._17
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
-
         private void panel1_Press(object sender, EventArgs e)
         {
             //MessageBox.Show("电影编号为" + Mname_lbl.BindDataValue.ToString());
@@ -30,7 +29,7 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = Mgrade_lbl.Text + "分";
         }
 
-        private void button1_Press(object sender, EventArgs e)
+        private void button1_Press(object sender, EventArgs e)//购买键点击事件
         {
 
         }

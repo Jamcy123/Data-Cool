@@ -85,6 +85,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.BindMode = Smobiler.Core.Controls.DataBindMode.BindUpdate;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));

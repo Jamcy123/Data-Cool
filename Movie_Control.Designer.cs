@@ -136,7 +136,6 @@ namespace SmobilerAppTEST7._17
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
-            this.Name = "Moive_Control";
             this.Size = new System.Drawing.Size(300, 100);
             this.Load += new System.EventHandler(this.Moive_Control_Load);
             this.Name = "Moive_Control";
