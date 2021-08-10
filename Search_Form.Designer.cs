@@ -26,8 +26,8 @@ namespace SmobilerAppTEST7._17
             this.listView2 = new Smobiler.Core.Controls.ListView();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.panel1 = new Smobiler.Core.Controls.Panel();
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             this.searchBox_Control1 = new SmobilerAppTEST7._17.SearchBox_Control();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // tabPageView1
             // 
@@ -51,6 +51,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.BindMode = Smobiler.Core.Controls.DataBindMode.BindUpdate;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 73);
             this.listView1.Name = "listView1";
@@ -66,6 +67,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView2
             // 
+            this.listView2.BindMode = Smobiler.Core.Controls.DataBindMode.BindUpdate;
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Location = new System.Drawing.Point(59, 219);
             this.listView2.Name = "listView2";
@@ -92,6 +94,17 @@ namespace SmobilerAppTEST7._17
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 100);
             // 
+            // searchBox_Control1
+            // 
+            this.searchBox_Control1.BackColor = System.Drawing.Color.White;
+            this.searchBox_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchBox_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.searchBox_Control1.Location = new System.Drawing.Point(0, 98);
+            this.searchBox_Control1.Name = "searchBox_Control1";
+            this.searchBox_Control1.Size = new System.Drawing.Size(300, 40);
+            this.searchBox_Control1.TextBox_Text = "";
+            this.searchBox_Control1.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
+            // 
             // title_Control1
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
@@ -103,17 +116,6 @@ namespace SmobilerAppTEST7._17
             this.title_Control1.Size = new System.Drawing.Size(100, 36);
             this.title_Control1.Text = "搜索";
             this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress_1);
-            // 
-            // searchBox_Control1
-            // 
-            this.searchBox_Control1.BackColor = System.Drawing.Color.White;
-            this.searchBox_Control1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.searchBox_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.searchBox_Control1.Location = new System.Drawing.Point(0, 98);
-            this.searchBox_Control1.Name = "searchBox_Control1";
-            this.searchBox_Control1.Size = new System.Drawing.Size(300, 40);
-            this.searchBox_Control1.TextBox_Text = "";
-            this.searchBox_Control1.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
             // 
             // Search_Form
             // 
