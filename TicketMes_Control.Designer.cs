@@ -29,10 +29,22 @@ namespace SmobilerAppTEST7._17
             this.label4 = new Smobiler.Core.Controls.Label();
             this.panel5 = new Smobiler.Core.Controls.Panel();
             this.label5 = new Smobiler.Core.Controls.Label();
-            this.seatMes_Control1 = new SmobilerAppTEST7._17.SeatMes_Control();
-            this.seatMes_Control2 = new SmobilerAppTEST7._17.SeatMes_Control();
-            this.seatMes_Control3 = new SmobilerAppTEST7._17.SeatMes_Control();
-            this.seatMes_Control4 = new SmobilerAppTEST7._17.SeatMes_Control();
+            this.tikMes_Pan1 = new Smobiler.Core.Controls.Panel();
+            this.seat_Text1 = new Smobiler.Core.Controls.Label();
+            this.money_Text1 = new Smobiler.Core.Controls.Label();
+            this.delete_btn1 = new Smobiler.Core.Controls.ImageButton();
+            this.tikMes_Pan2 = new Smobiler.Core.Controls.Panel();
+            this.seat_Text2 = new Smobiler.Core.Controls.Label();
+            this.money_Text2 = new Smobiler.Core.Controls.Label();
+            this.delete_btn2 = new Smobiler.Core.Controls.ImageButton();
+            this.tikMes_Pan3 = new Smobiler.Core.Controls.Panel();
+            this.seat_Text3 = new Smobiler.Core.Controls.Label();
+            this.money_Text3 = new Smobiler.Core.Controls.Label();
+            this.delete_btn3 = new Smobiler.Core.Controls.ImageButton();
+            this.tikMes_Pan4 = new Smobiler.Core.Controls.Panel();
+            this.seat_Text4 = new Smobiler.Core.Controls.Label();
+            this.money_Text4 = new Smobiler.Core.Controls.Label();
+            this.delete_btn4 = new Smobiler.Core.Controls.ImageButton();
             // 
             // panel1
             // 
@@ -53,10 +65,10 @@ namespace SmobilerAppTEST7._17
             this.Week_lbl,
             this.Dtime_lbl,
             this.line1,
-            this.seatMes_Control1,
-            this.seatMes_Control2,
-            this.seatMes_Control3,
-            this.seatMes_Control4});
+            this.tikMes_Pan1,
+            this.tikMes_Pan2,
+            this.tikMes_Pan3,
+            this.tikMes_Pan4});
             this.panel2.Location = new System.Drawing.Point(15, 25);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 150);
@@ -146,41 +158,165 @@ namespace SmobilerAppTEST7._17
             this.label5.Size = new System.Drawing.Size(36, 15);
             this.label5.Text = "已售";
             // 
-            // seatMes_Control1
+            // tikMes_Pan1
             // 
-            this.seatMes_Control1.Location = new System.Drawing.Point(10, 82);
-            this.seatMes_Control1.Money_Text = "¥50";
-            this.seatMes_Control1.Name = "seatMes_Control1";
-            this.seatMes_Control1.Seat_Text = "8排8座";
-            this.seatMes_Control1.Size = new System.Drawing.Size(55, 50);
-            this.seatMes_Control1.Visible = false;
+            this.tikMes_Pan1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tikMes_Pan1.BorderRadius = 12;
+            this.tikMes_Pan1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.seat_Text1,
+            this.money_Text1,
+            this.delete_btn1});
+            this.tikMes_Pan1.Location = new System.Drawing.Point(10, 82);
+            this.tikMes_Pan1.Name = "tikMes_Pan1";
+            this.tikMes_Pan1.Size = new System.Drawing.Size(55, 50);
             // 
-            // seatMes_Control2
+            // seat_Text1
             // 
-            this.seatMes_Control2.Location = new System.Drawing.Point(75, 82);
-            this.seatMes_Control2.Money_Text = "¥50";
-            this.seatMes_Control2.Name = "seatMes_Control2";
-            this.seatMes_Control2.Seat_Text = "8排8座";
-            this.seatMes_Control2.Size = new System.Drawing.Size(55, 50);
-            this.seatMes_Control2.Visible = false;
+            this.seat_Text1.FontSize = 11F;
+            this.seat_Text1.ForeColor = System.Drawing.Color.DimGray;
+            this.seat_Text1.Location = new System.Drawing.Point(6, 6);
+            this.seat_Text1.Name = "seat_Text1";
+            this.seat_Text1.Size = new System.Drawing.Size(40, 16);
+            this.seat_Text1.Text = "8排8座";
             // 
-            // seatMes_Control3
+            // money_Text1
             // 
-            this.seatMes_Control3.Location = new System.Drawing.Point(140, 82);
-            this.seatMes_Control3.Money_Text = "¥50";
-            this.seatMes_Control3.Name = "seatMes_Control3";
-            this.seatMes_Control3.Seat_Text = "8排8座";
-            this.seatMes_Control3.Size = new System.Drawing.Size(55, 50);
-            this.seatMes_Control3.Visible = false;
+            this.money_Text1.FontSize = 11F;
+            this.money_Text1.ForeColor = System.Drawing.Color.DimGray;
+            this.money_Text1.Location = new System.Drawing.Point(6, 27);
+            this.money_Text1.Name = "money_Text1";
+            this.money_Text1.Size = new System.Drawing.Size(40, 16);
+            this.money_Text1.Text = "¥50";
             // 
-            // seatMes_Control4
+            // delete_btn1
             // 
-            this.seatMes_Control4.Location = new System.Drawing.Point(205, 82);
-            this.seatMes_Control4.Money_Text = "¥50";
-            this.seatMes_Control4.Name = "seatMes_Control4";
-            this.seatMes_Control4.Seat_Text = "8排8座";
-            this.seatMes_Control4.Size = new System.Drawing.Size(55, 50);
-            this.seatMes_Control4.Visible = false;
+            this.delete_btn1.IconColor = System.Drawing.Color.DimGray;
+            this.delete_btn1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.delete_btn1.ImgTextRatio = new Smobiler.Core.Controls.Ratio(1, 0);
+            this.delete_btn1.Location = new System.Drawing.Point(35, 14);
+            this.delete_btn1.Name = "delete_btn1";
+            this.delete_btn1.ResourceID = "ios-close";
+            this.delete_btn1.Size = new System.Drawing.Size(22, 22);
+            // 
+            // tikMes_Pan2
+            // 
+            this.tikMes_Pan2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tikMes_Pan2.BorderRadius = 12;
+            this.tikMes_Pan2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.seat_Text2,
+            this.money_Text2,
+            this.delete_btn2});
+            this.tikMes_Pan2.Location = new System.Drawing.Point(75, 82);
+            this.tikMes_Pan2.Name = "tikMes_Pan2";
+            this.tikMes_Pan2.Size = new System.Drawing.Size(55, 50);
+            // 
+            // seat_Text2
+            // 
+            this.seat_Text2.FontSize = 11F;
+            this.seat_Text2.ForeColor = System.Drawing.Color.DimGray;
+            this.seat_Text2.Location = new System.Drawing.Point(6, 6);
+            this.seat_Text2.Name = "seat_Text2";
+            this.seat_Text2.Size = new System.Drawing.Size(40, 16);
+            this.seat_Text2.Text = "8排8座";
+            // 
+            // money_Text2
+            // 
+            this.money_Text2.FontSize = 11F;
+            this.money_Text2.ForeColor = System.Drawing.Color.DimGray;
+            this.money_Text2.Location = new System.Drawing.Point(6, 27);
+            this.money_Text2.Name = "money_Text2";
+            this.money_Text2.Size = new System.Drawing.Size(40, 16);
+            this.money_Text2.Text = "¥50";
+            // 
+            // delete_btn2
+            // 
+            this.delete_btn2.IconColor = System.Drawing.Color.DimGray;
+            this.delete_btn2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.delete_btn2.ImgTextRatio = new Smobiler.Core.Controls.Ratio(1, 0);
+            this.delete_btn2.Location = new System.Drawing.Point(35, 14);
+            this.delete_btn2.Name = "delete_btn2";
+            this.delete_btn2.ResourceID = "ios-close";
+            this.delete_btn2.Size = new System.Drawing.Size(22, 22);
+            // 
+            // tikMes_Pan3
+            // 
+            this.tikMes_Pan3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tikMes_Pan3.BorderRadius = 12;
+            this.tikMes_Pan3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.seat_Text3,
+            this.money_Text3,
+            this.delete_btn3});
+            this.tikMes_Pan3.Location = new System.Drawing.Point(140, 82);
+            this.tikMes_Pan3.Name = "tikMes_Pan3";
+            this.tikMes_Pan3.Size = new System.Drawing.Size(55, 50);
+            // 
+            // seat_Text3
+            // 
+            this.seat_Text3.FontSize = 11F;
+            this.seat_Text3.ForeColor = System.Drawing.Color.DimGray;
+            this.seat_Text3.Location = new System.Drawing.Point(6, 6);
+            this.seat_Text3.Name = "seat_Text3";
+            this.seat_Text3.Size = new System.Drawing.Size(40, 16);
+            this.seat_Text3.Text = "8排8座";
+            // 
+            // money_Text3
+            // 
+            this.money_Text3.FontSize = 11F;
+            this.money_Text3.ForeColor = System.Drawing.Color.DimGray;
+            this.money_Text3.Location = new System.Drawing.Point(6, 27);
+            this.money_Text3.Name = "money_Text3";
+            this.money_Text3.Size = new System.Drawing.Size(40, 16);
+            this.money_Text3.Text = "¥50";
+            // 
+            // delete_btn3
+            // 
+            this.delete_btn3.IconColor = System.Drawing.Color.DimGray;
+            this.delete_btn3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.delete_btn3.ImgTextRatio = new Smobiler.Core.Controls.Ratio(1, 0);
+            this.delete_btn3.Location = new System.Drawing.Point(35, 14);
+            this.delete_btn3.Name = "delete_btn3";
+            this.delete_btn3.ResourceID = "ios-close";
+            this.delete_btn3.Size = new System.Drawing.Size(22, 22);
+            // 
+            // tikMes_Pan4
+            // 
+            this.tikMes_Pan4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tikMes_Pan4.BorderRadius = 12;
+            this.tikMes_Pan4.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.seat_Text4,
+            this.money_Text4,
+            this.delete_btn4});
+            this.tikMes_Pan4.Location = new System.Drawing.Point(205, 82);
+            this.tikMes_Pan4.Name = "tikMes_Pan4";
+            this.tikMes_Pan4.Size = new System.Drawing.Size(55, 50);
+            // 
+            // seat_Text4
+            // 
+            this.seat_Text4.FontSize = 11F;
+            this.seat_Text4.ForeColor = System.Drawing.Color.DimGray;
+            this.seat_Text4.Location = new System.Drawing.Point(6, 6);
+            this.seat_Text4.Name = "seat_Text4";
+            this.seat_Text4.Size = new System.Drawing.Size(40, 16);
+            this.seat_Text4.Text = "8排8座";
+            // 
+            // money_Text4
+            // 
+            this.money_Text4.FontSize = 11F;
+            this.money_Text4.ForeColor = System.Drawing.Color.DimGray;
+            this.money_Text4.Location = new System.Drawing.Point(6, 27);
+            this.money_Text4.Name = "money_Text4";
+            this.money_Text4.Size = new System.Drawing.Size(40, 16);
+            this.money_Text4.Text = "¥50";
+            // 
+            // delete_btn4
+            // 
+            this.delete_btn4.IconColor = System.Drawing.Color.DimGray;
+            this.delete_btn4.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            this.delete_btn4.ImgTextRatio = new Smobiler.Core.Controls.Ratio(1, 0);
+            this.delete_btn4.Location = new System.Drawing.Point(35, 14);
+            this.delete_btn4.Name = "delete_btn4";
+            this.delete_btn4.ResourceID = "ios-close";
+            this.delete_btn4.Size = new System.Drawing.Size(22, 22);
             // 
             // TicketMes_Control
             // 
@@ -203,9 +339,21 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.Panel panel5;
         private Smobiler.Core.Controls.Label label5;
-        private SeatMes_Control seatMes_Control1;
-        private SeatMes_Control seatMes_Control2;
-        private SeatMes_Control seatMes_Control3;
-        private SeatMes_Control seatMes_Control4;
+        private Smobiler.Core.Controls.Panel tikMes_Pan1;
+        private Smobiler.Core.Controls.Label seat_Text1;
+        private Smobiler.Core.Controls.Label money_Text1;
+        private Smobiler.Core.Controls.ImageButton delete_btn1;
+        private Smobiler.Core.Controls.Panel tikMes_Pan2;
+        private Smobiler.Core.Controls.Label seat_Text2;
+        private Smobiler.Core.Controls.Label money_Text2;
+        private Smobiler.Core.Controls.ImageButton delete_btn2;
+        private Smobiler.Core.Controls.Panel tikMes_Pan3;
+        private Smobiler.Core.Controls.Label seat_Text3;
+        private Smobiler.Core.Controls.Label money_Text3;
+        private Smobiler.Core.Controls.ImageButton delete_btn3;
+        private Smobiler.Core.Controls.Panel tikMes_Pan4;
+        private Smobiler.Core.Controls.Label seat_Text4;
+        private Smobiler.Core.Controls.Label money_Text4;
+        private Smobiler.Core.Controls.ImageButton delete_btn4;
     }
 }

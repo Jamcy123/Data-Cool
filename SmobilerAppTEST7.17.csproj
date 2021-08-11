@@ -316,6 +316,12 @@
     <Compile Include="Seat_Control.Designer.cs">
       <DependentUpon>Seat_Control.cs</DependentUpon>
     </Compile>
+    <Compile Include="Seat_Form.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Seat_Form.Designer.cs">
+      <DependentUpon>Seat_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="login.cs">
       <SubType>Component</SubType>
@@ -457,6 +463,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Seat_Control.resx">
       <DependentUpon>Seat_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seat_Form.resx">
+      <DependentUpon>Seat_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TicketMes_Control.resx">
       <DependentUpon>TicketMes_Control.cs</DependentUpon>
