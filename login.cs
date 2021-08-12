@@ -243,7 +243,7 @@ namespace SmobilerAppTEST7._17
 
         private void button3_Press(object sender, EventArgs e)//我直接选座位
         {
-            this.Form.Show(new Seat_Form());
+            this.Form.Show(new Seat_Form("是电影名称","是影院名称","周几","几月几号 00:00-00:00","票单价"));
         }
     }
 }

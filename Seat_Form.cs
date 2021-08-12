@@ -14,19 +14,21 @@ namespace SmobilerAppTEST7._17
         double mon=1.2;//价格
         int[] mes = new int[8];//选择的座位数组
         Seat_Control[][] Controlss;
-
-        public Seat_Form() : base()
+        
+        public Seat_Form(string Mname,string Cname,string Week,string Dtime,string price) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
             Seat_Update(9, 9, 1);
+            mon = double.Parse(price);
+            ticketMes_Control1.MesInput(Mname, Week, Dtime);
+            title_Control1.Text = Cname;
         }
 
         private void Seat_Form_Load(object sender, EventArgs e)//载入事件
         {
             ticketMes_Control1.Delete_Btn_Press += TicketMes_Control1_Delete_Btn_Press;//单击事件
-            ticketMes_Control1.MesInput("是什么电影", "周三", "月月日日 00：00");
-            title_Control1.Text = "哪个影院";
+
         }
 
         private void TicketMes_Control1_Delete_Btn_Press(object sender, EventArgs e)//小票删除按钮
@@ -48,7 +50,6 @@ namespace SmobilerAppTEST7._17
             }
             //throw new NotImplementedException();
         }
-
         private void Seat_Update(int x, int y,int which)//生成x列y行座位表 ******补充已选座位信息******
         {
             switch (which)
