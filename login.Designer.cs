@@ -29,13 +29,13 @@ namespace SmobilerAppTEST7._17
             this.checkRemb = new Smobiler.Core.Controls.CheckBox();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.btnForget = new Smobiler.Core.Controls.Button();
-            this.button1 = new Smobiler.Core.Controls.Button();
             this.button2 = new Smobiler.Core.Controls.Button();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.label4 = new Smobiler.Core.Controls.Label();
             this.checkBox1 = new Smobiler.Core.Controls.CheckBox();
             this.checkBox2 = new Smobiler.Core.Controls.CheckBox();
+            this.button1 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
@@ -49,13 +49,13 @@ namespace SmobilerAppTEST7._17
             this.checkRemb,
             this.label1,
             this.btnForget,
-            this.button1,
             this.button2,
             this.label2,
             this.label3,
             this.label4,
             this.checkBox1,
-            this.checkBox2});
+            this.checkBox2,
+            this.button1});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(120, 313);
             this.panel1.Name = "panel1";
@@ -140,14 +140,6 @@ namespace SmobilerAppTEST7._17
             this.btnForget.Text = "清除密码";
             this.btnForget.Press += new System.EventHandler(this.btnForget_Press);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(104, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.Text = "button1";
-            this.button1.Press += new System.EventHandler(this.button1_Press);
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
@@ -197,6 +189,14 @@ namespace SmobilerAppTEST7._17
             this.checkBox2.Size = new System.Drawing.Size(20, 20);
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(127, 159);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.Text = "button1";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
             // SmobilerForm1
             // 
             this.BackgroundImage = "bluee.png";
@@ -218,12 +218,12 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.CheckBox checkRemb;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Button btnForget;
-        private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Button button2;
         private Smobiler.Core.Controls.Label label2;
         private Smobiler.Core.Controls.Label label3;
         private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.CheckBox checkBox1;
         private Smobiler.Core.Controls.CheckBox checkBox2;
+        private Smobiler.Core.Controls.Button button1;
     }
 }

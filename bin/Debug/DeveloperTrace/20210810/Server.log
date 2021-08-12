@@ -59,3 +59,20 @@
 对象名:“System.Net.Sockets.Socket”。 
 2021/08/10 20:29:25 [Server-1] Stoped 
 2021/08/10 20:29:25 [AutoSet-7] Stop 
+2021/08/10 20:46:24 [Server-1] Starting 
+2021/08/10 20:46:24 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/10 20:46:25 [Server-1] Started 
+2021/08/10 20:46:25 [AutoSet-7] Start 
+2021/08/10 20:46:30 [Server-1] Stoping 
+2021/08/10 20:46:30 [TcpAccept-EX-8] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/10 20:46:32 [Server-1] Stoped 
+2021/08/10 20:46:32 [AutoSet-7] Stop 
