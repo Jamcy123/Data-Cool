@@ -40,6 +40,8 @@ namespace SmobilerAppTEST7._17
             this.button1 = new Smobiler.Core.Controls.Button();
             this.textBox1 = new Smobiler.Core.Controls.TextBox();
             this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
+            this.camera1 = new Smobiler.Core.Controls.Camera();
+            this.button2 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
@@ -169,7 +171,7 @@ namespace SmobilerAppTEST7._17
             this.label11.FontSize = 16F;
             this.label11.Name = "label11";
             this.label11.Padding = new Smobiler.Core.Controls.Padding(4F, 0F, 0F, 0F);
-            this.label11.Size = new System.Drawing.Size(224, 0);
+            this.label11.Size = new System.Drawing.Size(224, 98);
             this.label11.Text = "用户头像";
             // 
             // image1
@@ -208,7 +210,7 @@ namespace SmobilerAppTEST7._17
             // button1
             // 
             this.button1.FontSize = 16F;
-            this.button1.Location = new System.Drawing.Point(66, 427);
+            this.button1.Location = new System.Drawing.Point(69, 449);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(168, 32);
             this.button1.Text = "保存";
@@ -235,10 +237,26 @@ namespace SmobilerAppTEST7._17
             this.title_Control1.Text = "我的资料";
             this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             // 
+            // camera1
+            // 
+            this.camera1.Name = "camera1";
+            this.camera1.ImageCaptured += new Smobiler.Core.Controls.CameraOnlineCallBackHandler(this.camera1_ImageCaptured);
+            // 
+            // button2
+            // 
+            this.button2.FontSize = 16F;
+            this.button2.Location = new System.Drawing.Point(69, 401);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(168, 32);
+            this.button2.Text = "上传照片";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
+            // 
             // Mymessage
             // 
             this.BackgroundImage = "bluee";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
+            this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
+            this.camera1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1,
             this.panel2,
@@ -248,7 +266,8 @@ namespace SmobilerAppTEST7._17
             this.panel6,
             this.button1,
             this.textBox1,
-            this.title_Control1});
+            this.title_Control1,
+            this.button2});
             this.Name = "Mymessage";
 
         }
@@ -274,5 +293,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.TextBox textBox1;
         private Title_Control title_Control1;
         private Smobiler.Core.Controls.DatePicker datePicker1;
+        private Smobiler.Core.Controls.Camera camera1;
+        private Smobiler.Core.Controls.Button button2;
     }
 }

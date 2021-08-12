@@ -173,5 +173,10 @@ namespace SmobilerAppTEST7._17
         {
             ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;
         }
+
+        private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;
+        }
     }
 }

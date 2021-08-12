@@ -24,6 +24,7 @@ namespace SmobilerAppTEST7._17
             this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
             this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
             this.panel4 = new Smobiler.Core.Controls.Panel();
             this.button3 = new Smobiler.Core.Controls.Button();
@@ -37,7 +38,8 @@ namespace SmobilerAppTEST7._17
             this.Mtype = new Smobiler.Core.Controls.TextBox();
             this.Mduration = new Smobiler.Core.Controls.TextBox();
             this.Mgrade = new Smobiler.Core.Controls.TextBox();
-            this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
+            this.button1 = new Smobiler.Core.Controls.Button();
+            this.camera1 = new Smobiler.Core.Controls.Camera();
             // 
             // panel1
             // 
@@ -79,6 +81,18 @@ namespace SmobilerAppTEST7._17
             this.listView1.Size = new System.Drawing.Size(300, 490);
             this.listView1.TemplateControlName = "DControl";
             this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
+            // 
+            // searchBox_Control
+            // 
+            this.searchBox_Control.BackColor = System.Drawing.Color.White;
+            this.searchBox_Control.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchBox_Control.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.searchBox_Control.Location = new System.Drawing.Point(0, 13);
+            this.searchBox_Control.Name = "searchBox_Control";
+            this.searchBox_Control.Size = new System.Drawing.Size(300, 37);
+            this.searchBox_Control.TextBox_Text = "";
+            this.searchBox_Control.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
+            this.searchBox_Control.Load += new System.EventHandler(this.searchBox_Control1_Load);
             // 
             // tabPageControl2
             // 
@@ -124,6 +138,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mdetail
             // 
+            this.Mdetail.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mdetail.Location = new System.Drawing.Point(26, 41);
             this.Mdetail.Name = "Mdetail";
             this.Mdetail.Size = new System.Drawing.Size(251, 146);
@@ -139,7 +154,8 @@ namespace SmobilerAppTEST7._17
             this.Mlanguage,
             this.Mtype,
             this.Mduration,
-            this.Mgrade});
+            this.Mgrade,
+            this.button1});
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 46);
             this.panel3.Name = "panel3";
@@ -156,6 +172,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mno
             // 
+            this.Mno.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mno.Location = new System.Drawing.Point(130, 7);
             this.Mno.Name = "Mno";
             this.Mno.Size = new System.Drawing.Size(140, 30);
@@ -163,6 +180,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mname
             // 
+            this.Mname.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mname.Location = new System.Drawing.Point(130, 45);
             this.Mname.Name = "Mname";
             this.Mname.Size = new System.Drawing.Size(140, 30);
@@ -170,6 +188,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mlanguage
             // 
+            this.Mlanguage.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mlanguage.Location = new System.Drawing.Point(130, 83);
             this.Mlanguage.Name = "Mlanguage";
             this.Mlanguage.Size = new System.Drawing.Size(140, 30);
@@ -177,6 +196,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mtype
             // 
+            this.Mtype.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mtype.Location = new System.Drawing.Point(130, 121);
             this.Mtype.Name = "Mtype";
             this.Mtype.Size = new System.Drawing.Size(140, 30);
@@ -184,6 +204,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mduration
             // 
+            this.Mduration.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mduration.Location = new System.Drawing.Point(130, 159);
             this.Mduration.Name = "Mduration";
             this.Mduration.Size = new System.Drawing.Size(140, 30);
@@ -191,25 +212,30 @@ namespace SmobilerAppTEST7._17
             // 
             // Mgrade
             // 
+            this.Mgrade.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mgrade.Location = new System.Drawing.Point(130, 197);
             this.Mgrade.Name = "Mgrade";
             this.Mgrade.Size = new System.Drawing.Size(140, 30);
             this.Mgrade.WaterMarkText = "电影评分";
             // 
-            // searchBox_Control
+            // button1
             // 
-            this.searchBox_Control.BackColor = System.Drawing.Color.White;
-            this.searchBox_Control.Dock = System.Windows.Forms.DockStyle.Top;
-            this.searchBox_Control.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.searchBox_Control.Location = new System.Drawing.Point(0, 13);
-            this.searchBox_Control.Name = "searchBox_Control";
-            this.searchBox_Control.Size = new System.Drawing.Size(300, 37);
-            this.searchBox_Control.TextBox_Text = "";
-            this.searchBox_Control.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
-            this.searchBox_Control.Load += new System.EventHandler(this.searchBox_Control1_Load);
+            this.button1.Location = new System.Drawing.Point(13, 159);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.Text = "上传照片";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // camera1
+            // 
+            this.camera1.Name = "camera1";
+            this.camera1.QualityMode = Smobiler.Core.Controls.ImageQualityMode.Custom;
+            this.camera1.ImageCaptured += new Smobiler.Core.Controls.CameraOnlineCallBackHandler(this.camera1_ImageCaptured);
             // 
             // Movieincrease
             // 
+            this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
+            this.camera1});
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
             this.Name = "Movieincrease";
@@ -235,5 +261,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.TextBox Mtype;
         private Smobiler.Core.Controls.TextBox Mduration;
         private Smobiler.Core.Controls.TextBox Mgrade;
+        private Smobiler.Core.Controls.Button button1;
+        private Smobiler.Core.Controls.Camera camera1;
     }
 }

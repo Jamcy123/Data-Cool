@@ -105,6 +105,7 @@ namespace SmobilerAppTEST7._17
             this.listView2.Size = new System.Drawing.Size(300, 300);
             this.listView2.TemplateControlName = "AddControl";
             this.listView2.Refresh += new System.EventHandler(this.listView2_Refresh);
+            this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView2_RowBind);
             // 
             // label1
             // 

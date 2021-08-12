@@ -35,7 +35,6 @@ namespace SmobilerAppTEST7._17
             this.label4 = new Smobiler.Core.Controls.Label();
             this.checkBox1 = new Smobiler.Core.Controls.CheckBox();
             this.checkBox2 = new Smobiler.Core.Controls.CheckBox();
-            this.button1 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
@@ -54,8 +53,7 @@ namespace SmobilerAppTEST7._17
             this.label3,
             this.label4,
             this.checkBox1,
-            this.checkBox2,
-            this.button1});
+            this.checkBox2});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(120, 313);
             this.panel1.Name = "panel1";
@@ -63,11 +61,11 @@ namespace SmobilerAppTEST7._17
             // 
             // image1
             // 
-            this.image1.BorderRadius = 360;
-            this.image1.Location = new System.Drawing.Point(98, 57);
+            this.image1.BorderRadius = 50;
+            this.image1.Location = new System.Drawing.Point(104, 48);
             this.image1.Name = "image1";
-            this.image1.ResourceID = "sansan1.png";
-            this.image1.Size = new System.Drawing.Size(122, 80);
+            this.image1.Size = new System.Drawing.Size(100, 100);
+            this.image1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             // 
             // fontIcon1
             // 
@@ -89,7 +87,8 @@ namespace SmobilerAppTEST7._17
             // txtUserName
             // 
             this.txtUserName.BackColor = System.Drawing.Color.Transparent;
-            this.txtUserName.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dotted;
+            this.txtUserName.Border = new Smobiler.Core.Controls.Border(1F);
+            this.txtUserName.BorderColor = System.Drawing.Color.Gray;
             this.txtUserName.Location = new System.Drawing.Point(65, 217);
             this.txtUserName.MaxLength = 11;
             this.txtUserName.Name = "txtUserName";
@@ -99,6 +98,8 @@ namespace SmobilerAppTEST7._17
             // 
             // txtPassword
             // 
+            this.txtPassword.Border = new Smobiler.Core.Controls.Border(1F);
+            this.txtPassword.BorderColor = System.Drawing.Color.DimGray;
             this.txtPassword.Location = new System.Drawing.Point(65, 275);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
@@ -189,14 +190,6 @@ namespace SmobilerAppTEST7._17
             this.checkBox2.Size = new System.Drawing.Size(20, 20);
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(127, 159);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.Text = "button1";
-            this.button1.Press += new System.EventHandler(this.button1_Press);
-            // 
             // SmobilerForm1
             // 
             this.BackgroundImage = "bluee.png";
@@ -224,6 +217,5 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.CheckBox checkBox1;
         private Smobiler.Core.Controls.CheckBox checkBox2;
-        private Smobiler.Core.Controls.Button button1;
     }
 }

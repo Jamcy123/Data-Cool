@@ -101,10 +101,10 @@ namespace SmobilerAppTEST7._17
                 {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();
-                    if (userID=="001")
+                    if (userID == "001")
                     {
-                       
-                        if (PassWord=="123456")
+
+                        if (PassWord == "123456")
                         {
                             Movieincrease movieincrease = new Movieincrease();
                             this.Show(movieincrease);
@@ -115,56 +115,61 @@ namespace SmobilerAppTEST7._17
                             Toast("密码不正确，请重新输入！");
                         }
                     }
-            
-                    if (userID.Length != 11)
-                    {
-                        txtUserName.Text = "";
-                        throw new Exception("请输入11位的账号");
-                    }
-                    if (string.IsNullOrEmpty(userID))
-                        throw new Exception("请输入用户名");
-                    if (string.IsNullOrEmpty(PassWord))
-                        throw new Exception("请输入密码");
-                    if (checkRemb.Checked == true)
-                    {
-                        //记住密码
-                        string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
-                        Databaseconnect(database, update);
-
-                    }
-
-                    string select = "Select Apassword from Cinema where Aid=" + txtUserName.Text;
-                    DataSet save = Databaseconnect(database, select);
-
-
-                    if (save.Tables[0].Rows.Count <= 0)
-                    {
-                        txtUserName.Text = "";
-                        txtPassword.Text = "";
-                        throw new Exception("用户不存在，请重新输入！");
-                    }
-
-
-                    string pwd = save.Tables[0].Rows[0][0].ToString();
-
-                    if (pwd == txtPassword.Text)
-                    {
-                        
-                        string a = txtUserName.Text;
-                        Administrator administrator = new Administrator(a);
-                        this.Show(administrator);
-                    }
                     else
                     {
-                        throw new Exception("密码不正确，请重新输入！");
-                    }
+                        if (userID.Length != 11)
+                        {
+                            txtUserName.Text = "";
+                            throw new Exception("请输入11位的账号");
+                        }
+                        if (string.IsNullOrEmpty(userID))
+                            throw new Exception("请输入用户名");
+                        if (string.IsNullOrEmpty(PassWord))
+                            throw new Exception("请输入密码");
+                        if (checkRemb.Checked == true)
+                        {
+                            //记住密码
+                            string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
+                            Databaseconnect(database, update);
 
+                        }
+
+                        string select = "Select Apassword from Cinema where Aid=" + txtUserName.Text;
+                        DataSet save = Databaseconnect(database, select);
+
+
+                        if (save.Tables[0].Rows.Count <= 0)
+                        {
+                            txtUserName.Text = "";
+                            txtPassword.Text = "";
+                            throw new Exception("用户不存在，请重新输入！");
+                        }
+
+
+                        string pwd = save.Tables[0].Rows[0][0].ToString();
+
+                        if (pwd == txtPassword.Text)
+                        {
+
+                            string a = txtUserName.Text;
+                            Administrator administrator = new Administrator(a);
+                            this.Show(administrator);
+                        }
+                        else
+                        {
+                            throw new Exception("密码不正确，请重新输入！");
+                        }
+
+                    }
                 }
                 catch (Exception ex)
                 {
                     Toast(ex.Message);
                 }
             }
+            
+                    
+            
         }
 
         private void btnForget_Press(object sender, EventArgs e)
@@ -220,10 +225,6 @@ namespace SmobilerAppTEST7._17
             }            
         }
 
-        private void button1_Press(object sender, EventArgs e)
-        {
-            Movieincrease movieincrease = new Movieincrease();
-            this.Show(movieincrease);
-        }
+
     }
 }

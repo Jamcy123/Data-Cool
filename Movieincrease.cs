@@ -9,9 +9,10 @@ using System.Text;
 
 namespace SmobilerAppTEST7._17
 {
+    
     partial class Movieincrease : Smobiler.Core.Controls.MobileForm
     {
-        
+        string name;
         public Movieincrease() : base()
         {
             //This call is required by the SmobilerForm.
@@ -91,8 +92,21 @@ namespace SmobilerAppTEST7._17
         private void button3_Press(object sender, EventArgs e)
         {
             string database = "Movie_ticket";
-            string insert = "insert into Movie values ('" + Mno.Text + "','" + Mname.Text + "','" + Mlanguage.Text + "','" + Mtype.Text + "','" + "001" + "','" + Mduration.Text + "','" + Mdetail.Text + "','" + Mgrade.Text + "')";
+            string insert = "insert into Movie values ('" + Mno.Text + "','" + Mname.Text + "','" + Mlanguage.Text + "','" + Mtype.Text + "','" + name + "','" + Mduration.Text + "','" + Mdetail.Text + "','" + Mgrade.Text + "')";
             Databaseconnect(database, insert);
+        }
+
+        private void button1_Press(object sender, EventArgs e)
+        {
+            camera1.GetPhoto();
+        }
+
+        private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
+        {
+            name = DateTime.UtcNow.ToString();
+            e.SaveFile(name, MobileResourceManager.DefaultImagePath); //第二个参数为路径，图片保存在项目下\bin\Debug\Resources\Image下
+            image1.ResourceID = name;
+
         }
     }
 }
