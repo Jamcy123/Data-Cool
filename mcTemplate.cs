@@ -37,8 +37,10 @@ namespace SmobilerAppTEST7._17
 
         private void panel1_Press(object sender, EventArgs e)
         {
-            cinema_confirm cinema_Confirm = new cinema_confirm();
-            this.Form.Show(cinema_Confirm);
+            string b = Cname_lbl.BindDataValue.ToString();
+            string a = Ptime_lbl.BindDataValue.ToString();
+            cinema_movie cinema_Movie = new cinema_movie(a,b);
+            this.Form.Show(cinema_Movie);
         }
     }
 }

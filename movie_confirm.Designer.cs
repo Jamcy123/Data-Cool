@@ -43,6 +43,7 @@ namespace SmobilerAppTEST7._17
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 1F);
             this.panel1.BorderColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.Mpicadress_image,
@@ -149,6 +150,7 @@ namespace SmobilerAppTEST7._17
             // 
             // tabPageView1
             // 
+            this.tabPageView1.Border = new Smobiler.Core.Controls.Border(0F, 1F, 0F, 0F);
             this.tabPageView1.BorderColor = System.Drawing.Color.LightGray;
             this.tabPageView1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.tabPageControl1,
@@ -157,7 +159,7 @@ namespace SmobilerAppTEST7._17
             this.tabPageView1.Location = new System.Drawing.Point(0, 176);
             this.tabPageView1.Name = "tabPageView1";
             this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
-            this.tabPageView1.Size = new System.Drawing.Size(300, 324);
+            this.tabPageView1.Size = new System.Drawing.Size(300, 333);
             this.tabPageView1.TitleStyle = new Smobiler.Core.Controls.TabPageViewTitleStyle(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129))))), System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(140)))), ((int)(((byte)(255))))), 13F, System.Drawing.Color.Silver, 2);
             // 
             // tabPageControl1
@@ -168,10 +170,10 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(0, 26);
+            this.listView1.Location = new System.Drawing.Point(0, 10);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 274);
+            this.listView1.Size = new System.Drawing.Size(300, 323);
             this.listView1.TemplateControlName = "mcTemplate";
             // 
             // tabPageControl2
@@ -207,6 +209,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
             this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
             this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.title_Control1.Name = "title_Control1";
             this.title_Control1.Size = new System.Drawing.Size(300, 36);
