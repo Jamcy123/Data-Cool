@@ -119,7 +119,7 @@ namespace SmobilerAppTEST7._17
                         {
 
                             string a = txtUserName.Text;
-                            Movieincrease movieincrease = new Movieincrease(a);
+                            Movieincrease movieincrease = new Movieincrease();
                             this.Show(movieincrease);
                         }
                         else
