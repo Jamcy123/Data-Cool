@@ -41,7 +41,6 @@ namespace SmobilerAppTEST7._17
             listView1.DataBind();
             listView2.DataSource = dataSet2;
             listView2.DataBind();
-           
 
         }
         public void showlabel(string a)
@@ -99,6 +98,7 @@ namespace SmobilerAppTEST7._17
                         }
                         
                         break;
+
                     case 1://可上映
                         sql = 
                         "select * from Movie_ticket.Movie" +
