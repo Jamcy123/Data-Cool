@@ -16,13 +16,14 @@ namespace SmobilerAppTEST7._17
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
+        public event EventHandler Delete_Btn_Press;//单击事件
         public void MesInput(string Mname,string Week,string Dtime)//填入电影与时间信息
         {
             Mname_lbl.Text = Mname;
             Week_lbl.Text = Week;
             Dtime_lbl.Text = Dtime;
         }
-        public void Choice_ed(int num,string []mes,string mon)//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
+        public void Choice_ed(int num,int []mes,double mon)//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
         {
             try
             {
@@ -37,6 +38,7 @@ namespace SmobilerAppTEST7._17
                     }
                     else//显示选座信息
                     {
+                        tikMes[i].Visible = true;
                         moneyText[i].Text = "¥" + mon;//显示价格                                                          
                         seatText[i].Text = mes[2 * i] + "排" + mes[2 * i + 1] + "座";//读取座位信息
                     }
@@ -44,6 +46,13 @@ namespace SmobilerAppTEST7._17
             }
             catch (Exception ex)
             { Toast(ex.Message); }
+        }
+
+        private void delete_btn_Press(object sender, EventArgs e)//单击删除事件
+        {
+            ImageButton del_btn = (ImageButton)sender;
+            if (Delete_Btn_Press != null)
+                Delete_Btn_Press.Invoke(del_btn, EventArgs.Empty);
         }
     }
 }

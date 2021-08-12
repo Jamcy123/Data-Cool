@@ -55,6 +55,8 @@ namespace SmobilerAppTEST7._17
             // 
             // txtPassword
             // 
+            this.txtPassword.Border = new Smobiler.Core.Controls.Border(1F);
+            this.txtPassword.BorderColor = System.Drawing.Color.DimGray;
             this.txtPassword.Location = new System.Drawing.Point(84, 281);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
@@ -64,6 +66,8 @@ namespace SmobilerAppTEST7._17
             // 
             // txtUserphone
             // 
+            this.txtUserphone.Border = new Smobiler.Core.Controls.Border(1F);
+            this.txtUserphone.BorderColor = System.Drawing.Color.DimGray;
             this.txtUserphone.Location = new System.Drawing.Point(84, 234);
             this.txtUserphone.MaxLength = 11;
             this.txtUserphone.Name = "txtUserphone";
@@ -72,6 +76,8 @@ namespace SmobilerAppTEST7._17
             // 
             // txtsure
             // 
+            this.txtsure.Border = new Smobiler.Core.Controls.Border(1F);
+            this.txtsure.BorderColor = System.Drawing.Color.DimGray;
             this.txtsure.Location = new System.Drawing.Point(84, 325);
             this.txtsure.MaxLength = 20;
             this.txtsure.Name = "txtsure";

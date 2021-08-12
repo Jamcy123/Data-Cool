@@ -20,12 +20,12 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.RadioButton radioButton7 = new Smobiler.Core.Controls.RadioButton();
-            Smobiler.Core.Controls.RadioButton radioButton8 = new Smobiler.Core.Controls.RadioButton();
-            Smobiler.Core.Controls.RadioButton radioButton9 = new Smobiler.Core.Controls.RadioButton();
-            Smobiler.Core.Controls.RadioButton radioButton10 = new Smobiler.Core.Controls.RadioButton();
-            Smobiler.Core.Controls.RadioButton radioButton11 = new Smobiler.Core.Controls.RadioButton();
-            Smobiler.Core.Controls.RadioButton radioButton12 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton1 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton2 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton3 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton4 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton5 = new Smobiler.Core.Controls.RadioButton();
+            Smobiler.Core.Controls.RadioButton radioButton6 = new Smobiler.Core.Controls.RadioButton();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
@@ -69,31 +69,31 @@ namespace SmobilerAppTEST7._17
             // 
             // radioGroup1
             // 
-            radioButton7.ID = "thirty";
-            radioButton7.Text = "30元";
-            radioButton7.Value = null;
-            radioButton8.ID = "fifty";
-            radioButton8.Text = "50元";
-            radioButton8.Value = null;
-            radioButton9.ID = "one";
-            radioButton9.Text = "100元";
-            radioButton9.Value = null;
-            radioButton10.ID = "two";
-            radioButton10.Text = "200元";
-            radioButton10.Value = null;
-            radioButton11.ID = "three";
-            radioButton11.Text = "300元";
-            radioButton11.Value = null;
-            radioButton12.ID = "five";
-            radioButton12.Text = "500元";
-            radioButton12.Value = null;
+            radioButton1.ID = "thirty";
+            radioButton1.Text = "30元";
+            radioButton1.Value = null;
+            radioButton2.ID = "fifty";
+            radioButton2.Text = "50元";
+            radioButton2.Value = null;
+            radioButton3.ID = "one";
+            radioButton3.Text = "100元";
+            radioButton3.Value = null;
+            radioButton4.ID = "two";
+            radioButton4.Text = "200元";
+            radioButton4.Value = null;
+            radioButton5.ID = "three";
+            radioButton5.Text = "300元";
+            radioButton5.Value = null;
+            radioButton6.ID = "five";
+            radioButton6.Text = "500元";
+            radioButton6.Value = null;
             this.radioGroup1.Buttons.AddRange(new Smobiler.Core.Controls.RadioButton[] {
-            radioButton7,
-            radioButton8,
-            radioButton9,
-            radioButton10,
-            radioButton11,
-            radioButton12});
+            radioButton1,
+            radioButton2,
+            radioButton3,
+            radioButton4,
+            radioButton5,
+            radioButton6});
             this.radioGroup1.FontSize = 15F;
             this.radioGroup1.GridLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.radioGroup1.Location = new System.Drawing.Point(0, 167);
@@ -119,6 +119,8 @@ namespace SmobilerAppTEST7._17
             // 
             // textBox1
             // 
+            this.textBox1.Border = new Smobiler.Core.Controls.Border(1F);
+            this.textBox1.BorderColor = System.Drawing.Color.DimGray;
             this.textBox1.Location = new System.Drawing.Point(113, 363);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(173, 46);

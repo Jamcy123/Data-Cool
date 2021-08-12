@@ -34,7 +34,7 @@ namespace SmobilerAppTEST7._17
             // 
             // sure_panel
             // 
-            this.sure_panel.BackColor = System.Drawing.Color.Coral;
+            this.sure_panel.BackColor = System.Drawing.Color.MistyRose;
             this.sure_panel.BorderRadius = 30;
             this.sure_panel.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.sure_lbl});
@@ -52,14 +52,13 @@ namespace SmobilerAppTEST7._17
             this.sure_lbl.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.sure_lbl.Name = "sure_lbl";
             this.sure_lbl.Size = new System.Drawing.Size(250, 45);
-            this.sure_lbl.Text = "买票啦阿sir";
+            this.sure_lbl.Text = "请先选座";
             // 
             // touch_panel
             // 
             this.touch_panel.Location = new System.Drawing.Point(25, 5);
             this.touch_panel.Name = "touch_panel";
             this.touch_panel.Size = new System.Drawing.Size(250, 45);
-            this.touch_panel.Visible = false;
             // 
             // BuyBtn_Control
             // 

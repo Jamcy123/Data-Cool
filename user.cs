@@ -31,6 +31,7 @@ namespace SmobilerAppTEST7._17
             InitializeComponent();
             Uno = a;
             showlabel(a);
+            image1.ResourceID = Uno;
         }
 
         public void showlabel(string a)

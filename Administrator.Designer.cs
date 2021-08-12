@@ -20,9 +20,9 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem4 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem5 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem6 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
@@ -31,8 +31,8 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
             this.listView2 = new Smobiler.Core.Controls.ListView();
             this.label1 = new Smobiler.Core.Controls.Label();
-            this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
+            this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
             // 
             // panel1
             // 
@@ -77,6 +77,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.BindMode = Smobiler.Core.Controls.DataBindMode.BindUpdate;
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 73);
             this.listView1.Name = "listView1";
@@ -85,6 +86,7 @@ namespace SmobilerAppTEST7._17
             this.listView1.Size = new System.Drawing.Size(300, 389);
             this.listView1.TemplateControlName = "DelControl";
             this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // tabPageControl2
             // 
@@ -94,6 +96,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView2
             // 
+            this.listView2.BindMode = Smobiler.Core.Controls.DataBindMode.BindUpdate;
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Location = new System.Drawing.Point(59, 219);
             this.listView2.Name = "listView2";
@@ -102,6 +105,7 @@ namespace SmobilerAppTEST7._17
             this.listView2.Size = new System.Drawing.Size(300, 300);
             this.listView2.TemplateControlName = "AddControl";
             this.listView2.Refresh += new System.EventHandler(this.listView2_Refresh);
+            this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView2_RowBind);
             // 
             // label1
             // 
@@ -114,6 +118,37 @@ namespace SmobilerAppTEST7._17
             this.label1.Size = new System.Drawing.Size(84, 43);
             this.label1.Text = "label1";
             // 
+            // toolBar1
+            // 
+            this.toolBar1.BackColor = System.Drawing.Color.White;
+            this.toolBar1.BorderColor = System.Drawing.Color.White;
+            toolBarItem1.IconID = "film";
+            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem1.Name = "film";
+            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconID = "film";
+            toolBarItem1.Text = "电影管理";
+            toolBarItem2.IconID = "calculator";
+            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem2.Name = "sale";
+            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconID = "calculator";
+            toolBarItem2.Text = "销售情况";
+            toolBarItem3.IconID = "file-text-o";
+            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem3.Name = "cinema";
+            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconID = "file-text-o";
+            toolBarItem3.Text = "影院信息";
+            this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
+            toolBarItem1,
+            toolBarItem2,
+            toolBarItem3});
+            this.toolBar1.Location = new System.Drawing.Point(79, 480);
+            this.toolBar1.Name = "toolBar1";
+            this.toolBar1.Size = new System.Drawing.Size(100, 50);
+            this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick_1);
+            // 
             // searchBox_Control
             // 
             this.searchBox_Control.BackColor = System.Drawing.Color.White;
@@ -125,37 +160,6 @@ namespace SmobilerAppTEST7._17
             this.searchBox_Control.TextBox_Text = "";
             this.searchBox_Control.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
             this.searchBox_Control.Load += new System.EventHandler(this.searchBox_Control1_Load);
-            // 
-            // toolBar1
-            // 
-            this.toolBar1.BackColor = System.Drawing.Color.White;
-            this.toolBar1.BorderColor = System.Drawing.Color.White;
-            toolBarItem4.IconID = "film";
-            toolBarItem4.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem4.Name = "film";
-            toolBarItem4.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem4.SelectIconID = "film";
-            toolBarItem4.Text = "电影管理";
-            toolBarItem5.IconID = "calculator";
-            toolBarItem5.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem5.Name = "sale";
-            toolBarItem5.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem5.SelectIconID = "calculator";
-            toolBarItem5.Text = "销售情况";
-            toolBarItem6.IconID = "file-text-o";
-            toolBarItem6.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem6.Name = "cinema";
-            toolBarItem6.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem6.SelectIconID = "file-text-o";
-            toolBarItem6.Text = "影院信息";
-            this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem4,
-            toolBarItem5,
-            toolBarItem6});
-            this.toolBar1.Location = new System.Drawing.Point(79, 480);
-            this.toolBar1.Name = "toolBar1";
-            this.toolBar1.Size = new System.Drawing.Size(100, 50);
-            this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick_1);
             // 
             // Administrator
             // 

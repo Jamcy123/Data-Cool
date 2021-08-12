@@ -17,7 +17,6 @@ namespace SmobilerAppTEST7._17
         public SmobilerForm1() : base()
         {
             InitializeComponent(); 
-           
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -119,7 +118,7 @@ namespace SmobilerAppTEST7._17
                         {
 
                             string a = txtUserName.Text;
-                            Movieincrease movieincrease = new Movieincrease(a);
+                            Movieincrease movieincrease = new Movieincrease();
                             this.Show(movieincrease);
                         }
                         else
@@ -213,23 +212,21 @@ namespace SmobilerAppTEST7._17
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked == false)
-                checkBox1.Checked = true;
-            else
-                checkBox1.Checked = false;
+            if (checkBox2.Checked == true)
+                checkBox2.Checked = false;
+           
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == false)
-                checkBox2.Checked = true;
-            else
-                checkBox2.Checked = false;
+            if (checkBox1.Checked == true)
+                checkBox1.Checked = false;
+
         }
 
         private void txtUserName_TouchLeave(object sender, EventArgs e)
         {
-            string select = "Select Uip,Upassword from Userinf where Uphoneno=" + txtUserName.Text;
+            string select = "Select Uip,Upassword from Userinf where Uphoneno='" + txtUserName.Text+"'";
             string database = "Movie_ticket";
             DataSet pass = Databaseconnect(database, select);
             if(pass.Tables[0].Rows.Count>0)
@@ -243,7 +240,7 @@ namespace SmobilerAppTEST7._17
 
         private void button3_Press(object sender, EventArgs e)//我直接选座位
         {
-            this.Form.Show(new Seat_Form());
+            //this.Form.Show(new Seat_Form("是电影名称","是影院名称","周几","几月几号 00:00-00:00","票单价"));
         }
     }
 }

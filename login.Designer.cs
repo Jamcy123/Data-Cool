@@ -29,7 +29,6 @@ namespace SmobilerAppTEST7._17
             this.checkRemb = new Smobiler.Core.Controls.CheckBox();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.btnForget = new Smobiler.Core.Controls.Button();
-            this.button1 = new Smobiler.Core.Controls.Button();
             this.button2 = new Smobiler.Core.Controls.Button();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.label3 = new Smobiler.Core.Controls.Label();
@@ -50,7 +49,6 @@ namespace SmobilerAppTEST7._17
             this.checkRemb,
             this.label1,
             this.btnForget,
-            this.button1,
             this.button2,
             this.label2,
             this.label3,
@@ -65,11 +63,11 @@ namespace SmobilerAppTEST7._17
             // 
             // image1
             // 
-            this.image1.BorderRadius = 360;
-            this.image1.Location = new System.Drawing.Point(98, 57);
+            this.image1.BorderRadius = 50;
+            this.image1.Location = new System.Drawing.Point(104, 48);
             this.image1.Name = "image1";
-            this.image1.ResourceID = "sansan1.png";
-            this.image1.Size = new System.Drawing.Size(122, 80);
+            this.image1.Size = new System.Drawing.Size(100, 100);
+            this.image1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             // 
             // fontIcon1
             // 
@@ -91,7 +89,8 @@ namespace SmobilerAppTEST7._17
             // txtUserName
             // 
             this.txtUserName.BackColor = System.Drawing.Color.Transparent;
-            this.txtUserName.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dotted;
+            this.txtUserName.Border = new Smobiler.Core.Controls.Border(1F);
+            this.txtUserName.BorderColor = System.Drawing.Color.Gray;
             this.txtUserName.Location = new System.Drawing.Point(65, 217);
             this.txtUserName.MaxLength = 11;
             this.txtUserName.Name = "txtUserName";
@@ -101,6 +100,8 @@ namespace SmobilerAppTEST7._17
             // 
             // txtPassword
             // 
+            this.txtPassword.Border = new Smobiler.Core.Controls.Border(1F);
+            this.txtPassword.BorderColor = System.Drawing.Color.DimGray;
             this.txtPassword.Location = new System.Drawing.Point(65, 275);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
@@ -141,14 +142,6 @@ namespace SmobilerAppTEST7._17
             this.btnForget.Size = new System.Drawing.Size(80, 25);
             this.btnForget.Text = "清除密码";
             this.btnForget.Press += new System.EventHandler(this.btnForget_Press);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(104, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 35);
-            this.button1.Text = "button1";
-            this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
             // button2
             // 
@@ -228,7 +221,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.CheckBox checkRemb;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Button btnForget;
-        private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Button button2;
         private Smobiler.Core.Controls.Label label2;
         private Smobiler.Core.Controls.Label label3;
