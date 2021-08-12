@@ -101,75 +101,83 @@ namespace SmobilerAppTEST7._17
                 {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();
-                    if (userID == "001")
+                    if (userID=="001")
                     {
-
-                        if (PassWord == "123456")
+                        string Select= "Select Apassword from Cinema where Aid=" + txtUserName.Text;
+                        DataSet Save = Databaseconnect(database, Select);
+                        if (Save.Tables[0].Rows.Count <= 0)
                         {
-                            Movieincrease movieincrease = new Movieincrease();
-                            this.Show(movieincrease);
+                            txtUserName.Text = "";
+                            txtPassword.Text = "";
+                            Toast("用户不存在，请重新输入！");
                         }
 
+
+                        string pw = Save.Tables[0].Rows[0][0].ToString();
+
+                        if (pw == txtPassword.Text)
+                        {
+
+                            string a = txtUserName.Text;
+                            Movieincrease movieincrease = new Movieincrease(a);
+                            this.Show(movieincrease);
+                        }
                         else
                         {
                             Toast("密码不正确，请重新输入！");
                         }
                     }
-                    else
+            
+            
+                    if (userID.Length != 11)
                     {
-                        if (userID.Length != 11)
-                        {
-                            txtUserName.Text = "";
-                            throw new Exception("请输入11位的账号");
-                        }
-                        if (string.IsNullOrEmpty(userID))
-                            throw new Exception("请输入用户名");
-                        if (string.IsNullOrEmpty(PassWord))
-                            throw new Exception("请输入密码");
-                        if (checkRemb.Checked == true)
-                        {
-                            //记住密码
-                            string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
-                            Databaseconnect(database, update);
-
-                        }
-
-                        string select = "Select Apassword from Cinema where Aid=" + txtUserName.Text;
-                        DataSet save = Databaseconnect(database, select);
-
-
-                        if (save.Tables[0].Rows.Count <= 0)
-                        {
-                            txtUserName.Text = "";
-                            txtPassword.Text = "";
-                            throw new Exception("用户不存在，请重新输入！");
-                        }
-
-
-                        string pwd = save.Tables[0].Rows[0][0].ToString();
-
-                        if (pwd == txtPassword.Text)
-                        {
-
-                            string a = txtUserName.Text;
-                            Administrator administrator = new Administrator(a);
-                            this.Show(administrator);
-                        }
-                        else
-                        {
-                            throw new Exception("密码不正确，请重新输入！");
-                        }
+                        txtUserName.Text = "";
+                        throw new Exception("请输入11位的账号");
+                    }
+                    if (string.IsNullOrEmpty(userID))
+                        throw new Exception("请输入用户名");
+                    if (string.IsNullOrEmpty(PassWord))
+                        throw new Exception("请输入密码");
+                    if (checkRemb.Checked == true)
+                    {
+                        //记住密码
+                        string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
+                        Databaseconnect(database, update);
 
                     }
+
+                    string select = "Select Apassword from Cinema where Aid=" + txtUserName.Text;
+                    DataSet save = Databaseconnect(database, select);
+
+
+                    if (save.Tables[0].Rows.Count <= 0)
+                    {
+                        txtUserName.Text = "";
+                        txtPassword.Text = "";
+                        throw new Exception("用户不存在，请重新输入！");
+                    }
+
+
+                    string pwd = save.Tables[0].Rows[0][0].ToString();
+
+                    if (pwd == txtPassword.Text)
+                    {
+                        
+                        string a = txtUserName.Text;
+                        Administrator administrator = new Administrator(a);
+                        this.Show(administrator);
+                    }
+                    else
+                    {
+                        throw new Exception("密码不正确，请重新输入！");
+                    }
+
                 }
                 catch (Exception ex)
                 {
                     Toast(ex.Message);
                 }
             }
-            
-                    
-            
         }
 
         private void btnForget_Press(object sender, EventArgs e)
@@ -190,7 +198,12 @@ namespace SmobilerAppTEST7._17
             }
         }
 
-       
+        private void button1_Press(object sender, EventArgs e)
+        {
+            string a = txtUserName.Text;
+            moive_select moive_Select = new moive_select(a);
+            this.Show(moive_Select);
+        }
 
         private void btnregister_Press(object sender, EventArgs e)
         {
@@ -200,15 +213,18 @@ namespace SmobilerAppTEST7._17
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked == true)        
-                checkBox2.Checked = false;
+            if (checkBox2.Checked == false)
+                checkBox1.Checked = true;
+            else
+                checkBox1.Checked = false;
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
-                checkBox1.Checked = false;
-           
+            if (checkBox1.Checked == false)
+                checkBox2.Checked = true;
+            else
+                checkBox2.Checked = false;
         }
 
         private void txtUserName_TouchLeave(object sender, EventArgs e)
@@ -225,6 +241,9 @@ namespace SmobilerAppTEST7._17
             }            
         }
 
-
+        private void button3_Press(object sender, EventArgs e)//我直接选座位
+        {
+            this.Form.Show(new Seat_Form("是电影名称","是影院名称","周几","几月几号 00:00-00:00","票单价"));
+        }
     }
 }

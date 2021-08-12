@@ -36,11 +36,13 @@ namespace SmobilerAppTEST7._17
             this.Mdetail_lbl = new Smobiler.Core.Controls.Label();
             this.button3 = new Smobiler.Core.Controls.Button();
             this.label8 = new Smobiler.Core.Controls.Label();
+            this.Mno_lbl = new Smobiler.Core.Controls.Label();
             // 
             // title_Control1
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
             this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
             this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.title_Control1.Name = "title_Control1";
             this.title_Control1.Size = new System.Drawing.Size(300, 36);
@@ -161,7 +163,8 @@ namespace SmobilerAppTEST7._17
             this.panel2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.Mdetail_lbl,
             this.button3,
-            this.label8});
+            this.label8,
+            this.Mno_lbl});
             this.panel2.Location = new System.Drawing.Point(0, 222);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 278);
@@ -171,7 +174,7 @@ namespace SmobilerAppTEST7._17
             this.Mdetail_lbl.DisplayMember = "Mdetail";
             this.Mdetail_lbl.Location = new System.Drawing.Point(12, 47);
             this.Mdetail_lbl.Name = "Mdetail_lbl";
-            this.Mdetail_lbl.Size = new System.Drawing.Size(265, 151);
+            this.Mdetail_lbl.Size = new System.Drawing.Size(265, 153);
             this.Mdetail_lbl.VerticalAlignment = Smobiler.Core.Controls.VerticalAlignment.Top;
             // 
             // button3
@@ -195,6 +198,13 @@ namespace SmobilerAppTEST7._17
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 39);
             this.label8.Text = "电影简介：";
+            // 
+            // Mno_lbl
+            // 
+            this.Mno_lbl.Location = new System.Drawing.Point(177, 2);
+            this.Mno_lbl.Name = "Mno_lbl";
+            this.Mno_lbl.Size = new System.Drawing.Size(100, 35);
+            this.Mno_lbl.Text = "label5";
             // 
             // movie_information
             // 
@@ -224,5 +234,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label Mdetail_lbl;
         private Smobiler.Core.Controls.Button button3;
         private Smobiler.Core.Controls.Label label8;
+        private Smobiler.Core.Controls.Label Mno_lbl;
     }
 }
