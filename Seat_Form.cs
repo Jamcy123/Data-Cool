@@ -26,23 +26,21 @@ namespace SmobilerAppTEST7._17
         {
             ticketMes_Control1.Delete_Btn_Press += TicketMes_Control1_Delete_Btn_Press;//单击事件
             ticketMes_Control1.MesInput("是什么电影", "周三", "月月日日 00：00");
-
+            title_Control1.Text = "哪个影院";
         }
 
-        private void TicketMes_Control1_Delete_Btn_Press(object sender, EventArgs e)
+        private void TicketMes_Control1_Delete_Btn_Press(object sender, EventArgs e)//小票删除按钮
         {
             try
             {
                 ImageButton del_btn = (ImageButton)sender;
-                Toast(del_btn.TextMember);
-                //num--;
-                //int y = mes[2 * (int.Parse(del_btn.TextMember) - 1)];//y排x座
-                //int x = mes[2 * (int.Parse(del_btn.TextMember) - 1) + 1];//Controls[X][Y]
-                //MesChange(x, y);//更新mes数组
-                //Seat_Update(x, y, 2);//取消勾选座位
-                ////Controlss[x][y].Seat_Panel.BorderColor = Color.LightGray;//******************
-                ////Controlss[x][y].Seat_Panel.BackColor = Color.White;//*******************
-                //ticketMes_Control1.Choice_ed(num, mes, mon);//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
+                num--;
+                int y = mes[2 * (int.Parse(del_btn.TextMember) - 1)];//y排x座
+                int x = mes[2 * (int.Parse(del_btn.TextMember) - 1) + 1];//Controls[y][x]
+                MesChange(x, y);//更新mes数组
+                Seat_Update(x, y, 2);//取消勾选座位
+                buyBtn_Control1.sure_panel_change(num, mon);//更改确认按钮信息
+                ticketMes_Control1.Choice_ed(num, mes, mon);//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
             }
             catch (Exception ex)
             {
@@ -57,7 +55,7 @@ namespace SmobilerAppTEST7._17
             {
                 case 1:
                     {
-                        Controlss = new Seat_Control[x][];
+                        this.Controlss = new Seat_Control[x][];
                         int i, j;
                         for (i = 0; i < x; i++)
                         {
@@ -80,7 +78,9 @@ namespace SmobilerAppTEST7._17
                     } break;                   
                 case 2:
                     {
-
+                        this.Controlss[y - 1][x - 1].Fon_Bool = false;
+                        this.Controlss[y - 1][x - 1].Seat_Panel.BorderColor = Color.LightGray;
+                        this.Controlss[y - 1][x - 1].Seat_Panel.BackColor = Color.White;
                     } break;
             }
             

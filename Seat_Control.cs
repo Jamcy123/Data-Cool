@@ -9,7 +9,7 @@ using System.Drawing;
 namespace SmobilerAppTEST7._17
 {
     ////ToolboxItem用于控制是否添加自定义控件到工具箱，true添加，false不添加
-    //[System.ComponentModel.ToolboxItem(true)]
+    [System.ComponentModel.ToolboxItem(true)]
     partial class Seat_Control : Smobiler.Core.Controls.MobileUserControl
     {
         bool pressbool = true;//判断座位是否到达四个
@@ -34,6 +34,11 @@ namespace SmobilerAppTEST7._17
             get { return stop_panel; }
             set { stop_panel = value; }
         }
+        public bool Fon_Bool
+        {
+            get { return fontIcon1.Visible; }
+            set { fontIcon1.Visible = value; }
+        }
         private void panel1_Press(object sender, EventArgs e)//单击选座变绿带勾，再点变灰
         {
             //事件响应
@@ -54,7 +59,6 @@ namespace SmobilerAppTEST7._17
                 seat_panel.BorderColor = Color.LightGray;
                 seat_panel.BackColor = Color.White;
             }
-
         }
     }
 }
