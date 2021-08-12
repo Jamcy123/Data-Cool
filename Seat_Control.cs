@@ -12,12 +12,18 @@ namespace SmobilerAppTEST7._17
     //[System.ComponentModel.ToolboxItem(true)]
     partial class Seat_Control : Smobiler.Core.Controls.MobileUserControl
     {
+        bool pressbool = true;//判断座位是否到达四个
+        public bool PressBool//pressbool属性
+        {
+            get { return pressbool; }
+            set { pressbool = value; }
+        }
         public Seat_Control() : base()
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
-
+        public event EventHandler Seat_Ctrl_Press;//单击事件
         public Panel Seat_Panel//座位属性
         {
             get { return seat_panel; }
@@ -30,7 +36,13 @@ namespace SmobilerAppTEST7._17
         }
         private void panel1_Press(object sender, EventArgs e)//单击选座变绿带勾，再点变灰
         {
-            if (seat_panel.BackColor == Color.White)
+            //事件响应
+            if (Seat_Ctrl_Press != null)
+            {
+                Seat_Ctrl_Press.Invoke(this, EventArgs.Empty);
+            }
+            //颜色变化反馈
+            if (seat_panel.BackColor == Color.White&&pressbool)
             {
                 fontIcon1.Visible = true;
                 seat_panel.BorderColor = Color.LimeGreen;
@@ -42,6 +54,7 @@ namespace SmobilerAppTEST7._17
                 seat_panel.BorderColor = Color.LightGray;
                 seat_panel.BackColor = Color.White;
             }
+
         }
     }
 }
