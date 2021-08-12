@@ -5,22 +5,38 @@ using System.Text;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
 using System.Drawing;
+using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace SmobilerAppTEST7._17
 {
     partial class Seat_Form : Smobiler.Core.Controls.MobileForm
     {
         int num=0;//当前座位总数
-        double mon=1.2;//价格
+        double money=1.2;//价格
         int[] mes = new int[8];//选择的座位数组
         Seat_Control[][] Controlss;
-        
-        public Seat_Form(string Mname,string Cname,string Week,string Dtime,string price) : base()
+        string Uno;//当前用户电话
+        string Mno;//电影编号
+        string Cno;//影院编号
+        private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
+        {
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = "server=127.0.0.1;Database=" + dabatase + ";uid=root;pwd=;";//连接数据库
+            con.Open();
+            MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(sql, con);//执行sql语句
+            DataSet dataSet = new DataSet();
+            mySqlDataAdapter.Fill(dataSet);
+            con.Close();
+            return dataSet;
+        }
+        public Seat_Form(string uno,string Mname,string mno,string Cname,string cno,string Week,string Dtime,string price) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
-            Seat_Update(9, 9, 1);
-            mon = double.Parse(price);
+            Uno = uno;
+            Seat_Update(9, 9, 1);//生成座位表
+            money = double.Parse(price);
             ticketMes_Control1.MesInput(Mname, Week, Dtime);
             title_Control1.Text = Cname;
         }
@@ -41,8 +57,8 @@ namespace SmobilerAppTEST7._17
                 int x = mes[2 * (int.Parse(del_btn.TextMember) - 1) + 1];//Controls[y][x]
                 MesChange(x, y);//更新mes数组
                 Seat_Update(x, y, 2);//取消勾选座位
-                buyBtn_Control1.sure_panel_change(num, mon);//更改确认按钮信息
-                ticketMes_Control1.Choice_ed(num, mes, mon);//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
+                buyBtn_Control1.sure_panel_change(num, money);//更改确认按钮信息
+                ticketMes_Control1.Choice_ed(num, mes, money);//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
             }
             catch (Exception ex)
             {
@@ -87,7 +103,6 @@ namespace SmobilerAppTEST7._17
             
 
         }
-
         private void Seat_Form_Seat_Ctrl_Press(object sender, EventArgs e)//座位单击事件
         {
             try
@@ -111,16 +126,16 @@ namespace SmobilerAppTEST7._17
                         //数组之间不存在空隙
                         mes[2 * (num - 1)] = Y + 1;//(Y+1)排(X+1)座
                         mes[2 * (num - 1) + 1] = X + 1;
-                        ticketMes_Control1.Choice_ed(num, mes, mon);//选择座位后进行小票改动
-                        buyBtn_Control1.sure_panel_change(num, mon);//更改确认按钮信息
+                        ticketMes_Control1.Choice_ed(num, mes, money);//选择座位后进行小票改动
+                        buyBtn_Control1.sure_panel_change(num, money);//更改确认按钮信息
                     }
                 }
                 else
                 {
                     num --;
                     MesChange(X + 1, Y + 1);//更新mes数组
-                    ticketMes_Control1.Choice_ed(num, mes, mon);//选择座位后进行小票改动
-                    buyBtn_Control1.sure_panel_change(num, mon);//更改确认按钮信息
+                    ticketMes_Control1.Choice_ed(num, mes, money);//选择座位后进行小票改动
+                    buyBtn_Control1.sure_panel_change(num, money);//更改确认按钮信息
                 }
 
             }
@@ -147,6 +162,45 @@ namespace SmobilerAppTEST7._17
                         break;
                     }
                 }
+            }
+        }
+
+        private void buyBtn_Control1_Sure_btn_press(object sender, EventArgs e)//购票按钮 先判断余额是否足够，判断有没有选，最后同步数据库
+        {
+            try
+            {
+                //先判断余额是否足够
+                string database = "Movie_ticket";
+                string sql = "select Ublance from userinf where Uphoneno='"+Uno+"'";
+                DataSet dataSet=Databaseconnect(database, sql);
+                double ublance=double.Parse(dataSet.Tables[0].Rows[0].ItemArray[0].ToString());
+                if (money * num > ublance)
+                { throw new Exception("余额不足"); }
+                else
+                {
+                    //判断已选的位置是否被先选了 选了就刷新座位 没选就扣钱刷新座位
+                    sql = "select * from ticket where Cno='" + Cno + "' and Mno='" + Mno + "' and ";//*********
+                    for (int i=0;i<num;i++)
+                    {
+                        sql = sql;
+                    }
+                    dataSet = Databaseconnect(database, sql);
+                    if (dataSet.Tables[0].Rows.Count>0)
+                    {//刷新位置
+                        //***********
+                        throw new Exception("位置已被抢先，请重新选座");
+                    }
+                    else
+                    {
+                        //购买成功 同步数据库
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
             }
         }
     }
