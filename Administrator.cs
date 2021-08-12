@@ -175,5 +175,10 @@ namespace SmobilerAppTEST7._17
         {
 
         }
+
+        private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            ((Label)e.Row.Control.Controls.Find("label4")).Text = "跳转12";//button1文字改为跳转
+        }
     }
 }

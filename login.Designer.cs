@@ -66,10 +66,10 @@ namespace SmobilerAppTEST7._17
             // image1
             // 
             this.image1.BorderRadius = 360;
-            this.image1.Location = new System.Drawing.Point(98, 57);
+            this.image1.Location = new System.Drawing.Point(100, 57);
             this.image1.Name = "image1";
-            this.image1.ResourceID = "sansan1.png";
-            this.image1.Size = new System.Drawing.Size(122, 80);
+            this.image1.ResourceID = "yingtao.png";
+            this.image1.Size = new System.Drawing.Size(100, 100);
             // 
             // fontIcon1
             // 
@@ -144,7 +144,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(104, 137);
+            this.button1.Location = new System.Drawing.Point(4, 142);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.Text = "button1";
@@ -209,7 +209,7 @@ namespace SmobilerAppTEST7._17
             // 
             // SmobilerForm1
             // 
-            this.BackgroundImage = "bluee.png";
+            this.BackgroundImage = "background.png";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});

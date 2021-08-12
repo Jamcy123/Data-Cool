@@ -17,7 +17,6 @@ namespace SmobilerAppTEST7._17
         public SmobilerForm1() : base()
         {
             InitializeComponent(); 
-           
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -229,7 +228,7 @@ namespace SmobilerAppTEST7._17
 
         private void txtUserName_TouchLeave(object sender, EventArgs e)
         {
-            string select = "Select Uip,Upassword from Userinf where Uphoneno=" + txtUserName.Text;
+            string select = "Select Uip,Upassword from Userinf where Uphoneno='" + txtUserName.Text+"'";
             string database = "Movie_ticket";
             DataSet pass = Databaseconnect(database, select);
             if(pass.Tables[0].Rows.Count>0)
@@ -243,7 +242,7 @@ namespace SmobilerAppTEST7._17
 
         private void button3_Press(object sender, EventArgs e)//我直接选座位
         {
-            this.Form.Show(new Seat_Form("是电影名称","是影院名称","周几","几月几号 00:00-00:00","票单价"));
+            //this.Form.Show(new Seat_Form("是电影名称","是影院名称","周几","几月几号 00:00-00:00","票单价"));
         }
     }
 }

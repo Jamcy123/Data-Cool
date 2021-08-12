@@ -53,6 +53,7 @@ namespace SmobilerAppTEST7._17
             this.buyBtn_Control1.Name = "buyBtn_Control1";
             this.buyBtn_Control1.Size = new System.Drawing.Size(300, 55);
             this.buyBtn_Control1.Sure_lbl_Text = "买票啦阿sir";
+            this.buyBtn_Control1.Sure_btn_press += new System.EventHandler(this.buyBtn_Control1_Sure_btn_press);
             // 
             // ticketMes_Control1
             // 

@@ -30,6 +30,7 @@ namespace SmobilerAppTEST7._17
             this.Mlanguage_lbl = new Smobiler.Core.Controls.Label();
             this.button1 = new Smobiler.Core.Controls.Button();
             this.getCno = new Smobiler.Core.Controls.Label();
+            this.label4 = new Smobiler.Core.Controls.Label();
             // 
             // panel1
             // 
@@ -46,7 +47,8 @@ namespace SmobilerAppTEST7._17
             this.label1,
             this.Mlanguage_lbl,
             this.button1,
-            this.getCno});
+            this.getCno,
+            this.label4});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(111, 312);
             this.panel1.Name = "panel1";
@@ -144,6 +146,13 @@ namespace SmobilerAppTEST7._17
             this.getCno.Text = "label4";
             this.getCno.Visible = false;
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(245, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 35);
+            this.label4.Text = "label4";
+            // 
             // DelControl
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -166,5 +175,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label Mlanguage_lbl;
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Label getCno;
+        private Smobiler.Core.Controls.Label label4;
     }
 }
