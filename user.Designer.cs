@@ -84,8 +84,8 @@ namespace SmobilerAppTEST7._17
             this.image1.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dashed;
             this.image1.Location = new System.Drawing.Point(15, 53);
             this.image1.Name = "image1";
-            this.image1.ResourceID = "wanzi";
             this.image1.Size = new System.Drawing.Size(80, 80);
+            this.image1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             // 
             // label1
             // 

@@ -83,5 +83,19 @@ namespace SmobilerAppTEST7._17
                 Databaseconnect(database, update);
             
         }
+
+        private void button2_Press(object sender, EventArgs e)
+        {
+            camera1.GetPhoto();
+        }
+
+        private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
+        {
+            e.SaveFile(Uno, MobileResourceManager.DefaultImagePath); //第二个参数为路径，图片保存在项目下\bin\Debug\Resources\Image下
+            image1.ResourceID = Uno;
+            string update = "Update Userinf set Uphoto='" + Uno + "' where Uphoneno=" + Uno;
+            string database = "Movie_ticket";
+            Databaseconnect(database, update);
+        }
     }
 }

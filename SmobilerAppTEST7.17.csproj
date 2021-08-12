@@ -171,6 +171,12 @@
     <Compile Include="cmTemplate.Designer.cs">
       <DependentUpon>cmTemplate.cs</DependentUpon>
     </Compile>
+    <Compile Include="DControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DControl.Designer.cs">
+      <DependentUpon>DControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DelControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -391,6 +397,9 @@
     <EmbeddedResource Include="cmTemplate.resx">
       <DependentUpon>cmTemplate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DControl.resx">
+      <DependentUpon>DControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DelControl.resx">
       <DependentUpon>DelControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -408,6 +417,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mcTemplate.resx">
       <DependentUpon>mcTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movieincrease.resx">
+      <DependentUpon>Movieincrease.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="movie_confirm.resx">
       <DependentUpon>movie_confirm.cs</DependentUpon>

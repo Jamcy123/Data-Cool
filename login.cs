@@ -118,7 +118,7 @@ namespace SmobilerAppTEST7._17
                         {
 
                             string a = txtUserName.Text;
-                            Movieincrease movieincrease = new Movieincrease(a);
+                            Movieincrease movieincrease = new Movieincrease();
                             this.Show(movieincrease);
                         }
                         else
@@ -212,18 +212,16 @@ namespace SmobilerAppTEST7._17
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked == false)
-                checkBox1.Checked = true;
-            else
-                checkBox1.Checked = false;
+            if (checkBox2.Checked == true)
+                checkBox2.Checked = false;
+           
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == false)
-                checkBox2.Checked = true;
-            else
-                checkBox2.Checked = false;
+            if (checkBox1.Checked == true)
+                checkBox1.Checked = false;
+
         }
 
         private void txtUserName_TouchLeave(object sender, EventArgs e)

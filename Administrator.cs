@@ -28,7 +28,7 @@ namespace SmobilerAppTEST7._17
         public void showmovie()
         {
             string database = "Movie_ticket";
-            string sql1 = "alter table Movie_ticket.Movie add column Cno varchar(10) default '"+ Cno +"';" +
+            string sql1 =
                 "select * from Movie_ticket.Movie " +
                 "where exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno='" + Cno + "');";
             string sql2 =
@@ -41,8 +41,6 @@ namespace SmobilerAppTEST7._17
             listView1.DataBind();
             listView2.DataSource = dataSet2;
             listView2.DataBind();
-            string sql= "alter table Movie_ticket.Movie drop column Cno";
-            Databaseconnect(database, sql);
 
         }
         public void showlabel(string a)
@@ -81,7 +79,7 @@ namespace SmobilerAppTEST7._17
                 switch (tabPageView1.PageIndex)
                 {
                     case 0://正在热映
-                        sql = "alter table Movie_ticket.Movie add column Cno varchar(10) default '"+ Cno +"'; " +
+                        sql = 
                         "select * from Movie_ticket.Movie " +
                         "where exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno='" + Cno + "') and  Mname like '%" + BoxText + "%'"; 
                         dataSet = Databaseconnect(database, sql);
@@ -89,22 +87,20 @@ namespace SmobilerAppTEST7._17
                         {
                             
                             listView1.DataSource = dataSet;
-                            listView1.DataBind();
-                            sql = "alter table Movie_ticket.Movie drop column Cno";
-                            Databaseconnect(database, sql);
+                            listView1.DataBind();                     
                             throw new Exception("此处暂无符合要求的电影");
                         }
                         else
                         {
                             listView1.DataSource = dataSet;
                             listView1.DataBind();
-                            sql = "alter table Movie_ticket.Movie drop column Cno";
-                            Databaseconnect(database, sql);
+                            
                         }
                         
                         break;
+
                     case 1://可上映
-                        sql = "alter table Movie_ticket.Movie add column Cno varchar(10) default '" + Cno + "'; " +
+                        sql = 
                         "select * from Movie_ticket.Movie" +
                         " where not exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno = '" + Cno + "') and Mname like '%" + BoxText + "%'";  
                         dataSet = Databaseconnect(database, sql);
@@ -113,16 +109,13 @@ namespace SmobilerAppTEST7._17
                         {
                             listView2.DataSource = dataSet;
                             listView2.DataBind();
-                            sql = "alter table Movie_ticket.Movie drop column Cno";
-                            Databaseconnect(database, sql);
                             throw new Exception("此处暂无符合要求的电影");
                         }
                         else
                         {
                             listView2.DataSource = dataSet;
                             listView2.DataBind();
-                            sql = "alter table Movie_ticket.Movie drop column Cno";
-                            Databaseconnect(database, sql);
+                           
                         }
                        
                         break;
@@ -176,9 +169,17 @@ namespace SmobilerAppTEST7._17
 
         }
 
+
+        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;
+        }
+
         private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
         {
-            ((Label)e.Row.Control.Controls.Find("label4")).Text = "跳转12";//button1文字改为跳转
+            ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;
+            
         }
+
     }
 }
