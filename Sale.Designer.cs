@@ -20,9 +20,9 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem13 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem14 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem15 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.listView1 = new Smobiler.Core.Controls.ListView();
@@ -32,28 +32,28 @@ namespace SmobilerAppTEST7._17
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
             this.toolBar1.BorderColor = System.Drawing.Color.White;
-            toolBarItem13.IconID = "film";
-            toolBarItem13.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem13.Name = "film";
-            toolBarItem13.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem13.SelectIconID = "film";
-            toolBarItem13.Text = "电影管理";
-            toolBarItem14.IconID = "calculator";
-            toolBarItem14.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem14.Name = "sale";
-            toolBarItem14.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem14.SelectIconID = "calculator";
-            toolBarItem14.Text = "销售情况";
-            toolBarItem15.IconID = "file-text-o";
-            toolBarItem15.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem15.Name = "cinema";
-            toolBarItem15.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem15.SelectIconID = "file-text-o";
-            toolBarItem15.Text = "影院信息";
+            toolBarItem1.IconID = "film";
+            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem1.Name = "film";
+            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconID = "film";
+            toolBarItem1.Text = "电影管理";
+            toolBarItem2.IconID = "calculator";
+            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem2.Name = "sale";
+            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconID = "calculator";
+            toolBarItem2.Text = "销售情况";
+            toolBarItem3.IconID = "file-text-o";
+            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem3.Name = "cinema";
+            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconID = "file-text-o";
+            toolBarItem3.Text = "影院信息";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem13,
-            toolBarItem14,
-            toolBarItem15});
+            toolBarItem1,
+            toolBarItem2,
+            toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(79, 480);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
@@ -77,6 +77,7 @@ namespace SmobilerAppTEST7._17
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.Size = new System.Drawing.Size(300, 300);
             this.listView1.TemplateControlName = "SaleControl";
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // searchBox_Control
             // 

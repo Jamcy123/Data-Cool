@@ -19,16 +19,25 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
+            this.getCno = new Smobiler.Core.Controls.Label();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.image1 = new Smobiler.Core.Controls.Image();
             this.Mname_lbl = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.Mgrade_lbl = new Smobiler.Core.Controls.Label();
-            this.Mtype_lbl = new Smobiler.Core.Controls.Label();
+            this.All_lbl = new Smobiler.Core.Controls.Label();
             this.label1 = new Smobiler.Core.Controls.Label();
-            this.Mlanguage_lbl = new Smobiler.Core.Controls.Label();
+            this.sale_lbl = new Smobiler.Core.Controls.Label();
             this.button1 = new Smobiler.Core.Controls.Button();
+            // 
+            // getCno
+            // 
+            this.getCno.Location = new System.Drawing.Point(106, 28);
+            this.getCno.Name = "getCno";
+            this.getCno.Size = new System.Drawing.Size(100, 35);
+            this.getCno.Text = "label1";
+            this.getCno.Visible = false;
             // 
             // panel1
             // 
@@ -41,9 +50,9 @@ namespace SmobilerAppTEST7._17
             this.label2,
             this.label3,
             this.Mgrade_lbl,
-            this.Mtype_lbl,
+            this.All_lbl,
             this.label1,
-            this.Mlanguage_lbl,
+            this.sale_lbl,
             this.button1});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(111, 312);
@@ -86,7 +95,7 @@ namespace SmobilerAppTEST7._17
             this.label3.Location = new System.Drawing.Point(94, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 17);
-            this.label3.Text = "电影类型";
+            this.label3.Text = "总票数";
             // 
             // Mgrade_lbl
             // 
@@ -98,13 +107,12 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl.Size = new System.Drawing.Size(50, 17);
             this.Mgrade_lbl.Text = "label4";
             // 
-            // Mtype_lbl
+            // All_lbl
             // 
-            this.Mtype_lbl.DisplayMember = "Mtype";
-            this.Mtype_lbl.Location = new System.Drawing.Point(166, 56);
-            this.Mtype_lbl.Name = "Mtype_lbl";
-            this.Mtype_lbl.Size = new System.Drawing.Size(76, 17);
-            this.Mtype_lbl.Text = "label5";
+            this.All_lbl.Location = new System.Drawing.Point(166, 56);
+            this.All_lbl.Name = "All_lbl";
+            this.All_lbl.Size = new System.Drawing.Size(76, 17);
+            this.All_lbl.Text = "label5";
             // 
             // label1
             // 
@@ -112,15 +120,15 @@ namespace SmobilerAppTEST7._17
             this.label1.Location = new System.Drawing.Point(94, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 17);
-            this.label1.Text = "电影语言";
+            this.label1.Text = "卖出票数";
             // 
-            // Mlanguage_lbl
+            // sale_lbl
             // 
-            this.Mlanguage_lbl.DisplayMember = "Mlanguage";
-            this.Mlanguage_lbl.Location = new System.Drawing.Point(166, 77);
-            this.Mlanguage_lbl.Name = "Mlanguage_lbl";
-            this.Mlanguage_lbl.Size = new System.Drawing.Size(76, 17);
-            this.Mlanguage_lbl.Text = "label5";
+            this.sale_lbl.DisplayMember = "Pamount";
+            this.sale_lbl.Location = new System.Drawing.Point(166, 77);
+            this.sale_lbl.Name = "sale_lbl";
+            this.sale_lbl.Size = new System.Drawing.Size(76, 17);
+            this.sale_lbl.Text = "label5";
             // 
             // button1
             // 
@@ -130,12 +138,13 @@ namespace SmobilerAppTEST7._17
             this.button1.Location = new System.Drawing.Point(242, 40);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 22);
-            this.button1.Text = "购票";
+            this.button1.Text = "详情";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
             // SaleControl
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.getCno,
             this.panel1});
             this.Size = new System.Drawing.Size(300, 100);
             this.Name = "SaleControl";
@@ -143,15 +152,16 @@ namespace SmobilerAppTEST7._17
         }
         #endregion
 
+        private Smobiler.Core.Controls.Label getCno;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Image image1;
         private Smobiler.Core.Controls.Label Mname_lbl;
         private Smobiler.Core.Controls.Label label2;
         private Smobiler.Core.Controls.Label label3;
         private Smobiler.Core.Controls.Label Mgrade_lbl;
-        private Smobiler.Core.Controls.Label Mtype_lbl;
+        private Smobiler.Core.Controls.Label All_lbl;
         private Smobiler.Core.Controls.Label label1;
-        private Smobiler.Core.Controls.Label Mlanguage_lbl;
+        private Smobiler.Core.Controls.Label sale_lbl;
         private Smobiler.Core.Controls.Button button1;
     }
 }

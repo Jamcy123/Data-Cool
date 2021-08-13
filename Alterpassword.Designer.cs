@@ -104,6 +104,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.Location = new System.Drawing.Point(93, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
@@ -130,7 +131,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Alterpassword
             // 
-            this.BackgroundImage = "background.png";
+            this.BackgroundImage = "background";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});

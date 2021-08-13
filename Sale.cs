@@ -53,14 +53,13 @@ namespace SmobilerAppTEST7._17
         public void showmovie()
         {
             string database = "Movie_ticket";
-            string sql1 = "alter table Movie_ticket.Movie add column Cno varchar(10) default '" + Cno + "';" +
+            string sql1 = 
                 "select * from Movie_ticket.Movie " +
                 "where exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno='" + Cno + "');";
             DataSet dataSet1 = Databaseconnect(database, sql1);   
             listView1.DataSource = dataSet1;
             listView1.DataBind();
-            string sql = "alter table Movie_ticket.Movie drop column Cno";
-            Databaseconnect(database, sql);
+ 
 
         }
         private void searchBox_Control1_SearchButtonPress(object sender, EventArgs e)
@@ -71,6 +70,11 @@ namespace SmobilerAppTEST7._17
         private void searchBox_Control1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;
         }
     }
 }

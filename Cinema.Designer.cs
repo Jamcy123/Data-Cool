@@ -20,9 +20,9 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem4 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem5 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem6 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.image1 = new Smobiler.Core.Controls.Image();
@@ -35,28 +35,28 @@ namespace SmobilerAppTEST7._17
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
             this.toolBar1.BorderColor = System.Drawing.Color.White;
-            toolBarItem4.IconID = "film";
-            toolBarItem4.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem4.Name = "film";
-            toolBarItem4.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem4.SelectIconID = "film";
-            toolBarItem4.Text = "电影管理";
-            toolBarItem5.IconID = "calculator";
-            toolBarItem5.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem5.Name = "sale";
-            toolBarItem5.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem5.SelectIconID = "calculator";
-            toolBarItem5.Text = "销售情况";
-            toolBarItem6.IconID = "file-text-o";
-            toolBarItem6.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem6.Name = "cinema";
-            toolBarItem6.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem6.SelectIconID = "file-text-o";
-            toolBarItem6.Text = "影院信息";
+            toolBarItem1.IconID = "film";
+            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem1.Name = "film";
+            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconID = "film";
+            toolBarItem1.Text = "电影管理";
+            toolBarItem2.IconID = "calculator";
+            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem2.Name = "sale";
+            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconID = "calculator";
+            toolBarItem2.Text = "销售情况";
+            toolBarItem3.IconID = "file-text-o";
+            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem3.Name = "cinema";
+            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconID = "file-text-o";
+            toolBarItem3.Text = "影院信息";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem4,
-            toolBarItem5,
-            toolBarItem6});
+            toolBarItem1,
+            toolBarItem2,
+            toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(79, 480);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
@@ -95,8 +95,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
-            this.button1.BorderColor = System.Drawing.Color.DarkGray;
-            this.button1.BorderRadius = 20;
+            this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.FontSize = 16F;
             this.button1.Location = new System.Drawing.Point(92, 394);
             this.button1.Name = "button1";
@@ -106,6 +105,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.FontSize = 16F;
             this.button2.Location = new System.Drawing.Point(92, 335);
             this.button2.Name = "button2";
@@ -123,7 +123,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Cinema
             // 
-            this.BackgroundImage = "background.png";
+            this.BackgroundImage = "background";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,

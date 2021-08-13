@@ -120,7 +120,6 @@ namespace SmobilerAppTEST7._17
             this.button3.Bold = true;
             this.button3.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.button3.FontSize = 18F;
-            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(89, 197);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(121, 35);
@@ -130,7 +129,9 @@ namespace SmobilerAppTEST7._17
             // label8
             // 
             this.label8.Bold = true;
+            this.label8.BorderColor = System.Drawing.Color.DimGray;
             this.label8.FontSize = 16F;
+            this.label8.ForeColor = System.Drawing.Color.DimGray;
             this.label8.Location = new System.Drawing.Point(12, 2);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 39);
@@ -139,7 +140,9 @@ namespace SmobilerAppTEST7._17
             // Mdetail
             // 
             this.Mdetail.Border = new Smobiler.Core.Controls.Border(1F);
+            this.Mdetail.BorderColor = System.Drawing.Color.DimGray;
             this.Mdetail.Location = new System.Drawing.Point(26, 41);
+            this.Mdetail.Multiline = true;
             this.Mdetail.Name = "Mdetail";
             this.Mdetail.Size = new System.Drawing.Size(251, 146);
             // 
@@ -173,6 +176,7 @@ namespace SmobilerAppTEST7._17
             // Mno
             // 
             this.Mno.Border = new Smobiler.Core.Controls.Border(1F);
+            this.Mno.BorderColor = System.Drawing.Color.DimGray;
             this.Mno.Location = new System.Drawing.Point(130, 7);
             this.Mno.Name = "Mno";
             this.Mno.Size = new System.Drawing.Size(140, 30);
@@ -181,6 +185,7 @@ namespace SmobilerAppTEST7._17
             // Mname
             // 
             this.Mname.Border = new Smobiler.Core.Controls.Border(1F);
+            this.Mname.BorderColor = System.Drawing.Color.DimGray;
             this.Mname.Location = new System.Drawing.Point(130, 45);
             this.Mname.Name = "Mname";
             this.Mname.Size = new System.Drawing.Size(140, 30);
@@ -189,6 +194,7 @@ namespace SmobilerAppTEST7._17
             // Mlanguage
             // 
             this.Mlanguage.Border = new Smobiler.Core.Controls.Border(1F);
+            this.Mlanguage.BorderColor = System.Drawing.Color.DimGray;
             this.Mlanguage.Location = new System.Drawing.Point(130, 83);
             this.Mlanguage.Name = "Mlanguage";
             this.Mlanguage.Size = new System.Drawing.Size(140, 30);
@@ -197,6 +203,7 @@ namespace SmobilerAppTEST7._17
             // Mtype
             // 
             this.Mtype.Border = new Smobiler.Core.Controls.Border(1F);
+            this.Mtype.BorderColor = System.Drawing.Color.DimGray;
             this.Mtype.Location = new System.Drawing.Point(130, 121);
             this.Mtype.Name = "Mtype";
             this.Mtype.Size = new System.Drawing.Size(140, 30);
@@ -205,6 +212,7 @@ namespace SmobilerAppTEST7._17
             // Mduration
             // 
             this.Mduration.Border = new Smobiler.Core.Controls.Border(1F);
+            this.Mduration.BorderColor = System.Drawing.Color.DimGray;
             this.Mduration.Location = new System.Drawing.Point(130, 159);
             this.Mduration.Name = "Mduration";
             this.Mduration.Size = new System.Drawing.Size(140, 30);
@@ -213,6 +221,7 @@ namespace SmobilerAppTEST7._17
             // Mgrade
             // 
             this.Mgrade.Border = new Smobiler.Core.Controls.Border(1F);
+            this.Mgrade.BorderColor = System.Drawing.Color.DimGray;
             this.Mgrade.Location = new System.Drawing.Point(130, 197);
             this.Mgrade.Name = "Mgrade";
             this.Mgrade.Size = new System.Drawing.Size(140, 30);
@@ -220,6 +229,8 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FontSize = 16F;
             this.button1.Location = new System.Drawing.Point(13, 159);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);

@@ -128,6 +128,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(10)))), ((int)(((byte)(50)))));
             this.button1.FontSize = 15F;
             this.button1.Location = new System.Drawing.Point(79, 433);
             this.button1.Name = "button1";
@@ -149,7 +150,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Myblance
             // 
-            this.BackgroundImage = "background.png";
+            this.BackgroundImage = "background";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1,
