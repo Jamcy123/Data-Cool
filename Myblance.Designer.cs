@@ -149,7 +149,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Myblance
             // 
-            this.BackgroundImage = "bluee";
+            this.BackgroundImage = "background.png";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1,

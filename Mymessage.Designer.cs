@@ -253,7 +253,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mymessage
             // 
-            this.BackgroundImage = "bluee";
+            this.BackgroundImage = "background.png";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
             this.camera1});

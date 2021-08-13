@@ -28,8 +28,8 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
             this.listView1 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
-            this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView2 = new Smobiler.Core.Controls.ListView();
+            this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
             // 
             // panel1
@@ -71,13 +71,19 @@ namespace SmobilerAppTEST7._17
             // 
             // tabPageView1
             // 
+            this.tabPageView1.BorderStyle = Smobiler.Core.Controls.BorderStyle.Dotted;
             this.tabPageView1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.tabPageControl1,
             this.tabPageControl2,
             this.tabPageControl3});
             this.tabPageView1.Location = new System.Drawing.Point(0, 125);
             this.tabPageView1.Name = "tabPageView1";
+            this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
             this.tabPageView1.Size = new System.Drawing.Size(300, 352);
+            this.tabPageView1.Titles = new string[] {
+        "1",
+        "2",
+        "3"};
             // 
             // tabPageControl1
             // 
@@ -99,12 +105,6 @@ namespace SmobilerAppTEST7._17
             this.listView2});
             this.tabPageControl2.Name = "tabPageControl2";
             // 
-            // tabPageControl3
-            // 
-            this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView3});
-            this.tabPageControl3.Name = "tabPageControl3";
-            // 
             // listView2
             // 
             this.listView2.Location = new System.Drawing.Point(0, 20);
@@ -112,6 +112,12 @@ namespace SmobilerAppTEST7._17
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView2.Size = new System.Drawing.Size(300, 300);
             this.listView2.TemplateControlName = "ccTemplate";
+            // 
+            // tabPageControl3
+            // 
+            this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.listView3});
+            this.tabPageControl3.Name = "tabPageControl3";
             // 
             // listView3
             // 

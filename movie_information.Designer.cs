@@ -183,7 +183,6 @@ namespace SmobilerAppTEST7._17
             this.button3.Bold = true;
             this.button3.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.button3.FontSize = 18F;
-            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(86, 216);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(121, 35);

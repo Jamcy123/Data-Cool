@@ -66,6 +66,7 @@ namespace SmobilerAppTEST7._17
             this.image1.BorderRadius = 50;
             this.image1.Location = new System.Drawing.Point(104, 48);
             this.image1.Name = "image1";
+            this.image1.ResourceID = "yingtao";
             this.image1.Size = new System.Drawing.Size(100, 100);
             this.image1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             // 
@@ -180,6 +181,7 @@ namespace SmobilerAppTEST7._17
             // 
             // checkBox1
             // 
+            this.checkBox1.Checked = true;
             this.checkBox1.Location = new System.Drawing.Point(113, 408);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(22, 22);
@@ -202,7 +204,7 @@ namespace SmobilerAppTEST7._17
             // 
             // SmobilerForm1
             // 
-            this.BackgroundImage = "bluee.png";
+            this.BackgroundImage = "background.png";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
