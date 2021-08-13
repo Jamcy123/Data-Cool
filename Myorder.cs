@@ -34,7 +34,7 @@ namespace SmobilerAppTEST7._17
         {
             string select = "SELECT * FROM Movie_ticket.myorder where Uphoneno=" +Uno;
             string database = "Movie_ticket";
-            DataSet dataSet = Databaseconnect(database, select);;
+            DataSet dataSet = Databaseconnect(database, select);
             if (dataSet.Tables[0].Rows.Count <= 0)
             {
                 label1.Visible = true;

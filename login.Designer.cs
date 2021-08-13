@@ -66,6 +66,7 @@ namespace SmobilerAppTEST7._17
             this.image1.BorderRadius = 50;
             this.image1.Location = new System.Drawing.Point(104, 61);
             this.image1.Name = "image1";
+            this.image1.ResourceID = "yingtao.png";
             this.image1.Size = new System.Drawing.Size(100, 100);
             this.image1.SizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             // 
