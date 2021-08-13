@@ -50,9 +50,10 @@ namespace SmobilerAppTEST7._17
             Cname_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[2].ToString();
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
-            string select2 = "SELECT DISTINCT projection.Mno,projection.Cno,projection.Ptime,projection.Phall,ticket.Pprice,movie.Mtype,movie.Mduration " +
-                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket " +
-                "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' and projection.Mno = movie.Mno and projection.Cno = ticket.Cno and projection.Mno = ticket.Mno;";
+            string select2 = "SELECT DISTINCT projection.*,ticket.Pprice,movie.*,cinema.Cname " +
+                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
+                "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Cno = ticket.Cno and projection.Mno = ticket.Mno;";
 
             DataSet dataSet2 = Databaseconnect(database, select2);
 
