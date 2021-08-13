@@ -50,7 +50,7 @@ namespace SmobilerAppTEST7._17
             Cname_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[2].ToString();
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
-            string select2 = "SELECT DISTINCT projection.Ptime,projection.Phall,ticket.Pprice,movie.Mtype,movie.Mduration " +
+            string select2 = "SELECT DISTINCT projection.Mno,projection.Cno,projection.Ptime,projection.Phall,ticket.Pprice,movie.Mtype,movie.Mduration " +
                 "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' and projection.Mno = movie.Mno and projection.Cno = ticket.Cno and projection.Mno = ticket.Mno;";
 
@@ -69,7 +69,7 @@ namespace SmobilerAppTEST7._17
                 listView3.DataBind();
             }
 
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(30).ToShortDateString().ToString(), DateTime.Now.AddDays(59).ToShortDateString().ToString() };
+            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
             tabPageView1.Titles = a;
 
         }

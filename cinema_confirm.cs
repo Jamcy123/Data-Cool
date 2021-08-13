@@ -49,17 +49,18 @@ namespace SmobilerAppTEST7._17
             listView1.Rows.Clear();     //清除数据
             if (table.Rows.Count > 0)    //绑定数据源
             {
-                listView1.DataSource = table;
+                listView1.DataSource = dataSet;
                 listView1.DataBind();
-                listView2.DataSource = table;
+                listView2.DataSource = dataSet;
                 listView2.DataBind();
-                listView3.DataSource = table;
+                listView3.DataSource = dataSet;
                 listView3.DataBind();
             }
 
             string[] cinema_time = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
             tabPageView1.Titles = cinema_time;
 
+            Cno_lbl.Text = cinema_no;
         }
     }
 }
