@@ -43,7 +43,7 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
-            string select1 = "SELECT cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Ptime " +
+            string select1 = "SELECT cinema.Cno,cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Mno,projection.Ptime " +
                 "FROM movie_ticket.project,movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
                 "where project.Mno like '" + movie_no + "' and project.Cno like cinema.Cno and project.Cno like ticket.Cno and project.Mno like ticket.Mno and projection.Cno like project.Cno and projection.Mno like project.Mno;";
 

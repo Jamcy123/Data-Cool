@@ -50,7 +50,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.Ptime_lbl.Bold = true;
             this.Ptime_lbl.DisplayMember = "Ptime";
-            this.Ptime_lbl.FontSize = 18F;
+            this.Ptime_lbl.FontSize = 16F;
             this.Ptime_lbl.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.Ptime_lbl.Name = "Ptime_lbl";
             this.Ptime_lbl.Size = new System.Drawing.Size(84, 30);
@@ -103,11 +103,11 @@ namespace SmobilerAppTEST7._17
             // 
             this.Pprice_lbl.Bold = true;
             this.Pprice_lbl.DisplayMember = "Pprice";
-            this.Pprice_lbl.FontSize = 18F;
+            this.Pprice_lbl.FontSize = 16F;
             this.Pprice_lbl.ForeColor = System.Drawing.Color.Red;
             this.Pprice_lbl.Location = new System.Drawing.Point(207, 7);
             this.Pprice_lbl.Name = "Pprice_lbl";
-            this.Pprice_lbl.Size = new System.Drawing.Size(30, 30);
+            this.Pprice_lbl.Size = new System.Drawing.Size(43, 30);
             this.Pprice_lbl.Text = "label3";
             // 
             // button1
@@ -117,7 +117,7 @@ namespace SmobilerAppTEST7._17
             this.button1.BorderColor = System.Drawing.Color.Gold;
             this.button1.FontSize = 18F;
             this.button1.ForeColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(244, 7);
+            this.button1.Location = new System.Drawing.Point(250, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 30);
             this.button1.Text = "购票";

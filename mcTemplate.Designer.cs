@@ -55,6 +55,7 @@ namespace SmobilerAppTEST7._17
             // Cname_lbl
             // 
             this.Cname_lbl.Bold = true;
+            this.Cname_lbl.DataMember = "Cno";
             this.Cname_lbl.DisplayMember = "Cname";
             this.Cname_lbl.FontSize = 16F;
             this.Cname_lbl.Location = new System.Drawing.Point(10, 0);
@@ -64,6 +65,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Ptime_lbl
             // 
+            this.Ptime_lbl.DataMember = "Mno";
             this.Ptime_lbl.DisplayMember = "Ptime";
             this.Ptime_lbl.Location = new System.Drawing.Point(46, 48);
             this.Ptime_lbl.Name = "Ptime_lbl";

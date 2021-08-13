@@ -11,10 +11,12 @@ namespace SmobilerAppTEST7._17
 {
     partial class cinema_confirm : Smobiler.Core.Controls.MobileForm
     {
-        public cinema_confirm() : base()
+        string cinema_no;
+        public cinema_confirm(string b) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
+            cinema_no = b;
         }
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
@@ -35,13 +37,13 @@ namespace SmobilerAppTEST7._17
 
             string database = "movie_ticket";
 
-            string select1 = "SELECT * FROM movie_ticket.cinema where Cno like '001';";
+            string select1 = "SELECT * FROM movie_ticket.cinema where Cno like '" + cinema_no + "';";
             DataSet dataSet1 = Databaseconnect(database, select1);
             Cname_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[2].ToString();
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
 
-            string select = "SELECT movie.* FROM movie_ticket.project,movie_ticket.movie where project.Cno like '001' and project.Mno = movie.Mno;";
+            string select = "SELECT movie.* FROM movie_ticket.project,movie_ticket.movie where project.Cno like '" + cinema_no + "' and project.Mno = movie.Mno;";
             DataSet dataSet = Databaseconnect(database, select);
 
 

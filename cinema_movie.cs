@@ -11,10 +11,14 @@ namespace SmobilerAppTEST7._17
 {
     partial class cinema_movie : Smobiler.Core.Controls.MobileForm
     {
-        public cinema_movie() : base()
+        string movie_no;
+        string cinema_no;
+        public cinema_movie(string a , string b) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
+            movie_no = a;
+            cinema_no = b;
         }
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
@@ -32,7 +36,7 @@ namespace SmobilerAppTEST7._17
         {
             string database = "movie_ticket";
 
-            string select = "SELECT * FROM movie_ticket.movie where Mno = 1;";
+            string select = "SELECT * FROM movie_ticket.movie where Mno like '" + movie_no +"';";
             DataSet dataSet = Databaseconnect(database, select);
             Mname_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[1].ToString();
             Mlanguage_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[2].ToString();
@@ -41,12 +45,14 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
-            string select1 = "SELECT * FROM movie_ticket.cinema where Cno like '001';";
+            string select1 = "SELECT * FROM movie_ticket.cinema where Cno like '" + cinema_no + "';";
             DataSet dataSet1 = Databaseconnect(database, select1);
             Cname_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[2].ToString();
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
-            string select2 = "SELECT projection.Ptime,projection.Phall,ticket.Pprice,movie.Mtype,movie.Mduration FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket where projection.Mno = 1 and projection.Cno like '001' and projection.Mno = movie.Mno and projection.Cno = ticket.Cno and projection.Mno = ticket.Mno;";
+            string select2 = "SELECT projection.Ptime,projection.Phall,ticket.Pprice,movie.Mtype,movie.Mduration " +
+                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' and projection.Mno = movie.Mno and projection.Cno = ticket.Cno and projection.Mno = ticket.Mno;";
 
             DataSet dataSet2 = Databaseconnect(database, select2);
 
