@@ -19,21 +19,10 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.buyBtn_Control1 = new SmobilerAppTEST7._17.BuyBtn_Control();
             this.ticketMes_Control1 = new SmobilerAppTEST7._17.TicketMes_Control();
-            // 
-            // title_Control1
-            // 
-            this.title_Control1.BackColor = System.Drawing.Color.Gray;
-            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
-            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.title_Control1.Location = new System.Drawing.Point(40, 76);
-            this.title_Control1.Name = "title_Control1";
-            this.title_Control1.Size = new System.Drawing.Size(100, 36);
-            this.title_Control1.Text = "标题";
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // panel1
             // 
@@ -61,6 +50,17 @@ namespace SmobilerAppTEST7._17
             this.ticketMes_Control1.Location = new System.Drawing.Point(118, 278);
             this.ticketMes_Control1.Name = "ticketMes_Control1";
             this.ticketMes_Control1.Size = new System.Drawing.Size(300, 184);
+            // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Location = new System.Drawing.Point(40, 76);
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(100, 36);
+            this.title_Control1.Text = "标题";
             // 
             // Seat_Form
             // 
