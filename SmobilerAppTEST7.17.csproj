@@ -153,12 +153,6 @@
     <Compile Include="Cinema_Control.Designer.cs">
       <DependentUpon>Cinema_Control.cs</DependentUpon>
     </Compile>
-    <Compile Include="cinema_known.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="cinema_known.Designer.cs">
-      <DependentUpon>cinema_known.cs</DependentUpon>
-    </Compile>
     <Compile Include="cinema_movie.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -405,9 +399,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cinema_Control.resx">
       <DependentUpon>Cinema_Control.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cinema_known.resx">
-      <DependentUpon>cinema_known.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cinema_movie.resx">
       <DependentUpon>cinema_movie.cs</DependentUpon>

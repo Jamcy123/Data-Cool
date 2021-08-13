@@ -11,7 +11,7 @@ namespace SmobilerAppTEST7._17
 {
     partial class cinema_confirm : Smobiler.Core.Controls.MobileForm
     {
-        string cinema_no;
+        string cinema_no;//当前页面影院编号
         public cinema_confirm(string b) : base()
         {
             //This call is required by the SmobilerForm.
@@ -40,7 +40,7 @@ namespace SmobilerAppTEST7._17
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
 
-            string select = "SELECT movie.* FROM movie_ticket.project,movie_ticket.movie where project.Cno like '" + cinema_no + "' and project.Mno like movie.Mno;";
+            string select = "SELECT DISTINCT movie.* FROM movie_ticket.projection,movie_ticket.movie where projection.Cno like '" + cinema_no + "' and projection.Mno like movie.Mno;";
             DataSet dataSet = Databaseconnect(database, select);
 
 

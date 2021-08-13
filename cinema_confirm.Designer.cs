@@ -23,7 +23,6 @@ namespace SmobilerAppTEST7._17
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.Cname_lbl = new Smobiler.Core.Controls.Label();
             this.Caddress_lbl = new Smobiler.Core.Controls.Label();
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
             this.listView1 = new Smobiler.Core.Controls.ListView();
@@ -31,6 +30,7 @@ namespace SmobilerAppTEST7._17
             this.listView2 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // panel1
             // 
@@ -60,16 +60,6 @@ namespace SmobilerAppTEST7._17
             this.Caddress_lbl.Size = new System.Drawing.Size(280, 35);
             this.Caddress_lbl.Text = "label1";
             // 
-            // title_Control1
-            // 
-            this.title_Control1.BackColor = System.Drawing.Color.Gray;
-            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
-            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.title_Control1.Name = "title_Control1";
-            this.title_Control1.Size = new System.Drawing.Size(356, 36);
-            this.title_Control1.Text = "特惠购票";
-            // 
             // tabPageView1
             // 
             this.tabPageView1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -78,7 +68,12 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl3});
             this.tabPageView1.Location = new System.Drawing.Point(0, 125);
             this.tabPageView1.Name = "tabPageView1";
+            this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
             this.tabPageView1.Size = new System.Drawing.Size(300, 352);
+            this.tabPageView1.Titles = new string[] {
+        "",
+        "",
+        ""};
             this.tabPageView1.TitleStyle = new Smobiler.Core.Controls.TabPageViewTitleStyle(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129))))), System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(140)))), ((int)(((byte)(255))))), 13F, System.Drawing.Color.LightGray, 2);
             // 
             // tabPageControl1
@@ -122,6 +117,16 @@ namespace SmobilerAppTEST7._17
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView3.Size = new System.Drawing.Size(300, 300);
             this.listView3.TemplateControlName = "ccTemplate";
+            // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(356, 36);
+            this.title_Control1.Text = "特惠购票";
             // 
             // cinema_confirm
             // 
