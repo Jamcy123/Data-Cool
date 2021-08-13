@@ -74,6 +74,7 @@ namespace SmobilerAppTEST7._17
             // Mtype_lbl
             // 
             this.Mtype_lbl.Bold = true;
+            this.Mtype_lbl.DataMember = "Mno";
             this.Mtype_lbl.DisplayMember = "Mtype";
             this.Mtype_lbl.FontSize = 16F;
             this.Mtype_lbl.Location = new System.Drawing.Point(101, 0);
@@ -83,6 +84,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Phall_lbl
             // 
+            this.Phall_lbl.DataMember = "Cno";
             this.Phall_lbl.DisplayMember = "Phall";
             this.Phall_lbl.Location = new System.Drawing.Point(101, 30);
             this.Phall_lbl.Name = "Phall_lbl";
