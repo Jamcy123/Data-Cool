@@ -143,6 +143,7 @@ namespace SmobilerAppTEST7._17
             this.Cno_lbl.Name = "Cno_lbl";
             this.Cno_lbl.Size = new System.Drawing.Size(40, 20);
             this.Cno_lbl.Text = "label4";
+            this.Cno_lbl.Visible = false;
             // 
             // Mno_lbl
             // 
@@ -151,6 +152,7 @@ namespace SmobilerAppTEST7._17
             this.Mno_lbl.Name = "Mno_lbl";
             this.Mno_lbl.Size = new System.Drawing.Size(40, 15);
             this.Mno_lbl.Text = "label4";
+            this.Mno_lbl.Visible = false;
             // 
             // ccTemplate
             // 

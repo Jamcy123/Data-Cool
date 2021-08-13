@@ -135,6 +135,7 @@ namespace SmobilerAppTEST7._17
             this.Cno_lbl.Name = "Cno_lbl";
             this.Cno_lbl.Size = new System.Drawing.Size(100, 35);
             this.Cno_lbl.Text = "label1";
+            this.Cno_lbl.Visible = false;
             // 
             // cinema_confirm
             // 
