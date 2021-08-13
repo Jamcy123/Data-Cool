@@ -32,9 +32,6 @@ namespace SmobilerAppTEST7._17
 
         private void cinema_confirm_Load(object sender, EventArgs e)
         {
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(30).ToShortDateString().ToString(), DateTime.Now.AddDays(59).ToShortDateString().ToString() };
-            tabPageView1.Titles = a;
-
             string database = "movie_ticket";
 
             string select1 = "SELECT * FROM movie_ticket.cinema where Cno like '" + cinema_no + "';";
@@ -43,7 +40,7 @@ namespace SmobilerAppTEST7._17
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
 
-            string select = "SELECT movie.* FROM movie_ticket.project,movie_ticket.movie where project.Cno like '" + cinema_no + "' and project.Mno = movie.Mno;";
+            string select = "SELECT movie.* FROM movie_ticket.project,movie_ticket.movie where project.Cno like '" + cinema_no + "' and project.Mno like movie.Mno;";
             DataSet dataSet = Databaseconnect(database, select);
 
 
@@ -54,7 +51,15 @@ namespace SmobilerAppTEST7._17
             {
                 listView1.DataSource = table;
                 listView1.DataBind();
+                listView2.DataSource = table;
+                listView2.DataBind();
+                listView3.DataSource = table;
+                listView3.DataBind();
             }
+
+            string[] cinema_time = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
+            tabPageView1.Titles = cinema_time;
+
         }
     }
 }

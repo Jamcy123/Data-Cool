@@ -62,7 +62,7 @@ namespace SmobilerAppTEST7._17
                 listView3.DataBind();
             }
 
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(30).ToShortDateString().ToString(), DateTime.Now.AddDays(59).ToShortDateString().ToString() };
+            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
             tabPageView1.Titles = a;
         }
 
