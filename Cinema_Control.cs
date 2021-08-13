@@ -19,7 +19,10 @@ namespace SmobilerAppTEST7._17
 
         private void panel1_Press(object sender, EventArgs e)
         {
-            MessageBox.Show("影院编号为"+Cname_lbl.BindDataValue);
+            //MessageBox.Show("影院编号为"+Cname_lbl.BindDataValue);
+            string b = Cname_lbl.BindDataValue.ToString();
+            cinema_confirm cinema_Confirm = new cinema_confirm(b);
+            this.Form.Show(cinema_Confirm);
         }
     }
 }

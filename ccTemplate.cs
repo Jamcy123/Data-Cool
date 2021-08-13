@@ -47,8 +47,8 @@ namespace SmobilerAppTEST7._17
 
         private void goupiao_button_Press(object sender, EventArgs e)
         {
-            cinema_movie cinema_Movie = new cinema_movie();
-            this.Form.Show(cinema_Movie);
+            //cinema_movie cinema_Movie = new cinema_movie();
+            //this.Form.Show(cinema_Movie);
         }
     }
 }
