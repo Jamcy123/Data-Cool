@@ -209,6 +209,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(10)))), ((int)(((byte)(50)))));
             this.button1.FontSize = 16F;
             this.button1.Location = new System.Drawing.Point(69, 449);
             this.button1.Name = "button1";
@@ -244,6 +245,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(10)))), ((int)(((byte)(50)))));
             this.button2.FontSize = 16F;
             this.button2.Location = new System.Drawing.Point(69, 401);
             this.button2.Name = "button2";
@@ -253,7 +255,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mymessage
             // 
-            this.BackgroundImage = "bluee";
+            this.BackgroundImage = "background";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
             this.camera1});

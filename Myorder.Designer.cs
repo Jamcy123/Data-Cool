@@ -57,7 +57,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Myorder
             // 
-            this.BackgroundImage = "bluee";
+            this.BackgroundImage = "background";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.listView1,

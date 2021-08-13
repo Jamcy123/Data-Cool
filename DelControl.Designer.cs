@@ -30,6 +30,7 @@ namespace SmobilerAppTEST7._17
             this.label4 = new Smobiler.Core.Controls.Label();
             this.Mlanguage_lbl = new Smobiler.Core.Controls.Label();
             this.button1 = new Smobiler.Core.Controls.Button();
+            this.button2 = new Smobiler.Core.Controls.Button();
             // 
             // getCno
             // 
@@ -53,7 +54,8 @@ namespace SmobilerAppTEST7._17
             this.Mtype_lbl,
             this.label4,
             this.Mlanguage_lbl,
-            this.button1});
+            this.button1,
+            this.button2});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(111, 312);
             this.panel1.Name = "panel1";
@@ -136,11 +138,22 @@ namespace SmobilerAppTEST7._17
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.BorderRadius = 15;
             this.button1.FontSize = 15F;
-            this.button1.Location = new System.Drawing.Point(244, 41);
+            this.button1.Location = new System.Drawing.Point(251, 19);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 22);
+            this.button1.Size = new System.Drawing.Size(49, 23);
             this.button1.Text = "下映";
             this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.OrangeRed;
+            this.button2.BorderRadius = 15;
+            this.button2.FontSize = 15F;
+            this.button2.Location = new System.Drawing.Point(251, 61);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 22);
+            this.button2.Text = "排片";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
             // DelControl
             // 
@@ -165,5 +178,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.Label Mlanguage_lbl;
         private Smobiler.Core.Controls.Button button1;
+        private Smobiler.Core.Controls.Button button2;
     }
 }

@@ -94,6 +94,25 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             string insert = "insert into Movie values ('" + Mno.Text + "','" + Mname.Text + "','" + Mlanguage.Text + "','" + Mtype.Text + "','" + name + "','" + Mduration.Text + "','" + Mdetail.Text + "','" + Mgrade.Text + "')";
             Databaseconnect(database, insert);
+            string select = "select* from Movie where Mno='" + Mno.Text + "'";
+            DataSet dataSet = Databaseconnect(database, select);
+            if(dataSet.Tables[0].Rows.Count <= 0)
+            {
+                Toast("添加电影失败！请重新添加");
+
+            }
+            else
+            {
+                Toast("添加电影成功！");
+                Mno.Text = "";
+                Mname.Text = "";
+                Mlanguage.Text = "";
+                Mtype.Text = "";
+                image1.ResourceID = "";
+                Mduration.Text = "";
+                Mdetail.Text = "";
+                Mgrade.Text = "";
+            }
         }
 
         private void button1_Press(object sender, EventArgs e)
@@ -103,7 +122,7 @@ namespace SmobilerAppTEST7._17
 
         private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
         {
-            name = DateTime.UtcNow.ToString();
+            name = DateTime.UtcNow.ToString().Replace("/", "").Replace(":","");
             e.SaveFile(name, MobileResourceManager.DefaultImagePath); //第二个参数为路径，图片保存在项目下\bin\Debug\Resources\Image下
             image1.ResourceID = name;
 

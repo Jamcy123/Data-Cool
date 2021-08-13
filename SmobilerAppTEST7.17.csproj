@@ -117,6 +117,12 @@
     <Compile Include="Alterpassword.Designer.cs">
       <DependentUpon>Alterpassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Arrange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Arrange.Designer.cs">
+      <DependentUpon>Arrange.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuyBtn_Control.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -369,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alterpassword.resx">
       <DependentUpon>Alterpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arrange.resx">
+      <DependentUpon>Arrange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuyBtn_Control.resx">
       <DependentUpon>BuyBtn_Control.cs</DependentUpon>
