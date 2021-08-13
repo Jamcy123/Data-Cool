@@ -195,8 +195,6 @@ namespace SmobilerAppTEST7._17
                         //购买成功 同步数据库
                     }
                 }
-
-
             }
             catch (Exception ex)
             {
