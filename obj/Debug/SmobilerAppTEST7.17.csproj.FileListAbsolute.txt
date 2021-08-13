@@ -281,8 +281,5 @@ D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Seat_Form.resources
 D:\github\XYZ\Data-Cool\obj\Debug\SmobilerAppTEST7._17.TicketMes_Control.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.DControl.resources
 C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Movieincrease.resources
-C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7.17.csproj.AssemblyReference.cache
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Arrange.resources
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.DControl.resources
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Movieincrease.resources
-D:\SombilerDesigner\Data-Cool-master\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Session.resources
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Arrange.resources
+C:\Users\Patrick\Desktop\数据库课设\Data-Cool\obj\Debug\SmobilerAppTEST7._17.Session.resources

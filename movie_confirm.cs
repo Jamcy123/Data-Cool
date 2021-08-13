@@ -43,9 +43,9 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
-            string select1 = "SELECT cinema.Cno,cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Mno,projection.Ptime " +
-                "FROM movie_ticket.project,movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
-                "where project.Mno like '" + movie_no + "' and project.Cno like cinema.Cno and project.Cno like ticket.Cno and project.Mno like ticket.Mno and projection.Cno like project.Cno and projection.Mno like project.Mno;";
+            string select1 = "SELECT DISTINCT cinema.Cno,cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Mno,projection.Ptime " +
+                "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Cno like ticket.Cno and projection.Mno like ticket.Mno;";
 
             DataSet dataSet1 = Databaseconnect(database, select1);
             
@@ -62,7 +62,7 @@ namespace SmobilerAppTEST7._17
                 listView3.DataBind();
             }
 
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(30).ToShortDateString().ToString(), DateTime.Now.AddDays(59).ToShortDateString().ToString() };
+            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
             tabPageView1.Titles = a;
         }
 
