@@ -55,5 +55,18 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = Mgrade_lbl.Text + "分";
 
         }
+
+        private void button2_Press(object sender, EventArgs e)
+        {
+            string Cno = getCno.Text;
+            string database = "Movie_ticket";
+            string Mname = Mname_lbl.Text;
+            string select = "select Mno from Movie where Mname ='" + Mname + "'";
+            DataSet getMno = Databaseconnect(database, select);
+            string Mno = getMno.Tables[0].Rows[0][0].ToString();
+            Arrange arrange = new Arrange(Cno,Mno);
+            this.Form.Show(arrange);
+
+        }
     }
 }

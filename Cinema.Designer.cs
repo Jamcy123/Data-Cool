@@ -95,6 +95,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.FontSize = 16F;
             this.button1.Location = new System.Drawing.Point(92, 394);
             this.button1.Name = "button1";
@@ -104,6 +105,7 @@ namespace SmobilerAppTEST7._17
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.FontSize = 16F;
             this.button2.Location = new System.Drawing.Point(92, 335);
             this.button2.Name = "button2";
@@ -121,7 +123,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Cinema
             // 
-            this.BackgroundImage = "bluee";
+            this.BackgroundImage = "background";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
