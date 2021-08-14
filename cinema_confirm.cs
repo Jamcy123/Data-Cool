@@ -62,5 +62,10 @@ namespace SmobilerAppTEST7._17
 
             Cno_lbl.Text = cinema_no;
         }
+
+        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+
+        }
     }
 }
