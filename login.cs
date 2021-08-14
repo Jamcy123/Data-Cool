@@ -257,10 +257,6 @@ namespace SmobilerAppTEST7._17
             //string aaa = "";
             this.Client.Session.Add("aaa", "123");
             Toast(this.Client.Session[0].ToString());
-            //aaa=this.Client.Session.Keys[0];
-            //this.Client.Session[0].ToString();
-            //Toast(this.Client.Session[0].ToString());
-            //Toast(this.Client.Session.Keys.Count.ToString());
         }
     }
 }
