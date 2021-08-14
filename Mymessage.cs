@@ -40,7 +40,6 @@ namespace SmobilerAppTEST7._17
             four = textBox4.Text;
             datePicker1.BindDisplayValue = showlabel("Ubirth", Uno);
             //five = (string)datePicker1.BindDisplayValue;
-
         }
 
         public string showlabel(string b, string a)
@@ -49,7 +48,6 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             DataSet name = Databaseconnect(database, txt2);
             return name.Tables[0].Rows[0][0].ToString();
-
         }
 
         private void button1_Press(object sender, EventArgs e)
@@ -66,7 +64,6 @@ namespace SmobilerAppTEST7._17
                 string database = "Movie_ticket";
                 Databaseconnect(database, update);
             }
-
         }
 
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
@@ -76,12 +73,9 @@ namespace SmobilerAppTEST7._17
 
         private void datePicker1_ValueChanged(object sender, EventArgs e)
         {
-        
-
                 string update = "Update Userinf set Ubirth='" + datePicker1.BindDisplayValue + "' where Uphoneno=" + Uno;
                 string database = "Movie_ticket";
-                Databaseconnect(database, update);
-            
+                Databaseconnect(database, update);          
         }
 
         private void button2_Press(object sender, EventArgs e)
@@ -91,11 +85,20 @@ namespace SmobilerAppTEST7._17
 
         private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
         {
-            e.SaveFile(Uno, MobileResourceManager.DefaultImagePath); //第二个参数为路径，图片保存在项目下\bin\Debug\Resources\Image下
+            if (e != null)
+            {
+
+                e.SaveFile(Uno, MobileResourceManager.DefaultImagePath); //第二个参数为路径，图片保存在项目下\bin\Debug\Resources\Image下
+                image1.ResourceID = Uno;
+                string update = "Update Userinf set Uphoto='" + Uno + "' where Uphoneno=" + Uno;
+                string database = "Movie_ticket";
+                Databaseconnect(database, update);
+            }
+        }
+
+        private void Mymessage_Load(object sender, EventArgs e)
+        {
             image1.ResourceID = Uno;
-            string update = "Update Userinf set Uphoto='" + Uno + "' where Uphoneno=" + Uno;
-            string database = "Movie_ticket";
-            Databaseconnect(database, update);
         }
     }
 }

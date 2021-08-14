@@ -19,6 +19,7 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
+            this.label1 = new Smobiler.Core.Controls.Label();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.Mpicadress_image = new Smobiler.Core.Controls.Image();
             this.Mname_lbl = new Smobiler.Core.Controls.Label();
@@ -26,11 +27,18 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl = new Smobiler.Core.Controls.Label();
             this.label3 = new Smobiler.Core.Controls.Label();
             this.Mtype_lbl = new Smobiler.Core.Controls.Label();
-            this.label1 = new Smobiler.Core.Controls.Label();
+            this.label4 = new Smobiler.Core.Controls.Label();
             this.Mlanguage_lbl = new Smobiler.Core.Controls.Label();
             this.goupiao_button = new Smobiler.Core.Controls.Button();
             this.Cno_lbl = new Smobiler.Core.Controls.Label();
             this.Mno_lbl = new Smobiler.Core.Controls.Label();
+            // 
+            // label1
+            // 
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 35);
+            this.label1.Text = "label1";
+            this.label1.Visible = false;
             // 
             // panel1
             // 
@@ -44,7 +52,7 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl,
             this.label3,
             this.Mtype_lbl,
-            this.label1,
+            this.label4,
             this.Mlanguage_lbl,
             this.goupiao_button,
             this.Cno_lbl,
@@ -108,13 +116,13 @@ namespace SmobilerAppTEST7._17
             this.Mtype_lbl.Size = new System.Drawing.Size(60, 15);
             this.Mtype_lbl.Text = "label5";
             // 
-            // label1
+            // label4
             // 
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(132, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 17);
-            this.label1.Text = "电影语言";
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(132, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.Text = "电影语言";
             // 
             // Mlanguage_lbl
             // 
@@ -157,6 +165,7 @@ namespace SmobilerAppTEST7._17
             // ccTemplate
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.label1,
             this.panel1});
             this.Size = new System.Drawing.Size(300, 80);
             this.Load += new System.EventHandler(this.ccTemplate_Load);
@@ -165,6 +174,7 @@ namespace SmobilerAppTEST7._17
         }
         #endregion
 
+        private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Image Mpicadress_image;
         private Smobiler.Core.Controls.Label Mname_lbl;
@@ -172,7 +182,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label Mgrade_lbl;
         private Smobiler.Core.Controls.Label label3;
         private Smobiler.Core.Controls.Label Mtype_lbl;
-        private Smobiler.Core.Controls.Label label1;
+        private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.Label Mlanguage_lbl;
         private Smobiler.Core.Controls.Button goupiao_button;
         private Smobiler.Core.Controls.Label Cno_lbl;

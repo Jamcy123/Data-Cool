@@ -90,6 +90,7 @@ namespace SmobilerAppTEST7._17
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.Size = new System.Drawing.Size(300, 300);
             this.listView1.TemplateControlName = "ccTemplate";
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // tabPageControl2
             // 
