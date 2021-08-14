@@ -34,6 +34,9 @@ namespace SmobilerAppTEST7._17
 
         private void cinema_movie_Load(object sender, EventArgs e)
         {
+            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
+            tabPageView1.Titles = a;
+
             string database = "movie_ticket";
 
             string select = "SELECT DISTINCT * FROM movie_ticket.movie where Mno like '" + movie_no +"';";
@@ -50,28 +53,48 @@ namespace SmobilerAppTEST7._17
             Cname_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[2].ToString();
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
-            string select2 = "SELECT DISTINCT projection.*,ticket.Pprice,movie.*,cinema.Cname " +
+            string select21 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
                 "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
-                "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Cno = ticket.Cno and projection.Mno = ticket.Mno;";
+                "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
 
-            DataSet dataSet2 = Databaseconnect(database, select2);
+            string select22 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
+                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
+                "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
 
-            DataTable table = new DataTable();
-            table = dataSet2.Tables[0];
+            string select23 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
+                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
+                "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
+
+
+            DataSet dataSet21 = Databaseconnect(database, select21);
+            DataSet dataSet22 = Databaseconnect(database, select22);
+            DataSet dataSet23 = Databaseconnect(database, select23);
+
+            DataTable table1 = new DataTable();
+            table1 = dataSet21.Tables[0];
+            DataTable table2 = new DataTable();
+            table2 = dataSet22.Tables[0];
+            DataTable table3 = new DataTable();
+            table3 = dataSet23.Tables[0];
             listView1.Rows.Clear();     //清除数据
-            if (table.Rows.Count > 0)    //绑定数据源
+            if (table1.Rows.Count > 0)    //绑定数据源
             {
-                listView1.DataSource = table;
+                listView1.DataSource = table1;
                 listView1.DataBind();
-                listView2.DataSource = table;
+            }
+            if (table2.Rows.Count > 0)    //绑定数据源
+            {
+                listView2.DataSource = table2;
                 listView2.DataBind();
-                listView3.DataSource = table;
+            }
+            if (table3.Rows.Count > 0)    //绑定数据源
+            {
+                listView3.DataSource = table3;
                 listView3.DataBind();
             }
-
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
-            tabPageView1.Titles = a;
 
         }
     }
