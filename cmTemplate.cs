@@ -32,7 +32,7 @@ namespace SmobilerAppTEST7._17
             Console.WriteLine(week);
             week = t.ToString("dddd");
 
-            this.Form.Show(new Seat_Form("13549473975",movie_name,movie_no,cinema_name,cinema_no,Convert.ToInt32(Phall_lbl.Text),week,Ptime_lbl.Text,Pprice_lbl.Text));
+            this.Form.Show(new Seat_Form(this.Client.Session[0].ToString(),movie_name,movie_no,cinema_name,cinema_no,Convert.ToInt32(Phall_lbl.Text),week,Ptime_lbl.Text,Pprice_lbl.Text));
         }
     }
 }
