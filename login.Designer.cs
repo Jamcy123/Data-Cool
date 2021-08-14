@@ -37,6 +37,7 @@ namespace SmobilerAppTEST7._17
             this.button2 = new Smobiler.Core.Controls.Button();
             this.label2 = new Smobiler.Core.Controls.Label();
             this.button3 = new Smobiler.Core.Controls.Button();
+            this.button1 = new Smobiler.Core.Controls.Button();
             // 
             // panel1
             // 
@@ -74,7 +75,8 @@ namespace SmobilerAppTEST7._17
             this.btnForget,
             this.button2,
             this.label2,
-            this.button3});
+            this.button3,
+            this.button1});
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(9, 400);
             this.panel2.Name = "panel2";
@@ -221,6 +223,14 @@ namespace SmobilerAppTEST7._17
             this.button3.Text = "我直接选座位";
             this.button3.Press += new System.EventHandler(this.button3_Press);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(139, 320);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.Text = "任意门";
+            this.button1.Press += new System.EventHandler(this.button1_Press_1);
+            // 
             // SmobilerForm1
             // 
             this.BackgroundImage = "background";
@@ -250,5 +260,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Button button2;
         private Smobiler.Core.Controls.Label label2;
         private Smobiler.Core.Controls.Button button3;
+        private Smobiler.Core.Controls.Button button1;
     }
 }

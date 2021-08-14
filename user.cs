@@ -106,7 +106,6 @@ namespace SmobilerAppTEST7._17
                     Mymessage mymessage = new Mymessage(Uno);
                     this.Show(mymessage);
                     break;
-
             }
         }
 

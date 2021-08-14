@@ -229,11 +229,6 @@ namespace SmobilerAppTEST7._17
             } 
         }
 
-        private void button3_Press(object sender, EventArgs e)//我直接选座位
-        {
-            this.Form.Show(new Seat_Form("13549473975","是部电影","001","又是个影院","001",1,"周四","2021-08-12 09:00:00", "1.2"));
-        }
-
         private void txtUserName_TouchEnter(object sender, EventArgs e)//用户名textbox触碰事件
         {
             txtUserName.BorderColor = Color.Red;
@@ -247,6 +242,17 @@ namespace SmobilerAppTEST7._17
         private void txtPassword_TouchLeave(object sender, EventArgs e)//密码textbox触碰离开事件
         {
             txtPassword.BorderColor = Color.WhiteSmoke;
+        }
+
+        private void button3_Press(object sender, EventArgs e)//我直接选座位
+        {
+            this.Form.Show(new Seat_Form("13549473975", "是部电影", "001", "又是个影院", "001", 1, "周四", "2021-08-12 09:00:00", "1.2"));
+        }
+
+        private void button1_Press_1(object sender, EventArgs e)//任意门
+        {
+            //this.Form.Show(new Myblance("13549473975"));
+            this.Form.Show(new Mymessage("13549473975"));
         }
     }
 }

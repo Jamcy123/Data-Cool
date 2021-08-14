@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
+using System.Drawing;
 
 namespace SmobilerAppTEST7._17
 {
@@ -23,6 +24,11 @@ namespace SmobilerAppTEST7._17
             set { this.Title_lbl.Text = value; }
         }
 
+        public Color BACKColor_re
+        {
+            get { return this.BackColor; }
+            set { this.BackColor = value; }
+        }
         private void panel2_Press(object sender, EventArgs e)
         {
             if (ExitButtonpPress != null)
