@@ -33,27 +33,29 @@ namespace SmobilerAppTEST7._17
         private void cinema_confirm_Load(object sender, EventArgs e)
         {
             string database = "movie_ticket";
-
-            string select1 = "SELECT * FROM movie_ticket.cinema where Cno like '" + cinema_no + "';";
+            Toast(cinema_no);
+            string select1 = "SELECT * FROM movie_ticket.cinema where Cno = '" + cinema_no + "';";
             DataSet dataSet1 = Databaseconnect(database, select1);
             Cname_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[2].ToString();
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
 
-            string select = "SELECT DISTINCT movie.* FROM movie_ticket.projection,movie_ticket.movie where projection.Cno like '" + cinema_no + "' and projection.Mno like movie.Mno;";
+            string select = "SELECT DISTINCT projection.Cno,movie.* FROM projection,movie where projection.Cno = '" + cinema_no + "' and projection.Mno = movie.Mno;";
+            //select = "SELECT DISTINCT projection.Cno,movie.* FROM projection,movie where projection.Cno = '0001' and projection.Mno = movie.Mno;";
+            //select = "select * from movie";
             DataSet dataSet = Databaseconnect(database, select);
 
 
             DataTable table = new DataTable();
             table = dataSet.Tables[0];
-            listView1.Rows.Clear();     //清除数据
-            if (table.Rows.Count > 0)    //绑定数据源
+            //listView1.Rows.Clear();     //清除数据
+            //if (table.Rows.Count > 0)    //绑定数据源
             {
-                listView1.DataSource = table;
+                listView1.DataSource = dataSet;
                 listView1.DataBind();
-                listView2.DataSource = table;
+                listView2.DataSource = dataSet;
                 listView2.DataBind();
-                listView3.DataSource = table;
+                listView3.DataSource = dataSet;
                 listView3.DataBind();
             }
 

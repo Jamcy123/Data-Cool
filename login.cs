@@ -33,10 +33,19 @@ namespace SmobilerAppTEST7._17
         private void btnLogon_Press(object sender, EventArgs e)
         {
             string database = "Movie_ticket";
-            if (checkBox1.Checked == false && checkBox2.Checked == false)
+            try
             {
-                throw new Exception("请选择一种身份");
+                if (checkBox1.Checked == false && checkBox2.Checked == false)
+                {
+                    throw new Exception("请选择一种身份");
+                }
             }
+            catch (Exception ex)
+            {
+
+                Toast(ex.Message);
+            }
+
             if (checkBox1.Checked == true)
             {
                 try
