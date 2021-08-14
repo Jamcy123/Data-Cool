@@ -27,8 +27,12 @@ namespace SmobilerAppTEST7._17
             cinema_name = Phall_lbl.BindDataValue.ToString();
             string cinema_no;
             cinema_no = Ptime_lbl.BindDataValue.ToString();
+            DateTime t = Convert.ToDateTime(Ptime_lbl.Text);
+            string week = t.ToString("yyyy年MM日dd日 dddd");
+            Console.WriteLine(week);
+            week = t.ToString("dddd");
 
-            this.Form.Show(new Seat_Form("13549473975",movie_name,movie_no,cinema_name,cinema_no,Convert.ToInt32(Phall_lbl.Text),"周五",Ptime_lbl.Text,Pprice_lbl.Text));
+            this.Form.Show(new Seat_Form("13549473975",movie_name,movie_no,cinema_name,cinema_no,Convert.ToInt32(Phall_lbl.Text),week,Ptime_lbl.Text,Pprice_lbl.Text));
         }
     }
 }
