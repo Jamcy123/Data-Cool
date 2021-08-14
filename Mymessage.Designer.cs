@@ -23,7 +23,6 @@ namespace SmobilerAppTEST7._17
             this.button1 = new Smobiler.Core.Controls.Button();
             this.camera1 = new Smobiler.Core.Controls.Camera();
             this.button2 = new Smobiler.Core.Controls.Button();
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             this.panel6 = new Smobiler.Core.Controls.Panel();
             this.label11 = new Smobiler.Core.Controls.Label();
             this.image1 = new Smobiler.Core.Controls.Image();
@@ -42,6 +41,7 @@ namespace SmobilerAppTEST7._17
             this.panel5 = new Smobiler.Core.Controls.Panel();
             this.label9 = new Smobiler.Core.Controls.Label();
             this.datePicker1 = new Smobiler.Core.Controls.DatePicker();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // button1
             // 
@@ -69,19 +69,6 @@ namespace SmobilerAppTEST7._17
             this.button2.Size = new System.Drawing.Size(168, 32);
             this.button2.Text = "上传照片";
             this.button2.Press += new System.EventHandler(this.button2_Press);
-            // 
-            // title_Control1
-            // 
-            this.title_Control1.BackColor = System.Drawing.Color.Gray;
-            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
-            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
-            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.title_Control1.Location = new System.Drawing.Point(121, 6);
-            this.title_Control1.Name = "title_Control1";
-            this.title_Control1.Size = new System.Drawing.Size(100, 36);
-            this.title_Control1.Text = "我的资料";
-            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             // 
             // panel6
             // 
@@ -265,6 +252,19 @@ namespace SmobilerAppTEST7._17
             this.datePicker1.Size = new System.Drawing.Size(200, 0);
             this.datePicker1.ValueChanged += new System.EventHandler(this.datePicker1_ValueChanged);
             // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Location = new System.Drawing.Point(121, 6);
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(100, 36);
+            this.title_Control1.Text = "我的资料";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
+            // 
             // Mymessage
             // 
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
@@ -280,7 +280,6 @@ namespace SmobilerAppTEST7._17
             this.panel3,
             this.panel4,
             this.panel5});
-            this.Load += new System.EventHandler(this.Mymessage_Load);
             this.Name = "Mymessage";
 
         }

@@ -35,15 +35,78 @@ namespace SmobilerAppTEST7._17
             try
             {
                 string database = "Movie_ticket";
-                    if (checkBox1.Checked == false && checkBox2.Checked == false)
-                    {
-                        throw new Exception("请选择一种身份");
-                    }                
+                if (checkBox1.Checked == false && checkBox2.Checked == false)
+                {
+                    throw new Exception("请选择一种身份");
+                }
 
                 if (checkBox1.Checked == true)
                 {
-                        string userID = txtUserName.Text.Trim();
-                        string PassWord = txtPassword.Text.Trim();
+                    string userID = txtUserName.Text.Trim();
+                    string PassWord = txtPassword.Text.Trim();
+                    if (userID.Length != 11)
+                    {
+                        txtUserName.Text = "";
+                        throw new Exception("请输入11位的账号");
+                    }
+                    if (string.IsNullOrEmpty(userID))
+                        throw new Exception("请输入用户名");
+                    if (string.IsNullOrEmpty(PassWord))
+                        throw new Exception("请输入密码");
+
+                    if (checkRemb.Checked == true)
+                    {
+                        //记住密码
+                        string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
+                        Databaseconnect(database, update);
+                    }
+
+                    string select1 = "Select Upassword from Userinf where Uphoneno='" + txtUserName.Text + "'";
+                    DataSet save = Databaseconnect(database, select1);
+
+                    if (save.Tables[0].Rows.Count <= 0)
+                    {
+                        txtUserName.Text = "";
+                        txtPassword.Text = "";
+                        throw new Exception("用户不存在，请重新输入！");
+                    }
+
+                    string pwd = save.Tables[0].Rows[0][0].ToString();
+
+                    if (pwd == txtPassword.Text)
+                    {
+                        this.Client.Session.Clear();//登陆前清空之前的全局变量
+                        this.Client.Session.Add("Uphone", txtUserName.Text);//设置用户号码的全局变量
+                        string a = txtUserName.Text;
+                        moive_select moive_Select = new moive_select(a);
+                        this.Show(moive_Select);
+                    }
+                    else
+                    {
+                        throw new Exception("密码不正确，请重新输入！");
+                    }
+                }
+
+                if (checkBox2.Checked == true)
+                {
+                    string userID = txtUserName.Text.Trim();
+                    string PassWord = txtPassword.Text.Trim();
+                    if (userID == "001")
+                    {
+
+                        if (txtPassword.Text == "123456")
+                        {
+                            string a = txtUserName.Text;
+                            Movieincrease movieincrease = new Movieincrease();
+                            this.Show(movieincrease);
+                        }
+                        else
+                        {
+                            Toast("密码不正确，请重新输入！");
+                        }
+                    }
+                    else
+                    {
                         if (userID.Length != 11)
                         {
                             txtUserName.Text = "";
@@ -53,7 +116,6 @@ namespace SmobilerAppTEST7._17
                             throw new Exception("请输入用户名");
                         if (string.IsNullOrEmpty(PassWord))
                             throw new Exception("请输入密码");
-
                         if (checkRemb.Checked == true)
                         {
                             //记住密码
@@ -61,8 +123,8 @@ namespace SmobilerAppTEST7._17
                             Databaseconnect(database, update);
                         }
 
-                        string select1 = "Select Upassword from Userinf where Uphoneno='" + txtUserName.Text + "'";
-                        DataSet save = Databaseconnect(database, select1);
+                        string select = "Select Apassword from Cinema where Aid='" + txtUserName.Text + "'";
+                        DataSet save = Databaseconnect(database, select);
 
                         if (save.Tables[0].Rows.Count <= 0)
                         {
@@ -76,74 +138,14 @@ namespace SmobilerAppTEST7._17
                         if (pwd == txtPassword.Text)
                         {
                             string a = txtUserName.Text;
-                            moive_select moive_Select = new moive_select(a);
-                            this.Show(moive_Select);
+                            Administrator administrator = new Administrator(a);
+                            this.Show(administrator);
                         }
                         else
                         {
                             throw new Exception("密码不正确，请重新输入！");
                         }
-                }
-
-                if (checkBox2.Checked == true)
-                {
-                        string userID = txtUserName.Text.Trim();
-                        string PassWord = txtPassword.Text.Trim();
-                        if (userID == "001")
-                        {
-
-                            if (txtPassword.Text == "123456")
-                            {
-                                string a = txtUserName.Text;
-                                Movieincrease movieincrease = new Movieincrease();
-                                this.Show(movieincrease);
-                            }
-                            else
-                            {
-                                Toast("密码不正确，请重新输入！");
-                            }
-                        }
-                        else
-                        {
-                            if (userID.Length != 11)
-                            {
-                                txtUserName.Text = "";
-                                throw new Exception("请输入11位的账号");
-                            }
-                            if (string.IsNullOrEmpty(userID))
-                                throw new Exception("请输入用户名");
-                            if (string.IsNullOrEmpty(PassWord))
-                                throw new Exception("请输入密码");
-                            if (checkRemb.Checked == true)
-                            {
-                                //记住密码
-                                string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
-                                Databaseconnect(database, update);
-                            }
-
-                            string select = "Select Apassword from Cinema where Aid='" + txtUserName.Text + "'";
-                            DataSet save = Databaseconnect(database, select);
-
-                            if (save.Tables[0].Rows.Count <= 0)
-                            {
-                                txtUserName.Text = "";
-                                txtPassword.Text = "";
-                                throw new Exception("用户不存在，请重新输入！");
-                            }
-
-                            string pwd = save.Tables[0].Rows[0][0].ToString();
-
-                            if (pwd == txtPassword.Text)
-                            {
-                                string a = txtUserName.Text;
-                                Administrator administrator = new Administrator(a);
-                                this.Show(administrator);
-                            }
-                            else
-                            {
-                                throw new Exception("密码不正确，请重新输入！");
-                            }
-                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -168,13 +170,6 @@ namespace SmobilerAppTEST7._17
             {
                 Toast(ex.Message);
             }
-        }
-
-        private void button1_Press(object sender, EventArgs e)
-        {
-            string a = txtUserName.Text;
-            moive_select moive_Select = new moive_select(a);
-            this.Show(moive_Select);
         }
 
         private void btnregister_Press(object sender, EventArgs e)
@@ -251,8 +246,21 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press_1(object sender, EventArgs e)//任意门
         {
+            this.Client.Session.Add("aaa", "123");
+            Toast(this.Client.Session[0].ToString());
             //this.Form.Show(new Myblance("13549473975"));
             this.Form.Show(new Mymessage("13549473975"));
+            //this.Client.Session = "";
+            //ReadClientData
+            LoadClientData("NNno", "13549473975");
+            ReadClientData("NNno");
+            //string aaa = "";
+            this.Client.Session.Add("aaa", "123");
+            Toast(this.Client.Session[0].ToString());
+            //aaa=this.Client.Session.Keys[0];
+            //this.Client.Session[0].ToString();
+            //Toast(this.Client.Session[0].ToString());
+            //Toast(this.Client.Session.Keys.Count.ToString());
         }
     }
 }

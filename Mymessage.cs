@@ -18,6 +18,7 @@ namespace SmobilerAppTEST7._17
         string five;
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
+            
             MySqlConnection con = new MySqlConnection();
             con.ConnectionString = "server=127.0.0.1;Database=" + dabatase + ";uid=root;pwd=;";//连接数据库
             con.Open();
@@ -94,11 +95,6 @@ namespace SmobilerAppTEST7._17
                 string database = "Movie_ticket";
                 Databaseconnect(database, update);
             }
-        }
-
-        private void Mymessage_Load(object sender, EventArgs e)
-        {
-            image1.ResourceID = Uno;
         }
     }
 }
