@@ -45,10 +45,13 @@ namespace SmobilerAppTEST7._17
             this.button1});
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 50);
+            this.panel1.Touchable = true;
+            this.panel1.Press += new System.EventHandler(this.panel1_Press);
             // 
             // Ptime_lbl
             // 
             this.Ptime_lbl.Bold = true;
+            this.Ptime_lbl.DataMember = "Cno";
             this.Ptime_lbl.DisplayMember = "Ptime";
             this.Ptime_lbl.FontSize = 16F;
             this.Ptime_lbl.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
@@ -65,6 +68,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mduration_lbl
             // 
+            this.Mduration_lbl.DataMember = "Mname";
             this.Mduration_lbl.DisplayMember = "Mduration";
             this.Mduration_lbl.Location = new System.Drawing.Point(39, 30);
             this.Mduration_lbl.Name = "Mduration_lbl";
@@ -74,6 +78,7 @@ namespace SmobilerAppTEST7._17
             // Mtype_lbl
             // 
             this.Mtype_lbl.Bold = true;
+            this.Mtype_lbl.DataMember = "Mno";
             this.Mtype_lbl.DisplayMember = "Mtype";
             this.Mtype_lbl.FontSize = 16F;
             this.Mtype_lbl.Location = new System.Drawing.Point(101, 0);
@@ -83,6 +88,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Phall_lbl
             // 
+            this.Phall_lbl.DataMember = "Cname";
             this.Phall_lbl.DisplayMember = "Phall";
             this.Phall_lbl.Location = new System.Drawing.Point(101, 30);
             this.Phall_lbl.Name = "Phall_lbl";
@@ -112,11 +118,10 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.Bold = true;
             this.button1.BorderColor = System.Drawing.Color.Gold;
             this.button1.FontSize = 18F;
-            this.button1.ForeColor = System.Drawing.Color.Gold;
             this.button1.Location = new System.Drawing.Point(250, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 30);

@@ -30,6 +30,7 @@ namespace SmobilerAppTEST7._17
             this.Mlanguage_lbl = new Smobiler.Core.Controls.Label();
             this.goupiao_button = new Smobiler.Core.Controls.Button();
             this.Cno_lbl = new Smobiler.Core.Controls.Label();
+            this.Mno_lbl = new Smobiler.Core.Controls.Label();
             // 
             // panel1
             // 
@@ -46,7 +47,8 @@ namespace SmobilerAppTEST7._17
             this.label1,
             this.Mlanguage_lbl,
             this.goupiao_button,
-            this.Cno_lbl});
+            this.Cno_lbl,
+            this.Mno_lbl});
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 80);
             this.panel1.Touchable = true;
@@ -143,6 +145,15 @@ namespace SmobilerAppTEST7._17
             this.Cno_lbl.Text = "label4";
             this.Cno_lbl.Visible = false;
             // 
+            // Mno_lbl
+            // 
+            this.Mno_lbl.DisplayMember = "Mno";
+            this.Mno_lbl.Location = new System.Drawing.Point(248, 0);
+            this.Mno_lbl.Name = "Mno_lbl";
+            this.Mno_lbl.Size = new System.Drawing.Size(40, 15);
+            this.Mno_lbl.Text = "label4";
+            this.Mno_lbl.Visible = false;
+            // 
             // ccTemplate
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -165,5 +176,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label Mlanguage_lbl;
         private Smobiler.Core.Controls.Button goupiao_button;
         private Smobiler.Core.Controls.Label Cno_lbl;
+        private Smobiler.Core.Controls.Label Mno_lbl;
     }
 }

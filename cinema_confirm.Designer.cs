@@ -31,6 +31,7 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
             this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
+            this.Cno_lbl = new Smobiler.Core.Controls.Label();
             // 
             // panel1
             // 
@@ -50,7 +51,7 @@ namespace SmobilerAppTEST7._17
             this.Cname_lbl.FontSize = 20F;
             this.Cname_lbl.Location = new System.Drawing.Point(10, 1);
             this.Cname_lbl.Name = "Cname_lbl";
-            this.Cname_lbl.Size = new System.Drawing.Size(280, 35);
+            this.Cname_lbl.Size = new System.Drawing.Size(189, 35);
             this.Cname_lbl.Text = "label1";
             // 
             // Caddress_lbl
@@ -74,6 +75,7 @@ namespace SmobilerAppTEST7._17
         "1",
         "2",
         "3"};
+            this.tabPageView1.TitleStyle = new Smobiler.Core.Controls.TabPageViewTitleStyle(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129))))), System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(140)))), ((int)(((byte)(255))))), 13F, System.Drawing.Color.LightGray, 2);
             // 
             // tabPageControl1
             // 
@@ -127,12 +129,22 @@ namespace SmobilerAppTEST7._17
             this.title_Control1.Size = new System.Drawing.Size(356, 36);
             this.title_Control1.Text = "特惠购票";
             // 
+            // Cno_lbl
+            // 
+            this.Cno_lbl.DisplayMember = "Cno";
+            this.Cno_lbl.Location = new System.Drawing.Point(200, 37);
+            this.Cno_lbl.Name = "Cno_lbl";
+            this.Cno_lbl.Size = new System.Drawing.Size(100, 35);
+            this.Cno_lbl.Text = "label1";
+            this.Cno_lbl.Visible = false;
+            // 
             // cinema_confirm
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1,
             this.title_Control1,
-            this.tabPageView1});
+            this.tabPageView1,
+            this.Cno_lbl});
             this.Load += new System.EventHandler(this.cinema_confirm_Load);
             this.Name = "cinema_confirm";
 
@@ -150,5 +162,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.ListView listView2;
         private Smobiler.Core.Controls.TabPageControl tabPageControl3;
         private Smobiler.Core.Controls.ListView listView3;
+        private Smobiler.Core.Controls.Label Cno_lbl;
     }
 }

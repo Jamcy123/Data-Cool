@@ -40,7 +40,7 @@ namespace SmobilerAppTEST7._17
         private void panel1_Press(object sender, EventArgs e)
         {
             string b = Cno_lbl.Text;
-            string a = Mname_lbl.BindDataValue.ToString();
+            string a = Mno_lbl.Text;
             cinema_movie cinema_Movie = new cinema_movie(a,b);
             this.Form.Show(cinema_Movie);
 
