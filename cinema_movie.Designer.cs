@@ -38,8 +38,8 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
             this.listView1 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
-            this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView2 = new Smobiler.Core.Controls.ListView();
+            this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
             this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
@@ -217,12 +217,6 @@ namespace SmobilerAppTEST7._17
             this.listView2});
             this.tabPageControl2.Name = "tabPageControl2";
             // 
-            // tabPageControl3
-            // 
-            this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView3});
-            this.tabPageControl3.Name = "tabPageControl3";
-            // 
             // listView2
             // 
             this.listView2.Location = new System.Drawing.Point(0, 10);
@@ -230,6 +224,12 @@ namespace SmobilerAppTEST7._17
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView2.Size = new System.Drawing.Size(300, 203);
             this.listView2.TemplateControlName = "cmTemplate";
+            // 
+            // tabPageControl3
+            // 
+            this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.listView3});
+            this.tabPageControl3.Name = "tabPageControl3";
             // 
             // listView3
             // 
@@ -242,11 +242,13 @@ namespace SmobilerAppTEST7._17
             // title_Control1
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
             this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
             this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.title_Control1.Name = "title_Control1";
             this.title_Control1.Size = new System.Drawing.Size(319, 36);
             this.title_Control1.Text = "特惠购票";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             // 
             // cinema_movie
             // 

@@ -75,5 +75,10 @@ namespace SmobilerAppTEST7._17
             }
             Cno_lbl.Text = cinema_no;
         }
+
+        private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

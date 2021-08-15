@@ -71,6 +71,11 @@ namespace SmobilerAppTEST7._17
             DataTable table3 = new DataTable();
             table3 = dataSet3.Tables[0];
             listView1.Rows.Clear();     //清除数据
+
+            string str = table1.Rows[1]["Ptime"].ToString();
+            string[] array = str.Split(' ');
+            MessageBox.Show(array[1]); //弹出我
+
             if (table1.Rows.Count > 0)    //绑定数据源
             {
                 listView1.DataSource = table1;
@@ -89,5 +94,9 @@ namespace SmobilerAppTEST7._17
 
         }
 
+        private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
