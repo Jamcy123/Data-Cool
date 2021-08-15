@@ -78,6 +78,7 @@ namespace SmobilerAppTEST7._17
                         this.Client.Session.Clear();//登陆前清空之前的全局变量
                         this.Client.Session.Add("Uphone", txtUserName.Text);//设置用户号码的全局变量
                         string a = txtUserName.Text;
+                        //ClientVariables.GetCurrentClient(上一个设备的DeviceID).ReStart()*****用户唯一在线
                         moive_select moive_Select = new moive_select(a);
                         this.Show(moive_Select);
                     }
@@ -246,17 +247,8 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press_1(object sender, EventArgs e)//任意门
         {
-            this.Client.Session.Add("aaa", "123");
-            Toast(this.Client.Session[0].ToString());
             //this.Form.Show(new Myblance("13549473975"));
             this.Form.Show(new Mymessage("13549473975"));
-            //this.Client.Session = "";
-            //ReadClientData
-            LoadClientData("NNno", "13549473975");
-            ReadClientData("NNno");
-            //string aaa = "";
-            this.Client.Session.Add("aaa", "123");
-            Toast(this.Client.Session[0].ToString());
         }
     }
 }

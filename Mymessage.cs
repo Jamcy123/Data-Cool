@@ -51,7 +51,7 @@ namespace SmobilerAppTEST7._17
             return name.Tables[0].Rows[0][0].ToString();
         }
 
-        private void button1_Press(object sender, EventArgs e)
+        private void button1_Press(object sender, EventArgs e)//保存按钮响应事件***建立缓存？？剪切文件？？删除文件？？
         {
             if (two != textBox2.Text)
             {
@@ -79,12 +79,12 @@ namespace SmobilerAppTEST7._17
                 Databaseconnect(database, update);          
         }
 
-        private void button2_Press(object sender, EventArgs e)
+        private void button2_Press(object sender, EventArgs e)//上传照片按钮响应事件
         {
             camera1.GetPhoto();
         }
 
-        private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
+        private void camera1_ImageCaptured(object sender, BinaryResultArgs e)//传照片
         {
             if (e != null)
             {
