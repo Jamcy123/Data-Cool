@@ -28,7 +28,7 @@ namespace SmobilerAppTEST7._17
             this.date_lbl = new Smobiler.Core.Controls.Label();
             this.Cno_lbl = new Smobiler.Core.Controls.Label();
             this.Mno_lbl = new Smobiler.Core.Controls.Label();
-            this.Ptime_lbl = new Smobiler.Core.Controls.Label();
+            this.time_lbl = new Smobiler.Core.Controls.Label();
             // 
             // panel1
             // 
@@ -44,7 +44,7 @@ namespace SmobilerAppTEST7._17
             this.date_lbl,
             this.Cno_lbl,
             this.Mno_lbl,
-            this.Ptime_lbl});
+            this.time_lbl});
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 70);
             this.panel1.Touchable = true;
@@ -119,12 +119,12 @@ namespace SmobilerAppTEST7._17
             this.Mno_lbl.Size = new System.Drawing.Size(30, 15);
             this.Mno_lbl.Visible = false;
             // 
-            // Ptime_lbl
+            // time_lbl
             // 
-            this.Ptime_lbl.Location = new System.Drawing.Point(66, 48);
-            this.Ptime_lbl.Name = "Ptime_lbl";
-            this.Ptime_lbl.Size = new System.Drawing.Size(100, 15);
-            this.Ptime_lbl.Text = "label3";
+            this.time_lbl.Location = new System.Drawing.Point(66, 48);
+            this.time_lbl.Name = "time_lbl";
+            this.time_lbl.Size = new System.Drawing.Size(100, 15);
+            this.time_lbl.Text = "label3";
             // 
             // mcTemplate
             // 
@@ -146,6 +146,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label date_lbl;
         private Smobiler.Core.Controls.Label Cno_lbl;
         private Smobiler.Core.Controls.Label Mno_lbl;
-        private Smobiler.Core.Controls.Label Ptime_lbl;
+        private Smobiler.Core.Controls.Label time_lbl;
     }
 }
