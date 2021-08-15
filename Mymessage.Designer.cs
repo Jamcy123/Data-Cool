@@ -48,9 +48,9 @@ namespace SmobilerAppTEST7._17
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.button1.BorderRadius = 20;
             this.button1.FontSize = 16F;
-            this.button1.Location = new System.Drawing.Point(69, 449);
+            this.button1.Location = new System.Drawing.Point(69, 450);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 32);
+            this.button1.Size = new System.Drawing.Size(168, 40);
             this.button1.Text = "保存";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
@@ -64,9 +64,9 @@ namespace SmobilerAppTEST7._17
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.button2.BorderRadius = 20;
             this.button2.FontSize = 16F;
-            this.button2.Location = new System.Drawing.Point(69, 401);
+            this.button2.Location = new System.Drawing.Point(69, 393);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 32);
+            this.button2.Size = new System.Drawing.Size(168, 40);
             this.button2.Text = "上传照片";
             this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
@@ -97,6 +97,7 @@ namespace SmobilerAppTEST7._17
             this.image1.BorderRadius = 40;
             this.image1.Location = new System.Drawing.Point(0, 5);
             this.image1.Name = "image1";
+            this.image1.ResourceID = "./Cache/";
             this.image1.Size = new System.Drawing.Size(80, 80);
             // 
             // panel1
@@ -280,6 +281,7 @@ namespace SmobilerAppTEST7._17
             this.panel3,
             this.panel4,
             this.panel5});
+            this.Load += new System.EventHandler(this.Mymessage_Load);
             this.Name = "Mymessage";
 
         }

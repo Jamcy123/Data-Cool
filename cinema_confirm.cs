@@ -73,13 +73,7 @@ namespace SmobilerAppTEST7._17
                 listView3.DataSource = table3;
                 listView3.DataBind();
             }
-
             Cno_lbl.Text = cinema_no;
-        }
-
-        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
-        {
-
         }
     }
 }

@@ -32,18 +32,25 @@ namespace SmobilerAppTEST7._17
         }
         private void Myorder_Load(object sender, EventArgs e)
         {
-            string select = "SELECT * FROM Movie_ticket.myorder where Uphoneno=" +Uno;
-            string database = "Movie_ticket";
-            DataSet dataSet = Databaseconnect(database, select);
-            if (dataSet.Tables[0].Rows.Count <= 0)
+            try
             {
-                label1.Visible = true;
+                string select = "SELECT * FROM Movie_ticket.myorder where Uphoneno=" + Uno;
+                string database = "Movie_ticket";
+                DataSet dataSet = Databaseconnect(database, select);
+                if (dataSet.Tables[0].Rows.Count <= 0)
+                {
+                    label1.Visible = true;
+                }
+                else
+                {
+                    label1.Visible = false;
+                    listView1.DataSource = dataSet;
+                    listView1.DataBind();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                label1.Visible = false;
-                listView1.DataSource = dataSet;
-                listView1.DataBind();
+                Toast(ex.Message);
             }
         }
 
