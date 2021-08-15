@@ -46,15 +46,15 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
-            string select1 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Ptime,projection.Pprice " +
+            string select1 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
 
-            string select2 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Ptime,projection.Pprice " +
+            string select2 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
 
-            string select3 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Ptime,projection.Pprice " +
+            string select3 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
 
@@ -66,28 +66,39 @@ namespace SmobilerAppTEST7._17
 
             DataTable table1 = new DataTable();
             table1 = dataSet1.Tables[0];
+            table1.Columns.Add(new DataColumn() { ColumnName = "select_date", DataType = typeof(String) });
             DataTable table2 = new DataTable();
             table2 = dataSet2.Tables[0];
+            table2.Columns.Add(new DataColumn() { ColumnName = "select_date", DataType = typeof(String) });
             DataTable table3 = new DataTable();
             table3 = dataSet3.Tables[0];
+            table3.Columns.Add(new DataColumn() { ColumnName = "select_date", DataType = typeof(String) });
+
             listView1.Rows.Clear();     //清除数据
-
-            string str = table1.Rows[1]["Ptime"].ToString();
-            string[] array = str.Split(' ');
-            MessageBox.Show(array[1]); //弹出我
-
             if (table1.Rows.Count > 0)    //绑定数据源
             {
+                for (int i = 0; i < table1.Rows.Count; i++)
+                {
+                    table1.Rows[i]["select_date"] = DateTime.Now.ToString("yyyy-MM-dd");
+                }
                 listView1.DataSource = table1;
                 listView1.DataBind();
             }
             if (table2.Rows.Count > 0)    //绑定数据源
             {
+                for (int i = 0; i < table1.Rows.Count; i++)
+                {
+                    table2.Rows[i]["select_date"] = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd");
+                }
                 listView2.DataSource = table2;
                 listView2.DataBind();
             }
             if (table3.Rows.Count > 0)    //绑定数据源
             {
+                for (int i = 0; i < table1.Rows.Count; i++)
+                {
+                    table3.Rows[i]["select_date"] = DateTime.Now.AddDays(2).ToString("yyyy-MM-dd");
+                }
                 listView3.DataSource = table3;
                 listView3.DataBind();
             }

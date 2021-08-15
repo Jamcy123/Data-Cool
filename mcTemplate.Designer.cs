@@ -22,11 +22,13 @@ namespace SmobilerAppTEST7._17
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.Caddress_lbl = new Smobiler.Core.Controls.Label();
             this.Cname_lbl = new Smobiler.Core.Controls.Label();
-            this.Ptime_lbl = new Smobiler.Core.Controls.Label();
             this.Pprice_lbl = new Smobiler.Core.Controls.Label();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
-            this.movie_time_lbl = new Smobiler.Core.Controls.Label();
+            this.date_lbl = new Smobiler.Core.Controls.Label();
+            this.Cno_lbl = new Smobiler.Core.Controls.Label();
+            this.Mno_lbl = new Smobiler.Core.Controls.Label();
+            this.Ptime_lbl = new Smobiler.Core.Controls.Label();
             // 
             // panel1
             // 
@@ -36,11 +38,13 @@ namespace SmobilerAppTEST7._17
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.Caddress_lbl,
             this.Cname_lbl,
-            this.Ptime_lbl,
             this.Pprice_lbl,
             this.label1,
             this.label2,
-            this.movie_time_lbl});
+            this.date_lbl,
+            this.Cno_lbl,
+            this.Mno_lbl,
+            this.Ptime_lbl});
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 70);
             this.panel1.Touchable = true;
@@ -65,17 +69,10 @@ namespace SmobilerAppTEST7._17
             this.Cname_lbl.Size = new System.Drawing.Size(156, 20);
             this.Cname_lbl.Text = "label1";
             // 
-            // Ptime_lbl
-            // 
-            this.Ptime_lbl.DataMember = "Mno";
-            this.Ptime_lbl.DisplayMember = "Ptime";
-            this.Ptime_lbl.Location = new System.Drawing.Point(180, 48);
-            this.Ptime_lbl.Name = "Ptime_lbl";
-            this.Ptime_lbl.Size = new System.Drawing.Size(120, 15);
-            // 
             // Pprice_lbl
             // 
             this.Pprice_lbl.Bold = true;
+            this.Pprice_lbl.DataMember = "Mno";
             this.Pprice_lbl.DisplayMember = "Pprice";
             this.Pprice_lbl.ForeColor = System.Drawing.Color.Red;
             this.Pprice_lbl.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
@@ -98,11 +95,36 @@ namespace SmobilerAppTEST7._17
             this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.Text = "场次：";
             // 
-            // movie_time_lbl
+            // date_lbl
             // 
-            this.movie_time_lbl.Location = new System.Drawing.Point(68, 48);
-            this.movie_time_lbl.Name = "movie_time_lbl";
-            this.movie_time_lbl.Size = new System.Drawing.Size(98, 15);
+            this.date_lbl.DisplayMember = "select_date";
+            this.date_lbl.Location = new System.Drawing.Point(239, 48);
+            this.date_lbl.Name = "date_lbl";
+            this.date_lbl.Size = new System.Drawing.Size(50, 15);
+            this.date_lbl.Visible = false;
+            // 
+            // Cno_lbl
+            // 
+            this.Cno_lbl.DisplayMember = "Cno";
+            this.Cno_lbl.Location = new System.Drawing.Point(179, 5);
+            this.Cno_lbl.Name = "Cno_lbl";
+            this.Cno_lbl.Size = new System.Drawing.Size(30, 15);
+            this.Cno_lbl.Visible = false;
+            // 
+            // Mno_lbl
+            // 
+            this.Mno_lbl.DisplayMember = "Mno";
+            this.Mno_lbl.Location = new System.Drawing.Point(209, 48);
+            this.Mno_lbl.Name = "Mno_lbl";
+            this.Mno_lbl.Size = new System.Drawing.Size(30, 15);
+            this.Mno_lbl.Visible = false;
+            // 
+            // Ptime_lbl
+            // 
+            this.Ptime_lbl.Location = new System.Drawing.Point(66, 48);
+            this.Ptime_lbl.Name = "Ptime_lbl";
+            this.Ptime_lbl.Size = new System.Drawing.Size(100, 15);
+            this.Ptime_lbl.Text = "label3";
             // 
             // mcTemplate
             // 
@@ -118,10 +140,12 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Label Caddress_lbl;
         private Smobiler.Core.Controls.Label Cname_lbl;
-        private Smobiler.Core.Controls.Label Ptime_lbl;
         private Smobiler.Core.Controls.Label Pprice_lbl;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Label label2;
-        private Smobiler.Core.Controls.Label movie_time_lbl;
+        private Smobiler.Core.Controls.Label date_lbl;
+        private Smobiler.Core.Controls.Label Cno_lbl;
+        private Smobiler.Core.Controls.Label Mno_lbl;
+        private Smobiler.Core.Controls.Label Ptime_lbl;
     }
 }
