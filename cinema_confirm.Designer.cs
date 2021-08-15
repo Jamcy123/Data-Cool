@@ -90,7 +90,6 @@ namespace SmobilerAppTEST7._17
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.Size = new System.Drawing.Size(300, 300);
             this.listView1.TemplateControlName = "ccTemplate";
-            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // tabPageControl2
             // 
@@ -123,6 +122,7 @@ namespace SmobilerAppTEST7._17
             // title_Control1
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
             this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
             this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
             this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;

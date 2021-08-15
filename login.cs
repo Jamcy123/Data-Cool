@@ -248,7 +248,8 @@ namespace SmobilerAppTEST7._17
         private void button1_Press_1(object sender, EventArgs e)//任意门
         {
             //this.Form.Show(new Myblance("13549473975"));
-            this.Form.Show(new Mymessage("13549473975"));
+            //this.Form.Show(new Mymessage("13549473975"));
+            this.Form.Show(new Myorder("13549473975"));
         }
     }
 }

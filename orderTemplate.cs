@@ -16,5 +16,22 @@ namespace SmobilerAppTEST7._17
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
         }
+
+        private void orderTemplate_Load(object sender, EventArgs e)
+        {
+            label3.Text = label3.Text + "号厅";
+            label6.Text = label6.Text + " >";
+            label8.Text = label8.Text + "元";
+        }
+
+        private void panel2_Press(object sender, EventArgs e)//影院详情链接
+        {
+            this.Form.Show(new cinema_confirm(label6.BindDataValue.ToString()));
+        }
+
+        private void panel1_Press(object sender, EventArgs e)//电影链接详情
+        {
+            this.Form.Show(new movie_information(label1.BindDataValue.ToString()));
+        }
     }
 }
