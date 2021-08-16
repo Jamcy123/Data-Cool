@@ -118,6 +118,7 @@ namespace SmobilerAppTEST7._17
             this.checkBox1.Location = new System.Drawing.Point(135, 380);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(20, 20);
+            this.checkBox1.TintColor = System.Drawing.Color.Salmon;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
@@ -125,6 +126,7 @@ namespace SmobilerAppTEST7._17
             this.checkBox2.Location = new System.Drawing.Point(239, 380);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(19, 20);
+            this.checkBox2.TintColor = System.Drawing.Color.Tomato;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // label5
@@ -143,6 +145,8 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FontSize = 16F;
             this.button1.Location = new System.Drawing.Point(95, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
@@ -151,7 +155,7 @@ namespace SmobilerAppTEST7._17
             // 
             // register
             // 
-            this.BackgroundImage = "bluee";
+            this.BackgroundImage = "background";
             this.BackgroundImageSizeMode = Smobiler.Core.Controls.ImageSizeMode.Stretch;
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});

@@ -33,13 +33,15 @@ namespace SmobilerAppTEST7._17
         private void btnLogon_Press(object sender, EventArgs e)
         {
             string database = "Movie_ticket";
-            if (checkBox1.Checked == false && checkBox2.Checked == false)
-            {
-                throw new Exception("请选择一种身份");
-            }
-            if (checkBox1.Checked == true)
-            {
+            
+          
                 try
+                {
+                    if (checkBox1.Checked == false && checkBox2.Checked == false)
+                {
+                    throw new Exception("请选择一种身份");
+                }
+                    if (checkBox1.Checked == true)
                 {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();
@@ -91,23 +93,17 @@ namespace SmobilerAppTEST7._17
                         throw new Exception("密码不正确，请重新输入！");
                     }
 
+                  
                 }
-                catch (Exception ex)
+                    if (checkBox2.Checked == true)
                 {
-                    Toast(ex.Message);
-                }
-            }
 
-            if (checkBox2.Checked == true)
-            {
-                try
-                {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();
                     if (userID == "001")
                     {
 
-                        if (txtPassword.Text=="123456")
+                        if (txtPassword.Text == "123456")
                         {
 
                             string a = txtUserName.Text;
@@ -164,13 +160,16 @@ namespace SmobilerAppTEST7._17
                             throw new Exception("密码不正确，请重新输入！");
                         }
                     }
+
                 }
 
-                catch (Exception ex)
+                 }
+                 catch (Exception ex)
                 {
                     Toast(ex.Message);
-                }
-            }
+                 }
+
+
 
 
         }  
