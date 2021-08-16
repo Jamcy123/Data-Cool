@@ -71,7 +71,7 @@ namespace SmobilerAppTEST7._17
             if (dateTime.CompareTo(DateTime.Now) >= 0)//当前时间早于结束时间
             {
                 ((Label)e.Row.Control.Controls.Find("label7")).Text = "未完成";
-                ((Label)e.Row.Control.Controls.Find("label7")).ForeColor = Color.Black;
+                ((Label)e.Row.Control.Controls.Find("label7")).ForeColor = Color.Red;
             }
             else
             {

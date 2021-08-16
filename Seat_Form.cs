@@ -216,14 +216,14 @@ namespace SmobilerAppTEST7._17
                     {
                         if (i == 0)
                         {
-                            sql = sql + "and Pposition='" + mes[2 * i] + "排" + mes[2 * i + 1] + "座'";
+                            sql = sql + "and (Pposition='" + mes[2 * i] + "排" + mes[2 * i + 1] + "座'";
                         }
                         else 
                         {
                             sql = sql + "or Pposition='" + mes[2 * i] + "排" + mes[2 * i + 1] + "座'";
                         }
                     }
-                    dataSet = Databaseconnect(database, sql);
+                    dataSet = Databaseconnect(database, sql+")");
                     if (dataSet.Tables[0].Rows.Count>0)
                     {
                         //刷新位置
