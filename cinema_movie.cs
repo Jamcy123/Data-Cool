@@ -56,7 +56,7 @@ namespace SmobilerAppTEST7._17
             string select21 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
                 "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
-                "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
+                "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "'; ";
 
             string select22 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
                 "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
