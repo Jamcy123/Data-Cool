@@ -134,7 +134,7 @@ namespace SmobilerAppTEST7._17
             // 
             // goupiao_button
             // 
-            this.goupiao_button.BackColor = System.Drawing.Color.Red;
+            this.goupiao_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.goupiao_button.Bold = true;
             this.goupiao_button.FontSize = 15F;
             this.goupiao_button.Location = new System.Drawing.Point(243, 19);

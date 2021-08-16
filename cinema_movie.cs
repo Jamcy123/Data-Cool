@@ -34,7 +34,7 @@ namespace SmobilerAppTEST7._17
 
         private void cinema_movie_Load(object sender, EventArgs e)
         {
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
+            string[] a = { "今天 " + DateTime.Now.ToShortDateString().ToString(), "明天 " + DateTime.Now.AddDays(1).ToShortDateString().ToString(), "后天 " + DateTime.Now.AddDays(2).ToShortDateString().ToString() };
             tabPageView1.Titles = a;
 
             string database = "movie_ticket";
@@ -101,6 +101,33 @@ namespace SmobilerAppTEST7._17
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string shangying = "";
+            string[] movie_time;
+            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
+            shangying = movie_time[1];
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
+        }
+
+        private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string shangying = "";
+            string[] movie_time;
+            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
+            shangying = movie_time[1];
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
+        }
+
+        private void listView3_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string shangying = "";
+            string[] movie_time;
+            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
+            shangying = movie_time[1];
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
         }
     }
 }

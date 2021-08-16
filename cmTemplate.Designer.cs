@@ -21,7 +21,7 @@ namespace SmobilerAppTEST7._17
         {
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.Ptime_lbl = new Smobiler.Core.Controls.Label();
-            this.label1 = new Smobiler.Core.Controls.Label();
+            this.shichang_lbl = new Smobiler.Core.Controls.Label();
             this.Mduration_lbl = new Smobiler.Core.Controls.Label();
             this.Mtype_lbl = new Smobiler.Core.Controls.Label();
             this.Phall_lbl = new Smobiler.Core.Controls.Label();
@@ -36,7 +36,7 @@ namespace SmobilerAppTEST7._17
             this.panel1.BorderColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.Ptime_lbl,
-            this.label1,
+            this.shichang_lbl,
             this.Mduration_lbl,
             this.Mtype_lbl,
             this.Phall_lbl,
@@ -52,25 +52,24 @@ namespace SmobilerAppTEST7._17
             // 
             this.Ptime_lbl.Bold = true;
             this.Ptime_lbl.DataMember = "Cno";
-            this.Ptime_lbl.DisplayMember = "Ptime";
-            this.Ptime_lbl.FontSize = 16F;
+            this.Ptime_lbl.FontSize = 18F;
             this.Ptime_lbl.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.Ptime_lbl.Name = "Ptime_lbl";
-            this.Ptime_lbl.Size = new System.Drawing.Size(84, 30);
-            this.Ptime_lbl.Text = "label1";
+            this.Ptime_lbl.Size = new System.Drawing.Size(84, 28);
             // 
-            // label1
+            // shichang_lbl
             // 
-            this.label1.Location = new System.Drawing.Point(0, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 20);
-            this.label1.Text = "时长:";
+            this.shichang_lbl.DataMember = "Ptime";
+            this.shichang_lbl.Location = new System.Drawing.Point(10, 28);
+            this.shichang_lbl.Name = "shichang_lbl";
+            this.shichang_lbl.Size = new System.Drawing.Size(39, 20);
+            this.shichang_lbl.Text = "时长:";
             // 
             // Mduration_lbl
             // 
             this.Mduration_lbl.DataMember = "Mname";
             this.Mduration_lbl.DisplayMember = "Mduration";
-            this.Mduration_lbl.Location = new System.Drawing.Point(39, 30);
+            this.Mduration_lbl.Location = new System.Drawing.Point(49, 28);
             this.Mduration_lbl.Name = "Mduration_lbl";
             this.Mduration_lbl.Size = new System.Drawing.Size(50, 20);
             this.Mduration_lbl.Text = "label2";
@@ -118,9 +117,9 @@ namespace SmobilerAppTEST7._17
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.button1.Bold = true;
-            this.button1.BorderColor = System.Drawing.Color.Gold;
+            this.button1.BorderColor = System.Drawing.Color.White;
             this.button1.FontSize = 18F;
             this.button1.Location = new System.Drawing.Point(250, 7);
             this.button1.Name = "button1";
@@ -140,7 +139,7 @@ namespace SmobilerAppTEST7._17
 
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Label Ptime_lbl;
-        private Smobiler.Core.Controls.Label label1;
+        private Smobiler.Core.Controls.Label shichang_lbl;
         private Smobiler.Core.Controls.Label Mduration_lbl;
         private Smobiler.Core.Controls.Label Mtype_lbl;
         private Smobiler.Core.Controls.Label Phall_lbl;
