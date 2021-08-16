@@ -30,10 +30,10 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             string sql1 =
                 "select * from Movie_ticket.Movie " +
-                "where exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno='" + Cno + "');";
+                "where exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno='" + Cno + "');";
             string sql2 =
                 "select * from Movie_ticket.Movie" +
-                " where not exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno = '" + Cno + "');";
+                " where not exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno = '" + Cno + "');";
                 
             DataSet dataSet1 = Databaseconnect(database, sql1);
             DataSet dataSet2 = Databaseconnect(database, sql2);
@@ -81,7 +81,7 @@ namespace SmobilerAppTEST7._17
                     case 0://正在热映
                         sql = 
                         "select * from Movie_ticket.Movie " +
-                        "where exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno='" + Cno + "') and  Mname like '%" + BoxText + "%'"; 
+                        "where exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno='" + Cno + "') and  Mname like '%" + BoxText + "%'"; 
                         dataSet = Databaseconnect(database, sql);
                         if (dataSet.Tables[0].Rows.Count <= 0)
                         {
@@ -102,7 +102,7 @@ namespace SmobilerAppTEST7._17
                     case 1://可上映
                         sql = 
                         "select * from Movie_ticket.Movie" +
-                        " where not exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno = '" + Cno + "') and Mname like '%" + BoxText + "%'";  
+                        " where not exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno = '" + Cno + "') and Mname like '%" + BoxText + "%'";  
                         dataSet = Databaseconnect(database, sql);
 
                         if (dataSet.Tables[0].Rows.Count <= 0)

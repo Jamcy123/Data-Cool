@@ -64,8 +64,6 @@ namespace SmobilerAppTEST7._17
 
                     listView1.DataSource = dataSet;
                     listView1.DataBind();
-                    sql = "alter table Movie_ticket.Movie drop column Cno";
-                    Databaseconnect(database, sql);
                     throw new Exception("此处暂无符合要求的电影");
                 }
                 else
@@ -122,7 +120,7 @@ namespace SmobilerAppTEST7._17
 
         private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
         {
-            name = DateTime.UtcNow.ToString().Replace("/", "").Replace(":","");
+            name = DateTime.UtcNow.ToString().Replace("/", "").Replace(":","")+".png";
             e.SaveFile(name, MobileResourceManager.DefaultImagePath); //第二个参数为路径，图片保存在项目下\bin\Debug\Resources\Image下
             image1.ResourceID = name;
 

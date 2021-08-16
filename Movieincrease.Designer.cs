@@ -56,6 +56,7 @@ namespace SmobilerAppTEST7._17
             this.tabPageView1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.tabPageControl1,
             this.tabPageControl2});
+            this.tabPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabPageView1.Name = "tabPageView1";
             this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
             this.tabPageView1.Size = new System.Drawing.Size(300, 574);
