@@ -249,7 +249,8 @@ namespace SmobilerAppTEST7._17
         {
             //this.Form.Show(new Myblance("13549473975"));
             //this.Form.Show(new Mymessage("13549473975"));
-            this.Form.Show(new Myorder("13549473975"));
+            //this.Form.Show(new Myorder("13549473975"));
+            this.Form.Show(new Alterpassword());
         }
     }
 }
