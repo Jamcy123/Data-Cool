@@ -34,7 +34,7 @@ namespace SmobilerAppTEST7._17
 
         private void cinema_movie_Load(object sender, EventArgs e)
         {
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString() };
+            string[] a = { "今天 " + DateTime.Now.ToShortDateString().ToString(), "明天 " + DateTime.Now.AddDays(1).ToShortDateString().ToString(), "后天 " + DateTime.Now.AddDays(2).ToShortDateString().ToString() };
             tabPageView1.Titles = a;
 
             string database = "movie_ticket";

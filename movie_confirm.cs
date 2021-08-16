@@ -33,7 +33,7 @@ namespace SmobilerAppTEST7._17
         }
         private void movie_confirm_Load(object sender, EventArgs e)
         {
-            string[] a = {DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString()};
+            string[] a = {"今天 " + DateTime.Now.ToShortDateString().ToString(), "明天 " + DateTime.Now.AddDays(1).ToShortDateString().ToString(), "后天 " + DateTime.Now.AddDays(2).ToShortDateString().ToString()};
             tabPageView1.Titles = a;
 
             string database = "movie_ticket";
@@ -84,6 +84,7 @@ namespace SmobilerAppTEST7._17
                 listView1.DataSource = table1;
                 listView1.DataBind();
             }
+            listView2.Rows.Clear();     //清除数据
             if (table2.Rows.Count > 0)    //绑定数据源
             {
                 for (int i = 0; i < table1.Rows.Count; i++)
@@ -93,6 +94,7 @@ namespace SmobilerAppTEST7._17
                 listView2.DataSource = table2;
                 listView2.DataBind();
             }
+            listView3.Rows.Clear();     //清除数据
             if (table3.Rows.Count > 0)    //绑定数据源
             {
                 for (int i = 0; i < table1.Rows.Count; i++)
