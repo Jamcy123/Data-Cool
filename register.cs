@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace SmobilerAppTEST7._17
 {
@@ -68,48 +69,91 @@ namespace SmobilerAppTEST7._17
                         }
                         else
                         {
-                            if (checkBox1.Checked == true && checkBox2.Checked == true)
-                                Toast("请只选择一个性别！");
-                            else if(checkBox1.Checked == false && checkBox2.Checked == false)
-                                Toast("请选择性别！");
+                            if (checkBox1.Checked == true)
+                                sex = "男";
+                            else if (checkBox2.Checked == true)
+                                sex = "女";
+                            string insert = "Insert into Userinf (Uphoneno,Upassword,Ublance,Usex) values(\"" + txtUserphone.Text + "\",\"" + txtPassword.Text + "\",\"" + "0" + "\",\"" + sex + "\")";
+                            Databaseconnect(database, insert);
+                            string select = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;
+                            DataSet save = Databaseconnect(database, select);
+                            if (save.Tables[0].Rows.Count <= 0)
+                                Toast("注册失败！");
                             else
                             {
-                                if (checkBox1.Checked == true)
-                                    sex = "男";
-                                else if (checkBox2.Checked == true)
-                                    sex = "女";
-                                string insert = "Insert into Userinf (Uphoneno,Upassword,Ublance,Usex) values(\"" + txtUserphone.Text + "\",\"" + txtPassword.Text + "\",\"" + "0" + "\",\"" + sex + "\")";
-                                Databaseconnect(database, insert);
-                                string select = "Select Upassword from Userinf where Uphoneno=" + txtUserphone.Text;                              
-                                DataSet save = Databaseconnect(database, select);
-                                if (save.Tables[0].Rows.Count <= 0)
-                                    Toast("注册失败！");
-                                else
-                                {
-                                    Toast("注册成功！");
-                                    this.Close();
-                                }
+                                Toast("注册成功！");
+                                this.Close();
                             }
-                           
-                        }
-              
+                        }            
                     }
-                }
-            
-            }
-            
+                }            
+            }           
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
+            if (checkBox1.Checked == false)
+                checkBox1.Checked = true;
+            else
                 checkBox1.Checked = false;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked == true)
+            if (checkBox2.Checked == false)
+                checkBox2.Checked = true;
+            else
                 checkBox2.Checked = false;
+        }
+
+        private void txtUserphone_TouchEnter(object sender, EventArgs e)
+        {
+            label1.Bold = true;
+            txtUserphone.BorderColor = Color.Red;
+        }
+
+        private void txtUserphone_TouchLeave(object sender, EventArgs e)
+        {
+            try
+            {
+                //确保账号输入的是数字
+                label1.Bold = false;
+                txtUserphone.BorderColor = Color.WhiteSmoke;
+                long.TryParse(txtUserphone.Text, out long a);
+                if (a == 0 && txtUserphone.Text != "")
+                {
+                    txtUserphone.Text = "";
+                    throw new Exception("请输入正确的账号格式");
+                }
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);             
+            }
+        }
+
+        private void txtPassword_TouchEnter(object sender, EventArgs e)
+        {
+            label2.Bold = true;
+            txtPassword.BorderColor = Color.Red;
+        }
+
+        private void txtPassword_TouchLeave(object sender, EventArgs e)
+        {
+            label2.Bold = false;
+            txtPassword.BorderColor = Color.WhiteSmoke;
+        }
+
+        private void txtsure_TouchEnter(object sender, EventArgs e)
+        {
+            label3.Bold = true;
+            txtsure.BorderColor = Color.Red;
+        }
+
+        private void txtsure_TouchLeave(object sender, EventArgs e)
+        {
+            label3.Bold = false;
+            txtsure.BorderColor = Color.WhiteSmoke;
         }
     }
 }

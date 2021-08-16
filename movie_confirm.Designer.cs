@@ -208,12 +208,14 @@ namespace SmobilerAppTEST7._17
             // title_Control1
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
             this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
             this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
             this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.title_Control1.Name = "title_Control1";
             this.title_Control1.Size = new System.Drawing.Size(300, 36);
             this.title_Control1.Text = "特惠购票";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             // 
             // movie_confirm
             // 

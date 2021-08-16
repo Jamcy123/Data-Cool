@@ -33,6 +33,9 @@ namespace SmobilerAppTEST7._17
         }
         private void movie_confirm_Load(object sender, EventArgs e)
         {
+            string[] a = {DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(1).ToShortDateString().ToString(), DateTime.Now.AddDays(2).ToShortDateString().ToString()};
+            tabPageView1.Titles = a;
+
             string database = "movie_ticket";
             string select = "SELECT * FROM movie_ticket.movie where Mno like '" + movie_no + "';";
             DataSet dataSet = Databaseconnect(database, select);
@@ -43,28 +46,57 @@ namespace SmobilerAppTEST7._17
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
-            string select1 = "SELECT cinema.Cno,cinema.Cname,ticket.Pprice,cinema.Caddress,projection.Mno,projection.Ptime " +
-                "FROM movie_ticket.project,movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
-                "where project.Mno like '" + movie_no + "' and project.Cno like cinema.Cno and project.Cno like ticket.Cno and project.Mno like ticket.Mno and projection.Cno like project.Cno and projection.Mno like project.Mno;";
+            string select1 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Ptime,projection.Pprice " +
+                "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
+
+            string select2 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Ptime,projection.Pprice " +
+                "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
+
+            string select3 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Ptime,projection.Pprice " +
+                "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
+                "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
+
 
             DataSet dataSet1 = Databaseconnect(database, select1);
-            
-            DataTable table = new DataTable();
-            table = dataSet1.Tables[0];
+            DataSet dataSet2 = Databaseconnect(database, select2);
+            DataSet dataSet3 = Databaseconnect(database, select3);
+
+
+            DataTable table1 = new DataTable();
+            table1 = dataSet1.Tables[0];
+            DataTable table2 = new DataTable();
+            table2 = dataSet2.Tables[0];
+            DataTable table3 = new DataTable();
+            table3 = dataSet3.Tables[0];
             listView1.Rows.Clear();     //清除数据
-            if (table.Rows.Count > 0)    //绑定数据源
+
+            string str = table1.Rows[1]["Ptime"].ToString();
+            string[] array = str.Split(' ');
+            MessageBox.Show(array[1]); //弹出我
+
+            if (table1.Rows.Count > 0)    //绑定数据源
             {
-                listView1.DataSource = table;
+                listView1.DataSource = table1;
                 listView1.DataBind();
-                listView2.DataSource = table;
+            }
+            if (table2.Rows.Count > 0)    //绑定数据源
+            {
+                listView2.DataSource = table2;
                 listView2.DataBind();
-                listView3.DataSource = table;
+            }
+            if (table3.Rows.Count > 0)    //绑定数据源
+            {
+                listView3.DataSource = table3;
                 listView3.DataBind();
             }
 
-            string[] a = { DateTime.Now.ToShortDateString().ToString(), DateTime.Now.AddDays(30).ToShortDateString().ToString(), DateTime.Now.AddDays(59).ToShortDateString().ToString() };
-            tabPageView1.Titles = a;
         }
 
+        private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace SmobilerAppTEST7._17
 {
@@ -113,10 +114,39 @@ namespace SmobilerAppTEST7._17
                
           
         }
-
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox1_TouchLeave(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox1.BorderColor = Color.WhiteSmoke;
+                //确保账号输入的是数字
+                textBox1.BorderColor = Color.WhiteSmoke;
+                double.TryParse(textBox1.Text, out double a);
+                if (a == 0 && textBox1.Text != "")
+                {
+                    textBox1.Text = "";
+                    throw new Exception("请输入正确的数额");
+                }
+                else
+                {
+                    if (a < 0)
+                        throw new Exception("请输入正数");
+                }
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
+            }
+        }
+
+        private void textBox1_TouchEnter(object sender, EventArgs e)
+        {
+            textBox1.BorderColor = Color.Red;
         }
     }
 }

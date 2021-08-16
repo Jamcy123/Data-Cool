@@ -32,16 +32,15 @@ namespace SmobilerAppTEST7._17
         }
         private void btnLogon_Press(object sender, EventArgs e)
         {
-            string database = "Movie_ticket";
-            
-          
-                try
-                {
-                    if (checkBox1.Checked == false && checkBox2.Checked == false)
+            try
+            {
+                string database = "Movie_ticket";
+                if (checkBox1.Checked == false && checkBox2.Checked == false)
                 {
                     throw new Exception("请选择一种身份");
                 }
-                    if (checkBox1.Checked == true)
+
+                if (checkBox1.Checked == true)
                 {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();
@@ -60,13 +59,10 @@ namespace SmobilerAppTEST7._17
                         //记住密码
                         string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
                         Databaseconnect(database, update);
-
-
                     }
 
                     string select1 = "Select Upassword from Userinf where Uphoneno='" + txtUserName.Text + "'";
                     DataSet save = Databaseconnect(database, select1);
-
 
                     if (save.Tables[0].Rows.Count <= 0)
                     {
@@ -74,17 +70,15 @@ namespace SmobilerAppTEST7._17
                         txtPassword.Text = "";
                         throw new Exception("用户不存在，请重新输入！");
                     }
-                    else
-                    {
-                        image1.ResourceID = txtUserName.Text;
-                    }
-
 
                     string pwd = save.Tables[0].Rows[0][0].ToString();
 
                     if (pwd == txtPassword.Text)
                     {
+                        this.Client.Session.Clear();//登陆前清空之前的全局变量
+                        this.Client.Session.Add("Uphone", txtUserName.Text);//设置用户号码的全局变量
                         string a = txtUserName.Text;
+                        //ClientVariables.GetCurrentClient(上一个设备的DeviceID).ReStart()*****用户唯一在线
                         moive_select moive_Select = new moive_select(a);
                         this.Show(moive_Select);
                     }
@@ -92,12 +86,10 @@ namespace SmobilerAppTEST7._17
                     {
                         throw new Exception("密码不正确，请重新输入！");
                     }
-
-                  
                 }
-                    if (checkBox2.Checked == true)
-                {
 
+                if (checkBox2.Checked == true)
+                {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();
                     if (userID == "001")
@@ -105,7 +97,6 @@ namespace SmobilerAppTEST7._17
 
                         if (txtPassword.Text == "123456")
                         {
-
                             string a = txtUserName.Text;
                             Movieincrease movieincrease = new Movieincrease();
                             this.Show(movieincrease);
@@ -131,12 +122,10 @@ namespace SmobilerAppTEST7._17
                             //记住密码
                             string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
                             Databaseconnect(database, update);
-
                         }
 
                         string select = "Select Apassword from Cinema where Aid='" + txtUserName.Text + "'";
                         DataSet save = Databaseconnect(database, select);
-
 
                         if (save.Tables[0].Rows.Count <= 0)
                         {
@@ -145,12 +134,10 @@ namespace SmobilerAppTEST7._17
                             throw new Exception("用户不存在，请重新输入！");
                         }
 
-
                         string pwd = save.Tables[0].Rows[0][0].ToString();
 
                         if (pwd == txtPassword.Text)
                         {
-
                             string a = txtUserName.Text;
                             Administrator administrator = new Administrator(a);
                             this.Show(administrator);
@@ -160,22 +147,14 @@ namespace SmobilerAppTEST7._17
                             throw new Exception("密码不正确，请重新输入！");
                         }
                     }
-
                 }
-
-                 }
-                 catch (Exception ex)
-                {
-                    Toast(ex.Message);
-                 }
-
-
-
-
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
+            }
         }  
-            
-        
-
+                   
         private void btnForget_Press(object sender, EventArgs e)
         {
             try
@@ -194,13 +173,6 @@ namespace SmobilerAppTEST7._17
             }
         }
 
-        private void button1_Press(object sender, EventArgs e)
-        {
-            string a = txtUserName.Text;
-            moive_select moive_Select = new moive_select(a);
-            this.Show(moive_Select);
-        }
-
         private void btnregister_Press(object sender, EventArgs e)
         {
             register register= new register();
@@ -211,33 +183,73 @@ namespace SmobilerAppTEST7._17
         {
             if (checkBox2.Checked == true)
                 checkBox2.Checked = false;
-           
+            else
+                checkBox2.Checked = true;
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked == true)
                 checkBox1.Checked = false;
-
+            else
+                checkBox1.Checked = true;
         }
 
-        private void txtUserName_TouchLeave(object sender, EventArgs e)
+        private void txtUserName_TouchLeave(object sender, EventArgs e)//用户名textbox触碰离开事件
         {
-            string select = "Select Uip,Upassword from Userinf where Uphoneno='" + txtUserName.Text+"'";
-            string database = "Movie_ticket";
-            DataSet pass = Databaseconnect(database, select);
-            if(pass.Tables[0].Rows.Count>0)
+            try
             {
-                if (pass.Tables[0].Rows[0][0].ToString() == this.Client.SessionID)
+                //确保账号输入的是数字
+                txtUserName.BorderColor = Color.WhiteSmoke;             
+                long.TryParse(txtUserName.Text,out long a);
+                if (a == 0&& txtUserName.Text != "")
                 {
-                    txtPassword.Text = pass.Tables[0].Rows[0][1].ToString();
+                    txtUserName.Text = "";
+                    throw new Exception("请输入正确的账号格式");
                 }
-            }            
+                //查询数据库
+                string select = "Select Uip,Upassword from Userinf where Uphoneno='" + txtUserName.Text + "'";
+                string database = "Movie_ticket";
+                DataSet pass = Databaseconnect(database, select);
+                if (pass.Tables[0].Rows.Count > 0)
+                {
+                    if (pass.Tables[0].Rows[0][0].ToString() == this.Client.SessionID)
+                    {
+                        txtPassword.Text = pass.Tables[0].Rows[0][1].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
+            } 
+        }
+
+        private void txtUserName_TouchEnter(object sender, EventArgs e)//用户名textbox触碰事件
+        {
+            txtUserName.BorderColor = Color.Red;
+        }
+
+        private void txtPassword_TouchEnter(object sender, EventArgs e)//密码textbox触碰事件
+        {
+            txtPassword.BorderColor = Color.Red;
+        }
+
+        private void txtPassword_TouchLeave(object sender, EventArgs e)//密码textbox触碰离开事件
+        {
+            txtPassword.BorderColor = Color.WhiteSmoke;
         }
 
         private void button3_Press(object sender, EventArgs e)//我直接选座位
         {
-            //this.Form.Show(new Seat_Form("是电影名称","是影院名称","周几","几月几号 00:00-00:00","票单价"));
+            this.Form.Show(new Seat_Form("13549473975", "是部电影", "001", "又是个影院", "001", 1, "周四", "2021-08-12 09:00:00", "1.2"));
+        }
+
+        private void button1_Press_1(object sender, EventArgs e)//任意门
+        {
+            //this.Form.Show(new Myblance("13549473975"));
+            //this.Form.Show(new Mymessage("13549473975"));
+            this.Form.Show(new Myorder("13549473975"));
         }
     }
 }

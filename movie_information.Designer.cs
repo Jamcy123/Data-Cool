@@ -41,12 +41,14 @@ namespace SmobilerAppTEST7._17
             // title_Control1
             // 
             this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
             this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
             this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
             this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
             this.title_Control1.Name = "title_Control1";
             this.title_Control1.Size = new System.Drawing.Size(300, 36);
             this.title_Control1.Text = "电影详情";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             this.title_Control1.Load += new System.EventHandler(this.title_Control1_Load_1);
             // 
             // panel1
@@ -183,7 +185,6 @@ namespace SmobilerAppTEST7._17
             this.button3.Bold = true;
             this.button3.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.button3.FontSize = 18F;
-            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(86, 216);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(121, 35);

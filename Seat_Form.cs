@@ -16,9 +16,11 @@ namespace SmobilerAppTEST7._17
         double money=1.2;//价格
         int[] mes = new int[8];//选择的座位数组
         Seat_Control[][] Controlss;
-        string Uno;//当前用户电话
-        string Mno;//电影编号
-        string Cno;//影院编号
+        string Uno="13549473975";//当前用户电话
+        string Mno="001";//电影编号
+        string Cno="001";//影院编号
+        int Phall=1;//影厅号
+        string Ptime = "2021-08-12 09:00:00";//放映时间
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
             MySqlConnection con = new MySqlConnection();
@@ -30,14 +32,18 @@ namespace SmobilerAppTEST7._17
             con.Close();
             return dataSet;
         }
-        public Seat_Form(string uno,string Mname,string mno,string Cname,string cno,string Week,string Dtime,string price) : base()
+        public Seat_Form(string uno,string Mname,string mno,string Cname,string cno,int phall,string Week,string ptime,string price) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
             Uno = uno;
+            Mno = mno;
+            Cno = cno;
+            Ptime = ptime;
+            Phall = phall;
             Seat_Update(9, 9, 1);//生成座位表
             money = double.Parse(price);
-            ticketMes_Control1.MesInput(Mname, Week, Dtime);
+            ticketMes_Control1.MesInput(Mname, Week, ptime);
             title_Control1.Text = Cname;
         }
 
@@ -66,7 +72,8 @@ namespace SmobilerAppTEST7._17
             }
             //throw new NotImplementedException();
         }
-        private void Seat_Update(int x, int y,int which)//生成x列y行座位表 ******补充已选座位信息******
+
+        private void Seat_Update(int x, int y,int which)//1：生成x列y行座位表 2：取消勾选座位
         {
             switch (which)
             {
@@ -86,22 +93,46 @@ namespace SmobilerAppTEST7._17
                             }
                         }
                         //调用数据库中的数据，选过座位的位置设置为红色不可选
-                        for (int a = 0; a < x; a++)
-                        {
-                            Controlss[3][a].Seat_Panel.BackColor = Color.FromArgb(200, Color.Red);
-                            Controlss[3][a].Seat_Panel.BackColor = Color.FromArgb(200, Color.Red);
-                            Controlss[3][a].Stop_Panel.Visible = true;//座位变红后变为不可选
-                        }
+                        red_seat();
                     } break;                   
                 case 2:
-                    {
+                    {//取消勾选座位
                         this.Controlss[y - 1][x - 1].Fon_Bool = false;
                         this.Controlss[y - 1][x - 1].Seat_Panel.BorderColor = Color.LightGray;
                         this.Controlss[y - 1][x - 1].Seat_Panel.BackColor = Color.White;
                     } break;
+            }            
+        }
+        private void red_seat()//已被选座位变红不可选
+        {
+            string database = "Movie_ticket";
+            string sql = "select Pposition from ticket where Cno='" + Cno + "' and Mno='" + Mno + "' and Phall='" + Phall + "' and Ptime='" + Ptime + "'";
+            DataSet dataSet = Databaseconnect(database, sql);
+            string wei = "";
+            int pai;//几排
+            int zuo;//几座
+            for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
+            {
+                wei = dataSet.Tables[0].Rows[i].ItemArray[0].ToString();
+                pai = int.Parse(wei.Substring(0, wei.IndexOf("排")));
+                zuo = int.Parse(wei.Substring(wei.IndexOf("排") + 1, wei.IndexOf("座") - wei.IndexOf("排") - 1));
+                this.Controlss[pai - 1][zuo - 1].Seat_Panel.BackColor = Color.FromArgb(200, Color.Red);
+                this.Controlss[pai - 1][zuo - 1].Seat_Panel.BackColor = Color.FromArgb(200, Color.Red);
+                this.Controlss[pai - 1][zuo - 1].Stop_Panel.Visible = true;//座位变红后变为不可选
             }
-            
-
+        }
+        private void clear_seat()
+        {
+            int x, y;
+            for (int i = 0; i < num; i++)
+            {
+                y = mes[2 * i];//y排x座
+                x = mes[2 * i + 1];//Controls[y][x]
+                Seat_Update(x, y, 2);//取消勾选座位
+            }
+            num = 0;
+            buyBtn_Control1.sure_panel_change(num, money);//更改确认按钮信息
+            ticketMes_Control1.Choice_ed(num, mes, money);//选择座位后进行小票改动 num:选择位置的总个数 mes:选择的位置信息 mon:价格信息
         }
         private void Seat_Form_Seat_Ctrl_Press(object sender, EventArgs e)//座位单击事件
         {
@@ -179,27 +210,52 @@ namespace SmobilerAppTEST7._17
                 else
                 {
                     //判断已选的位置是否被先选了 选了就刷新座位 没选就扣钱刷新座位
-                    sql = "select * from ticket where Cno='" + Cno + "' and Mno='" + Mno + "' and ";//*********
+                    //string sql = "select Pposition from ticket where Cno='" + Cno + "' and Mno='"+Mno+ "' and Phall='"+Phall+"' and Ptime='"+Ptime+"'";
+                    sql = "select * from ticket where Cno='" + Cno + "' and Mno='" + Mno + "' and Phall='" + Phall + "' and Ptime='" + Ptime + "' ";//*********
                     for (int i=0;i<num;i++)
                     {
-                        sql = sql;
+                        if (i == 0)
+                        {
+                            sql = sql + "and Pposition='" + mes[2 * i] + "排" + mes[2 * i + 1] + "座'";
+                        }
+                        else 
+                        {
+                            sql = sql + "or Pposition='" + mes[2 * i] + "排" + mes[2 * i + 1] + "座'";
+                        }
                     }
                     dataSet = Databaseconnect(database, sql);
                     if (dataSet.Tables[0].Rows.Count>0)
-                    {//刷新位置
-                        //***********
+                    {
+                        //刷新位置
+                        clear_seat();//清空已选座位
+                        red_seat();//更新被选信息
                         throw new Exception("位置已被抢先，请重新选座");
                     }
                     else
                     {
-                        //购买成功 同步数据库
+                        //购买成功 扣钱 刷新位置 同步数据库;
+                        sql = "update userinf set ublance = ublance -"+ money * num +" where uphoneno='"+Uno+"'";
+                        for (int i = 0; i < num; i++)
+                        {
+                            sql = "insert into ticket(Cno,Mno,Phall,Ptime,Pposition,Uphoneno,Pprice)values ('" + Cno + "','" + Mno + "','" + Phall + "','" + Ptime + "','" + mes[2 * i] + "排" + mes[2 * i + 1] + "座','" + Uno + "','" + money + "')";
+                            Databaseconnect(database, sql);
+                        }
+                        MessageBox.Show("请移步至 '我的订单' 查看详情", "购票成功", MessageBoxButtons.OK, (obj, args) =>
+                        {
+                            this.Close();
+                        });
                     }
                 }
             }
             catch (Exception ex)
-            {
+            {               
                 Toast(ex.Message);
             }
+        }
+
+        private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

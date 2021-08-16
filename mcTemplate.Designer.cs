@@ -26,6 +26,7 @@ namespace SmobilerAppTEST7._17
             this.Pprice_lbl = new Smobiler.Core.Controls.Label();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
+            this.movie_time_lbl = new Smobiler.Core.Controls.Label();
             // 
             // panel1
             // 
@@ -38,7 +39,8 @@ namespace SmobilerAppTEST7._17
             this.Ptime_lbl,
             this.Pprice_lbl,
             this.label1,
-            this.label2});
+            this.label2,
+            this.movie_time_lbl});
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 70);
             this.panel1.Touchable = true;
@@ -67,10 +69,9 @@ namespace SmobilerAppTEST7._17
             // 
             this.Ptime_lbl.DataMember = "Mno";
             this.Ptime_lbl.DisplayMember = "Ptime";
-            this.Ptime_lbl.Location = new System.Drawing.Point(46, 48);
+            this.Ptime_lbl.Location = new System.Drawing.Point(180, 48);
             this.Ptime_lbl.Name = "Ptime_lbl";
-            this.Ptime_lbl.Size = new System.Drawing.Size(231, 15);
-            this.Ptime_lbl.Text = "label4";
+            this.Ptime_lbl.Size = new System.Drawing.Size(120, 15);
             // 
             // Pprice_lbl
             // 
@@ -97,6 +98,12 @@ namespace SmobilerAppTEST7._17
             this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.Text = "场次：";
             // 
+            // movie_time_lbl
+            // 
+            this.movie_time_lbl.Location = new System.Drawing.Point(68, 48);
+            this.movie_time_lbl.Name = "movie_time_lbl";
+            this.movie_time_lbl.Size = new System.Drawing.Size(98, 15);
+            // 
             // mcTemplate
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -115,5 +122,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label Pprice_lbl;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Label label2;
+        private Smobiler.Core.Controls.Label movie_time_lbl;
     }
 }

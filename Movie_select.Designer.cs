@@ -37,19 +37,19 @@ namespace SmobilerAppTEST7._17
             toolBarItem1.IconID = "video-camera";
             toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             toolBarItem1.Name = "cinema-icon";
-            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             toolBarItem1.SelectIconID = "video-camera";
             toolBarItem1.Text = "影院";
             toolBarItem2.IconID = "youtube-play";
             toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             toolBarItem2.Name = "moive-icon";
-            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             toolBarItem2.SelectIconID = "youtube-play";
             toolBarItem2.Text = "电影";
             toolBarItem3.IconID = "user";
             toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
             toolBarItem3.Name = "user-icon";
-            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             toolBarItem3.SelectIconID = "user";
             toolBarItem3.Text = "我的";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
@@ -58,7 +58,7 @@ namespace SmobilerAppTEST7._17
             toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(59, 477);
             this.toolBar1.Name = "toolBar1";
-            this.toolBar1.SelectForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.toolBar1.SelectForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
             this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick);
             // 

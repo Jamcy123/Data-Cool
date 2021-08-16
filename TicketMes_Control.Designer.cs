@@ -89,14 +89,14 @@ namespace SmobilerAppTEST7._17
             this.Week_lbl.ForeColor = System.Drawing.Color.DimGray;
             this.Week_lbl.Location = new System.Drawing.Point(19, 41);
             this.Week_lbl.Name = "Week_lbl";
-            this.Week_lbl.Size = new System.Drawing.Size(37, 19);
+            this.Week_lbl.Size = new System.Drawing.Size(56, 19);
             this.Week_lbl.Text = "周几";
             // 
             // Dtime_lbl
             // 
             this.Dtime_lbl.FontSize = 15F;
             this.Dtime_lbl.ForeColor = System.Drawing.Color.DarkGray;
-            this.Dtime_lbl.Location = new System.Drawing.Point(51, 41);
+            this.Dtime_lbl.Location = new System.Drawing.Point(83, 41);
             this.Dtime_lbl.Name = "Dtime_lbl";
             this.Dtime_lbl.Size = new System.Drawing.Size(190, 19);
             this.Dtime_lbl.Text = "某月某日 00:00-00:00";
