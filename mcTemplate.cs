@@ -38,7 +38,7 @@ namespace SmobilerAppTEST7._17
         private void panel1_Press(object sender, EventArgs e)
         {
             string b = Cname_lbl.BindDataValue.ToString();
-            string a = Ptime_lbl.BindDataValue.ToString();
+            string a = Pprice_lbl.BindDataValue.ToString();
             cinema_movie cinema_Movie = new cinema_movie(a,b);
             this.Form.Show(cinema_Movie);
         }

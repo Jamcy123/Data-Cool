@@ -27,13 +27,14 @@ namespace SmobilerAppTEST7._17
             cinema_name = Phall_lbl.BindDataValue.ToString();
             string cinema_no;
             cinema_no = Ptime_lbl.BindDataValue.ToString();
-            DateTime t = Convert.ToDateTime(Ptime_lbl.Text);
+            DateTime t = Convert.ToDateTime(shichang_lbl.BindDataValue.ToString());
             string week = t.ToString("yyyy年MM日dd日 dddd");
             Console.WriteLine(week);
             week = t.ToString("dddd");
+            string projection_time = shichang_lbl.BindDataValue.ToString();
             string user_no = this.Client.Session[0].ToString();
 
-            this.Form.Show(new Seat_Form(user_no,movie_name,movie_no,cinema_name,cinema_no,Convert.ToInt32(Phall_lbl.Text),week,Ptime_lbl.Text,Pprice_lbl.Text));
+            this.Form.Show(new Seat_Form(user_no,movie_name,movie_no,cinema_name,cinema_no,Convert.ToInt32(Phall_lbl.Text),week, projection_time, Pprice_lbl.Text));
         }
 
         private void button1_Press(object sender, EventArgs e)
@@ -46,13 +47,14 @@ namespace SmobilerAppTEST7._17
             cinema_name = Phall_lbl.BindDataValue.ToString();
             string cinema_no;
             cinema_no = Ptime_lbl.BindDataValue.ToString();
-            DateTime t = Convert.ToDateTime(Ptime_lbl.Text);
+            DateTime t = Convert.ToDateTime(shichang_lbl.BindDataValue.ToString());
             string week = t.ToString("yyyy年MM日dd日 dddd");
             Console.WriteLine(week);
             week = t.ToString("dddd");
+            string projection_time = shichang_lbl.BindDataValue.ToString();
             string user_no = this.Client.Session[0].ToString();
 
-            this.Form.Show(new Seat_Form(user_no, movie_name, movie_no, cinema_name, cinema_no, Convert.ToInt32(Phall_lbl.Text), week, Ptime_lbl.Text, Pprice_lbl.Text));
+            this.Form.Show(new Seat_Form(user_no, movie_name, movie_no, cinema_name, cinema_no, Convert.ToInt32(Phall_lbl.Text), week, projection_time, Pprice_lbl.Text));
 
         }
     }
