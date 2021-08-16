@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace SmobilerAppTEST7._17
 {
@@ -81,7 +82,26 @@ namespace SmobilerAppTEST7._17
 
         private void txtUserphone_TouchEnter(object sender, EventArgs e)
         {
+            txtUserphone.BorderColor = Color.Red;
+        }
 
+        private void txtUserphone_TouchLeave(object sender, EventArgs e)
+        {
+            try
+            {
+                txtUserphone.BorderColor = Color.WhiteSmoke;
+                //确保账号输入的是数字
+                long.TryParse(txtUserphone.Text, out long a);
+                if (a == 0 && txtUserphone.Text != "")
+                {
+                    txtUserphone.Text = "";
+                    throw new Exception("请输入正确的账号格式");
+                }
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
+            }
         }
     }
 }

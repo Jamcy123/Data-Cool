@@ -116,9 +116,9 @@ namespace SmobilerAppTEST7._17
         {
             try
             {
-                //确保账号输入的是数字
-                label1.Bold = false;
                 txtUserphone.BorderColor = Color.WhiteSmoke;
+                label1.Bold = false;
+                //确保账号输入的是数字
                 long.TryParse(txtUserphone.Text, out long a);
                 if (a == 0 && txtUserphone.Text != "")
                 {

@@ -72,6 +72,7 @@ namespace SmobilerAppTEST7._17
             // 
             // label3
             // 
+            this.label3.FontSize = 15F;
             this.label3.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Right;
             this.label3.Location = new System.Drawing.Point(3, 154);
             this.label3.Name = "label3";
@@ -80,8 +81,9 @@ namespace SmobilerAppTEST7._17
             // 
             // txtnewpassword
             // 
+            this.txtnewpassword.BackColor = System.Drawing.Color.Transparent;
             this.txtnewpassword.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 2F);
-            this.txtnewpassword.BorderColor = System.Drawing.Color.DimGray;
+            this.txtnewpassword.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.txtnewpassword.Location = new System.Drawing.Point(81, 103);
             this.txtnewpassword.MaxLength = 20;
             this.txtnewpassword.Name = "txtnewpassword";
@@ -91,6 +93,7 @@ namespace SmobilerAppTEST7._17
             // 
             // label4
             // 
+            this.label4.FontSize = 15F;
             this.label4.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Right;
             this.label4.Location = new System.Drawing.Point(3, 103);
             this.label4.Name = "label4";
@@ -99,6 +102,7 @@ namespace SmobilerAppTEST7._17
             // 
             // label2
             // 
+            this.label2.FontSize = 15F;
             this.label2.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Right;
             this.label2.Location = new System.Drawing.Point(3, 53);
             this.label2.Name = "label2";
@@ -107,8 +111,9 @@ namespace SmobilerAppTEST7._17
             // 
             // txtPassword
             // 
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
             this.txtPassword.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 2F);
-            this.txtPassword.BorderColor = System.Drawing.Color.DimGray;
+            this.txtPassword.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.txtPassword.Location = new System.Drawing.Point(81, 53);
             this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
@@ -118,17 +123,20 @@ namespace SmobilerAppTEST7._17
             // 
             // txtUserphone
             // 
+            this.txtUserphone.BackColor = System.Drawing.Color.Transparent;
             this.txtUserphone.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 2F);
-            this.txtUserphone.BorderColor = System.Drawing.Color.DimGray;
+            this.txtUserphone.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.txtUserphone.Location = new System.Drawing.Point(81, 6);
             this.txtUserphone.MaxLength = 11;
             this.txtUserphone.Name = "txtUserphone";
             this.txtUserphone.Size = new System.Drawing.Size(200, 30);
             this.txtUserphone.WaterMarkText = "请输入手机号";
             this.txtUserphone.TouchEnter += new System.EventHandler(this.txtUserphone_TouchEnter);
+            this.txtUserphone.TouchLeave += new System.EventHandler(this.txtUserphone_TouchLeave);
             // 
             // label1
             // 
+            this.label1.FontSize = 15F;
             this.label1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Right;
             this.label1.Location = new System.Drawing.Point(18, 6);
             this.label1.Name = "label1";
@@ -137,8 +145,9 @@ namespace SmobilerAppTEST7._17
             // 
             // txtsure
             // 
+            this.txtsure.BackColor = System.Drawing.Color.Transparent;
             this.txtsure.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 2F);
-            this.txtsure.BorderColor = System.Drawing.Color.DimGray;
+            this.txtsure.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.txtsure.Location = new System.Drawing.Point(81, 154);
             this.txtsure.MaxLength = 20;
             this.txtsure.Name = "txtsure";
