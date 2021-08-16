@@ -21,8 +21,8 @@ namespace SmobilerAppTEST7._17
         private void InitializeComponent()
         {
             this.label1 = new Smobiler.Core.Controls.Label();
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // label1
             // 
@@ -33,6 +33,19 @@ namespace SmobilerAppTEST7._17
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 53);
             this.label1.Text = "暂无订单，快去购票！";
+            // 
+            // listView1
+            // 
+            this.listView1.BindMode = Smobiler.Core.Controls.DataBindMode.BindUpdate;
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 30);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.ShowSplitLine = true;
+            this.listView1.Size = new System.Drawing.Size(300, 470);
+            this.listView1.SplitLineColor = System.Drawing.Color.Silver;
+            this.listView1.TemplateControlName = "orderTemplate";
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // title_Control1
             // 
@@ -46,17 +59,6 @@ namespace SmobilerAppTEST7._17
             this.title_Control1.Size = new System.Drawing.Size(100, 36);
             this.title_Control1.Text = "我的订单";
             this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
-            // 
-            // listView1
-            // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Location = new System.Drawing.Point(0, 30);
-            this.listView1.Name = "listView1";
-            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.ShowSplitLine = true;
-            this.listView1.Size = new System.Drawing.Size(300, 470);
-            this.listView1.SplitLineColor = System.Drawing.Color.Silver;
-            this.listView1.TemplateControlName = "orderTemplate";
             // 
             // Myorder
             // 

@@ -70,6 +70,7 @@ namespace SmobilerAppTEST7._17
             // label2
             // 
             this.label2.Bold = true;
+            this.label2.DataMember = "Mduration";
             this.label2.DisplayMember = "Ptime";
             this.label2.FontSize = 11F;
             this.label2.ForeColor = System.Drawing.Color.Gray;
@@ -155,10 +156,12 @@ namespace SmobilerAppTEST7._17
             // 
             // label7
             // 
-            this.label7.FontSize = 10F;
-            this.label7.Location = new System.Drawing.Point(240, 0);
+            this.label7.FontSize = 12F;
+            this.label7.ForeColor = System.Drawing.Color.DarkGray;
+            this.label7.Location = new System.Drawing.Point(251, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 20);
+            this.label7.Selectable = true;
+            this.label7.Size = new System.Drawing.Size(49, 20);
             this.label7.Text = "label7";
             // 
             // orderTemplate

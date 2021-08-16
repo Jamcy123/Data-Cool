@@ -33,5 +33,13 @@ namespace SmobilerAppTEST7._17
         {
             this.Form.Show(new movie_information(label1.BindDataValue.ToString()));
         }
+
+        private void button1_Press(object sender, EventArgs e)
+        {
+            //label2.Text = "2021/8/15 9:00:00";
+            string ptime = label2.BindDisplayValue.ToString();
+            string[] subs = ptime.Split(' ');
+            Toast(subs[1]);
+        }
     }
 }
