@@ -102,5 +102,32 @@ namespace SmobilerAppTEST7._17
         {
             this.Close();
         }
+
+        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string shangying = "";
+            string[] movie_time;
+            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
+            shangying = movie_time[1];
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
+        }
+
+        private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string shangying = "";
+            string[] movie_time;
+            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
+            shangying = movie_time[1];
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
+        }
+
+        private void listView3_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string shangying = "";
+            string[] movie_time;
+            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
+            shangying = movie_time[1];
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
+        }
     }
 }

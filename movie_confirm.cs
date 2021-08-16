@@ -37,7 +37,7 @@ namespace SmobilerAppTEST7._17
             tabPageView1.Titles = a;
 
             string database = "movie_ticket";
-            string select = "SELECT * FROM movie_ticket.movie where Mno like '" + movie_no + "';";
+            string select = "SELECT * FROM movie_ticket.movie where Mno = '" + movie_no + "';";
             DataSet dataSet = Databaseconnect(database, select);
             Mname_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[1].ToString();
             Mlanguage_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[2].ToString();
@@ -48,15 +48,15 @@ namespace SmobilerAppTEST7._17
 
             string select1 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
-                "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
+                "where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
 
             string select2 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
-                "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
+                "where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
 
             string select3 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
-                "where projection.Mno like '" + movie_no + "' and projection.Cno like cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
+                "where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
 
 
             DataSet dataSet1 = Databaseconnect(database, select1);
@@ -119,9 +119,54 @@ namespace SmobilerAppTEST7._17
             string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
 
             string database = "movie_ticket";
-            string select = "SELECT Ptime FROM movie_ticket.projection where Mno like '" + a + "' and Cno like '" + b + "' and Ptime like '" + c + "%'; ";
+            string select = "SELECT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%'; ";
             DataSet dataSet = Databaseconnect(database, select);
-            ((Label)e.Row.Control.Controls.Find("Ptime_lbl",true)).Text = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();
+            string shangying = "";
+            string[] movie_time;
+            for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
+            {
+                movie_time = dataSet.Tables[0].Rows[i].ItemArray[0].ToString().Split(' ');
+                shangying = shangying + movie_time[1] + " ";
+            }
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl",true)).Text = shangying;
+        }
+
+        private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string a = ((Label)e.Row.Control.Controls.Find("Pprice_lbl", true)).BindDataValue.ToString();
+            string b = ((Label)e.Row.Control.Controls.Find("Cname_lbl", true)).BindDataValue.ToString();
+            string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
+
+            string database = "movie_ticket";
+            string select = "SELECT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%'; ";
+            DataSet dataSet = Databaseconnect(database, select);
+            string shangying = "";
+            string[] movie_time;
+            for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
+            {
+                movie_time = dataSet.Tables[0].Rows[i].ItemArray[0].ToString().Split(' ');
+                shangying = shangying + movie_time[1] + " ";
+            }
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
+        }
+
+        private void listView3_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string a = ((Label)e.Row.Control.Controls.Find("Pprice_lbl", true)).BindDataValue.ToString();
+            string b = ((Label)e.Row.Control.Controls.Find("Cname_lbl", true)).BindDataValue.ToString();
+            string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
+
+            string database = "movie_ticket";
+            string select = "SELECT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%'; ";
+            DataSet dataSet = Databaseconnect(database, select);
+            string shangying = "";
+            string[] movie_time;
+            for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
+            {
+                movie_time = dataSet.Tables[0].Rows[i].ItemArray[0].ToString().Split(' ');
+                shangying = shangying + movie_time[1] + " ";
+            }
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
         }
     }
 }

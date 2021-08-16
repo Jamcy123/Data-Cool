@@ -88,7 +88,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.label2.Location = new System.Drawing.Point(10, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.Size = new System.Drawing.Size(35, 15);
             this.label2.Text = "场次：";
             // 
             // date_lbl
@@ -101,7 +101,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Ptime_lbl
             // 
-            this.Ptime_lbl.Location = new System.Drawing.Point(66, 48);
+            this.Ptime_lbl.Location = new System.Drawing.Point(40, 48);
             this.Ptime_lbl.Name = "Ptime_lbl";
             this.Ptime_lbl.Size = new System.Drawing.Size(100, 15);
             this.Ptime_lbl.Text = "label3";
