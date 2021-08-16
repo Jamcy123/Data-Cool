@@ -129,6 +129,7 @@ namespace SmobilerAppTEST7._17
             this.title_Control1.Name = "title_Control1";
             this.title_Control1.Size = new System.Drawing.Size(356, 36);
             this.title_Control1.Text = "特惠购票";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             // 
             // Cno_lbl
             // 

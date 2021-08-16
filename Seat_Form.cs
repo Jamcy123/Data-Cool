@@ -252,5 +252,10 @@ namespace SmobilerAppTEST7._17
                 Toast(ex.Message);
             }
         }
+
+        private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

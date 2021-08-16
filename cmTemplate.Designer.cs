@@ -126,6 +126,7 @@ namespace SmobilerAppTEST7._17
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 30);
             this.button1.Text = "购票";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
             // cmTemplate
             // 
