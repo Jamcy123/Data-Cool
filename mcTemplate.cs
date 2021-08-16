@@ -32,14 +32,7 @@ namespace SmobilerAppTEST7._17
 
         private void mcTemplate_Load(object sender, EventArgs e)
         {
-            string a = Mno_lbl.Text.ToString();
-            string b = Cno_lbl.Text.ToString();
-            string c = date_lbl.Text.ToString();
 
-            string database = "movie_ticket";
-            string select = "SELECT Ptime FROM movie_ticket.projection where Mno like '" + a + "' and Cno like '" + b + "' and Ptime like '" + c + "%'; ";
-            DataSet dataSet = Databaseconnect(database, select);
-            time_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();
         }
 
         private void panel1_Press(object sender, EventArgs e)

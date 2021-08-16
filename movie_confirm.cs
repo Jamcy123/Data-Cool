@@ -109,5 +109,17 @@ namespace SmobilerAppTEST7._17
         {
             this.Close();
         }
+
+        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
+        {
+            string a = ((Label)e.Row.Control.Controls.Find("Pprice_lbl", true)).BindDataValue.ToString();
+            string b = ((Label)e.Row.Control.Controls.Find("Cname_lbl", true)).BindDataValue.ToString();
+            string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
+
+            string database = "movie_ticket";
+            string select = "SELECT Ptime FROM movie_ticket.projection where Mno like '" + a + "' and Cno like '" + b + "' and Ptime like '" + c + "%'; ";
+            DataSet dataSet = Databaseconnect(database, select);
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl",true)).Text = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();
+        }
     }
 }
