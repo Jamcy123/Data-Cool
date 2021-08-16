@@ -119,7 +119,7 @@ namespace SmobilerAppTEST7._17
             string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
 
             string database = "movie_ticket";
-            string select = "SELECT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%'; ";
+            string select = "SELECT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%' and Ptime > '" + DateTime.Now.ToString() + "'; ";
             DataSet dataSet = Databaseconnect(database, select);
             string shangying = "";
             string[] movie_time;
