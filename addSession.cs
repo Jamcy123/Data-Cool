@@ -11,12 +11,18 @@ namespace SmobilerAppTEST7._17
 {
     ////ToolboxItem用于控制是否添加自定义控件到工具箱，true添加，false不添加
     //[System.ComponentModel.ToolboxItem(true)]
-    partial class SaleControl : Smobiler.Core.Controls.MobileUserControl
+    partial class addSession : Smobiler.Core.Controls.MobileUserControl
     {
-        public SaleControl() : base()
+        string Cno;
+        string Mno;
+        string Ptime;
+        public addSession(string a,string b,string c) : base()
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
+            Cno = a;
+            Mno = b;
+            Ptime = c;
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -30,25 +36,24 @@ namespace SmobilerAppTEST7._17
             con.Close();
             return dataSet;
         }
-        private void show()
-        {
-            string database = "Movie_ticket";
-            string sql1 =
-                "select count(*)*81,sum(Pamount) from Movie_ticket.Projection " +
-                "where Projection.Mno='"+ getMno.Text + " and Projection.Cno='" + getCno.Text + "');";
-            DataSet dataSet1 = Databaseconnect(database, sql1);
-            All_lbl.Text = (string)dataSet1.Tables[0].Rows[0][0];
-            sale_lbl.Text= (string)dataSet1.Tables[0].Rows[0][1];
 
-        }
+
         private void button1_Press(object sender, EventArgs e)
         {
-
+            string database = "movie_ticket";
+            string select = "SELECT * FROM movie_ticket.movie where Mno = '" + Mno + "';";
         }
 
-        private void panel1_Press(object sender, EventArgs e)
-        {
 
+
+        private void popList1_Selected(object sender, EventArgs e)
+        {
+            gethall.Text = popList1.Selection.Text.ToString();
+        }
+
+        private void panel2_Press(object sender, EventArgs e)
+        {
+            popList1.ShowDialog();
         }
     }
 }

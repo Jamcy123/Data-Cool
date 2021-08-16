@@ -20,6 +20,7 @@ namespace SmobilerAppTEST7._17
         private void InitializeComponent()
         {
             this.getCno = new Smobiler.Core.Controls.Label();
+            this.getMno = new Smobiler.Core.Controls.Label();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.image1 = new Smobiler.Core.Controls.Image();
             this.Mname_lbl = new Smobiler.Core.Controls.Label();
@@ -33,11 +34,20 @@ namespace SmobilerAppTEST7._17
             // 
             // getCno
             // 
-            this.getCno.Location = new System.Drawing.Point(106, 28);
+            this.getCno.Location = new System.Drawing.Point(38, 28);
             this.getCno.Name = "getCno";
             this.getCno.Size = new System.Drawing.Size(100, 35);
             this.getCno.Text = "label1";
             this.getCno.Visible = false;
+            // 
+            // getMno
+            // 
+            this.getMno.DisplayMember = "Mno";
+            this.getMno.Location = new System.Drawing.Point(151, 28);
+            this.getMno.Name = "getMno";
+            this.getMno.Size = new System.Drawing.Size(100, 35);
+            this.getMno.Text = "label1";
+            this.getMno.Visible = false;
             // 
             // panel1
             // 
@@ -124,7 +134,6 @@ namespace SmobilerAppTEST7._17
             // 
             // sale_lbl
             // 
-            this.sale_lbl.DisplayMember = "Pamount";
             this.sale_lbl.Location = new System.Drawing.Point(166, 77);
             this.sale_lbl.Name = "sale_lbl";
             this.sale_lbl.Size = new System.Drawing.Size(76, 17);
@@ -135,7 +144,7 @@ namespace SmobilerAppTEST7._17
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
             this.button1.BorderRadius = 15;
             this.button1.FontSize = 15F;
-            this.button1.Location = new System.Drawing.Point(242, 40);
+            this.button1.Location = new System.Drawing.Point(251, 41);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(49, 22);
             this.button1.Text = "详情";
@@ -145,6 +154,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.getCno,
+            this.getMno,
             this.panel1});
             this.Size = new System.Drawing.Size(300, 100);
             this.Name = "SaleControl";
@@ -153,6 +163,7 @@ namespace SmobilerAppTEST7._17
         #endregion
 
         private Smobiler.Core.Controls.Label getCno;
+        private Smobiler.Core.Controls.Label getMno;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Image image1;
         private Smobiler.Core.Controls.Label Mname_lbl;

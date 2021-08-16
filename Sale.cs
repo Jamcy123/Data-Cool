@@ -12,6 +12,7 @@ namespace SmobilerAppTEST7._17
     partial class Sale : Smobiler.Core.Controls.MobileForm
     {
         string Cno;
+       
         public Sale(string a) : base()
         {
             //This call is required by the SmobilerForm.
@@ -55,12 +56,12 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             string sql1 = 
                 "select * from Movie_ticket.Movie " +
-                "where exists( select * from Project where Movie.Mno=Project.Mno and Project.Cno='" + Cno + "');";
-            DataSet dataSet1 = Databaseconnect(database, sql1);   
+                "where exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno='" + Cno + "')" +
+                "order by Mgrade;";
+            DataSet dataSet1 = Databaseconnect(database, sql1);            
             listView1.DataSource = dataSet1;
             listView1.DataBind();
  
-
         }
         private void searchBox_Control1_SearchButtonPress(object sender, EventArgs e)
         {
@@ -75,6 +76,27 @@ namespace SmobilerAppTEST7._17
         private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
         {
             ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;
+            
+        }
+
+        private void panel3_Press(object sender, EventArgs e)
+        {
+            popList1.ShowDialog();
+        }
+
+        private void panel4_Press(object sender, EventArgs e)
+        {
+            popList2.ShowDialog();
+        }
+
+        private void popList1_Selected(object sender, EventArgs e)
+        {
+            order.Text=popList1.Selection.Text.ToString();
+        }
+
+        private void popList2_Selected(object sender, EventArgs e)
+        {
+            sequence.Text = popList2.Selection.Text.ToString();
         }
     }
 }

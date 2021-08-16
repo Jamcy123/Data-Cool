@@ -105,6 +105,12 @@
     <Compile Include="AddControl.Designer.cs">
       <DependentUpon>AddControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="addSession.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="addSession.Designer.cs">
+      <DependentUpon>addSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="Administrator.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -375,6 +381,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddControl.resx">
       <DependentUpon>AddControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSession.resx">
+      <DependentUpon>addSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrator.resx">
       <DependentUpon>Administrator.cs</DependentUpon>

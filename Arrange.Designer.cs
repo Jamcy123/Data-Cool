@@ -20,7 +20,6 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.label4 = new Smobiler.Core.Controls.Label();
             this.label1 = new Smobiler.Core.Controls.Label();
@@ -35,25 +34,17 @@ namespace SmobilerAppTEST7._17
             this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
             this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.button1 = new Smobiler.Core.Controls.Button();
+            this.nothing1 = new Smobiler.Core.Controls.Label();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
             this.listView2 = new Smobiler.Core.Controls.ListView();
+            this.button2 = new Smobiler.Core.Controls.Button();
+            this.nothing2 = new Smobiler.Core.Controls.Label();
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
-            this.button1 = new Smobiler.Core.Controls.Button();
-            this.button2 = new Smobiler.Core.Controls.Button();
             this.button3 = new Smobiler.Core.Controls.Button();
-            // 
-            // title_Control1
-            // 
-            this.title_Control1.BackColor = System.Drawing.Color.Gray;
-            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
-            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.title_Control1.Name = "title_Control1";
-            this.title_Control1.Size = new System.Drawing.Size(300, 36);
-            this.title_Control1.Text = "安排场次";
-            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
-            this.title_Control1.Load += new System.EventHandler(this.title_Control1_Load_1);
+            this.nothing3 = new Smobiler.Core.Controls.Label();
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             // 
             // panel1
             // 
@@ -172,16 +163,22 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl1,
             this.tabPageControl2,
             this.tabPageControl3});
-            this.tabPageView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tabPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabPageView1.Location = new System.Drawing.Point(0, 244);
             this.tabPageView1.Name = "tabPageView1";
+            this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
             this.tabPageView1.Size = new System.Drawing.Size(300, 312);
+            this.tabPageView1.Titles = new string[] {
+        "今天",
+        "明天",
+        "后天"};
             // 
             // tabPageControl1
             // 
             this.tabPageControl1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.listView1,
-            this.button1});
+            this.button1,
+            this.nothing1});
             this.tabPageControl1.Name = "tabPageControl1";
             // 
             // listView1
@@ -189,14 +186,35 @@ namespace SmobilerAppTEST7._17
             this.listView1.Location = new System.Drawing.Point(0, 31);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 203);
+            this.listView1.Size = new System.Drawing.Size(300, 221);
             this.listView1.TemplateControlName = "Session";
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
+            // 
+            // button1
+            // 
+            this.button1.FontSize = 16F;
+            this.button1.Location = new System.Drawing.Point(97, 262);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 40);
+            this.button1.Text = "添加场次";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
+            // 
+            // nothing1
+            // 
+            this.nothing1.Bold = true;
+            this.nothing1.FontSize = 16F;
+            this.nothing1.Location = new System.Drawing.Point(16, 95);
+            this.nothing1.Name = "nothing1";
+            this.nothing1.Size = new System.Drawing.Size(276, 76);
+            this.nothing1.Text = "暂无排片，请前去添加场次！";
+            this.nothing1.Visible = false;
             // 
             // tabPageControl2
             // 
             this.tabPageControl2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.listView2,
-            this.button2});
+            this.button2,
+            this.nothing2});
             this.tabPageControl2.Name = "tabPageControl2";
             // 
             // listView2
@@ -204,14 +222,35 @@ namespace SmobilerAppTEST7._17
             this.listView2.Location = new System.Drawing.Point(0, 31);
             this.listView2.Name = "listView2";
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView2.Size = new System.Drawing.Size(300, 203);
+            this.listView2.Size = new System.Drawing.Size(300, 222);
             this.listView2.TemplateControlName = "Session";
+            this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView2_RowBind);
+            // 
+            // button2
+            // 
+            this.button2.FontSize = 16F;
+            this.button2.Location = new System.Drawing.Point(102, 263);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 40);
+            this.button2.Text = "添加场次";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
+            // 
+            // nothing2
+            // 
+            this.nothing2.Bold = true;
+            this.nothing2.FontSize = 16F;
+            this.nothing2.Location = new System.Drawing.Point(13, 69);
+            this.nothing2.Name = "nothing2";
+            this.nothing2.Size = new System.Drawing.Size(278, 124);
+            this.nothing2.Text = "暂无排片，请前去添加场次！";
+            this.nothing2.Visible = false;
             // 
             // tabPageControl3
             // 
             this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.listView3,
-            this.button3});
+            this.button3,
+            this.nothing3});
             this.tabPageControl3.Name = "tabPageControl3";
             // 
             // listView3
@@ -219,32 +258,41 @@ namespace SmobilerAppTEST7._17
             this.listView3.Location = new System.Drawing.Point(0, 31);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView3.Size = new System.Drawing.Size(300, 203);
+            this.listView3.Size = new System.Drawing.Size(300, 226);
             this.listView3.TemplateControlName = "Session";
-            // 
-            // button1
-            // 
-            this.button1.FontSize = 16F;
-            this.button1.Location = new System.Drawing.Point(97, 245);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 40);
-            this.button1.Text = "添加场次";
-            // 
-            // button2
-            // 
-            this.button2.FontSize = 16F;
-            this.button2.Location = new System.Drawing.Point(104, 249);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 40);
-            this.button2.Text = "添加场次";
+            this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView3_RowBind);
             // 
             // button3
             // 
             this.button3.FontSize = 16F;
-            this.button3.Location = new System.Drawing.Point(104, 250);
+            this.button3.Location = new System.Drawing.Point(103, 266);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 40);
             this.button3.Text = "添加场次";
+            this.button3.Press += new System.EventHandler(this.button3_Press);
+            // 
+            // nothing3
+            // 
+            this.nothing3.Bold = true;
+            this.nothing3.FontSize = 16F;
+            this.nothing3.Location = new System.Drawing.Point(7, 60);
+            this.nothing3.Name = "nothing3";
+            this.nothing3.Size = new System.Drawing.Size(286, 138);
+            this.nothing3.Text = "暂无排片，请前去添加场次！";
+            this.nothing3.Visible = false;
+            // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(300, 36);
+            this.title_Control1.Text = "安排场次";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
+            this.title_Control1.Load += new System.EventHandler(this.title_Control1_Load_1);
             // 
             // Arrange
             // 
@@ -279,5 +327,8 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.ListView listView3;
         private Smobiler.Core.Controls.Button button2;
         private Smobiler.Core.Controls.Button button3;
+        private Smobiler.Core.Controls.Label nothing1;
+        private Smobiler.Core.Controls.Label nothing2;
+        private Smobiler.Core.Controls.Label nothing3;
     }
 }
