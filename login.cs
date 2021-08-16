@@ -13,10 +13,10 @@ namespace SmobilerAppTEST7._17
     partial class SmobilerForm1 : Smobiler.Core.Controls.MobileForm
     {
 
-      
+
         public SmobilerForm1() : base()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -153,8 +153,8 @@ namespace SmobilerAppTEST7._17
             {
                 Toast(ex.Message);
             }
-        }  
-                   
+        }
+
         private void btnForget_Press(object sender, EventArgs e)
         {
             try
@@ -163,7 +163,7 @@ namespace SmobilerAppTEST7._17
                 {
                     if (string.IsNullOrEmpty(args.error))
                     {
-                        Toast("密码已成功清除" );
+                        Toast("密码已成功清除");
                     }
                 });
             }
@@ -175,7 +175,7 @@ namespace SmobilerAppTEST7._17
 
         private void btnregister_Press(object sender, EventArgs e)
         {
-            register register= new register();
+            register register = new register();
             this.Show(register);
         }
 
@@ -200,9 +200,9 @@ namespace SmobilerAppTEST7._17
             try
             {
                 //确保账号输入的是数字
-                txtUserName.BorderColor = Color.WhiteSmoke;             
-                long.TryParse(txtUserName.Text,out long a);
-                if (a == 0&& txtUserName.Text != "")
+                txtUserName.BorderColor = Color.WhiteSmoke;
+                long.TryParse(txtUserName.Text, out long a);
+                if (a == 0 && txtUserName.Text != "")
                 {
                     txtUserName.Text = "";
                     throw new Exception("请输入正确的账号格式");
@@ -222,7 +222,7 @@ namespace SmobilerAppTEST7._17
             catch (Exception ex)
             {
                 Toast(ex.Message);
-            } 
+            }
         }
 
         private void txtUserName_TouchEnter(object sender, EventArgs e)//用户名textbox触碰事件
@@ -250,7 +250,8 @@ namespace SmobilerAppTEST7._17
             //this.Form.Show(new Myblance("13549473975"));
             //this.Form.Show(new Mymessage("13549473975"));
             //this.Form.Show(new Myorder("13549473975"));
-            this.Form.Show(new Alterpassword());
+            //this.Form.Show(new Alterpassword());
+            this.Form.Show(new Myblance("13549473975"));
         }
     }
 }
