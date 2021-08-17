@@ -32,8 +32,8 @@ namespace SmobilerAppTEST7._17
         private void button1_Press(object sender, EventArgs e)//购买键点击事件
         {
             string a = Mname_lbl.BindDataValue.ToString();
-            movie_information movie_Information = new movie_information(a);
-            this.Form.Show(movie_Information);
+            movie_confirm movie_Confirm = new movie_confirm(a);
+            this.Form.Show(movie_Confirm);
         }
     }
 }
