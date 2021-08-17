@@ -159,6 +159,7 @@ namespace SmobilerAppTEST7._17
             this.textBox2.MaxLength = 20;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 0);
+            this.textBox2.WaterMarkText = "输入昵称";
             // 
             // panel3
             // 
