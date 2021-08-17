@@ -99,7 +99,7 @@ namespace SmobilerAppTEST7._17
             {
                 for (int i = 0; i < table1.Rows.Count; i++)
                 {
-                    table3.Rows[i]["select_date"] = DateTime.Now.AddDays(2).ToString("yyyy-MM-dd");
+                    table3.Rows[i]["select_date"] = DateTime.Now.Date.AddDays(2).ToString("yyyy-MM-dd");
                 }
                 listView3.DataSource = table3;
                 listView3.DataBind();

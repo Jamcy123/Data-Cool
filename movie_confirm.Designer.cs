@@ -20,6 +20,7 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
+            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.Mpicadress_image = new Smobiler.Core.Controls.Image();
             this.Mname_lbl = new Smobiler.Core.Controls.Label();
@@ -38,7 +39,18 @@ namespace SmobilerAppTEST7._17
             this.listView2 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
-            this.title_Control1 = new SmobilerAppTEST7._17.Title_Control();
+            // 
+            // title_Control1
+            // 
+            this.title_Control1.BackColor = System.Drawing.Color.Gray;
+            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
+            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
+            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.title_Control1.Name = "title_Control1";
+            this.title_Control1.Size = new System.Drawing.Size(300, 36);
+            this.title_Control1.Text = "特惠购票";
+            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
             // 
             // panel1
             // 
@@ -208,29 +220,18 @@ namespace SmobilerAppTEST7._17
             this.listView3.TemplateControlName = "mcTemplate";
             this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView3_RowBind);
             // 
-            // title_Control1
-            // 
-            this.title_Control1.BackColor = System.Drawing.Color.Gray;
-            this.title_Control1.BACKColor_re = System.Drawing.Color.Gray;
-            this.title_Control1.Direction = Smobiler.Core.Controls.LayoutDirection.Row;
-            this.title_Control1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title_Control1.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.title_Control1.Name = "title_Control1";
-            this.title_Control1.Size = new System.Drawing.Size(300, 36);
-            this.title_Control1.Text = "特惠购票";
-            this.title_Control1.ExitButtonpPress += new System.EventHandler(this.title_Control1_ExitButtonpPress);
-            // 
             // movie_confirm
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.tabPageView1,
+            this.title_Control1,
             this.panel1,
-            this.title_Control1});
+            this.tabPageView1});
             this.Load += new System.EventHandler(this.movie_confirm_Load);
             this.Name = "movie_confirm";
 
         }
         #endregion
+        private Title_Control title_Control1;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Image Mpicadress_image;
         private Smobiler.Core.Controls.Label Mname_lbl;
@@ -242,7 +243,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label Mlanguage_lbl;
         private Smobiler.Core.Controls.Label label4;
         private Smobiler.Core.Controls.Label Mduration_lbl;
-        private Title_Control title_Control1;
         private Smobiler.Core.Controls.TabPageView tabPageView1;
         private Smobiler.Core.Controls.TabPageControl tabPageControl1;
         private Smobiler.Core.Controls.ListView listView1;
