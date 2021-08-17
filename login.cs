@@ -12,8 +12,6 @@ namespace SmobilerAppTEST7._17
 {
     partial class SmobilerForm1 : Smobiler.Core.Controls.MobileForm
     {
-
-        string last_ID;//上次登录的设备号
         public SmobilerForm1() : base()
         {
             InitializeComponent();
