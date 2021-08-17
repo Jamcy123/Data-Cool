@@ -17,6 +17,7 @@ namespace SmobilerAppTEST7._17
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
+            
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -30,25 +31,19 @@ namespace SmobilerAppTEST7._17
             con.Close();
             return dataSet;
         }
-        private void show()
-        {
-            string database = "Movie_ticket";
-            string sql1 =
-                "select count(*)*81,sum(Pamount) from Movie_ticket.Projection " +
-                "where Projection.Mno='"+ getMno.Text + " and Projection.Cno='" + getCno.Text + "');";
-            DataSet dataSet1 = Databaseconnect(database, sql1);
-            All_lbl.Text = (string)dataSet1.Tables[0].Rows[0][0];
-            sale_lbl.Text= (string)dataSet1.Tables[0].Rows[0][1];
+        //private void show()
+        //{
+        //    string database = "Movie_ticket";
+        //    string sql1= "select Amount,Total from Movie_ticket.Sales" +
+        //        "where Sales.Mno='" + getMno.Text + "' and Sales.Cno='" + getCno.Text + "';";
+        //    //string sql1 =
+        //    //    "select count(*)*81,sum(Pamount) from Movie_ticket.Projection " +
+        //    //    "where Projection.Mno='"+ getMno.Text + "' and Projection.Cno='" + getCno.Text + "';";
+        //    DataSet dataSet1 = Databaseconnect(database, sql1);
+        //    All_lbl.Text = dataSet1.Tables[0].Rows[0][0].ToString();
+        //    sale_lbl.Text= dataSet1.Tables[0].Rows[0][1].ToString();
 
-        }
-        private void button1_Press(object sender, EventArgs e)
-        {
+        //}
 
-        }
-
-        private void panel1_Press(object sender, EventArgs e)
-        {
-
-        }
     }
 }

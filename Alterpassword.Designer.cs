@@ -57,7 +57,7 @@ namespace SmobilerAppTEST7._17
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 294);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 306);
+            this.panel2.Size = new System.Drawing.Size(300, 347);
             // 
             // button1
             // 
@@ -90,6 +90,8 @@ namespace SmobilerAppTEST7._17
             this.txtnewpassword.SecurityMode = true;
             this.txtnewpassword.Size = new System.Drawing.Size(200, 30);
             this.txtnewpassword.WaterMarkText = "请输入新密码";
+            this.txtnewpassword.TouchEnter += new System.EventHandler(this.txtnewpassword_TouchEnter);
+            this.txtnewpassword.TouchLeave += new System.EventHandler(this.txtnewpassword_TouchLeave);
             // 
             // label4
             // 
@@ -120,12 +122,15 @@ namespace SmobilerAppTEST7._17
             this.txtPassword.SecurityMode = true;
             this.txtPassword.Size = new System.Drawing.Size(200, 30);
             this.txtPassword.WaterMarkText = "请输入原始密码";
+            this.txtPassword.TouchEnter += new System.EventHandler(this.txtPassword_TouchEnter);
+            this.txtPassword.TouchLeave += new System.EventHandler(this.txtPassword_TouchLeave);
             // 
             // txtUserphone
             // 
             this.txtUserphone.BackColor = System.Drawing.Color.Transparent;
             this.txtUserphone.Border = new Smobiler.Core.Controls.Border(0F, 0F, 0F, 2F);
             this.txtUserphone.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUserphone.KeyboardType = Smobiler.Core.Controls.KeyboardType.Numeric;
             this.txtUserphone.Location = new System.Drawing.Point(81, 6);
             this.txtUserphone.MaxLength = 11;
             this.txtUserphone.Name = "txtUserphone";
@@ -154,6 +159,8 @@ namespace SmobilerAppTEST7._17
             this.txtsure.SecurityMode = true;
             this.txtsure.Size = new System.Drawing.Size(200, 30);
             this.txtsure.WaterMarkText = "确认密码";
+            this.txtsure.TouchEnter += new System.EventHandler(this.txtsure_TouchEnter);
+            this.txtsure.TouchLeave += new System.EventHandler(this.txtsure_TouchLeave);
             // 
             // Alterpassword
             // 

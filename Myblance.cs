@@ -14,7 +14,7 @@ namespace SmobilerAppTEST7._17
     {
         string Uno;
         string number;
-        int check=0;
+        int check = 0;
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
@@ -37,7 +37,6 @@ namespace SmobilerAppTEST7._17
 
         public void showlabel(string a)
         {
-
             string txt2 = "select Ublance from Userinf where Uphoneno=" + a;
             string database = "Movie_ticket";
             DataSet name = Databaseconnect(database, txt2);
@@ -48,19 +47,24 @@ namespace SmobilerAppTEST7._17
         private void button1_Press(object sender, EventArgs e)
         {
             string money = textBox1.Text;
-            if (!string.IsNullOrEmpty(money) && check== 1)
+            if (!string.IsNullOrEmpty(money) && check == 1)
                 Toast("请只选择一种充值方式");
             else
             {
-                if (!string.IsNullOrEmpty(money) && check == 0)
-                    number = textBox1.Text;
-                string update = "Update Userinf set Ublance=Ublance+'" + number + "' where Uphoneno='" + Uno + "'";
-                string database = "Movie_ticket";
-                Databaseconnect(database, update);
-                number = "0";
-                showlabel(Uno);
+                if (string.IsNullOrEmpty(money) && check == 0)
+                {
+                    Toast("请至少选择一种充值方式");
+                }
+                else
+                {
+                    if (!string.IsNullOrEmpty(money) && check == 0)//是否选择自定义输入
+                        number = textBox1.Text;
+                    string update = "Update Userinf set Ublance=Ublance+'" + number + "' where Uphoneno='" + Uno + "'";
+                    string database = "Movie_ticket";
+                    Databaseconnect(database, update);
+                    showlabel(Uno);
+                }
             }
-            
         }
 
         private void radioGroup1_ButtonPress(object sender, RadioButtonPressEventArgs e)
@@ -73,46 +77,37 @@ namespace SmobilerAppTEST7._17
                     case "thirty":
                         {
                             number = "30";
-
                         }
                         break;
                     case "fifty":
                         {
                             number = "50";
-
                         }
                         break;
                     case "one":
                         {
                             number = "100";
-
                         }
                         break;
                     case "two":
                         {
                             number = "200";
-
                         }
                         break;
                     case "three":
                         {
                             number = "300";
-
                         }
                         break;
                     case "five":
                         {
                             number = "500";
-
                         }
                         break;
-
                 }
             }
             else
                 check = 0;
-               
-          
         }
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
         {
