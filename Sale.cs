@@ -54,10 +54,9 @@ namespace SmobilerAppTEST7._17
         public void showmovie()
         {
             string database = "Movie_ticket";
-            string sql1 = 
-                "select * from Movie_ticket.Movie " +
-                "where exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno='" + Cno + "')" +
-                "order by Mgrade;";
+            string sql1 =
+                "select * from Movie_ticket.Sales " +
+                "where Cno='" + Cno + "');";
             DataSet dataSet1 = Databaseconnect(database, sql1);            
             listView1.DataSource = dataSet1;
             listView1.DataBind();
@@ -68,10 +67,7 @@ namespace SmobilerAppTEST7._17
 
         }
 
-        private void searchBox_Control1_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
         {
@@ -92,6 +88,73 @@ namespace SmobilerAppTEST7._17
         private void popList1_Selected(object sender, EventArgs e)
         {
             order.Text=popList1.Selection.Text.ToString();
+            string database = "Movie_ticket";
+            if (sequence.Text=="升序")
+            {
+                switch (order.Text)
+                {
+                    case "电影评分":
+                        string sql1 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "')" +
+                        "order by Mgrade;";
+                        DataSet dataSet1 = Databaseconnect(database, sql1);
+                        listView1.DataSource = dataSet1;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量":
+                        string sql2 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "')" +
+                        "order by Total;";
+                        DataSet dataSet2 = Databaseconnect(database, sql2);
+                        listView1.DataSource = dataSet2;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量/总数量":
+                        string sql3 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "')" +
+                        "order by Total;";
+                        DataSet dataSet3 = Databaseconnect(database, sql3);
+                        listView1.DataSource = dataSet3;
+                        listView1.DataBind();
+                        break;
+                }
+            }
+            else
+            {
+                switch (order.Text)
+                {
+                    case "电影评分":
+                        string sql1 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "')" +
+                        "order by Mgrade desp;";
+                        DataSet dataSet1 = Databaseconnect(database, sql1);
+                        listView1.DataSource = dataSet1;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量":
+                        string sql2 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "')" +
+                        "order by Total desp;";
+                        DataSet dataSet2 = Databaseconnect(database, sql2);
+                        listView1.DataSource = dataSet2;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量/总数量":
+                        string sql3 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "')" +
+                        "order by Total/Amount desp;";
+                        DataSet dataSet3 = Databaseconnect(database, sql3);
+                        listView1.DataSource = dataSet3;
+                        listView1.DataBind();
+                        break;
+                }
+            }
         }
 
         private void popList2_Selected(object sender, EventArgs e)

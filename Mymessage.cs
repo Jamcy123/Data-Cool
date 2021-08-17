@@ -16,7 +16,7 @@ namespace SmobilerAppTEST7._17
         string Uno;
         string two;
         string four;
-        string five;
+
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
 
@@ -128,7 +128,6 @@ namespace SmobilerAppTEST7._17
             {
                 if (e.Data != null)//没选照片不显示
                 {
-
                     string path = ".\\Resources\\Image\\Cache";
                     e.SaveFile(Uno + ".png", path); //第二个参数为路径
                     image1.ResourceID = ".\\Cache\\" + Uno + ".png";//展示预览图

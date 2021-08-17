@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace SmobilerAppTEST7._17
 {
@@ -89,28 +90,42 @@ namespace SmobilerAppTEST7._17
 
         private void button3_Press(object sender, EventArgs e)
         {
-            string database = "Movie_ticket";
-            string insert = "insert into Movie values ('" + Mno.Text + "','" + Mname.Text + "','" + Mlanguage.Text + "','" + Mtype.Text + "','" + name + "','" + Mduration.Text + "','" + Mdetail.Text + "','" + Mgrade.Text + "')";
-            Databaseconnect(database, insert);
-            string select = "select* from Movie where Mno='" + Mno.Text + "'";
-            DataSet dataSet = Databaseconnect(database, select);
-            if(dataSet.Tables[0].Rows.Count <= 0)
+            
+            string path_1 = ".\\Resources\\Image\\Cache\\" + name;//缓存路径
+            string path_2 = ".\\Resources\\Image\\" + name;
+            if (File.Exists(path_1))//用户选择了新的图片点击保存才上传
             {
-                Toast("添加电影失败！请重新添加");
+                if (File.Exists(path_2))//若存在自定义的图片，则先删除
+                {
+                    File.Delete(path_2);
+                }
+                File.Move(path_1, path_2);//剪切到image中
+                                          //同步更改到数据库
+                string database = "Movie_ticket";
+                string insert = "insert into Movie values ('" + Mno.Text.Replace("'", "''") + "','" + Mname.Text.Replace("'", "''") + "','" + Mlanguage.Text.Replace("'", "''") + "','" + Mtype.Text.Replace("'", "''") + "','" + name + "','" + Mduration.Text.Replace("'", "''") + "','" + Mdetail.Text.Replace("'", "''") + "','" + Mgrade.Text.Replace("'", "''") + "')";
+                Databaseconnect(database, insert);
+                string select = "select* from Movie where Mno='" + Mno.Text.Replace("'", "''") + "'";
+                DataSet dataSet = Databaseconnect(database, select);
+                if (dataSet.Tables[0].Rows.Count <= 0)
+                {
+                    Toast("添加电影失败！请重新添加");
 
+                }
+                else
+                {
+                    Toast("添加电影成功！");
+                    Mno.Text = "";
+                    Mname.Text = "";
+                    Mlanguage.Text = "";
+                    Mtype.Text = "";
+                    image1.ResourceID = "";
+                    Mduration.Text = "";
+                    Mdetail.Text = "";
+                    Mgrade.Text = "";
+                }
             }
-            else
-            {
-                Toast("添加电影成功！");
-                Mno.Text = "";
-                Mname.Text = "";
-                Mlanguage.Text = "";
-                Mtype.Text = "";
-                image1.ResourceID = "";
-                Mduration.Text = "";
-                Mdetail.Text = "";
-                Mgrade.Text = "";
-            }
+           
+            
         }
 
         private void button1_Press(object sender, EventArgs e)
@@ -120,10 +135,21 @@ namespace SmobilerAppTEST7._17
 
         private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
         {
-            name = DateTime.UtcNow.ToString().Replace("/", "").Replace(":","")+".png";
-            e.SaveFile(name, MobileResourceManager.DefaultImagePath); //第二个参数为路径，图片保存在项目下\bin\Debug\Resources\Image下
-            image1.ResourceID = name;
 
+            try
+            {
+                if (e.Data != null)//没选照片不显示
+                {
+                    name = DateTime.UtcNow.ToString().Replace("/", "").Replace(":", "") + ".png";
+                    string path = ".\\Resources\\Image\\Cache";
+                    e.SaveFile(name , path); //第二个参数为路径
+                    image1.ResourceID = ".\\Cache\\" + name ;//展示预览图
+                }
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
+            }
         }
     }
 }

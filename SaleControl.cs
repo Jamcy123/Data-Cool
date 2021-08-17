@@ -41,14 +41,6 @@ namespace SmobilerAppTEST7._17
             sale_lbl.Text= (string)dataSet1.Tables[0].Rows[0][1];
 
         }
-        private void button1_Press(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panel1_Press(object sender, EventArgs e)
-        {
-
-        }
     }
 }

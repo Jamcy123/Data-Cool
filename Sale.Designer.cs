@@ -105,7 +105,6 @@ namespace SmobilerAppTEST7._17
             this.searchBox_Control.Size = new System.Drawing.Size(300, 46);
             this.searchBox_Control.TextBox_Text = "";
             this.searchBox_Control.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
-            this.searchBox_Control.Load += new System.EventHandler(this.searchBox_Control1_Load);
             // 
             // panel2
             // 
@@ -171,9 +170,9 @@ namespace SmobilerAppTEST7._17
             popListItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             popListItem1.Text = "电影评分";
             popListItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem2.Text = "卖出数量";
+            popListItem2.Text = "售出数量";
             popListItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem3.Text = "卖出数量的占比";
+            popListItem3.Text = "售出数量/总票数";
             popListGroup1.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
             popListItem1,
             popListItem2,

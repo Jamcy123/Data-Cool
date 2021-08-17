@@ -30,10 +30,10 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             string sql1 =
                 "select * from Movie_ticket.Movie " +
-                "where exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno='" + Cno + "');";
+                "where exists( select * from Pmessage where Movie.Mno=Pmessage.Mno and Pmessage.Cno='" + Cno + "');";
             string sql2 =
                 "select * from Movie_ticket.Movie" +
-                " where not exists( select * from Projection where Movie.Mno=Projection.Mno and Projection.Cno = '" + Cno + "');";
+                " where not exists( select * from Pmessage where Movie.Mno=Pmessage.Mno and Pmessage.Cno = '" + Cno + "');";
                 
             DataSet dataSet1 = Databaseconnect(database, sql1);
             DataSet dataSet2 = Databaseconnect(database, sql2);
