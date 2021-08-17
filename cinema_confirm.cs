@@ -43,7 +43,7 @@ namespace SmobilerAppTEST7._17
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
 
-            string select21 = "SELECT DISTINCT projection.Cno,movie.* FROM movie_ticket.projection,movie_ticket.movie where projection.Cno like '" + cinema_no + "' and projection.Mno like movie.Mno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
+            string select21 = "SELECT DISTINCT projection.Cno,movie.* FROM movie_ticket.projection,movie_ticket.movie where projection.Cno like '" + cinema_no + "' and projection.Mno like movie.Mno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "'; ";
             string select22 = "SELECT DISTINCT projection.Cno,movie.* FROM movie_ticket.projection,movie_ticket.movie where projection.Cno like '" + cinema_no + "' and projection.Mno like movie.Mno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
             string select23 = "SELECT DISTINCT projection.Cno,movie.* FROM movie_ticket.projection,movie_ticket.movie where projection.Cno like '" + cinema_no + "' and projection.Mno like movie.Mno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
 

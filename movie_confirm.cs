@@ -48,7 +48,7 @@ namespace SmobilerAppTEST7._17
 
             string select1 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
-                "where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%'; ";
+                "where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "'; ";
 
             string select2 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
                 "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.ticket " +
@@ -119,7 +119,7 @@ namespace SmobilerAppTEST7._17
             string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
 
             string database = "movie_ticket";
-            string select = "SELECT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%'; ";
+            string select = "SELECT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%' and Ptime > '" + DateTime.Now.ToString() + "'; ";
             DataSet dataSet = Databaseconnect(database, select);
             string shangying = "";
             string[] movie_time;

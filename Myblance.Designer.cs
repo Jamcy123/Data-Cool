@@ -142,7 +142,7 @@ namespace SmobilerAppTEST7._17
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.button1.BorderRadius = 20;
             this.button1.FontSize = 15F;
-            this.button1.Location = new System.Drawing.Point(79, 454);
+            this.button1.Location = new System.Drawing.Point(85, 454);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(135, 40);
             this.button1.Text = "确认充值";

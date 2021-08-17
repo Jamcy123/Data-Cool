@@ -85,7 +85,6 @@ namespace SmobilerAppTEST7._17
                     string database = "Movie_ticket";
                     Databaseconnect(database, update);
                 }
-
                 if (two != textBox2.Text)
                 {
                     string update = "Update Userinf set Unickname='" + textBox2.Text + "' where Uphoneno=" + Uno;
