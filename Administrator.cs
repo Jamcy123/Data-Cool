@@ -23,8 +23,6 @@ namespace SmobilerAppTEST7._17
             
         }
 
-
-
         public void showmovie()
         {
             string database = "Movie_ticket";

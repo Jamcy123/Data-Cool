@@ -62,24 +62,23 @@ namespace SmobilerAppTEST7._17
             this.shichang_lbl.DataMember = "Ptime";
             this.shichang_lbl.Location = new System.Drawing.Point(10, 28);
             this.shichang_lbl.Name = "shichang_lbl";
-            this.shichang_lbl.Size = new System.Drawing.Size(39, 20);
+            this.shichang_lbl.Size = new System.Drawing.Size(29, 20);
             this.shichang_lbl.Text = "时长:";
             // 
             // Mduration_lbl
             // 
             this.Mduration_lbl.DataMember = "Mname";
             this.Mduration_lbl.DisplayMember = "Mduration";
-            this.Mduration_lbl.Location = new System.Drawing.Point(49, 28);
+            this.Mduration_lbl.Location = new System.Drawing.Point(39, 28);
             this.Mduration_lbl.Name = "Mduration_lbl";
             this.Mduration_lbl.Size = new System.Drawing.Size(50, 20);
             this.Mduration_lbl.Text = "label2";
             // 
             // Mtype_lbl
             // 
-            this.Mtype_lbl.Bold = true;
             this.Mtype_lbl.DataMember = "Mno";
             this.Mtype_lbl.DisplayMember = "Mtype";
-            this.Mtype_lbl.FontSize = 16F;
+            this.Mtype_lbl.FontSize = 15F;
             this.Mtype_lbl.Location = new System.Drawing.Point(101, 0);
             this.Mtype_lbl.Name = "Mtype_lbl";
             this.Mtype_lbl.Size = new System.Drawing.Size(60, 30);
@@ -89,7 +88,8 @@ namespace SmobilerAppTEST7._17
             // 
             this.Phall_lbl.DataMember = "Cname";
             this.Phall_lbl.DisplayMember = "Phall";
-            this.Phall_lbl.Location = new System.Drawing.Point(101, 30);
+            this.Phall_lbl.FontSize = 14F;
+            this.Phall_lbl.Location = new System.Drawing.Point(101, 28);
             this.Phall_lbl.Name = "Phall_lbl";
             this.Phall_lbl.Size = new System.Drawing.Size(72, 20);
             this.Phall_lbl.Text = "label2";
@@ -110,7 +110,7 @@ namespace SmobilerAppTEST7._17
             this.Pprice_lbl.DisplayMember = "Pprice";
             this.Pprice_lbl.FontSize = 16F;
             this.Pprice_lbl.ForeColor = System.Drawing.Color.Red;
-            this.Pprice_lbl.Location = new System.Drawing.Point(207, 7);
+            this.Pprice_lbl.Location = new System.Drawing.Point(203, 7);
             this.Pprice_lbl.Name = "Pprice_lbl";
             this.Pprice_lbl.Size = new System.Drawing.Size(43, 30);
             this.Pprice_lbl.Text = "label3";
@@ -120,10 +120,11 @@ namespace SmobilerAppTEST7._17
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.button1.Bold = true;
             this.button1.BorderColor = System.Drawing.Color.White;
-            this.button1.FontSize = 18F;
-            this.button1.Location = new System.Drawing.Point(250, 7);
+            this.button1.BorderRadius = 20;
+            this.button1.FontSize = 15F;
+            this.button1.Location = new System.Drawing.Point(250, 14);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 30);
+            this.button1.Size = new System.Drawing.Size(50, 23);
             this.button1.Text = "购票";
             this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
@@ -132,6 +133,7 @@ namespace SmobilerAppTEST7._17
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.panel1});
             this.Size = new System.Drawing.Size(300, 50);
+            this.Load += new System.EventHandler(this.cmTemplate_Load);
             this.Name = "cmTemplate";
 
         }
