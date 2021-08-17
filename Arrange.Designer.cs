@@ -146,7 +146,7 @@ namespace SmobilerAppTEST7._17
             // 
             // Mduration_lbl
             // 
-            this.Mduration_lbl.DisplayMember = "Mgrade";
+            this.Mduration_lbl.DisplayMember = "Mduration";
             this.Mduration_lbl.FontSize = 14F;
             this.Mduration_lbl.ForeColor = System.Drawing.Color.DarkOrange;
             this.Mduration_lbl.Location = new System.Drawing.Point(209, 129);
