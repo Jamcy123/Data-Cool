@@ -93,17 +93,18 @@ namespace SmobilerAppTEST7._17
             // 
             // date_lbl
             // 
+            this.date_lbl.BackColor = System.Drawing.Color.Red;
             this.date_lbl.DisplayMember = "select_date";
-            this.date_lbl.Location = new System.Drawing.Point(278, 48);
+            this.date_lbl.Location = new System.Drawing.Point(269, 48);
             this.date_lbl.Name = "date_lbl";
-            this.date_lbl.Size = new System.Drawing.Size(50, 15);
+            this.date_lbl.Size = new System.Drawing.Size(44, 15);
             this.date_lbl.Visible = false;
             // 
             // Ptime_lbl
             // 
             this.Ptime_lbl.Location = new System.Drawing.Point(40, 48);
             this.Ptime_lbl.Name = "Ptime_lbl";
-            this.Ptime_lbl.Size = new System.Drawing.Size(238, 15);
+            this.Ptime_lbl.Size = new System.Drawing.Size(216, 15);
             this.Ptime_lbl.Text = "label3";
             // 
             // mcTemplate

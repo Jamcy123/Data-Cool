@@ -34,7 +34,7 @@ namespace SmobilerAppTEST7._17
             try
             {
                 string database = "Movie_ticket";
-                if (checkBox1.Checked == true)//用户登录
+                if (checkBox1.Checked)//用户登录
                 {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();

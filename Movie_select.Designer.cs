@@ -78,8 +78,10 @@ namespace SmobilerAppTEST7._17
             this.listView1.Location = new System.Drawing.Point(0, 8);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.RaiseRefresh = true;
             this.listView1.Size = new System.Drawing.Size(300, 330);
             this.listView1.TemplateControlName = "Moive_Control";
+            this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
             // 
             // fontIcon1
             // 
