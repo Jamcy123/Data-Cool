@@ -65,7 +65,7 @@ namespace SmobilerAppTEST7._17
             //根据电影结束时间判断有没有完成订单
             string Mduration = ((Label)e.Row.Control.Controls.Find("label2", true)).BindDataValue.ToString();
             string Ptime = ((Label)e.Row.Control.Controls.Find("label2", true)).BindDisplayValue.ToString();
-            string[] subs = Ptime.Split(' ', '/', ':');
+            string[] subs = Ptime.Split(' ', '/', ':');//Ptime="2021/8/17 15:10:00" subs[0]=2021 subs[1]=8 subs[2]=17 subs[3]=15 subs[4]=10 subs[5]=00
             DateTime dateTime = new DateTime(int.Parse(subs[0]), int.Parse(subs[1]), int.Parse(subs[2]), int.Parse(subs[3]), int.Parse(subs[4]), int.Parse(subs[5]));
             dateTime = dateTime.AddMinutes(int.Parse(Mduration));//计算电影结束时间
             if (dateTime.CompareTo(DateTime.Now) >= 0)//当前时间早于结束时间
