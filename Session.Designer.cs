@@ -19,6 +19,9 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
+            this.getCno = new Smobiler.Core.Controls.Label();
+            this.getMno = new Smobiler.Core.Controls.Label();
+            this.getdate = new Smobiler.Core.Controls.Label();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.time = new Smobiler.Core.Controls.Label();
             this.getlanguage = new Smobiler.Core.Controls.Label();
@@ -26,6 +29,30 @@ namespace SmobilerAppTEST7._17
             this.price = new Smobiler.Core.Controls.Label();
             this.finish = new Smobiler.Core.Controls.Label();
             this.button1 = new Smobiler.Core.Controls.Button();
+            // 
+            // getCno
+            // 
+            this.getCno.Location = new System.Drawing.Point(155, 38);
+            this.getCno.Name = "getCno";
+            this.getCno.Size = new System.Drawing.Size(100, 35);
+            this.getCno.Text = "label1";
+            this.getCno.Visible = false;
+            // 
+            // getMno
+            // 
+            this.getMno.Location = new System.Drawing.Point(55, 38);
+            this.getMno.Name = "getMno";
+            this.getMno.Size = new System.Drawing.Size(100, 35);
+            this.getMno.Text = "label1";
+            this.getMno.Visible = false;
+            // 
+            // getdate
+            // 
+            this.getdate.Location = new System.Drawing.Point(99, 3);
+            this.getdate.Name = "getdate";
+            this.getdate.Size = new System.Drawing.Size(100, 35);
+            this.getdate.Text = "label1";
+            this.getdate.Visible = false;
             // 
             // panel1
             // 
@@ -45,13 +72,14 @@ namespace SmobilerAppTEST7._17
             // 
             this.time.DisplayMember = "Ptime";
             this.time.FontSize = 16F;
+            this.time.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.time.Location = new System.Drawing.Point(0, 19);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(65, 35);
-            this.time.Text = "label1";
             // 
             // getlanguage
             // 
+            this.getlanguage.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.getlanguage.Location = new System.Drawing.Point(75, 19);
             this.getlanguage.Name = "getlanguage";
             this.getlanguage.Size = new System.Drawing.Size(77, 35);
@@ -62,6 +90,7 @@ namespace SmobilerAppTEST7._17
             this.hall.DisplayMember = "Phall";
             this.hall.FontSize = 10F;
             this.hall.ForeColor = System.Drawing.Color.DimGray;
+            this.hall.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.hall.Location = new System.Drawing.Point(75, 54);
             this.hall.Name = "hall";
             this.hall.Size = new System.Drawing.Size(77, 23);
@@ -81,6 +110,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.finish.FontSize = 10F;
             this.finish.ForeColor = System.Drawing.Color.DimGray;
+            this.finish.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.finish.Location = new System.Drawing.Point(0, 54);
             this.finish.Name = "finish";
             this.finish.Size = new System.Drawing.Size(65, 23);
@@ -92,10 +122,14 @@ namespace SmobilerAppTEST7._17
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(53, 34);
             this.button1.Text = "删除";
+            this.button1.Press += new System.EventHandler(this.button1_Press);
             // 
             // Session
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.getCno,
+            this.getMno,
+            this.getdate,
             this.panel1});
             this.Size = new System.Drawing.Size(300, 100);
             this.Name = "Session";
@@ -103,6 +137,9 @@ namespace SmobilerAppTEST7._17
         }
         #endregion
 
+        private Smobiler.Core.Controls.Label getCno;
+        private Smobiler.Core.Controls.Label getMno;
+        private Smobiler.Core.Controls.Label getdate;
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.Label time;
         private Smobiler.Core.Controls.Label getlanguage;

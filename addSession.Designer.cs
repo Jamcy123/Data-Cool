@@ -19,12 +19,12 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.PopListGroup popListGroup3 = new Smobiler.Core.Controls.PopListGroup();
-            Smobiler.Core.Controls.PopListItem popListItem11 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListItem popListItem12 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListItem popListItem13 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListItem popListItem14 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListItem popListItem15 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListGroup popListGroup1 = new Smobiler.Core.Controls.PopListGroup();
+            Smobiler.Core.Controls.PopListItem popListItem1 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem2 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem3 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem4 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem5 = new Smobiler.Core.Controls.PopListItem();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.hall = new Smobiler.Core.Controls.Label();
             this.time = new Smobiler.Core.Controls.Label();
@@ -34,8 +34,8 @@ namespace SmobilerAppTEST7._17
             this.label1 = new Smobiler.Core.Controls.Label();
             this.datePicker1 = new Smobiler.Core.Controls.DatePicker();
             this.panel2 = new Smobiler.Core.Controls.Panel();
-            this.popList1 = new Smobiler.Core.Controls.PopList();
             this.gethall = new Smobiler.Core.Controls.Label();
+            this.popList1 = new Smobiler.Core.Controls.PopList();
             // 
             // panel1
             // 
@@ -128,31 +128,6 @@ namespace SmobilerAppTEST7._17
             this.panel2.Touchable = true;
             this.panel2.Press += new System.EventHandler(this.panel2_Press);
             // 
-            // popList1
-            // 
-            popListItem11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem11.Text = "1号放映厅";
-            popListItem12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem12.Text = "2号放映厅";
-            popListItem13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem13.Text = "3号放映厅";
-            popListItem14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem14.Text = "4号放映厅";
-            popListItem15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem15.Text = "5号放映厅";
-            popListGroup3.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
-            popListItem11,
-            popListItem12,
-            popListItem13,
-            popListItem14,
-            popListItem15});
-            popListGroup3.Value = null;
-            this.popList1.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
-            popListGroup3});
-            this.popList1.Name = "popList1";
-            this.popList1.Title = "请选择影厅";
-            this.popList1.Selected += new System.EventHandler(this.popList1_Selected);
-            // 
             // gethall
             // 
             this.gethall.Border = new Smobiler.Core.Controls.Border(1F);
@@ -164,6 +139,31 @@ namespace SmobilerAppTEST7._17
             this.gethall.Name = "gethall";
             this.gethall.Size = new System.Drawing.Size(141, 44);
             this.gethall.Text = "请选择影厅";
+            // 
+            // popList1
+            // 
+            popListItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem1.Text = "1号放映厅";
+            popListItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem2.Text = "2号放映厅";
+            popListItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem3.Text = "3号放映厅";
+            popListItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem4.Text = "4号放映厅";
+            popListItem5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem5.Text = "5号放映厅";
+            popListGroup1.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
+            popListItem1,
+            popListItem2,
+            popListItem3,
+            popListItem4,
+            popListItem5});
+            popListGroup1.Value = null;
+            this.popList1.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
+            popListGroup1});
+            this.popList1.Name = "popList1";
+            this.popList1.Title = "请选择影厅";
+            this.popList1.Selected += new System.EventHandler(this.popList1_Selected);
             // 
             // addSession
             // 

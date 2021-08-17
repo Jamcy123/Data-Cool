@@ -17,6 +17,7 @@ namespace SmobilerAppTEST7._17
         public SmobilerForm1() : base()
         {
             InitializeComponent();
+          
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数

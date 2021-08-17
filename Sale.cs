@@ -56,7 +56,7 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             string sql1 =
                 "select * from Movie_ticket.Sales " +
-                "where Cno='" + Cno + "');";
+                "where Cno='" + Cno + "';";
             DataSet dataSet1 = Databaseconnect(database, sql1);            
             listView1.DataSource = dataSet1;
             listView1.DataBind();
@@ -91,13 +91,13 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             if (sequence.Text=="升序")
             {
-                switch (order.Text)
+                switch (order.Text.ToString())
                 {
                     case "电影评分":
                         string sql1 =
                         "select * from Movie_ticket.Sales " +
-                        "where Cno='" + Cno + "')" +
-                        "order by Mgrade;";
+                        "where Cno='" + Cno + "'" +
+                        "order by Mgrade ASC;";
                         DataSet dataSet1 = Databaseconnect(database, sql1);
                         listView1.DataSource = dataSet1;
                         listView1.DataBind();
@@ -105,8 +105,8 @@ namespace SmobilerAppTEST7._17
                     case "售出数量":
                         string sql2 =
                         "select * from Movie_ticket.Sales " +
-                        "where Cno='" + Cno + "')" +
-                        "order by Total;";
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount ASC;";
                         DataSet dataSet2 = Databaseconnect(database, sql2);
                         listView1.DataSource = dataSet2;
                         listView1.DataBind();
@@ -114,8 +114,8 @@ namespace SmobilerAppTEST7._17
                     case "售出数量/总数量":
                         string sql3 =
                         "select * from Movie_ticket.Sales " +
-                        "where Cno='" + Cno + "')" +
-                        "order by Total;";
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount/Total ASC;";
                         DataSet dataSet3 = Databaseconnect(database, sql3);
                         listView1.DataSource = dataSet3;
                         listView1.DataBind();
@@ -124,13 +124,13 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
-                switch (order.Text)
+                switch (order.Text.ToString())
                 {
                     case "电影评分":
                         string sql1 =
                         "select * from Movie_ticket.Sales " +
-                        "where Cno='" + Cno + "')" +
-                        "order by Mgrade desp;";
+                        "where Cno='" + Cno + "'" +
+                        "order by Mgrade DESC;";
                         DataSet dataSet1 = Databaseconnect(database, sql1);
                         listView1.DataSource = dataSet1;
                         listView1.DataBind();
@@ -138,8 +138,8 @@ namespace SmobilerAppTEST7._17
                     case "售出数量":
                         string sql2 =
                         "select * from Movie_ticket.Sales " +
-                        "where Cno='" + Cno + "')" +
-                        "order by Total desp;";
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount DESC;";
                         DataSet dataSet2 = Databaseconnect(database, sql2);
                         listView1.DataSource = dataSet2;
                         listView1.DataBind();
@@ -147,8 +147,8 @@ namespace SmobilerAppTEST7._17
                     case "售出数量/总数量":
                         string sql3 =
                         "select * from Movie_ticket.Sales " +
-                        "where Cno='" + Cno + "')" +
-                        "order by Total/Amount desp;";
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount/Total DESC;";
                         DataSet dataSet3 = Databaseconnect(database, sql3);
                         listView1.DataSource = dataSet3;
                         listView1.DataBind();
@@ -160,6 +160,73 @@ namespace SmobilerAppTEST7._17
         private void popList2_Selected(object sender, EventArgs e)
         {
             sequence.Text = popList2.Selection.Text.ToString();
+            string database = "Movie_ticket";
+            if (sequence.Text == "升序")
+            {
+                switch (order.Text.ToString())
+                {
+                    case "电影评分":
+                        string sql1 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by Mgrade ASC;";
+                        DataSet dataSet1 = Databaseconnect(database, sql1);
+                        listView1.DataSource = dataSet1;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量":
+                        string sql2 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount ASC;";
+                        DataSet dataSet2 = Databaseconnect(database, sql2);
+                        listView1.DataSource = dataSet2;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量/总数量":
+                        string sql3 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount/Total ASC;";
+                        DataSet dataSet3 = Databaseconnect(database, sql3);
+                        listView1.DataSource = dataSet3;
+                        listView1.DataBind();
+                        break;
+                }
+            }
+            else
+            {
+                switch (order.Text.ToString())
+                {
+                    case "电影评分":
+                        string sql1 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by Mgrade DESC;";
+                        DataSet dataSet1 = Databaseconnect(database, sql1);
+                        listView1.DataSource = dataSet1;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量":
+                        string sql2 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount DESC;";
+                        DataSet dataSet2 = Databaseconnect(database, sql2);
+                        listView1.DataSource = dataSet2;
+                        listView1.DataBind();
+                        break;
+                    case "售出数量/总数量":
+                        string sql3 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by Amount/Total DESC;";
+                        DataSet dataSet3 = Databaseconnect(database, sql3);
+                        listView1.DataSource = dataSet3;
+                        listView1.DataBind();
+                        break;
+                }
+            }
         }
     }
 }
