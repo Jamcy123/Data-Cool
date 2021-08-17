@@ -61,7 +61,7 @@ namespace SmobilerAppTEST7._17
             string Cno = getCno.Text;
             string database = "Movie_ticket";
             string Mname = Mname_lbl.Text;
-            string select = "select Mno from Movie where Mname ='" + Mname + "'";
+            string select = "select Mno from Movie where Mname ='" + Mname + "';";
             DataSet getMno = Databaseconnect(database, select);
             string Mno = getMno.Tables[0].Rows[0][0].ToString();
             Arrange arrange = new Arrange(Cno,Mno);

@@ -54,17 +54,17 @@ namespace SmobilerAppTEST7._17
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
             string select21 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
-                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
+                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
                 "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "' ORDER BY Ptime; ";
 
             string select22 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
-                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
+                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
                 "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%' ORDER BY Ptime; ";
 
             string select23 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
-                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.ticket,movie_ticket.cinema " +
+                "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
                 "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%' ORDER BY Ptime; ";
 
@@ -108,26 +108,9 @@ namespace SmobilerAppTEST7._17
             string shangying = "";
             string[] movie_time;
             movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
-            shangying = movie_time[1];
+            shangying = movie_time[1].Substring(0, movie_time[1].Length - 3);
             ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
         }
 
-        private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
-        {
-            string shangying = "";
-            string[] movie_time;
-            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
-            shangying = movie_time[1];
-            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
-        }
-
-        private void listView3_RowBind(object sender, ListViewTemplateBindEventArgs e)
-        {
-            string shangying = "";
-            string[] movie_time;
-            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
-            shangying = movie_time[1];
-            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
-        }
     }
 }

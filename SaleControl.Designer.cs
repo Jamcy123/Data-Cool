@@ -72,7 +72,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.image1.BorderRadius = 7;
             this.image1.DisplayMember = "Mpicadress";
-            this.image1.Location = new System.Drawing.Point(8, 9);
+            this.image1.Location = new System.Drawing.Point(19, 7);
             this.image1.Name = "image1";
             this.image1.ResourceID = global::SmobilerAppTEST7._17.Properties.Settings.Default.Mpicadress;
             this.image1.Size = new System.Drawing.Size(70, 82);
@@ -83,7 +83,7 @@ namespace SmobilerAppTEST7._17
             this.Mname_lbl.DataMember = "Mno";
             this.Mname_lbl.DisplayMember = "Mname";
             this.Mname_lbl.FontSize = 17F;
-            this.Mname_lbl.Location = new System.Drawing.Point(94, 5);
+            this.Mname_lbl.Location = new System.Drawing.Point(116, 0);
             this.Mname_lbl.Name = "Mname_lbl";
             this.Mname_lbl.Size = new System.Drawing.Size(148, 26);
             this.Mname_lbl.Text = "label1";
@@ -91,7 +91,7 @@ namespace SmobilerAppTEST7._17
             // label2
             // 
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(94, 34);
+            this.label2.Location = new System.Drawing.Point(116, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.Text = "电影评分";
@@ -99,7 +99,7 @@ namespace SmobilerAppTEST7._17
             // label3
             // 
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(94, 56);
+            this.label3.Location = new System.Drawing.Point(116, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 17);
             this.label3.Text = "总票数";
@@ -109,14 +109,15 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl.DisplayMember = "Mgrade";
             this.Mgrade_lbl.FontSize = 14F;
             this.Mgrade_lbl.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Mgrade_lbl.Location = new System.Drawing.Point(166, 34);
+            this.Mgrade_lbl.Location = new System.Drawing.Point(188, 29);
             this.Mgrade_lbl.Name = "Mgrade_lbl";
             this.Mgrade_lbl.Size = new System.Drawing.Size(50, 17);
             this.Mgrade_lbl.Text = "label4";
             // 
             // All_lbl
             // 
-            this.All_lbl.Location = new System.Drawing.Point(166, 56);
+            this.All_lbl.DisplayMember = "Total";
+            this.All_lbl.Location = new System.Drawing.Point(188, 51);
             this.All_lbl.Name = "All_lbl";
             this.All_lbl.Size = new System.Drawing.Size(76, 17);
             this.All_lbl.Text = "label5";
@@ -124,14 +125,15 @@ namespace SmobilerAppTEST7._17
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(94, 77);
+            this.label1.Location = new System.Drawing.Point(116, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.Text = "售出票数";
             // 
             // sale_lbl
             // 
-            this.sale_lbl.Location = new System.Drawing.Point(166, 77);
+            this.sale_lbl.DisplayMember = "Amount";
+            this.sale_lbl.Location = new System.Drawing.Point(188, 72);
             this.sale_lbl.Name = "sale_lbl";
             this.sale_lbl.Size = new System.Drawing.Size(76, 17);
             this.sale_lbl.Text = "label5";

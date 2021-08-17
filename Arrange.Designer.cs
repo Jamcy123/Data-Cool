@@ -183,17 +183,18 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(0, 31);
+            this.listView1.Location = new System.Drawing.Point(0, 15);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 221);
+            this.listView1.Size = new System.Drawing.Size(300, 257);
             this.listView1.TemplateControlName = "Session";
+            this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
             this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // button1
             // 
             this.button1.FontSize = 16F;
-            this.button1.Location = new System.Drawing.Point(97, 262);
+            this.button1.Location = new System.Drawing.Point(97, 272);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 40);
             this.button1.Text = "添加场次";
@@ -219,17 +220,18 @@ namespace SmobilerAppTEST7._17
             // 
             // listView2
             // 
-            this.listView2.Location = new System.Drawing.Point(0, 31);
+            this.listView2.Location = new System.Drawing.Point(0, 20);
             this.listView2.Name = "listView2";
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView2.Size = new System.Drawing.Size(300, 222);
+            this.listView2.Size = new System.Drawing.Size(300, 242);
             this.listView2.TemplateControlName = "Session";
+            this.listView2.Refresh += new System.EventHandler(this.listView2_Refresh);
             this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView2_RowBind);
             // 
             // button2
             // 
             this.button2.FontSize = 16F;
-            this.button2.Location = new System.Drawing.Point(102, 263);
+            this.button2.Location = new System.Drawing.Point(101, 272);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 40);
             this.button2.Text = "添加场次";
@@ -255,17 +257,18 @@ namespace SmobilerAppTEST7._17
             // 
             // listView3
             // 
-            this.listView3.Location = new System.Drawing.Point(0, 31);
+            this.listView3.Location = new System.Drawing.Point(0, 18);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView3.Size = new System.Drawing.Size(300, 226);
+            this.listView3.Size = new System.Drawing.Size(300, 242);
             this.listView3.TemplateControlName = "Session";
+            this.listView3.Refresh += new System.EventHandler(this.listView3_Refresh);
             this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView3_RowBind);
             // 
             // button3
             // 
             this.button3.FontSize = 16F;
-            this.button3.Location = new System.Drawing.Point(103, 266);
+            this.button3.Location = new System.Drawing.Point(103, 272);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 40);
             this.button3.Text = "添加场次";
