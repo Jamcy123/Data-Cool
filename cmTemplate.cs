@@ -60,7 +60,6 @@ namespace SmobilerAppTEST7._17
 
         private void cmTemplate_Load(object sender, EventArgs e)
         {
-            Phall_lbl.Text = Phall_lbl.Text + "号厅";
             Mduration_lbl.Text = Mduration_lbl.Text + "分钟";
         }
     }

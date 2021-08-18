@@ -186,6 +186,7 @@ namespace SmobilerAppTEST7._17
             this.listView1.Location = new System.Drawing.Point(0, 15);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.RaiseRefresh = true;
             this.listView1.Size = new System.Drawing.Size(300, 257);
             this.listView1.TemplateControlName = "Session";
             this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
@@ -223,6 +224,7 @@ namespace SmobilerAppTEST7._17
             this.listView2.Location = new System.Drawing.Point(0, 20);
             this.listView2.Name = "listView2";
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView2.RaiseRefresh = true;
             this.listView2.Size = new System.Drawing.Size(300, 242);
             this.listView2.TemplateControlName = "Session";
             this.listView2.Refresh += new System.EventHandler(this.listView2_Refresh);
@@ -260,6 +262,7 @@ namespace SmobilerAppTEST7._17
             this.listView3.Location = new System.Drawing.Point(0, 18);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView3.RaiseRefresh = true;
             this.listView3.Size = new System.Drawing.Size(300, 242);
             this.listView3.TemplateControlName = "Session";
             this.listView3.Refresh += new System.EventHandler(this.listView3_Refresh);

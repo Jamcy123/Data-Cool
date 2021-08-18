@@ -31,7 +31,6 @@ namespace SmobilerAppTEST7._17
             con.Close();
             return dataSet;
         }
-
         private void cinema_movie_Load(object sender, EventArgs e)
         {
             string[] a = { "今天 " + DateTime.Now.ToShortDateString().ToString(), "明天 " + DateTime.Now.AddDays(1).ToShortDateString().ToString(), "后天 " + DateTime.Now.AddDays(2).ToShortDateString().ToString() };
@@ -53,21 +52,20 @@ namespace SmobilerAppTEST7._17
             Cname_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[2].ToString();
             Caddress_lbl.Text = dataSet1.Tables[0].Rows[0].ItemArray[3].ToString();
 
-            string select21 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
+            string select21 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname,DATE_FORMAT(Ptime,'%H:%i') TIME " +
                 "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
                 "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "' ORDER BY Ptime; ";
 
-            string select22 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
+            string select22 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname,DATE_FORMAT(Ptime,'%H:%i') TIME " +
                 "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
                 "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%' ORDER BY Ptime; ";
 
-            string select23 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname " +
+            string select23 = "SELECT DISTINCT projection.*,movie.*,cinema.Cname,DATE_FORMAT(Ptime,'%H:%i') TIME " +
                 "FROM movie_ticket.movie,movie_ticket.projection,movie_ticket.cinema " +
                 "where projection.Mno like '" + movie_no + "' and projection.Cno like '" + cinema_no + "' " +
                 "and projection.Mno = movie.Mno and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%' ORDER BY Ptime; ";
-
 
             DataSet dataSet21 = Databaseconnect(database, select21);
             DataSet dataSet22 = Databaseconnect(database, select22);
@@ -101,15 +99,6 @@ namespace SmobilerAppTEST7._17
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
-        {
-            string shangying = "";
-            string[] movie_time;
-            movie_time = ((Label)e.Row.Control.Controls.Find("shichang_lbl", true)).BindDataValue.ToString().Split(' ');
-            shangying = movie_time[1].Substring(0, movie_time[1].Length - 3);
-            ((Label)e.Row.Control.Controls.Find("Ptime_lbl", true)).Text = shangying;
         }
 
     }

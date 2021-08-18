@@ -25,7 +25,6 @@ namespace SmobilerAppTEST7._17
             this.Pprice_lbl = new Smobiler.Core.Controls.Label();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.label2 = new Smobiler.Core.Controls.Label();
-            this.date_lbl = new Smobiler.Core.Controls.Label();
             this.Ptime_lbl = new Smobiler.Core.Controls.Label();
             // 
             // panel1
@@ -39,7 +38,6 @@ namespace SmobilerAppTEST7._17
             this.Pprice_lbl,
             this.label1,
             this.label2,
-            this.date_lbl,
             this.Ptime_lbl});
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 70);
@@ -91,15 +89,6 @@ namespace SmobilerAppTEST7._17
             this.label2.Size = new System.Drawing.Size(35, 15);
             this.label2.Text = "场次：";
             // 
-            // date_lbl
-            // 
-            this.date_lbl.BackColor = System.Drawing.Color.Red;
-            this.date_lbl.DisplayMember = "select_date";
-            this.date_lbl.Location = new System.Drawing.Point(269, 48);
-            this.date_lbl.Name = "date_lbl";
-            this.date_lbl.Size = new System.Drawing.Size(44, 15);
-            this.date_lbl.Visible = false;
-            // 
             // Ptime_lbl
             // 
             this.Ptime_lbl.Location = new System.Drawing.Point(40, 48);
@@ -124,7 +113,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label Pprice_lbl;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Label label2;
-        private Smobiler.Core.Controls.Label date_lbl;
         private Smobiler.Core.Controls.Label Ptime_lbl;
     }
 }

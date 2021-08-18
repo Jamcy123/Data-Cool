@@ -120,7 +120,7 @@ namespace SmobilerAppTEST7._17
             this.All_lbl.Location = new System.Drawing.Point(188, 51);
             this.All_lbl.Name = "All_lbl";
             this.All_lbl.Size = new System.Drawing.Size(76, 17);
-            this.All_lbl.Text = "label5";
+            this.All_lbl.Text = "0";
             // 
             // label1
             // 
@@ -136,7 +136,7 @@ namespace SmobilerAppTEST7._17
             this.sale_lbl.Location = new System.Drawing.Point(188, 72);
             this.sale_lbl.Name = "sale_lbl";
             this.sale_lbl.Size = new System.Drawing.Size(76, 17);
-            this.sale_lbl.Text = "label5";
+            this.sale_lbl.Text = "0";
             // 
             // SaleControl
             // 
