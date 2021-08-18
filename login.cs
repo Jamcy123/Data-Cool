@@ -281,9 +281,7 @@ namespace SmobilerAppTEST7._17
                             }
                         }
                     }
-                }
-
-                
+                }            
             }
             catch (Exception ex)
             {
