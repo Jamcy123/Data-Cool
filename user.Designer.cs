@@ -177,6 +177,7 @@ namespace SmobilerAppTEST7._17
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.toolBar1,
             this.panel1});
+            this.Load += new System.EventHandler(this.user_Load);
             this.Name = "user";
 
         }

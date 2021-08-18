@@ -107,7 +107,7 @@ namespace SmobilerAppTEST7._17
             { c = DateTime.Now.AddDays(2).ToString("yyyy-MM-dd"); }
 
             string database = "movie_ticket";
-            string select = "SELECT DISTINCT DATE_FORMAT(Ptime,'%H:%i') FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%' and Ptime > '" + DateTime.Now.ToString() + "' ORDER BY Ptime; ";
+            string select = "SELECT DISTINCT DATE_FORMAT(Ptime,'%H:%i'),Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%' and Ptime > '" + DateTime.Now.ToString() + "' ORDER BY Ptime; ";
 
             DataSet dataSet = Databaseconnect(database, select);
             string shangying = "";

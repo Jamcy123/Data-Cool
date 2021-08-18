@@ -82,7 +82,7 @@ namespace SmobilerAppTEST7._17
                                         if (this.Client.SessionID != dataSet.Tables[0].Rows[0][0].ToString()&& dataSet.Tables[0].Rows[0][0].ToString()!="123456")
                                         {
                                             //ClientVariables.GetCurrentClient(上一个设备的DeviceID).ReStart();//实现用户唯一在线
-                                            ClientVariables.GetCurrentClient(dataSet.Tables[0].Rows[0][0].ToString()).ReStart();//唯一在线
+                                            //ClientVariables.GetCurrentClient(dataSet.Tables[0].Rows[0][0].ToString()).ReStart();//唯一在线
                                             sql = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
                                             Databaseconnect(database, sql);//更新设备号数据
 
@@ -92,7 +92,7 @@ namespace SmobilerAppTEST7._17
                                         {
                                             if (dataSet.Tables[0].Rows[0][0].ToString() == "123456")
                                             {
-                                                sql = "Update Cinema set Cip='" + this.Client.SessionID + "' where Aid='" + txtUserName.Text + "'";
+                                                sql = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
                                                 Databaseconnect(database, sql);//更新设备号数据
                                             }
                                         }
@@ -175,7 +175,7 @@ namespace SmobilerAppTEST7._17
                                                 if (this.Client.SessionID != dataSet.Tables[0].Rows[0][0].ToString() && dataSet.Tables[0].Rows[0][0].ToString() != "123456")
                                                 {
                                                     //ClientVariables.GetCurrentClient(上一个设备的DeviceID).ReStart();实现用户唯一在线
-                                                    ClientVariables.GetCurrentClient(dataSet.Tables[0].Rows[0][0].ToString()).ReStart();//唯一在线
+                                                    //ClientVariables.GetCurrentClient(dataSet.Tables[0].Rows[0][0].ToString()).ReStart();//唯一在线
                                                     sql = "Update Cinema set Cip='" + this.Client.SessionID + "' where Aid='" + txtUserName.Text + "'";
                                                     Databaseconnect(database, sql);//更新设备号数据
                                                 }
