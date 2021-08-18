@@ -31,7 +31,6 @@ namespace SmobilerAppTEST7._17
             InitializeComponent();
             Uno = a;
             showlabel(a);
-            image1.ResourceID = Uno;
         }
 
         public void showlabel(string a)
@@ -40,7 +39,6 @@ namespace SmobilerAppTEST7._17
             string database = "Movie_ticket";
             DataSet name=Databaseconnect(database, txt2);
             label1.Text = name.Tables[0].Rows[0][0].ToString();
-
         }
 
         public void setToolbarIndex(int i)
@@ -71,25 +69,6 @@ namespace SmobilerAppTEST7._17
             this.Show(alterpassword);
         }
 
-        //private DataTable GetMenu(string ID)
-        //{
-        //    try
-        //    {
-        //        MySqlConnection con = new MySqlConnection();
-        //        con.ConnectionString = "server=127.0.0.1;Database=movie_ticket;uid=root;pwd=;";
-        //        con.Open();
-        //        string select = "Select Upassword from Userinf where Uphoneno=" + ID;
-        //        MySqlDataAdapter find = new MySqlDataAdapter(select, con);
-        //        DataSet save = new DataSet();//缓存
-        //        find.Fill(save);//Fill(DataSet)	在 DataSet 中添加或刷新行。
-        //        con.Close();
-        //        return save.Tables[0];
-        //    }
-        //    catch(Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
-        //}
         private void iconMenuView1_ItemPress(object sender, IconMenuViewItemPressEventArgs e)
         {
             switch(e.Item.ID)
@@ -104,7 +83,7 @@ namespace SmobilerAppTEST7._17
                     break;
                 case "message":
                     Mymessage mymessage = new Mymessage(Uno);
-                    this.Show(mymessage);
+                    this.Show(mymessage, (obj, args) => { label1.Text = mymessage.Nickname;image1.ResourceID = mymessage.Pic; });//传递修改
                     break;
             }
         }
@@ -112,6 +91,23 @@ namespace SmobilerAppTEST7._17
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void user_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                //载入头像信息
+                string update = "Select Uphoto from Userinf where Uphoneno='" + Uno + "'";
+                string database = "Movie_ticket";
+                DataSet dataSet = Databaseconnect(database, update);
+                if (dataSet.Tables[0].Rows.Count > 0)
+                    image1.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();
+            }
+            catch (Exception ex)
+            {
+                Toast(ex.Message);
+            }
         }
     }
 }
