@@ -99,13 +99,11 @@ namespace SmobilerAppTEST7._17
             {
                 for (int i = 0; i < table1.Rows.Count; i++)
                 {
-                    table3.Rows[i]["select_date"] = DateTime.Now.AddDays(2).ToString("yyyy-MM-dd");
+                    table3.Rows[i]["select_date"] = DateTime.Now.Date.AddDays(2).ToString("yyyy-MM-dd");
                 }
                 listView3.DataSource = table3;
                 listView3.DataBind();
             }
-
-
         }
 
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)
@@ -118,9 +116,11 @@ namespace SmobilerAppTEST7._17
             string a = ((Label)e.Row.Control.Controls.Find("Pprice_lbl", true)).BindDataValue.ToString();
             string b = ((Label)e.Row.Control.Controls.Find("Cname_lbl", true)).BindDataValue.ToString();
             string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
-
+            if (sender == listView1)
+            { }
             string database = "movie_ticket";
             string select = "SELECT DISTINCT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%' and Ptime > '" + DateTime.Now.ToString() + "' ORDER BY Ptime; ";
+            textBox1.Text = select;
             DataSet dataSet = Databaseconnect(database, select);
             string shangying = "";
             string[] movie_time;
@@ -132,6 +132,5 @@ namespace SmobilerAppTEST7._17
             }
             ((Label)e.Row.Control.Controls.Find("Ptime_lbl",true)).Text = shangying + "...";
         }
-
     }
 }

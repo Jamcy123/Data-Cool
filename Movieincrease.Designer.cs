@@ -113,7 +113,7 @@ namespace SmobilerAppTEST7._17
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 190);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 335);
+            this.panel4.Size = new System.Drawing.Size(300, 349);
             // 
             // button3
             // 
@@ -121,7 +121,7 @@ namespace SmobilerAppTEST7._17
             this.button3.Bold = true;
             this.button3.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.button3.FontSize = 18F;
-            this.button3.Location = new System.Drawing.Point(89, 197);
+            this.button3.Location = new System.Drawing.Point(85, 299);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(121, 35);
             this.button3.Text = "上架电影";
@@ -133,7 +133,7 @@ namespace SmobilerAppTEST7._17
             this.label8.BorderColor = System.Drawing.Color.DimGray;
             this.label8.FontSize = 16F;
             this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(12, 2);
+            this.label8.Location = new System.Drawing.Point(13, 87);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 39);
             this.label8.Text = "电影简介：";
@@ -142,10 +142,10 @@ namespace SmobilerAppTEST7._17
             // 
             this.Mdetail.Border = new Smobiler.Core.Controls.Border(1F);
             this.Mdetail.BorderColor = System.Drawing.Color.DimGray;
-            this.Mdetail.Location = new System.Drawing.Point(26, 41);
+            this.Mdetail.Location = new System.Drawing.Point(27, 121);
             this.Mdetail.Multiline = true;
             this.Mdetail.Name = "Mdetail";
-            this.Mdetail.Size = new System.Drawing.Size(251, 146);
+            this.Mdetail.Size = new System.Drawing.Size(251, 168);
             // 
             // panel3
             // 
@@ -163,7 +163,7 @@ namespace SmobilerAppTEST7._17
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 46);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 239);
+            this.panel3.Size = new System.Drawing.Size(300, 243);
             // 
             // image1
             // 
@@ -264,7 +264,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Panel panel4;
         private Smobiler.Core.Controls.Button button3;
         private Smobiler.Core.Controls.Label label8;
-        private Smobiler.Core.Controls.TextBox Mdetail;
         private Smobiler.Core.Controls.Panel panel3;
         private Smobiler.Core.Controls.Image image1;
         private Smobiler.Core.Controls.TextBox Mno;
@@ -275,5 +274,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.TextBox Mgrade;
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Camera camera1;
+        private Smobiler.Core.Controls.TextBox Mdetail;
     }
 }

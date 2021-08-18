@@ -57,5 +57,11 @@ namespace SmobilerAppTEST7._17
             this.Form.Show(new Seat_Form(user_no, movie_name, movie_no, cinema_name, cinema_no, Convert.ToInt32(Phall_lbl.Text), week, projection_time, Pprice_lbl.Text));
 
         }
+
+        private void cmTemplate_Load(object sender, EventArgs e)
+        {
+            Phall_lbl.Text = Phall_lbl.Text + "号厅";
+            Mduration_lbl.Text = Mduration_lbl.Text + "分钟";
+        }
     }
 }

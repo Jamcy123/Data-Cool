@@ -10,7 +10,7 @@ using System.IO;
 
 namespace SmobilerAppTEST7._17
 {
-    
+
     partial class Movieincrease : Smobiler.Core.Controls.MobileForm
     {
         string name;
@@ -36,8 +36,8 @@ namespace SmobilerAppTEST7._17
         public void showmovie()
         {
             string database = "Movie_ticket";
-            string sql1 ="select * from Movie_ticket.Movie ";
-            DataSet dataSet1 = Databaseconnect(database, sql1);          
+            string sql1 = "select * from Movie_ticket.Movie ";
+            DataSet dataSet1 = Databaseconnect(database, sql1);
             listView1.DataSource = dataSet1;
             listView1.DataBind();
 
@@ -56,13 +56,10 @@ namespace SmobilerAppTEST7._17
                 string sql = "";
                 DataSet dataSet = new DataSet();
                 string BoxText = searchBox_Control.TextBox_Text.Replace("'", "''");//使数据库能正确识别字符串
-                sql =
-                         "select * from Movie_ticket.Movie " +
-                         "where Mname like '%" + BoxText + "%'";
+                sql = "select * from Movie_ticket.Movie where Mname like '%" + BoxText + "%'";
                 dataSet = Databaseconnect(database, sql);
                 if (dataSet.Tables[0].Rows.Count <= 0)
                 {
-
                     listView1.DataSource = dataSet;
                     listView1.DataBind();
                     throw new Exception("此处暂无符合要求的电影");
@@ -71,17 +68,13 @@ namespace SmobilerAppTEST7._17
                 {
                     listView1.DataSource = dataSet;
                     listView1.DataBind();
-
                 }
-
-
             }
             catch (Exception ex)
             {
                 Toast(ex.Message);
             }
-        
-    }
+        }
 
         private void searchBox_Control1_Load(object sender, EventArgs e)
         {
@@ -90,7 +83,6 @@ namespace SmobilerAppTEST7._17
 
         private void button3_Press(object sender, EventArgs e)
         {
-            
             string path_1 = ".\\Resources\\Image\\Cache\\" + name;//缓存路径
             string path_2 = ".\\Resources\\Image\\" + name;
             if (File.Exists(path_1))//用户选择了新的图片点击保存才上传
@@ -109,7 +101,6 @@ namespace SmobilerAppTEST7._17
                 if (dataSet.Tables[0].Rows.Count <= 0)
                 {
                     Toast("添加电影失败！请重新添加");
-
                 }
                 else
                 {
@@ -124,8 +115,6 @@ namespace SmobilerAppTEST7._17
                     Mgrade.Text = "";
                 }
             }
-           
-            
         }
 
         private void button1_Press(object sender, EventArgs e)
@@ -135,15 +124,14 @@ namespace SmobilerAppTEST7._17
 
         private void camera1_ImageCaptured(object sender, BinaryResultArgs e)
         {
-
             try
             {
                 if (e.Data != null)//没选照片不显示
                 {
                     name = DateTime.UtcNow.ToString().Replace("/", "").Replace(":", "") + ".png";
                     string path = ".\\Resources\\Image\\Cache";
-                    e.SaveFile(name , path); //第二个参数为路径
-                    image1.ResourceID = ".\\Cache\\" + name ;//展示预览图
+                    e.SaveFile(name, path); //第二个参数为路径
+                    image1.ResourceID = ".\\Cache\\" + name;//展示预览图
                 }
             }
             catch (Exception ex)

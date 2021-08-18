@@ -41,7 +41,7 @@ namespace SmobilerAppTEST7._17
             string select = "select Mno from Movie where Mname ='" + Mname + "'";
             DataSet getMno = Databaseconnect(database, select);
             string Mno = getMno.Tables[0].Rows[0][0].ToString();
-            string del = "delete from Project where Cno='" + Cno + "'and Mno='" + Mno + "'";
+            string del = "delete from Pmessage where Cno='" + Cno + "'and Mno='" + Mno + "'";
             Databaseconnect(database, del);
         }
 

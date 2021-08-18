@@ -156,19 +156,19 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press(object sender, EventArgs e)
         {
-            addSession addSession = new addSession(Cno, Mno, DateTime.Now.ToString("yyyy-MM-dd"));
+            addSession addSession = new addSession(Cno, Mno, DateTime.Now.ToString("yyyy-MM-dd"),Mduration_lbl.Text);
             this.Form.ShowDialog(addSession);
         }
 
         private void button2_Press(object sender, EventArgs e)
         {
-            addSession addSession = new addSession(Cno, Mno, DateTime.Now.AddDays(1).ToString("yyyy-MM-dd"));
+            addSession addSession = new addSession(Cno, Mno, DateTime.Now.AddDays(1).ToString("yyyy-MM-dd"),Mduration_lbl.Text);
             this.Form.ShowDialog(addSession);
         }
 
         private void button3_Press(object sender, EventArgs e)
         {
-            addSession addSession = new addSession(Cno, Mno, DateTime.Now.AddDays(2).ToString("yyyy-MM-dd"));
+            addSession addSession = new addSession(Cno, Mno, DateTime.Now.AddDays(2).ToString("yyyy-MM-dd"),Mduration_lbl.Text);
             this.Form.ShowDialog(addSession);
         }
 

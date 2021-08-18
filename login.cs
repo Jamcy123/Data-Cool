@@ -34,7 +34,7 @@ namespace SmobilerAppTEST7._17
             try
             {
                 string database = "Movie_ticket";
-                if (checkBox1.Checked == true)//用户登录
+                if (checkBox1.Checked)//用户登录
                 {
                     string userID = txtUserName.Text.Trim();
                     string PassWord = txtPassword.Text.Trim();
@@ -81,10 +81,12 @@ namespace SmobilerAppTEST7._17
                                         //123456表示注册后，首次登录
                                         if (this.Client.SessionID != dataSet.Tables[0].Rows[0][0].ToString()&& dataSet.Tables[0].Rows[0][0].ToString()!="123456")
                                         {
-                                            //ClientVariables.GetCurrentClient(上一个设备的DeviceID).ReStart();实现用户唯一在线
+                                            //ClientVariables.GetCurrentClient(上一个设备的DeviceID).ReStart();//实现用户唯一在线
                                             ClientVariables.GetCurrentClient(dataSet.Tables[0].Rows[0][0].ToString()).ReStart();//唯一在线
                                             sql = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
                                             Databaseconnect(database, sql);//更新设备号数据
+
+                                            //Client.GetActiveForm().MessageBox.Show("该账号已在别处登录");
                                         }
                                         else
                                         {
@@ -191,7 +193,7 @@ namespace SmobilerAppTEST7._17
                                                         Databaseconnect(database, sql);//更新设备号数据
                                                     }
                                                 }
-                                                this.Show(new moive_select(txtUserName.Text));
+                                                this.Show(new Administrator(txtUserName.Text));
                                             }
                                             else
                                             {
@@ -289,7 +291,8 @@ namespace SmobilerAppTEST7._17
 
         private void button3_Press(object sender, EventArgs e)//我直接选座位
         {
-            Toast("不给选");
+            this.Client.HeartBeatEnable(3000, 0, (obj, args) => { }, (obj, args) => { Toast(Client.DeviceID); });
+            //Toast("不给选");
             //this.Form.Show(new Seat_Form("13549473975", "是部电影", "001", "又是个影院", "001", 1, "周四", "2021-08-12 09:00:00", "1.2"));
         }
 

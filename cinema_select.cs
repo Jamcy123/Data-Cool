@@ -115,5 +115,25 @@ namespace SmobilerAppTEST7._17
             Search_Form search_Form = new Search_Form(Uno);//查询界面
             this.Form.Show(search_Form);
         }
+
+        private void listView1_Refresh(object sender, EventArgs e)//下拉刷新
+        {
+            listView1.Rows.Clear();
+            string select = "SELECT * FROM Movie_ticket.Cinema where Ccity='" + city_label.Text + "'";
+            string database = "Movie_ticket";
+            DataSet dataSet = Databaseconnect(database, select);
+            if (dataSet.Tables[0].Rows.Count <= 0)
+            {
+                label1.Visible = true;
+                listView1.DataSource = dataSet;
+                listView1.DataBind();
+            }
+            else
+            {
+                label1.Visible = false;
+                listView1.DataSource = dataSet;
+                listView1.DataBind();
+            }
+        }
     }
 }

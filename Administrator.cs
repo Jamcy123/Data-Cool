@@ -23,8 +23,6 @@ namespace SmobilerAppTEST7._17
             
         }
 
-
-
         public void showmovie()
         {
             string database = "Movie_ticket";
@@ -114,8 +112,7 @@ namespace SmobilerAppTEST7._17
                         else
                         {
                             listView2.DataSource = dataSet;
-                            listView2.DataBind();
-                           
+                            listView2.DataBind();                    
                         }
                        
                         break;
@@ -177,8 +174,7 @@ namespace SmobilerAppTEST7._17
 
         private void listView2_RowBind(object sender, ListViewTemplateBindEventArgs e)
         {
-            ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;
-            
+            ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;     
         }
 
     }

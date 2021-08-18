@@ -16,13 +16,15 @@ namespace SmobilerAppTEST7._17
         string Cno;
         string Mno;
         string Pdate;
-        public addSession(string a,string b,string c) : base()
+        string Duration;
+        public addSession(string a, string b, string c, string d) : base()
         {
             //This call is required by the SmobilerUserControl.
             InitializeComponent();
             Cno = a;
             Mno = b;
             Pdate = c;
+            Duration = d;
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
@@ -40,37 +42,49 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press(object sender, EventArgs e)
         {
+            string[] gettime = datePicker1.BindDisplayValue.ToString().Split(' ', '/', ':');
+            string Time = gettime[3] +":"+ gettime[4];
             string database = "movie_ticket";
-            string insert="insert into Projection values('"+Cno+"','"+Mno + "',"+gethall.Text.Substring(0,1) +
-                ",'" +Pdate+ " "+ datePicker1.BindDisplayValue+"','" +0 + "'," +getprice.Text+");";
-            Databaseconnect(database, insert);
-            string select = "select * from Projection where Cno='" + Cno + "'and Phall=" + gethall.Text.Substring(0, 1) + "and Ptime = '" +
-                Pdate + " " + datePicker1.BindDisplayValue + "';";//判断是否存在同一影院同一放映厅同一时间的电影
-            DataSet dataSet = Databaseconnect(database, select);
-            string delete = "delete from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + gethall.Text.Substring(0, 1) +
-                "and  Ptime like'" + Pdate + " " + datePicker1.BindDisplayValue + "'and Pprice =" + getprice.Text + ";";
-            if (dataSet.Tables[0].Rows.Count>0)
+            string sure = "select * from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + int.Parse(gethall.Text.Substring(0, 1)) +
+                "  and  Ptime = '" + Pdate + " " + Time + "';";
+            DataSet data=Databaseconnect(database, sure);
+            if(data.Tables[0].Rows.Count > 0)
             {
-                Databaseconnect(database, delete);
                 Toast("添加场次失败，请重新添加！");
             }
             else
             {
-                string select1 = "select* from Projection where Cno='" + Cno + "'and Phall=" + gethall.Text.Substring(0, 1) + "and Ptime < '" +
-                Pdate + " " + datePicker1.BindDisplayValue + "'and Ptime >'" + Pdate + " " + "00:00:00';";//判断是否存在同一影院同一放映厅早于该时间的电影
-                DataSet dataSet1 = Databaseconnect(database, select1);
-                if (dataSet1.Tables[0].Rows.Count > 0)
+                string insert = "insert into Projection values('" + Cno + "','" + Mno + "'," + gethall.Text.Substring(0, 1) +
+                ",'" + Pdate + " " + Time + "','" + 0 + "'," + getprice.Text + ");";
+                Databaseconnect(database, insert);
+                string select = "select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall="
+                    + gethall.Text.Substring(0, 1) + " and Ptime < '" + Pdate + " " + Time +
+                     "'and Ptime >'" + Pdate + " " + "00:00:00'" +
+                    " and date_add(Ptime,interval Mduration minute) > '" + Pdate + " " + Time + "';";
+                DataSet dataSet = Databaseconnect(database, select);
+                string delete = "delete from Projection where Cno= '" + Cno + "'and Mno='" + Mno + "'and Phall =" + int.Parse(gethall.Text.Substring(0, 1)) +
+                " and Ptime = '" + Pdate + " " + Time + "';";
+                if (dataSet.Tables[0].Rows.Count > 0)
                 {
-
+                    Databaseconnect(database, delete);
+                    Toast("添加场次失败，请重新添加！");
                 }
                 else
                 {
-                    string select2 = "select* from Projection where Cno='" + Cno + "'and Phall=" + gethall.Text.Substring(0, 1) + "and Ptime >'" +
-                Pdate + " " + datePicker1.BindDisplayValue + "'and Ptime <'" + Pdate + " " + "23:59:59';";//判断是否存在同一影院同一放映厅晚于该时间的电影
-                    DataSet dataSet2 = Databaseconnect(database, select2);
-                    if (dataSet2.Tables[0].Rows.Count > 0)
+                    string time = Pdate +" "+ Time+":00";
+                    string[] subs = time.Split(' ', '-', ':');
+                    DateTime dateTime = new DateTime(int.Parse(subs[0]), int.Parse(subs[1]), int.Parse(subs[2]), int.Parse(subs[3]), int.Parse(subs[4]), int.Parse(subs[5]));
+                    dateTime = dateTime.AddMinutes(int.Parse(Duration));  
+                    string select1 =
+                      " select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall= "
+                  + gethall.Text.Substring(0, 1) + " and Ptime > '" + Pdate + " " + Time +
+                   "' and Ptime < '" + Pdate + " " + "23:59:59' " +
+                  " and Ptime < '" + dateTime + "';";
+                    DataSet dataSet1 = Databaseconnect(database, select1);
+                    if (dataSet1.Tables[0].Rows.Count > 0)
                     {
-
+                        Databaseconnect(database, delete);
+                        Toast("添加场次失败，请重新添加！");
                     }
                     else
                     {
@@ -79,7 +93,9 @@ namespace SmobilerAppTEST7._17
                     }
                 }
             }
-        }
+            
+         }
+    
 
 
 

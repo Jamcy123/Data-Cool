@@ -98,7 +98,7 @@ namespace SmobilerAppTEST7._17
             this.Mpicadress_image.Location = new System.Drawing.Point(8, 9);
             this.Mpicadress_image.Name = "Mpicadress_image";
             this.Mpicadress_image.ResourceID = global::SmobilerAppTEST7._17.Properties.Settings.Default.Mpicadress;
-            this.Mpicadress_image.Size = new System.Drawing.Size(100, 120);
+            this.Mpicadress_image.Size = new System.Drawing.Size(100, 110);
             // 
             // Mname_lbl
             // 
@@ -208,7 +208,7 @@ namespace SmobilerAppTEST7._17
             this.listView1.Location = new System.Drawing.Point(0, 10);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 203);
+            this.listView1.Size = new System.Drawing.Size(300, 237);
             this.listView1.TemplateControlName = "cmTemplate";
             this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
@@ -223,7 +223,7 @@ namespace SmobilerAppTEST7._17
             this.listView2.Location = new System.Drawing.Point(0, 10);
             this.listView2.Name = "listView2";
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView2.Size = new System.Drawing.Size(300, 203);
+            this.listView2.Size = new System.Drawing.Size(300, 238);
             this.listView2.TemplateControlName = "cmTemplate";
             this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
@@ -238,7 +238,7 @@ namespace SmobilerAppTEST7._17
             this.listView3.Location = new System.Drawing.Point(0, 10);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView3.Size = new System.Drawing.Size(300, 203);
+            this.listView3.Size = new System.Drawing.Size(300, 236);
             this.listView3.TemplateControlName = "cmTemplate";
             this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
