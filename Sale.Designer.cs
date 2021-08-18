@@ -20,21 +20,19 @@ namespace SmobilerAppTEST7._17
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem19 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem20 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem21 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.PopListGroup popListGroup13 = new Smobiler.Core.Controls.PopListGroup();
-            Smobiler.Core.Controls.PopListItem popListItem31 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListItem popListItem32 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListItem popListItem33 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListGroup popListGroup14 = new Smobiler.Core.Controls.PopListGroup();
-            Smobiler.Core.Controls.PopListItem popListItem34 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListItem popListItem35 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.PopListGroup popListGroup1 = new Smobiler.Core.Controls.PopListGroup();
+            Smobiler.Core.Controls.PopListItem popListItem1 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem2 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem3 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListGroup popListGroup2 = new Smobiler.Core.Controls.PopListGroup();
+            Smobiler.Core.Controls.PopListItem popListItem4 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem5 = new Smobiler.Core.Controls.PopListItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.listView1 = new Smobiler.Core.Controls.ListView();
-            this.popList1 = new Smobiler.Core.Controls.PopList();
-            this.popList2 = new Smobiler.Core.Controls.PopList();
             this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.panel3 = new Smobiler.Core.Controls.Panel();
@@ -42,33 +40,35 @@ namespace SmobilerAppTEST7._17
             this.order = new Smobiler.Core.Controls.Label();
             this.panel4 = new Smobiler.Core.Controls.Panel();
             this.sequence = new Smobiler.Core.Controls.Label();
+            this.popList1 = new Smobiler.Core.Controls.PopList();
+            this.popList2 = new Smobiler.Core.Controls.PopList();
             // 
             // toolBar1
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
             this.toolBar1.BorderColor = System.Drawing.Color.White;
-            toolBarItem19.IconID = "film";
-            toolBarItem19.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem19.Name = "film";
-            toolBarItem19.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem19.SelectIconID = "film";
-            toolBarItem19.Text = "电影管理";
-            toolBarItem20.IconID = "calculator";
-            toolBarItem20.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem20.Name = "sale";
-            toolBarItem20.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem20.SelectIconID = "calculator";
-            toolBarItem20.Text = "销售情况";
-            toolBarItem21.IconID = "file-text-o";
-            toolBarItem21.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem21.Name = "cinema";
-            toolBarItem21.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
-            toolBarItem21.SelectIconID = "file-text-o";
-            toolBarItem21.Text = "影院信息";
+            toolBarItem1.IconID = "film";
+            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem1.Name = "film";
+            toolBarItem1.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem1.SelectIconID = "film";
+            toolBarItem1.Text = "电影管理";
+            toolBarItem2.IconID = "calculator";
+            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem2.Name = "sale";
+            toolBarItem2.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem2.SelectIconID = "calculator";
+            toolBarItem2.Text = "销售情况";
+            toolBarItem3.IconID = "file-text-o";
+            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem3.Name = "cinema";
+            toolBarItem3.SelectIconColor = System.Drawing.Color.DeepSkyBlue;
+            toolBarItem3.SelectIconID = "file-text-o";
+            toolBarItem3.Text = "影院信息";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem19,
-            toolBarItem20,
-            toolBarItem21});
+            toolBarItem1,
+            toolBarItem2,
+            toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(79, 480);
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
@@ -94,40 +94,6 @@ namespace SmobilerAppTEST7._17
             this.listView1.Size = new System.Drawing.Size(300, 478);
             this.listView1.TemplateControlName = "SaleControl";
             this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
-            // 
-            // popList1
-            // 
-            popListItem31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem31.Text = "电影评分";
-            popListItem32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem32.Text = "售出数量";
-            popListItem33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem33.Text = "售出数量/总票数";
-            popListGroup13.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
-            popListItem31,
-            popListItem32,
-            popListItem33});
-            popListGroup13.Value = null;
-            this.popList1.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
-            popListGroup13});
-            this.popList1.Name = "popList1";
-            this.popList1.Title = "请选择排序方式";
-            this.popList1.Selected += new System.EventHandler(this.popList1_Selected);
-            // 
-            // popList2
-            // 
-            popListItem34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem34.Text = "升序";
-            popListItem35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem35.Text = "降序";
-            popListGroup14.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
-            popListItem34,
-            popListItem35});
-            popListGroup14.Value = null;
-            this.popList2.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
-            popListGroup14});
-            this.popList2.Name = "popList2";
-            this.popList2.Selected += new System.EventHandler(this.popList2_Selected);
             // 
             // searchBox_Control
             // 
@@ -199,6 +165,40 @@ namespace SmobilerAppTEST7._17
             this.sequence.Name = "sequence";
             this.sequence.Size = new System.Drawing.Size(119, 41);
             this.sequence.Text = "升序";
+            // 
+            // popList1
+            // 
+            popListItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem1.Text = "电影评分";
+            popListItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem2.Text = "售出数量";
+            popListItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem3.Text = "售出数量/总票数";
+            popListGroup1.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
+            popListItem1,
+            popListItem2,
+            popListItem3});
+            popListGroup1.Value = null;
+            this.popList1.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
+            popListGroup1});
+            this.popList1.Name = "popList1";
+            this.popList1.Title = "请选择排序方式";
+            this.popList1.Selected += new System.EventHandler(this.popList1_Selected);
+            // 
+            // popList2
+            // 
+            popListItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem4.Text = "升序";
+            popListItem5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem5.Text = "降序";
+            popListGroup2.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
+            popListItem4,
+            popListItem5});
+            popListGroup2.Value = null;
+            this.popList2.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
+            popListGroup2});
+            this.popList2.Name = "popList2";
+            this.popList2.Selected += new System.EventHandler(this.popList2_Selected);
             // 
             // Sale
             // 

@@ -166,6 +166,7 @@ namespace SmobilerAppTEST7._17
 
         }
 
+        
 
         private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
         {
