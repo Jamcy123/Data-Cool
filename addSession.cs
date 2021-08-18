@@ -45,8 +45,8 @@ namespace SmobilerAppTEST7._17
             string[] gettime = datePicker1.BindDisplayValue.ToString().Split(' ', '/', ':');
             string Time = gettime[3] +":"+ gettime[4];
             string database = "movie_ticket";
-            string sure = "select * from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + gethall.Text.Substring(0, 1) +
-                "and  Ptime = '" + Pdate + " " + Time + "';";
+            string sure = "select * from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + int.Parse(gethall.Text.Substring(0, 1)) +
+                "  and  Ptime = '" + Pdate + " " + Time + "';";
             DataSet data=Databaseconnect(database, sure);
             if(data.Tables[0].Rows.Count > 0)
             {
@@ -60,10 +60,10 @@ namespace SmobilerAppTEST7._17
                 string select = "select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall="
                     + gethall.Text.Substring(0, 1) + " and Ptime < '" + Pdate + " " + Time +
                      "'and Ptime >'" + Pdate + " " + "00:00:00'" +
-                    "and date_add(Ptime,interval Mduration minute)>'" + Pdate + " " + Time + "';";
+                    " and date_add(Ptime,interval Mduration minute) > '" + Pdate + " " + Time + "';";
                 DataSet dataSet = Databaseconnect(database, select);
-                string delete = "delete from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + gethall.Text.Substring(0, 1) +
-                    "and  Ptime like'" + Pdate + " " + Time + "'and Pprice =" + getprice.Text + ";";
+                string delete = "delete from Projection where Cno= '" + Cno + "'and Mno='" + Mno + "'and Phall =" + int.Parse(gethall.Text.Substring(0, 1)) +
+                " and Ptime = '" + Pdate + " " + Time + "';";
                 if (dataSet.Tables[0].Rows.Count > 0)
                 {
                     Databaseconnect(database, delete);
@@ -71,16 +71,15 @@ namespace SmobilerAppTEST7._17
                 }
                 else
                 {
-                    string time = Pdate + Time;
-                    string[] subs = time.Split(' ', '/', ':');
+                    string time = Pdate +" "+ Time+":00";
+                    string[] subs = time.Split(' ', '-', ':');
                     DateTime dateTime = new DateTime(int.Parse(subs[0]), int.Parse(subs[1]), int.Parse(subs[2]), int.Parse(subs[3]), int.Parse(subs[4]), int.Parse(subs[5]));
-                    dateTime = dateTime.AddMinutes(int.Parse(Duration));
+                    dateTime = dateTime.AddMinutes(int.Parse(Duration));  
                     string select1 =
-                      "select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall="
-                  + gethall.Text.Substring(0, 1) + "and Ptime > '" + Pdate + " " + Time +
-                   "'and Ptime <'" + Pdate + " " + "23:59:59'" +
-                  "and Ptime<'" + dateTime + "';";
-
+                      " select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall= "
+                  + gethall.Text.Substring(0, 1) + " and Ptime > '" + Pdate + " " + Time +
+                   "' and Ptime < '" + Pdate + " " + "23:59:59' " +
+                  " and Ptime < '" + dateTime + "';";
                     DataSet dataSet1 = Databaseconnect(database, select1);
                     if (dataSet1.Tables[0].Rows.Count > 0)
                     {
