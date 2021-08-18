@@ -191,7 +191,7 @@ namespace SmobilerAppTEST7._17
                                                         Databaseconnect(database, sql);//更新设备号数据
                                                     }
                                                 }
-                                                this.Show(new moive_select(txtUserName.Text));
+                                                this.Show(new Administrator(txtUserName.Text));
                                             }
                                             else
                                             {
