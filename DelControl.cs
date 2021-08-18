@@ -41,8 +41,18 @@ namespace SmobilerAppTEST7._17
             string select = "select Mno from Movie where Mname ='" + Mname + "'";
             DataSet getMno = Databaseconnect(database, select);
             string Mno = getMno.Tables[0].Rows[0][0].ToString();
-            string del = "delete from Pmessage where Cno='" + Cno + "'and Mno='" + Mno + "'";
-            Databaseconnect(database, del);
+            string select1 = "select * from Pmessage where Cno='" + Cno + "' and Mno='" + Mno + "';";
+            DataSet check = Databaseconnect(database, select1);
+            if (check.Tables[0].Rows.Count <= 0)
+            {
+                Toast("该影片已下架，请下拉刷新！");
+            }
+            else
+            {
+                string del = "delete from Pmessage where Cno='" + Cno + "'and Mno='" + Mno + "'";
+                Databaseconnect(database, del);
+            }
+            
         }
 
         private void panel1_Press(object sender, EventArgs e)
