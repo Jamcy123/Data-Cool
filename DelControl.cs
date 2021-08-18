@@ -17,10 +17,8 @@ namespace SmobilerAppTEST7._17
         public DelControl() : base()
         {
             //This call is required by the SmobilerUserControl.
-            InitializeComponent();
-            
+            InitializeComponent();     
         }
-
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
@@ -33,6 +31,7 @@ namespace SmobilerAppTEST7._17
             con.Close();
             return dataSet;
         }
+
         private void button1_Press(object sender, EventArgs e)
         {
             string Cno = getCno.Text;

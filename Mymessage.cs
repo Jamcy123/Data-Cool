@@ -14,9 +14,16 @@ namespace SmobilerAppTEST7._17
     partial class Mymessage : Smobiler.Core.Controls.MobileForm
     {
         string Uno;
-        string two;
-        string four;
-
+        string pic;
+        string nickname;
+        public string Pic//头像属性
+        {
+            get { return pic; }
+        }
+        public string Nickname//昵称属性
+        {
+            get { return nickname; }
+        }
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
         {
 
@@ -36,12 +43,10 @@ namespace SmobilerAppTEST7._17
             Uno = a;
             textBox1.Text = showlabel("Uphoneno", Uno);
             textBox2.Text = showlabel("Unickname", Uno);
-            two = textBox2.Text;
+            nickname = textBox2.Text;
             textBox3.Text = showlabel("Usex", Uno);
             textBox4.Text = showlabel("Ucity", Uno);
-            four = textBox4.Text;
             datePicker1.BindDisplayValue = showlabel("Ubirth", Uno);
-            //five = (string)datePicker1.BindDisplayValue;
         }
         private void Mymessage_Load(object sender, EventArgs e)//界面载入函数
         {
@@ -53,6 +58,7 @@ namespace SmobilerAppTEST7._17
                 DataSet dataSet = Databaseconnect(database, update);
                 if (dataSet.Tables[0].Rows.Count > 0)
                     image1.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[0].ToString();
+                pic = image1.ResourceID;
             }
             catch (Exception ex)
             {
@@ -67,7 +73,7 @@ namespace SmobilerAppTEST7._17
             return name.Tables[0].Rows[0][0].ToString();
         }
 
-        private void button1_Press(object sender, EventArgs e)//保存按钮响应事件***建立缓存？？剪切文件？？删除文件？？
+        private void button1_Press(object sender, EventArgs e)//保存按钮响应事件
         {
             try
             {
@@ -84,18 +90,14 @@ namespace SmobilerAppTEST7._17
                     string update = "Update Userinf set Uphoto='" + Uno + ".png' where Uphoneno=" + Uno;
                     string database = "Movie_ticket";
                     Databaseconnect(database, update);
+                    pic = Uno + ".png";//传递更改回User界面
                 }
-                if (two != textBox2.Text)
+                if (nickname != textBox2.Text)
                 {
                     string update = "Update Userinf set Unickname='" + textBox2.Text + "' where Uphoneno=" + Uno;
                     string database = "Movie_ticket";
                     Databaseconnect(database, update);
-                }
-                if (four != textBox4.Text)
-                {
-                    string update = "Update Userinf set Ucity='" + textBox4.Text + "' where Uphoneno=" + Uno;
-                    string database = "Movie_ticket";
-                    Databaseconnect(database, update);
+                    nickname = textBox2.Text;
                 }
             }
             catch (Exception ex)
@@ -109,7 +111,7 @@ namespace SmobilerAppTEST7._17
             this.Close();
         }
 
-        private void datePicker1_ValueChanged(object sender, EventArgs e)
+        private void datePicker1_ValueChanged(object sender, EventArgs e)//出生日期
         {
             string update = "Update Userinf set Ubirth='" + datePicker1.BindDisplayValue + "' where Uphoneno=" + Uno;
             string database = "Movie_ticket";
