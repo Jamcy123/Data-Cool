@@ -32,7 +32,6 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.PopListItem popListItem5 = new Smobiler.Core.Controls.PopListItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
-            this.listView1 = new Smobiler.Core.Controls.ListView();
             this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.panel3 = new Smobiler.Core.Controls.Panel();
@@ -42,6 +41,7 @@ namespace SmobilerAppTEST7._17
             this.sequence = new Smobiler.Core.Controls.Label();
             this.popList1 = new Smobiler.Core.Controls.PopList();
             this.popList2 = new Smobiler.Core.Controls.PopList();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
             // 
             // toolBar1
             // 
@@ -77,23 +77,13 @@ namespace SmobilerAppTEST7._17
             // panel1
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView1,
             this.searchBox_Control,
-            this.panel2});
+            this.panel2,
+            this.listView1});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(134, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 100);
-            // 
-            // listView1
-            // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listView1.Location = new System.Drawing.Point(0, 139);
-            this.listView1.Name = "listView1";
-            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 478);
-            this.listView1.TemplateControlName = "SaleControl";
-            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // searchBox_Control
             // 
@@ -200,6 +190,16 @@ namespace SmobilerAppTEST7._17
             this.popList2.Name = "popList2";
             this.popList2.Selected += new System.EventHandler(this.popList2_Selected);
             // 
+            // listView1
+            // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 139);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.Size = new System.Drawing.Size(300, 478);
+            this.listView1.TemplateControlName = "SaleControl";
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
+            // 
             // Sale
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -215,7 +215,6 @@ namespace SmobilerAppTEST7._17
 
         private Smobiler.Core.Controls.ToolBar toolBar1;
         private Smobiler.Core.Controls.Panel panel1;
-        private Smobiler.Core.Controls.ListView listView1;
         private Smobiler.Core.Controls.PopList popList1;
         private Smobiler.Core.Controls.PopList popList2;
         private SearchBox_Control searchBox_Control;
@@ -225,5 +224,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label order;
         private Smobiler.Core.Controls.Panel panel4;
         private Smobiler.Core.Controls.Label sequence;
+        private Smobiler.Core.Controls.ListView listView1;
     }
 }

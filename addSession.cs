@@ -42,58 +42,79 @@ namespace SmobilerAppTEST7._17
 
         private void button1_Press(object sender, EventArgs e)
         {
-            string[] gettime = datePicker1.BindDisplayValue.ToString().Split(' ', '/', ':');
-            string Time = gettime[3] +":"+ gettime[4];
-            string database = "movie_ticket";
-            string sure = "select * from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + int.Parse(gethall.Text.Substring(0, 1)) +
-                "  and  Ptime = '" + Pdate + " " + Time + "';";
-            DataSet data=Databaseconnect(database, sure);
-            if(data.Tables[0].Rows.Count > 0)
+            if (gethall.Text == "请选择影厅")
             {
-                Toast("添加场次失败，请重新添加！");
+                Toast("请选择影厅！");
             }
             else
             {
-                string insert = "insert into Projection values('" + Cno + "','" + Mno + "'," + gethall.Text.Substring(0, 1) +
-                ",'" + Pdate + " " + Time + "','" + 0 + "'," + getprice.Text + ");";
-                Databaseconnect(database, insert);
-                string select = "select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall="
-                    + gethall.Text.Substring(0, 1) + " and Ptime < '" + Pdate + " " + Time +
-                     "'and Ptime >'" + Pdate + " " + "00:00:00'" +
-                    " and date_add(Ptime,interval Mduration minute) > '" + Pdate + " " + Time + "';";
-                DataSet dataSet = Databaseconnect(database, select);
-                string delete = "delete from Projection where Cno= '" + Cno + "'and Mno='" + Mno + "'and Phall =" + int.Parse(gethall.Text.Substring(0, 1)) +
-                " and Ptime = '" + Pdate + " " + Time + "';";
-                if (dataSet.Tables[0].Rows.Count > 0)
+                if (float.Parse(getprice.Text)<0)
                 {
-                    Databaseconnect(database, delete);
-                    Toast("添加场次失败，请重新添加！");
+                    Toast("请输入正确的金额！");
                 }
                 else
                 {
-                    string time = Pdate +" "+ Time+":00";
-                    string[] subs = time.Split(' ', '-', ':');
-                    DateTime dateTime = new DateTime(int.Parse(subs[0]), int.Parse(subs[1]), int.Parse(subs[2]), int.Parse(subs[3]), int.Parse(subs[4]), int.Parse(subs[5]));
-                    dateTime = dateTime.AddMinutes(int.Parse(Duration));  
-                    string select1 =
-                      " select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall= "
-                  + gethall.Text.Substring(0, 1) + " and Ptime > '" + Pdate + " " + Time +
-                   "' and Ptime < '" + Pdate + " " + "23:59:59' " +
-                  " and Ptime < '" + dateTime + "';";
-                    DataSet dataSet1 = Databaseconnect(database, select1);
-                    if (dataSet1.Tables[0].Rows.Count > 0)
+                   if(DateTime.Parse(datePicker1.BindDisplayValue.ToString())< DateTime.Now)
                     {
-                        Databaseconnect(database, delete);
-                        Toast("添加场次失败，请重新添加！");
+                        Toast("请输入正确的时间！");
                     }
-                    else
+                   else
                     {
-                        Toast("添加成功！");
-                        this.Form.Close();
+                        string[] gettime = datePicker1.BindDisplayValue.ToString().Split(' ', '/', ':');
+                        string Time = gettime[3] + ":" + gettime[4];
+                        string database = "movie_ticket";
+                        string sure = "select * from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + int.Parse(gethall.Text.Substring(0, 1)) +
+                            "  and  Ptime = '" + Pdate + " " + Time + "';";
+                        DataSet data = Databaseconnect(database, sure);
+                        if (data.Tables[0].Rows.Count > 0)
+                        {
+                            Toast("添加场次失败，请重新添加！");
+                        }
+                        else
+                        {
+                            string insert = "insert into Projection values('" + Cno + "','" + Mno + "'," + gethall.Text.Substring(0, 1) +
+                            ",'" + Pdate + " " + Time + "','" + 0 + "'," + getprice.Text + ");";
+                            Databaseconnect(database, insert);
+                            string select = "select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall="
+                                + gethall.Text.Substring(0, 1) + " and Ptime < '" + Pdate + " " + Time +
+                                 "'and Ptime >'" + Pdate + " " + "00:00:00'" +
+                                " and date_add(Ptime,interval Mduration minute) > '" + Pdate + " " + Time + "';";
+                            DataSet dataSet = Databaseconnect(database, select);
+                            string delete = "delete from Projection where Cno= '" + Cno + "'and Mno='" + Mno + "'and Phall =" + int.Parse(gethall.Text.Substring(0, 1)) +
+                            " and Ptime = '" + Pdate + " " + Time + "';";
+                            if (dataSet.Tables[0].Rows.Count > 0)
+                            {
+                                Databaseconnect(database, delete);
+                                Toast("添加场次失败，请重新添加！");
+                            }
+                            else
+                            {
+                                string time = Pdate + " " + Time + ":00";
+                                string[] subs = time.Split(' ', '-', ':');
+                                DateTime dateTime = new DateTime(int.Parse(subs[0]), int.Parse(subs[1]), int.Parse(subs[2]), int.Parse(subs[3]), int.Parse(subs[4]), int.Parse(subs[5]));
+                                dateTime = dateTime.AddMinutes(int.Parse(Duration));
+                                string select1 =
+                                  " select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall= "
+                              + gethall.Text.Substring(0, 1) + " and Ptime > '" + Pdate + " " + Time +
+                               "' and Ptime < '" + Pdate + " " + "23:59:59' " +
+                              " and Ptime < '" + dateTime + "';";
+                                DataSet dataSet1 = Databaseconnect(database, select1);
+                                if (dataSet1.Tables[0].Rows.Count > 0)
+                                {
+                                    Databaseconnect(database, delete);
+                                    Toast("添加场次失败，请重新添加！");
+                                }
+                                else
+                                {
+                                    Toast("添加成功！");
+                                    this.Form.Close();
+                                }
+                            }
+                        }
+
                     }
                 }
             }
-            
          }
     
 
