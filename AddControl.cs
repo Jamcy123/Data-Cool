@@ -42,7 +42,7 @@ namespace SmobilerAppTEST7._17
             string select = "select Mno from Movie where Mname ='" + Mname + "'";
             DataSet getMno = Databaseconnect(database, select);
             string Mno = getMno.Tables[0].Rows[0][0].ToString();
-            string insert = "insert into Project values('" + Cno + "','" + Mno + "')";
+            string insert = "insert into Pmessage values('" + Cno + "','" + Mno + "')";
             Databaseconnect(database, insert);
         }
 
