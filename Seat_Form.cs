@@ -233,13 +233,16 @@ namespace SmobilerAppTEST7._17
                     }
                     else
                     {
-                        //购买成功 扣钱 刷新位置 同步数据库;
+                        //购买成功 扣钱 刷新位置 同步数据库 ;
                         sql = "update userinf set ublance = ublance -"+ money * num +" where uphoneno='"+Uno+"'";
                         for (int i = 0; i < num; i++)
                         {
                             sql = "insert into ticket(Cno,Mno,Phall,Ptime,Pposition,Uphoneno,Pprice)values ('" + Cno + "','" + Mno + "','" + Phall + "','" + Ptime + "','" + mes[2 * i] + "排" + mes[2 * i + 1] + "座','" + Uno + "','" + money + "')";
                             Databaseconnect(database, sql);
                         }
+                        //更新销售数量
+                        sql = "update Projection set Pamount = Pamount +" + num + " where Cno='"+Cno+"' and Mno= '"+Mno+"' and Phall = '"+ Phall+"' and Ptime = '"+Ptime+"'";
+                        Databaseconnect(database, sql);
                         MessageBox.Show("请移步至 '我的订单' 查看详情", "购票成功", MessageBoxButtons.OK, (obj, args) =>
                         {
                             this.Close();
