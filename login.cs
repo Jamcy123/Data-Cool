@@ -106,12 +106,6 @@ namespace SmobilerAppTEST7._17
                             }
                         }
                     }
-                    if (checkRemb.Checked == true)
-                    {
-                        //记住密码
-                        string update = "Update Userinf set Uip='" + this.Client.SessionID + "' where Uphoneno='" + txtUserName.Text + "'";
-                        Databaseconnect(database, update);
-                    }
                 }
                 else
                 {
@@ -252,21 +246,44 @@ namespace SmobilerAppTEST7._17
                     txtUserName.Text = "";
                     throw new Exception("请输入正确的账号格式");
                 }
-                //查询数据库,是否在本设备选择了记住密码
-                string select = "Select Uip,Upassword,Urempass from Userinf where Uphoneno='" + txtUserName.Text + "'";
-                string database = "Movie_ticket";
-                DataSet pass = Databaseconnect(database, select);
-                if (pass.Tables[0].Rows.Count > 0)//账户存在
+                if (checkBox1.Checked)//用户登录
                 {
-                    if (pass.Tables[0].Rows[0][0].ToString() == this.Client.SessionID)//与上次登录的设备号相同
+                    //查询数据库,是否在本设备选择了记住密码
+                    string select = "Select Uip,Upassword,Urempass from Userinf where Uphoneno='" + txtUserName.Text + "'";
+                    string database = "Movie_ticket";
+                    DataSet pass = Databaseconnect(database, select);
+                    if (pass.Tables[0].Rows.Count > 0)//账户存在
                     {
-                        if ((bool)pass.Tables[0].Rows[0][2])//是否选择了记住密码
+                        if (pass.Tables[0].Rows[0][0].ToString() == this.Client.SessionID)//与上次登录的设备号相同
                         {
-                            txtPassword.Text = pass.Tables[0].Rows[0][1].ToString();//自动输入密码
-                            checkRemb.Checked = true;//自动勾选记住密码
+                            if ((bool)pass.Tables[0].Rows[0][2])//是否选择了记住密码
+                            {
+                                txtPassword.Text = pass.Tables[0].Rows[0][1].ToString();//自动输入密码
+                                checkRemb.Checked = true;//自动勾选记住密码
+                            }
                         }
                     }
                 }
+                else//影院管理员登录
+                {
+                    //查询数据库,是否在本设备选择了记住密码
+                    string select = "Select Cip,Apassword,Crempass from Cinema where Aid='" + txtUserName.Text + "'";
+                    string database = "Movie_ticket";
+                    DataSet pass = Databaseconnect(database, select);
+                    if (pass.Tables[0].Rows.Count > 0)//账户存在
+                    {
+                        if (pass.Tables[0].Rows[0][0].ToString() == this.Client.SessionID)//与上次登录的设备号相同
+                        {
+                            if ((bool)pass.Tables[0].Rows[0][2])//是否选择了记住密码
+                            {
+                                txtPassword.Text = pass.Tables[0].Rows[0][1].ToString();//自动输入密码
+                                checkRemb.Checked = true;//自动勾选记住密码
+                            }
+                        }
+                    }
+                }
+
+                
             }
             catch (Exception ex)
             {
@@ -302,7 +319,8 @@ namespace SmobilerAppTEST7._17
             //this.Form.Show(new Mymessage("13549473975"));
             //this.Form.Show(new Myorder("13549473975"));
             //this.Form.Show(new Alterpassword());
-            this.Form.Show(new Myblance("13549473975"));
+            //this.Form.Show(new Myblance("13549473975"));
+            this.Form.ShowDialog(new addSession("0004", "004", DateTime.Now.ToString("yyyy-MM-dd"), "999"));
         }
     }
 }

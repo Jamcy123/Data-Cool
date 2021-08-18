@@ -46,7 +46,7 @@ namespace SmobilerAppTEST7._17
             string Time = gettime[3] +":"+ gettime[4];
             string database = "movie_ticket";
             string sure = "select * from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + gethall.Text.Substring(0, 1) +
-                "and  Ptime = '" + Pdate + " " + Time + "';";
+                " and  Ptime = '" + Pdate + " " + Time + "';";
             DataSet data=Databaseconnect(database, sure);
             if(data.Tables[0].Rows.Count > 0)
             {
@@ -71,9 +71,10 @@ namespace SmobilerAppTEST7._17
                 }
                 else
                 {
-                    string time = Pdate + Time;
-                    string[] subs = time.Split(' ', '/', ':');
-                    DateTime dateTime = new DateTime(int.Parse(subs[0]), int.Parse(subs[1]), int.Parse(subs[2]), int.Parse(subs[3]), int.Parse(subs[4]), int.Parse(subs[5]));
+                    string time = Pdate +" "+ Time;
+                    string[] subs = time.Split(' ', '-', ':');
+                    getprice.Text = time;
+                    DateTime dateTime = new DateTime(int.Parse(subs[0]), int.Parse(subs[1]), int.Parse(subs[2]), int.Parse(subs[3]), int.Parse(subs[4]), int.Parse("00"));
                     dateTime = dateTime.AddMinutes(int.Parse(Duration));
                     string select1 =
                       "select * from Projection,Movie where Movie.Mno=Projection.Mno and Cno='" + Cno + "'and Phall="
@@ -95,10 +96,7 @@ namespace SmobilerAppTEST7._17
                 }
             }
             
-         }
-    
-
-
+         }  
 
         private void popList1_Selected(object sender, EventArgs e)
         {
