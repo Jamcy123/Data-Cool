@@ -93,6 +93,7 @@ namespace SmobilerAppTEST7._17
             this.getprice.BorderColor = System.Drawing.Color.Gray;
             this.getprice.FontSize = 16F;
             this.getprice.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.getprice.KeyboardType = Smobiler.Core.Controls.KeyboardType.PhonePad;
             this.getprice.Location = new System.Drawing.Point(146, 174);
             this.getprice.Name = "getprice";
             this.getprice.Size = new System.Drawing.Size(111, 43);

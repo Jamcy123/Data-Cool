@@ -1165,3 +1165,165 @@
 对象名:“System.Net.Sockets.Socket”。 
 2021/08/18 22:05:03 [Server-1] Stoped 
 2021/08/18 22:05:03 [AutoSet-7] Stop 
+2021/08/18 22:30:29 [Server-1] Starting 
+2021/08/18 22:30:29 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 22:30:29 [Server-1] Started 
+2021/08/18 22:30:29 [AutoSet-7] Start 
+2021/08/18 22:31:11 [TcpAccept-3] 192.168.10.8:49910 
+2021/08/18 22:31:11 [7704675e037b349e95175d2cb63d7871-192.168.10.8-9] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/18 22:31:44 [Server-1] Stoping 
+2021/08/18 22:31:44 [TcpAccept-EX-3] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/18 22:31:44 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/18 22:31:45 [Server-1] Stoped 
+2021/08/18 22:31:45 [AutoSet-7] Stop 
+2021/08/18 22:33:26 [Server-1] Starting 
+2021/08/18 22:33:26 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 22:33:26 [Server-1] Started 
+2021/08/18 22:33:28 [TcpAccept-3] 192.168.10.8:49946 
+2021/08/18 22:33:55 [Server-1] Stoping 
+2021/08/18 22:33:55 [TcpAccept-EX-16] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/18 22:33:55 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/18 22:33:57 [Server-1] Stoped 
+2021/08/18 22:33:57 [AutoSet-7] Stop 
+2021/08/18 22:35:15 [Server-1] Starting 
+2021/08/18 22:35:15 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 22:35:15 [Server-1] Started 
+2021/08/18 22:35:15 [AutoSet-7] Start 
+2021/08/18 22:35:25 [TcpAccept-3] 192.168.10.8:49976 
+2021/08/18 22:37:32 [Server-1] Starting 
+2021/08/18 22:37:33 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 22:37:33 [Server-1] Started 
+2021/08/18 22:37:33 [TcpAccept-3] 192.168.10.8:50060 
+2021/08/18 22:38:04 [Server-1] Stoping 
+2021/08/18 22:38:04 [TcpAccept-EX-12] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/18 22:38:04 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/18 22:38:05 [Server-1] Stoped 
+2021/08/18 22:38:05 [AutoSet-7] Stop 
+2021/08/18 22:39:06 [Server-1] Starting 
+2021/08/18 22:39:06 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 22:39:06 [Server-1] Started 
+2021/08/18 22:39:06 [AutoSet-7] Start 
+2021/08/18 22:39:09 [TcpAccept-3] 192.168.10.8:50152 
+2021/08/18 22:40:07 [Server-1] Stoping 
+2021/08/18 22:40:07 [TcpAccept-EX-14] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/18 22:40:07 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/18 22:40:08 [Server-1] Stoped 
+2021/08/18 22:40:08 [AutoSet-7] Stop 
+2021/08/18 22:42:18 [Server-1] Starting 
+2021/08/18 22:42:18 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 22:42:19 [Server-1] Started 
+2021/08/18 22:43:43 [TcpAccept-3] 192.168.10.8:50602 
+2021/08/18 22:43:43 [7704675e037b349e95175d2cb63d7871-192.168.10.8-8] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/18 22:53:16 [Server-1] Starting 
+2021/08/18 22:53:16 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 22:53:16 [Server-1] Started 
+2021/08/18 22:53:16 [AutoSet-7] Start 
+2021/08/18 22:53:36 [TcpAccept-3] 192.168.10.8:50922 
+2021/08/18 22:55:33 [TcpAccept-19] 192.168.10.8:51058 
+2021/08/18 22:55:59 [TcpAccept-11] 192.168.10.8:51200 
+2021/08/18 23:01:21 [Server-1] Starting 
+2021/08/18 23:01:21 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 23:01:21 [Server-1] Started 
+2021/08/18 23:01:26 [TcpAccept-3] 192.168.10.8:51300 
+2021/08/18 23:08:43 [Server-1] Starting 
+2021/08/18 23:08:43 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 23:08:43 [Server-1] Started 
+2021/08/18 23:08:44 [AutoSet-7] Start 
+2021/08/18 23:10:59 [TcpAccept-3] 192.168.10.8:51824 
+2021/08/18 23:10:59 [7704675e037b349e95175d2cb63d7871-192.168.10.8-8] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/18 23:12:47 [TcpAccept-16] 192.168.10.8:52148 
+2021/08/18 23:22:28 [Server-1] Starting 
+2021/08/18 23:22:28 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/18 23:22:28 [Server-1] Started 
+2021/08/18 23:22:28 [AutoSet-7] Start 
+2021/08/18 23:22:40 [TcpAccept-3] 192.168.10.8:52402 
+2021/08/18 23:23:18 [Server-1] Stoping 
+2021/08/18 23:23:18 [TcpAccept-EX-16] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/18 23:23:18 [7704675e037b349e95175d2cb63d7871-1] Stop-StopServer-True-- 
+2021/08/18 23:23:19 [Server-1] Stoped 
+2021/08/18 23:23:19 [AutoSet-7] Stop 
