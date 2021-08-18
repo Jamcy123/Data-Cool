@@ -35,8 +35,8 @@ namespace SmobilerAppTEST7._17
         private void button1_Press(object sender, EventArgs e)
         {
             string database = "movie_ticket";
-            string delete = "delete from Projection where Cno='" + getCno.Text + "'and Mno=" + getMno.Text + "'and Phall =" + hall.Text.Substring(0, 1) +
-                "and Ptime like'" + getdate.Text + " " + time.Text + "'and Pprice =" + price.Text.Substring(1) + ";";
+            string delete = "delete from Projection where Cno= '" + getCno.Text + "'and Mno='" + getMno.Text + "'and Phall =" + int.Parse(hall.Text.Substring(0, 1)) +
+                " and Ptime = '" + getdate.Text + " "  + time.Text + "';";
             Databaseconnect(database, delete);
         }
     }
