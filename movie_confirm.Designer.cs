@@ -39,7 +39,6 @@ namespace SmobilerAppTEST7._17
             this.listView2 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
-            this.textBox1 = new Smobiler.Core.Controls.TextBox();
             // 
             // title_Control1
             // 
@@ -68,8 +67,7 @@ namespace SmobilerAppTEST7._17
             this.label1,
             this.Mlanguage_lbl,
             this.label4,
-            this.Mduration_lbl,
-            this.textBox1});
+            this.Mduration_lbl});
             this.panel1.Location = new System.Drawing.Point(0, 36);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 131);
@@ -222,12 +220,6 @@ namespace SmobilerAppTEST7._17
             this.listView3.TemplateControlName = "mcTemplate";
             this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(54, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 94);
-            // 
             // movie_confirm
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
@@ -258,6 +250,5 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.ListView listView2;
         private Smobiler.Core.Controls.TabPageControl tabPageControl3;
         private Smobiler.Core.Controls.ListView listView3;
-        private Smobiler.Core.Controls.TextBox textBox1;
     }
 }

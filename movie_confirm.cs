@@ -58,49 +58,32 @@ namespace SmobilerAppTEST7._17
                 "FROM movie_ticket.cinema,movie_ticket.projection" +
                 " where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
 
-
             DataSet dataSet1 = Databaseconnect(database, select1);
             DataSet dataSet2 = Databaseconnect(database, select2);
             DataSet dataSet3 = Databaseconnect(database, select3);
 
-
             DataTable table1 = new DataTable();
             table1 = dataSet1.Tables[0];
-            table1.Columns.Add(new DataColumn() { ColumnName = "select_date", DataType = typeof(String) });
             DataTable table2 = new DataTable();
             table2 = dataSet2.Tables[0];
-            table2.Columns.Add(new DataColumn() { ColumnName = "select_date", DataType = typeof(String) });
             DataTable table3 = new DataTable();
             table3 = dataSet3.Tables[0];
-            table3.Columns.Add(new DataColumn() { ColumnName = "select_date", DataType = typeof(String) });
 
             listView1.Rows.Clear();     //清除数据
             if (table1.Rows.Count > 0)    //绑定数据源
             {
-                for (int i = 0; i < table1.Rows.Count; i++)
-                {
-                    table1.Rows[i]["select_date"] = DateTime.Now.ToString("yyyy-MM-dd");
-                }
                 listView1.DataSource = table1;
                 listView1.DataBind();
             }
             listView2.Rows.Clear();     //清除数据
             if (table2.Rows.Count > 0)    //绑定数据源
             {
-                for (int i = 0; i < table1.Rows.Count; i++)
-                {
-                    table2.Rows[i]["select_date"] = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd");
-                }
                 listView2.DataSource = table2;
                 listView2.DataBind();
             }
             listView3.Rows.Clear();     //清除数据
             if (table3.Rows.Count > 0)    //绑定数据源
             {
-                for (int i = 0; i < table1.Rows.Count; i++)
-                {
-                    table3.Rows[i]["select_date"] = DateTime.Now.Date.AddDays(2).ToString("yyyy-MM-dd");
-                }
                 listView3.DataSource = table3;
                 listView3.DataBind();
             }
@@ -115,22 +98,29 @@ namespace SmobilerAppTEST7._17
         {
             string a = ((Label)e.Row.Control.Controls.Find("Pprice_lbl", true)).BindDataValue.ToString();
             string b = ((Label)e.Row.Control.Controls.Find("Cname_lbl", true)).BindDataValue.ToString();
-            string c = ((Label)e.Row.Control.Controls.Find("date_lbl", true)).Text.ToString();
+            string c = "";
             if (sender == listView1)
-            { }
+            { c = DateTime.Now.ToString("yyyy-MM-dd"); }
+            if (sender == listView2)
+            { c = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd"); }
+            if (sender == listView3)
+            { c = DateTime.Now.AddDays(2).ToString("yyyy-MM-dd"); }
+
             string database = "movie_ticket";
-            string select = "SELECT DISTINCT Ptime FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%' and Ptime > '" + DateTime.Now.ToString() + "' ORDER BY Ptime; ";
-            textBox1.Text = select;
+            string select = "SELECT DISTINCT DATE_FORMAT(Ptime,'%H:%i') FROM movie_ticket.projection where Mno = '" + a + "' and Cno = '" + b + "' and Ptime like '" + c + "%' and Ptime > '" + DateTime.Now.ToString() + "' ORDER BY Ptime; ";
+
             DataSet dataSet = Databaseconnect(database, select);
             string shangying = "";
-            string[] movie_time;
+
             for (int i = 0; i < dataSet.Tables[0].Rows.Count; i++)
             {
-                if (i >= 3) { break; }
-                movie_time = dataSet.Tables[0].Rows[i].ItemArray[0].ToString().Split(' ');
-                shangying = shangying + movie_time[1].Substring(0, movie_time[1].Length - 3) + "  ";
+                if (i >= 5) 
+                {shangying = shangying + "...";
+                    break;
+                }
+                shangying = shangying + dataSet.Tables[0].Rows[i].ItemArray[0].ToString() + "  ";
             }
-            ((Label)e.Row.Control.Controls.Find("Ptime_lbl",true)).Text = shangying + "...";
+            ((Label)e.Row.Control.Controls.Find("Ptime_lbl",true)).Text = shangying;
         }
     }
 }
