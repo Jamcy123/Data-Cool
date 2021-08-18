@@ -210,7 +210,6 @@ namespace SmobilerAppTEST7._17
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.Size = new System.Drawing.Size(300, 237);
             this.listView1.TemplateControlName = "cmTemplate";
-            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // tabPageControl2
             // 
@@ -225,7 +224,6 @@ namespace SmobilerAppTEST7._17
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView2.Size = new System.Drawing.Size(300, 238);
             this.listView2.TemplateControlName = "cmTemplate";
-            this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // tabPageControl3
             // 
@@ -240,7 +238,6 @@ namespace SmobilerAppTEST7._17
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView3.Size = new System.Drawing.Size(300, 236);
             this.listView3.TemplateControlName = "cmTemplate";
-            this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // title_Control1
             // 
