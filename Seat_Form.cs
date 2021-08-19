@@ -223,7 +223,8 @@ namespace SmobilerAppTEST7._17
                             sql = sql + "or Pposition='" + mes[2 * i] + "排" + mes[2 * i + 1] + "座'";
                         }
                     }
-                    dataSet = Databaseconnect(database, sql+")");
+                    sql = sql + " )";
+                    dataSet = Databaseconnect(database, sql);
                     if (dataSet.Tables[0].Rows.Count>0)
                     {
                         //刷新位置
@@ -235,9 +236,10 @@ namespace SmobilerAppTEST7._17
                     {
                         //购买成功 扣钱 刷新位置 同步数据库 ;
                         sql = "update userinf set ublance = ublance -"+ money * num +" where uphoneno='"+Uno+"'";
+                        Databaseconnect(database, sql);
                         for (int i = 0; i < num; i++)
                         {
-                            sql = "insert into ticket(Cno,Mno,Phall,Ptime,Pposition,Uphoneno,Pprice)values ('" + Cno + "','" + Mno + "','" + Phall + "','" + Ptime + "','" + mes[2 * i] + "排" + mes[2 * i + 1] + "座','" + Uno + "','" + money + "')";
+                            sql = "insert into ticket(Cno,Mno,Phall,Ptime,Pposition,Uphoneno,Pprice) values ('" + Cno + "','" + Mno + "','" + Phall + "','" + Ptime + "','" + mes[2 * i] + "排" + mes[2 * i + 1] + "座','" + Uno + "','" + money + "')";
                             Databaseconnect(database, sql);
                         }
                         //更新销售数量
