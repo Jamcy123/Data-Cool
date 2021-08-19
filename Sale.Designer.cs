@@ -27,9 +27,10 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.PopListItem popListItem1 = new Smobiler.Core.Controls.PopListItem();
             Smobiler.Core.Controls.PopListItem popListItem2 = new Smobiler.Core.Controls.PopListItem();
             Smobiler.Core.Controls.PopListItem popListItem3 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListGroup popListGroup2 = new Smobiler.Core.Controls.PopListGroup();
             Smobiler.Core.Controls.PopListItem popListItem4 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListGroup popListGroup2 = new Smobiler.Core.Controls.PopListGroup();
             Smobiler.Core.Controls.PopListItem popListItem5 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem6 = new Smobiler.Core.Controls.PopListItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
@@ -187,10 +188,13 @@ namespace SmobilerAppTEST7._17
             popListItem2.Text = "售出数量";
             popListItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             popListItem3.Text = "售出数量/总票数";
+            popListItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem4.Text = "销售额";
             popListGroup1.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
             popListItem1,
             popListItem2,
-            popListItem3});
+            popListItem3,
+            popListItem4});
             popListGroup1.Value = null;
             this.popList1.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
             popListGroup1});
@@ -200,13 +204,13 @@ namespace SmobilerAppTEST7._17
             // 
             // popList2
             // 
-            popListItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem4.Text = "升序";
             popListItem5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem5.Text = "降序";
+            popListItem5.Text = "升序";
+            popListItem6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem6.Text = "降序";
             popListGroup2.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
-            popListItem4,
-            popListItem5});
+            popListItem5,
+            popListItem6});
             popListGroup2.Value = null;
             this.popList2.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
             popListGroup2});
