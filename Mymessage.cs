@@ -139,5 +139,14 @@ namespace SmobilerAppTEST7._17
                 Toast(ex.Message);
             }
         }
+
+        private void Mymessage_Closed(object sender, EventArgs e)//窗口关闭事件
+        {
+            string path_1 = ".\\Resources\\Image\\Cache\\" + Uno + ".png";//缓存路径
+            if (File.Exists(path_1))//若存在自定义的图片，则先删除
+            {
+                File.Delete(path_1);
+            }
+        }
     }
 }
