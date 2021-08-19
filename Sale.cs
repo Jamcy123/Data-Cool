@@ -128,6 +128,15 @@ namespace SmobilerAppTEST7._17
                         listView1.DataSource = dataSet3;
                         listView1.DataBind();
                         break;
+                    case "销售额":
+                        string sql4 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by values ASC;";
+                        DataSet dataSet4 = Databaseconnect(database, sql4);
+                        listView1.DataSource = dataSet4;
+                        listView1.DataBind();
+                        break;
                 }
             }
             else
@@ -159,6 +168,15 @@ namespace SmobilerAppTEST7._17
                         "order by Amount/Total DESC;";
                         DataSet dataSet3 = Databaseconnect(database, sql3);
                         listView1.DataSource = dataSet3;
+                        listView1.DataBind();
+                        break;
+                    case "销售额":
+                        string sql4 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by values DESC;";
+                        DataSet dataSet4 = Databaseconnect(database, sql4);
+                        listView1.DataSource = dataSet4;
                         listView1.DataBind();
                         break;
                 }
@@ -200,6 +218,15 @@ namespace SmobilerAppTEST7._17
                         listView1.DataSource = dataSet3;
                         listView1.DataBind();
                         break;
+                    case "销售额":
+                        string sql4 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by values ASC;";
+                        DataSet dataSet4 = Databaseconnect(database, sql4);
+                        listView1.DataSource = dataSet4;
+                        listView1.DataBind();
+                        break;
                 }
             }
             else
@@ -231,6 +258,15 @@ namespace SmobilerAppTEST7._17
                         "order by Amount/Total DESC;";
                         DataSet dataSet3 = Databaseconnect(database, sql3);
                         listView1.DataSource = dataSet3;
+                        listView1.DataBind();
+                        break;
+                    case "销售额":
+                        string sql4 =
+                        "select * from Movie_ticket.Sales " +
+                        "where Cno='" + Cno + "'" +
+                        "order by values DESC;";
+                        DataSet dataSet4 = Databaseconnect(database, sql4);
+                        listView1.DataSource = dataSet4;
                         listView1.DataBind();
                         break;
                 }
