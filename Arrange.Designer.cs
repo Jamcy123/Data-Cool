@@ -206,7 +206,8 @@ namespace SmobilerAppTEST7._17
             // 
             this.nothing1.Bold = true;
             this.nothing1.FontSize = 16F;
-            this.nothing1.Location = new System.Drawing.Point(16, 95);
+            this.nothing1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.nothing1.Location = new System.Drawing.Point(13, 95);
             this.nothing1.Name = "nothing1";
             this.nothing1.Size = new System.Drawing.Size(276, 76);
             this.nothing1.Text = "暂无排片，请前去添加场次！";
@@ -245,7 +246,8 @@ namespace SmobilerAppTEST7._17
             // 
             this.nothing2.Bold = true;
             this.nothing2.FontSize = 16F;
-            this.nothing2.Location = new System.Drawing.Point(13, 69);
+            this.nothing2.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.nothing2.Location = new System.Drawing.Point(10, 69);
             this.nothing2.Name = "nothing2";
             this.nothing2.Size = new System.Drawing.Size(278, 124);
             this.nothing2.Text = "暂无排片，请前去添加场次！";
@@ -284,6 +286,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.nothing3.Bold = true;
             this.nothing3.FontSize = 16F;
+            this.nothing3.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.nothing3.Location = new System.Drawing.Point(7, 60);
             this.nothing3.Name = "nothing3";
             this.nothing3.Size = new System.Drawing.Size(286, 138);
