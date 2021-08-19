@@ -75,17 +75,29 @@ namespace SmobilerAppTEST7._17
                 listView1.DataSource = table1;
                 listView1.DataBind();
             }
+            else
+            {
+                label5.Visible = true;
+            }
             listView2.Rows.Clear();     //清除数据
             if (table2.Rows.Count > 0)    //绑定数据源
             {
                 listView2.DataSource = table2;
                 listView2.DataBind();
             }
+            else
+            {
+                label6.Visible = true;
+            }
             listView3.Rows.Clear();     //清除数据
             if (table3.Rows.Count > 0)    //绑定数据源
             {
                 listView3.DataSource = table3;
                 listView3.DataBind();
+            }
+            else
+            {
+                label7.Visible = true;
             }
         }
 

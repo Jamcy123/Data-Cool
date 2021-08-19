@@ -39,6 +39,9 @@ namespace SmobilerAppTEST7._17
             this.listView2 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
+            this.label5 = new Smobiler.Core.Controls.Label();
+            this.label6 = new Smobiler.Core.Controls.Label();
+            this.label7 = new Smobiler.Core.Controls.Label();
             // 
             // title_Control1
             // 
@@ -177,7 +180,8 @@ namespace SmobilerAppTEST7._17
             // tabPageControl1
             // 
             this.tabPageControl1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView1});
+            this.listView1,
+            this.label5});
             this.tabPageControl1.Name = "tabPageControl1";
             // 
             // listView1
@@ -192,7 +196,8 @@ namespace SmobilerAppTEST7._17
             // tabPageControl2
             // 
             this.tabPageControl2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView2});
+            this.listView2,
+            this.label6});
             this.tabPageControl2.Name = "tabPageControl2";
             // 
             // listView2
@@ -208,7 +213,8 @@ namespace SmobilerAppTEST7._17
             // tabPageControl3
             // 
             this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView3});
+            this.listView3,
+            this.label7});
             this.tabPageControl3.Name = "tabPageControl3";
             // 
             // listView3
@@ -219,6 +225,39 @@ namespace SmobilerAppTEST7._17
             this.listView3.Size = new System.Drawing.Size(300, 274);
             this.listView3.TemplateControlName = "mcTemplate";
             this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
+            // 
+            // label5
+            // 
+            this.label5.Bold = true;
+            this.label5.FontSize = 16F;
+            this.label5.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.label5.Location = new System.Drawing.Point(37, 116);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(230, 64);
+            this.label5.Text = "暂无排片，敬请期待！";
+            this.label5.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.Bold = true;
+            this.label6.FontSize = 16F;
+            this.label6.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.label6.Location = new System.Drawing.Point(37, 116);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(230, 64);
+            this.label6.Text = "暂无排片，敬请期待！";
+            this.label6.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.Bold = true;
+            this.label7.FontSize = 16F;
+            this.label7.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.label7.Location = new System.Drawing.Point(37, 116);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(230, 64);
+            this.label7.Text = "暂无排片，敬请期待！";
+            this.label7.Visible = false;
             // 
             // movie_confirm
             // 
@@ -250,5 +289,8 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.ListView listView2;
         private Smobiler.Core.Controls.TabPageControl tabPageControl3;
         private Smobiler.Core.Controls.ListView listView3;
+        private Smobiler.Core.Controls.Label label5;
+        private Smobiler.Core.Controls.Label label6;
+        private Smobiler.Core.Controls.Label label7;
     }
 }

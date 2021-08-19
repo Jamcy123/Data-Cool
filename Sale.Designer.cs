@@ -39,9 +39,10 @@ namespace SmobilerAppTEST7._17
             this.order = new Smobiler.Core.Controls.Label();
             this.panel4 = new Smobiler.Core.Controls.Panel();
             this.sequence = new Smobiler.Core.Controls.Label();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.label2 = new Smobiler.Core.Controls.Label();
             this.popList1 = new Smobiler.Core.Controls.PopList();
             this.popList2 = new Smobiler.Core.Controls.PopList();
-            this.listView1 = new Smobiler.Core.Controls.ListView();
             // 
             // toolBar1
             // 
@@ -79,7 +80,8 @@ namespace SmobilerAppTEST7._17
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.searchBox_Control,
             this.panel2,
-            this.listView1});
+            this.listView1,
+            this.label2});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(134, 60);
             this.panel1.Name = "panel1";
@@ -156,6 +158,27 @@ namespace SmobilerAppTEST7._17
             this.sequence.Size = new System.Drawing.Size(119, 41);
             this.sequence.Text = "升序";
             // 
+            // listView1
+            // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 139);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.Size = new System.Drawing.Size(300, 478);
+            this.listView1.TemplateControlName = "SaleControl";
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
+            // 
+            // label2
+            // 
+            this.label2.Bold = true;
+            this.label2.FontSize = 18F;
+            this.label2.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.label2.Location = new System.Drawing.Point(67, 243);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 46);
+            this.label2.Text = "暂无销售情况！";
+            this.label2.Visible = false;
+            // 
             // popList1
             // 
             popListItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
@@ -190,16 +213,6 @@ namespace SmobilerAppTEST7._17
             this.popList2.Name = "popList2";
             this.popList2.Selected += new System.EventHandler(this.popList2_Selected);
             // 
-            // listView1
-            // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Location = new System.Drawing.Point(0, 139);
-            this.listView1.Name = "listView1";
-            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 478);
-            this.listView1.TemplateControlName = "SaleControl";
-            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
-            // 
             // Sale
             // 
             this.Components.AddRange(new Smobiler.Core.Controls.MobileComponent[] {
@@ -225,5 +238,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Panel panel4;
         private Smobiler.Core.Controls.Label sequence;
         private Smobiler.Core.Controls.ListView listView1;
+        private Smobiler.Core.Controls.Label label2;
     }
 }

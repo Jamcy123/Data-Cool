@@ -57,9 +57,17 @@ namespace SmobilerAppTEST7._17
             string sql1 =
                 "select * from Movie_ticket.Sales " +
                 "where Cno='" + Cno + "';";
-            DataSet dataSet1 = Databaseconnect(database, sql1);            
-            listView1.DataSource = dataSet1;
-            listView1.DataBind();
+            DataSet dataSet1 = Databaseconnect(database, sql1); 
+            if(dataSet1.Tables[0].Rows.Count>0)
+            {
+                listView1.DataSource = dataSet1;
+                listView1.DataBind();
+            }
+            else
+            {
+                label2.Visible = true;
+            }
+           
  
         }
         private void searchBox_Control1_SearchButtonPress(object sender, EventArgs e)
