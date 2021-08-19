@@ -79,7 +79,7 @@ namespace SmobilerAppTEST7._17
             this.Mname_lbl.FontSize = 15F;
             this.Mname_lbl.Location = new System.Drawing.Point(81, 8);
             this.Mname_lbl.Name = "Mname_lbl";
-            this.Mname_lbl.Size = new System.Drawing.Size(148, 26);
+            this.Mname_lbl.Size = new System.Drawing.Size(156, 26);
             this.Mname_lbl.Text = "label1";
             // 
             // label2
@@ -95,7 +95,7 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl.DisplayMember = "Mgrade";
             this.Mgrade_lbl.FontSize = 14F;
             this.Mgrade_lbl.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Mgrade_lbl.Location = new System.Drawing.Point(153, 34);
+            this.Mgrade_lbl.Location = new System.Drawing.Point(149, 34);
             this.Mgrade_lbl.Name = "Mgrade_lbl";
             this.Mgrade_lbl.Size = new System.Drawing.Size(60, 15);
             this.Mgrade_lbl.Text = "label4";
@@ -103,7 +103,7 @@ namespace SmobilerAppTEST7._17
             // label3
             // 
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(81, 53);
+            this.label3.Location = new System.Drawing.Point(81, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 15);
             this.label3.Text = "电影类型";
@@ -111,9 +111,9 @@ namespace SmobilerAppTEST7._17
             // Mtype_lbl
             // 
             this.Mtype_lbl.DisplayMember = "Mtype";
-            this.Mtype_lbl.Location = new System.Drawing.Point(153, 53);
+            this.Mtype_lbl.Location = new System.Drawing.Point(149, 50);
             this.Mtype_lbl.Name = "Mtype_lbl";
-            this.Mtype_lbl.Size = new System.Drawing.Size(60, 15);
+            this.Mtype_lbl.Size = new System.Drawing.Size(76, 25);
             this.Mtype_lbl.Text = "label5";
             // 
             // label4
@@ -136,10 +136,11 @@ namespace SmobilerAppTEST7._17
             // 
             this.goupiao_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(41)))), ((int)(((byte)(47)))));
             this.goupiao_button.Bold = true;
+            this.goupiao_button.BorderRadius = 20;
             this.goupiao_button.FontSize = 15F;
-            this.goupiao_button.Location = new System.Drawing.Point(243, 19);
+            this.goupiao_button.Location = new System.Drawing.Point(243, 23);
             this.goupiao_button.Name = "goupiao_button";
-            this.goupiao_button.Size = new System.Drawing.Size(50, 30);
+            this.goupiao_button.Size = new System.Drawing.Size(50, 23);
             this.goupiao_button.Text = "购票";
             this.goupiao_button.Press += new System.EventHandler(this.goupiao_button_Press);
             // 

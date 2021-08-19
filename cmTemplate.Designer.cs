@@ -84,7 +84,7 @@ namespace SmobilerAppTEST7._17
             this.Mtype_lbl.FontSize = 15F;
             this.Mtype_lbl.Location = new System.Drawing.Point(101, 0);
             this.Mtype_lbl.Name = "Mtype_lbl";
-            this.Mtype_lbl.Size = new System.Drawing.Size(60, 30);
+            this.Mtype_lbl.Size = new System.Drawing.Size(97, 30);
             this.Mtype_lbl.Text = "label2";
             // 
             // Phall_lbl

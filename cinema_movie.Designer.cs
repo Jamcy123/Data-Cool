@@ -190,7 +190,7 @@ namespace SmobilerAppTEST7._17
             this.tabPageView1.Location = new System.Drawing.Point(0, 244);
             this.tabPageView1.Name = "tabPageView1";
             this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
-            this.tabPageView1.Size = new System.Drawing.Size(300, 247);
+            this.tabPageView1.Size = new System.Drawing.Size(300, 263);
             this.tabPageView1.Titles = new string[] {
         "",
         "",
@@ -205,6 +205,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 10);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
@@ -219,6 +220,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView2
             // 
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Location = new System.Drawing.Point(0, 10);
             this.listView2.Name = "listView2";
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
@@ -233,6 +235,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView3
             // 
+            this.listView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView3.Location = new System.Drawing.Point(0, 10);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
