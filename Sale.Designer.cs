@@ -27,12 +27,12 @@ namespace SmobilerAppTEST7._17
             Smobiler.Core.Controls.PopListItem popListItem1 = new Smobiler.Core.Controls.PopListItem();
             Smobiler.Core.Controls.PopListItem popListItem2 = new Smobiler.Core.Controls.PopListItem();
             Smobiler.Core.Controls.PopListItem popListItem3 = new Smobiler.Core.Controls.PopListItem();
-            Smobiler.Core.Controls.PopListGroup popListGroup2 = new Smobiler.Core.Controls.PopListGroup();
             Smobiler.Core.Controls.PopListItem popListItem4 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListGroup popListGroup2 = new Smobiler.Core.Controls.PopListGroup();
             Smobiler.Core.Controls.PopListItem popListItem5 = new Smobiler.Core.Controls.PopListItem();
+            Smobiler.Core.Controls.PopListItem popListItem6 = new Smobiler.Core.Controls.PopListItem();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.panel1 = new Smobiler.Core.Controls.Panel();
-            this.listView1 = new Smobiler.Core.Controls.ListView();
             this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
             this.panel2 = new Smobiler.Core.Controls.Panel();
             this.panel3 = new Smobiler.Core.Controls.Panel();
@@ -40,6 +40,8 @@ namespace SmobilerAppTEST7._17
             this.order = new Smobiler.Core.Controls.Label();
             this.panel4 = new Smobiler.Core.Controls.Panel();
             this.sequence = new Smobiler.Core.Controls.Label();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.label2 = new Smobiler.Core.Controls.Label();
             this.popList1 = new Smobiler.Core.Controls.PopList();
             this.popList2 = new Smobiler.Core.Controls.PopList();
             // 
@@ -77,23 +79,14 @@ namespace SmobilerAppTEST7._17
             // panel1
             // 
             this.panel1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView1,
             this.searchBox_Control,
-            this.panel2});
+            this.panel2,
+            this.listView1,
+            this.label2});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(134, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 100);
-            // 
-            // listView1
-            // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listView1.Location = new System.Drawing.Point(0, 139);
-            this.listView1.Name = "listView1";
-            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 478);
-            this.listView1.TemplateControlName = "SaleControl";
-            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // searchBox_Control
             // 
@@ -166,6 +159,27 @@ namespace SmobilerAppTEST7._17
             this.sequence.Size = new System.Drawing.Size(119, 41);
             this.sequence.Text = "升序";
             // 
+            // listView1
+            // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 139);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.Size = new System.Drawing.Size(300, 478);
+            this.listView1.TemplateControlName = "SaleControl";
+            this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
+            // 
+            // label2
+            // 
+            this.label2.Bold = true;
+            this.label2.FontSize = 18F;
+            this.label2.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.label2.Location = new System.Drawing.Point(67, 243);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 46);
+            this.label2.Text = "暂无销售情况！";
+            this.label2.Visible = false;
+            // 
             // popList1
             // 
             popListItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
@@ -174,10 +188,13 @@ namespace SmobilerAppTEST7._17
             popListItem2.Text = "售出数量";
             popListItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             popListItem3.Text = "售出数量/总票数";
+            popListItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem4.Text = "销售额";
             popListGroup1.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
             popListItem1,
             popListItem2,
-            popListItem3});
+            popListItem3,
+            popListItem4});
             popListGroup1.Value = null;
             this.popList1.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
             popListGroup1});
@@ -187,13 +204,13 @@ namespace SmobilerAppTEST7._17
             // 
             // popList2
             // 
-            popListItem4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem4.Text = "升序";
             popListItem5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            popListItem5.Text = "降序";
+            popListItem5.Text = "升序";
+            popListItem6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            popListItem6.Text = "降序";
             popListGroup2.Items.AddRange(new Smobiler.Core.Controls.PopListItem[] {
-            popListItem4,
-            popListItem5});
+            popListItem5,
+            popListItem6});
             popListGroup2.Value = null;
             this.popList2.Groups.AddRange(new Smobiler.Core.Controls.PopListGroup[] {
             popListGroup2});
@@ -215,7 +232,6 @@ namespace SmobilerAppTEST7._17
 
         private Smobiler.Core.Controls.ToolBar toolBar1;
         private Smobiler.Core.Controls.Panel panel1;
-        private Smobiler.Core.Controls.ListView listView1;
         private Smobiler.Core.Controls.PopList popList1;
         private Smobiler.Core.Controls.PopList popList2;
         private SearchBox_Control searchBox_Control;
@@ -225,5 +241,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label order;
         private Smobiler.Core.Controls.Panel panel4;
         private Smobiler.Core.Controls.Label sequence;
+        private Smobiler.Core.Controls.ListView listView1;
+        private Smobiler.Core.Controls.Label label2;
     }
 }

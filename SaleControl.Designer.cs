@@ -30,6 +30,8 @@ namespace SmobilerAppTEST7._17
             this.All_lbl = new Smobiler.Core.Controls.Label();
             this.label1 = new Smobiler.Core.Controls.Label();
             this.sale_lbl = new Smobiler.Core.Controls.Label();
+            this.label4 = new Smobiler.Core.Controls.Label();
+            this.getvalues = new Smobiler.Core.Controls.Label();
             // 
             // getCno
             // 
@@ -61,7 +63,9 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl,
             this.All_lbl,
             this.label1,
-            this.sale_lbl});
+            this.sale_lbl,
+            this.label4,
+            this.getvalues});
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(111, 312);
             this.panel1.Name = "panel1";
@@ -138,13 +142,30 @@ namespace SmobilerAppTEST7._17
             this.sale_lbl.Size = new System.Drawing.Size(76, 17);
             this.sale_lbl.Text = "0";
             // 
+            // label4
+            // 
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(116, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.Text = "销售额";
+            // 
+            // getvalues
+            // 
+            this.getvalues.DisplayMember = "values";
+            this.getvalues.ForeColor = System.Drawing.Color.DarkRed;
+            this.getvalues.Location = new System.Drawing.Point(188, 95);
+            this.getvalues.Name = "getvalues";
+            this.getvalues.Size = new System.Drawing.Size(76, 17);
+            this.getvalues.Text = "label5";
+            // 
             // SaleControl
             // 
             this.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.getCno,
             this.getMno,
             this.panel1});
-            this.Size = new System.Drawing.Size(300, 100);
+            this.Size = new System.Drawing.Size(300, 120);
             this.Name = "SaleControl";
 
         }
@@ -161,5 +182,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Label All_lbl;
         private Smobiler.Core.Controls.Label label1;
         private Smobiler.Core.Controls.Label sale_lbl;
+        private Smobiler.Core.Controls.Label label4;
+        private Smobiler.Core.Controls.Label getvalues;
     }
 }

@@ -1,0 +1,255 @@
+2021/08/19 12:27:56 [Server-1] Starting 
+2021/08/19 12:27:57 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 12:27:57 [Server-1] Started 
+2021/08/19 12:27:57 [AutoSet-7] Start 
+2021/08/19 12:27:59 [Server-1] Stoping 
+2021/08/19 12:27:59 [TcpAccept-EX-8] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 12:28:00 [Server-1] Stoped 
+2021/08/19 12:28:00 [AutoSet-7] Stop 
+2021/08/19 14:30:05 [Server-1] Starting 
+2021/08/19 14:30:05 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 14:30:05 [Server-1] Started 
+2021/08/19 14:30:05 [AutoSet-7] Start 
+2021/08/19 14:34:49 [TcpAccept-3] 192.168.1.2:41378 
+2021/08/19 14:34:49 [861951044423780-192.168.1.2-8] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/19 14:36:25 [Server-1] Starting 
+2021/08/19 14:36:25 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 14:36:25 [Server-1] Started 
+2021/08/19 14:36:29 [TcpAccept-3] 192.168.1.2:41518 
+2021/08/19 14:38:25 [Server-1] Stoping 
+2021/08/19 14:38:25 [TcpAccept-EX-9] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 14:38:25 [861951044423780-1] Stop-StopServer-True-- 
+2021/08/19 14:38:25 [Server-1] Stoped 
+2021/08/19 14:38:25 [AutoSet-7] Stop 
+2021/08/19 14:38:30 [Server-1] Starting 
+2021/08/19 14:38:30 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 14:38:30 [Server-1] Started 
+2021/08/19 14:38:30 [AutoSet-7] Start 
+2021/08/19 14:38:59 [WebSocketAccept-9] 192.168.1.104:56036 
+2021/08/19 14:39:00 [861951044423780-192.168.1.104-8] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/19 14:42:30 [TcpAccept-8] 192.168.1.2:59886 
+2021/08/19 14:42:32 [WebSocketAccept-9] 192.168.1.104:54336 
+2021/08/19 14:47:39 [TcpAccept-10] 192.168.1.2:60006 
+2021/08/19 14:47:42 [WebSocketAccept-9] 192.168.1.104:60587 
+2021/08/19 14:47:43 [861951044423780-192.168.1.104-10] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/19 14:48:01 [WebSocketAccept-9] 192.168.1.104:65438 
+2021/08/19 14:49:08 [WebSocketAccept-9] 192.168.1.104:56767 
+2021/08/19 14:49:09 [63ca4ae0204e3a2f83bce86d30aadd06-192.168.1.104-19] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/19 14:56:31 [Server-1] Starting 
+2021/08/19 14:56:31 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 14:56:31 [Server-1] Started 
+2021/08/19 14:56:31 [AutoSet-7] Start 
+2021/08/19 14:56:36 [WebSocketAccept-8] 192.168.1.104:64697 
+2021/08/19 14:56:36 [861951044423780-192.168.1.104-10] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/19 14:58:04 [WebSocketAccept-8] 192.168.1.104:49884 
+2021/08/19 15:45:35 [Server-1] Starting 
+2021/08/19 15:45:35 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 15:45:35 [Server-1] Started 
+2021/08/19 15:45:35 [AutoSet-7] Start 
+2021/08/19 15:45:37 [Server-1] Stoping 
+2021/08/19 15:45:37 [TcpAccept-EX-8] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 15:45:38 [Server-1] Stoped 
+2021/08/19 15:45:38 [AutoSet-7] Stop 
+2021/08/19 20:48:38 [Server-1] Starting 
+2021/08/19 20:48:38 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 20:48:39 [Server-1] Started 
+2021/08/19 20:48:45 [TcpAccept-3] 192.168.1.2:37482 
+2021/08/19 20:48:45 [861951044423780-192.168.1.2-10] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"INE-AL00","screenSize":{"width":1080,"height":2128},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/19 20:52:12 [Server-1] Starting 
+2021/08/19 20:52:12 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 20:52:12 [Server-1] Started 
+2021/08/19 20:52:12 [AutoSet-7] Start 
+2021/08/19 20:52:14 [TcpAccept-3] 192.168.1.2:37522 
+2021/08/19 21:28:50 [Server-1] Starting 
+2021/08/19 21:28:50 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 21:28:51 [Server-1] Started 
+2021/08/19 21:28:51 [AutoSet-7] Start 
+2021/08/19 21:28:51 [TcpAccept-3] 192.168.1.2:35896 
+2021/08/19 21:32:28 [TcpAccept-15] 192.168.1.2:35990 
+2021/08/19 21:36:55 [Server-1] Starting 
+2021/08/19 21:36:55 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 21:36:56 [Server-1] Started 
+2021/08/19 21:36:56 [AutoSet-7] Start 
+2021/08/19 21:36:59 [TcpAccept-3] 192.168.1.2:36072 
+2021/08/19 21:37:34 [Server-1] Stoping 
+2021/08/19 21:37:34 [861951044423780-1] Stop-StopServer-True-- 
+2021/08/19 21:37:34 [TcpAccept-EX-13] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 21:37:35 [Server-1] Stoped 
+2021/08/19 21:37:35 [AutoSet-7] Stop 
+2021/08/19 21:37:43 [Server-1] Starting 
+2021/08/19 21:37:43 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 21:37:43 [Server-1] Started 
+2021/08/19 21:37:43 [AutoSet-7] Start 
+2021/08/19 21:37:45 [TcpAccept-3] 192.168.1.2:36096 
+2021/08/19 21:37:57 [Server-1] Stoping 
+2021/08/19 21:37:57 [861951044423780-1] Stop-StopServer-True-- 
+2021/08/19 21:37:57 [TcpAccept-EX-15] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 21:37:59 [Server-1] Stoped 
+2021/08/19 21:37:59 [AutoSet-7] Stop 
+2021/08/19 21:40:12 [Server-1] Starting 
+2021/08/19 21:40:12 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 21:40:12 [Server-1] Started 
+2021/08/19 21:40:12 [AutoSet-7] Start 
+2021/08/19 21:40:14 [TcpAccept-3] 192.168.1.2:36140 
+2021/08/19 21:40:29 [Server-1] Stoping 
+2021/08/19 21:40:29 [861951044423780-1] Stop-StopServer-True-- 
+2021/08/19 21:40:29 [TcpAccept-EX-12] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 21:40:30 [Server-1] Stoped 
+2021/08/19 21:40:30 [AutoSet-7] Stop 
+2021/08/19 21:42:35 [Server-1] Starting 
+2021/08/19 21:42:35 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 21:42:35 [Server-1] Started 
+2021/08/19 21:42:35 [AutoSet-7] Start 
+2021/08/19 21:42:38 [TcpAccept-3] 192.168.1.2:36184 
+2021/08/19 21:42:58 [Server-1] Stoping 
+2021/08/19 21:42:58 [861951044423780-1] Stop-StopServer-True-- 
+2021/08/19 21:42:58 [TcpAccept-EX-11] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 21:42:59 [Server-1] Stoped 
+2021/08/19 21:42:59 [AutoSet-7] Stop 
+2021/08/19 21:43:06 [Server-1] Starting 
+2021/08/19 21:43:06 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 21:43:06 [Server-1] Started 
+2021/08/19 21:43:06 [AutoSet-7] Start 
+2021/08/19 21:43:10 [Server-1] Stoping 
+2021/08/19 21:43:10 [TcpAccept-EX-8] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 21:43:11 [Server-1] Stoped 
+2021/08/19 21:43:11 [AutoSet-7] Stop 
+2021/08/19 21:43:22 [Server-1] Starting 
+2021/08/19 21:43:22 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/19 21:43:22 [Server-1] Started 
+2021/08/19 21:43:22 [AutoSet-7] Start 
+2021/08/19 21:43:29 [TcpAccept-3] 192.168.1.2:36228 
+2021/08/19 21:43:52 [Server-1] Stoping 
+2021/08/19 21:43:52 [861951044423780-1] Stop-StopServer-True-- 
+2021/08/19 21:43:52 [TcpAccept-EX-10] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/19 21:43:53 [Server-1] Stoped 
+2021/08/19 21:43:53 [AutoSet-7] Stop 

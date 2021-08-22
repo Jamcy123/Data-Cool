@@ -89,7 +89,6 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl1,
             this.tabPageControl2,
             this.tabPageControl3});
-            this.tabPageView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabPageView1.Location = new System.Drawing.Point(0, 125);
             this.tabPageView1.Name = "tabPageView1";
             this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
@@ -108,10 +107,11 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 20);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.Size = new System.Drawing.Size(300, 300);
+            this.listView1.Size = new System.Drawing.Size(300, 355);
             this.listView1.TemplateControlName = "ccTemplate";
             // 
             // tabPageControl2
@@ -122,6 +122,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView2
             // 
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Location = new System.Drawing.Point(0, 20);
             this.listView2.Name = "listView2";
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
@@ -136,6 +137,7 @@ namespace SmobilerAppTEST7._17
             // 
             // listView3
             // 
+            this.listView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView3.Location = new System.Drawing.Point(0, 20);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));

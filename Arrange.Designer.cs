@@ -163,11 +163,11 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl1,
             this.tabPageControl2,
             this.tabPageControl3});
-            this.tabPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPageView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabPageView1.Location = new System.Drawing.Point(0, 244);
             this.tabPageView1.Name = "tabPageView1";
             this.tabPageView1.PageIndicator = Smobiler.Core.Controls.TabPageIndicator.Title;
-            this.tabPageView1.Size = new System.Drawing.Size(300, 312);
+            this.tabPageView1.Size = new System.Drawing.Size(300, 450);
             this.tabPageView1.Titles = new string[] {
         "今天",
         "明天",
@@ -183,11 +183,12 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.listView1.Location = new System.Drawing.Point(0, 15);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.RaiseRefresh = true;
-            this.listView1.Size = new System.Drawing.Size(300, 257);
+            this.listView1.Size = new System.Drawing.Size(300, 270);
             this.listView1.TemplateControlName = "Session";
             this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
             this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
@@ -195,7 +196,7 @@ namespace SmobilerAppTEST7._17
             // button1
             // 
             this.button1.FontSize = 16F;
-            this.button1.Location = new System.Drawing.Point(97, 272);
+            this.button1.Location = new System.Drawing.Point(98, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 40);
             this.button1.Text = "添加场次";
@@ -205,7 +206,8 @@ namespace SmobilerAppTEST7._17
             // 
             this.nothing1.Bold = true;
             this.nothing1.FontSize = 16F;
-            this.nothing1.Location = new System.Drawing.Point(16, 95);
+            this.nothing1.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.nothing1.Location = new System.Drawing.Point(13, 95);
             this.nothing1.Name = "nothing1";
             this.nothing1.Size = new System.Drawing.Size(276, 76);
             this.nothing1.Text = "暂无排片，请前去添加场次！";
@@ -221,11 +223,12 @@ namespace SmobilerAppTEST7._17
             // 
             // listView2
             // 
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Top;
             this.listView2.Location = new System.Drawing.Point(0, 20);
             this.listView2.Name = "listView2";
             this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView2.RaiseRefresh = true;
-            this.listView2.Size = new System.Drawing.Size(300, 242);
+            this.listView2.Size = new System.Drawing.Size(300, 270);
             this.listView2.TemplateControlName = "Session";
             this.listView2.Refresh += new System.EventHandler(this.listView2_Refresh);
             this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView2_RowBind);
@@ -233,7 +236,7 @@ namespace SmobilerAppTEST7._17
             // button2
             // 
             this.button2.FontSize = 16F;
-            this.button2.Location = new System.Drawing.Point(101, 272);
+            this.button2.Location = new System.Drawing.Point(100, 320);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 40);
             this.button2.Text = "添加场次";
@@ -243,7 +246,8 @@ namespace SmobilerAppTEST7._17
             // 
             this.nothing2.Bold = true;
             this.nothing2.FontSize = 16F;
-            this.nothing2.Location = new System.Drawing.Point(13, 69);
+            this.nothing2.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
+            this.nothing2.Location = new System.Drawing.Point(10, 69);
             this.nothing2.Name = "nothing2";
             this.nothing2.Size = new System.Drawing.Size(278, 124);
             this.nothing2.Text = "暂无排片，请前去添加场次！";
@@ -259,11 +263,12 @@ namespace SmobilerAppTEST7._17
             // 
             // listView3
             // 
+            this.listView3.Dock = System.Windows.Forms.DockStyle.Top;
             this.listView3.Location = new System.Drawing.Point(0, 18);
             this.listView3.Name = "listView3";
             this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView3.RaiseRefresh = true;
-            this.listView3.Size = new System.Drawing.Size(300, 242);
+            this.listView3.Size = new System.Drawing.Size(300, 270);
             this.listView3.TemplateControlName = "Session";
             this.listView3.Refresh += new System.EventHandler(this.listView3_Refresh);
             this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView3_RowBind);
@@ -271,7 +276,7 @@ namespace SmobilerAppTEST7._17
             // button3
             // 
             this.button3.FontSize = 16F;
-            this.button3.Location = new System.Drawing.Point(103, 272);
+            this.button3.Location = new System.Drawing.Point(106, 320);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 40);
             this.button3.Text = "添加场次";
@@ -281,6 +286,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.nothing3.Bold = true;
             this.nothing3.FontSize = 16F;
+            this.nothing3.HorizontalAlignment = Smobiler.Core.Controls.HorizontalAlignment.Center;
             this.nothing3.Location = new System.Drawing.Point(7, 60);
             this.nothing3.Name = "nothing3";
             this.nothing3.Size = new System.Drawing.Size(286, 138);

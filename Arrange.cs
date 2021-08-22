@@ -57,7 +57,7 @@ namespace SmobilerAppTEST7._17
             string[] a = { "今天"+DateTime.Now.ToShortDateString().ToString(), "明天"+DateTime.Now.AddDays(1).ToShortDateString().ToString(), "后天"+DateTime.Now.AddDays(2).ToShortDateString().ToString() };
             tabPageView1.Titles = a;
             string database = "movie_ticket";
-            string select1 = "SELECT * FROM movie_ticket.Projection where Mno = '" + Mno + "'and Cno ='" + Cno + "'and Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' " +
+            string select1 = "SELECT * FROM movie_ticket.Projection where Mno = '" + Mno + "'and Cno ='" + Cno + "'and Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "' " + 
                 "order by Ptime";
             string select2 = "SELECT * FROM movie_ticket.Projection where Mno = '" + Mno + "'and Cno ='" + Cno + "'and Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%' " +
                 "order by Ptime";
@@ -75,6 +75,8 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+                listView1.DataSource = today;
+                listView1.DataBind();
                 nothing1.Visible = true;
             }
             if (tomorrow.Tables[0].Rows.Count > 0)    //绑定数据源
@@ -84,6 +86,8 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+                listView2.DataSource = tomorrow;
+                listView2.DataBind();
                 nothing2.Visible = true;
             }
             if (todayaftertomorrow.Tables[0].Rows.Count > 0)    //绑定数据源
@@ -93,6 +97,8 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+                listView3.DataSource = todayaftertomorrow;
+                listView3.DataBind();
                 nothing3.Visible = true;
             }
 
@@ -185,6 +191,9 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+
+                listView1.DataSource = today;
+                listView1.DataBind(); 
                 nothing1.Visible = true;
             }
         }
@@ -202,6 +211,8 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+                listView2.DataSource = tomorrow;
+                listView2.DataBind();
                 nothing2.Visible = true;
             }
            
@@ -220,6 +231,8 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+                listView3.DataSource = todayaftertomorrow;
+                listView3.DataBind();
                 nothing3.Visible = true;
             }
         }

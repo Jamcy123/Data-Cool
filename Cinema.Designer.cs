@@ -86,8 +86,9 @@ namespace SmobilerAppTEST7._17
             // 
             // label1
             // 
-            this.label1.FontSize = 16F;
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.BindDisplayValueGone = true;
+            this.label1.FontSize = 20F;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(108, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 35);
@@ -115,10 +116,11 @@ namespace SmobilerAppTEST7._17
             // 
             // label2
             // 
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(108, 99);
+            this.label2.FontSize = 15F;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(108, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 28);
+            this.label2.Size = new System.Drawing.Size(184, 53);
             this.label2.Text = "label2";
             // 
             // Cinema

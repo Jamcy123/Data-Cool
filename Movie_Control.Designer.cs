@@ -68,7 +68,7 @@ namespace SmobilerAppTEST7._17
             this.Mname_lbl.FontSize = 17F;
             this.Mname_lbl.Location = new System.Drawing.Point(94, 5);
             this.Mname_lbl.Name = "Mname_lbl";
-            this.Mname_lbl.Size = new System.Drawing.Size(148, 26);
+            this.Mname_lbl.Size = new System.Drawing.Size(181, 26);
             this.Mname_lbl.Text = "label1";
             // 
             // label2
@@ -100,9 +100,9 @@ namespace SmobilerAppTEST7._17
             // Mtype_lbl
             // 
             this.Mtype_lbl.DisplayMember = "Mtype";
-            this.Mtype_lbl.Location = new System.Drawing.Point(166, 56);
+            this.Mtype_lbl.Location = new System.Drawing.Point(166, 51);
             this.Mtype_lbl.Name = "Mtype_lbl";
-            this.Mtype_lbl.Size = new System.Drawing.Size(76, 17);
+            this.Mtype_lbl.Size = new System.Drawing.Size(76, 26);
             this.Mtype_lbl.Text = "label5";
             // 
             // label1
