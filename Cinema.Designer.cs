@@ -120,7 +120,7 @@ namespace SmobilerAppTEST7._17
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(108, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 28);
+            this.label2.Size = new System.Drawing.Size(184, 53);
             this.label2.Text = "label2";
             // 
             // Cinema

@@ -158,6 +158,7 @@ namespace SmobilerAppTEST7._17
             toolBarItem3});
             this.toolBar1.Location = new System.Drawing.Point(79, 480);
             this.toolBar1.Name = "toolBar1";
+            this.toolBar1.SelectedIndex = 0;
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
             this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick_1);
             // 
