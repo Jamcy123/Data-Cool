@@ -23,8 +23,9 @@ namespace SmobilerAppTEST7._17
             this.panel1 = new Smobiler.Core.Controls.Panel();
             this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
-            this.listView1 = new Smobiler.Core.Controls.ListView();
             this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.button2 = new Smobiler.Core.Controls.Button();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
             this.panel4 = new Smobiler.Core.Controls.Panel();
             this.button3 = new Smobiler.Core.Controls.Button();
@@ -68,20 +69,10 @@ namespace SmobilerAppTEST7._17
             // tabPageControl1
             // 
             this.tabPageControl1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.searchBox_Control,
             this.listView1,
-            this.searchBox_Control});
+            this.button2});
             this.tabPageControl1.Name = "tabPageControl1";
-            // 
-            // listView1
-            // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.listView1.Location = new System.Drawing.Point(0, 73);
-            this.listView1.Name = "listView1";
-            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.RaiseRefresh = true;
-            this.listView1.Size = new System.Drawing.Size(300, 490);
-            this.listView1.TemplateControlName = "DControl";
-            this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
             // 
             // searchBox_Control
             // 
@@ -94,6 +85,28 @@ namespace SmobilerAppTEST7._17
             this.searchBox_Control.TextBox_Text = "";
             this.searchBox_Control.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
             this.searchBox_Control.Load += new System.EventHandler(this.searchBox_Control1_Load);
+            // 
+            // listView1
+            // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.listView1.Location = new System.Drawing.Point(0, 73);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.RaiseRefresh = true;
+            this.listView1.Size = new System.Drawing.Size(300, 490);
+            this.listView1.TemplateControlName = "DControl";
+            this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FontSize = 16F;
+            this.button2.Location = new System.Drawing.Point(107, 486);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 35);
+            this.button2.Text = "退出登录";
+            this.button2.Press += new System.EventHandler(this.button2_Press);
             // 
             // tabPageControl2
             // 
@@ -258,7 +271,6 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Panel panel1;
         private Smobiler.Core.Controls.TabPageView tabPageView1;
         private Smobiler.Core.Controls.TabPageControl tabPageControl1;
-        private Smobiler.Core.Controls.ListView listView1;
         private SearchBox_Control searchBox_Control;
         private Smobiler.Core.Controls.TabPageControl tabPageControl2;
         private Smobiler.Core.Controls.Panel panel4;
@@ -275,5 +287,7 @@ namespace SmobilerAppTEST7._17
         private Smobiler.Core.Controls.Button button1;
         private Smobiler.Core.Controls.Camera camera1;
         private Smobiler.Core.Controls.TextBox Mdetail;
+        private Smobiler.Core.Controls.ListView listView1;
+        private Smobiler.Core.Controls.Button button2;
     }
 }

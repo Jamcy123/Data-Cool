@@ -304,21 +304,6 @@ namespace SmobilerAppTEST7._17
             txtPassword.BorderColor = Color.WhiteSmoke;
         }
 
-        private void button3_Press(object sender, EventArgs e)//我直接选座位
-        {
-            this.Client.HeartBeatEnable(3000, 0, (obj, args) => { }, (obj, args) => { Toast(Client.DeviceID); });
-            //Toast("不给选");
-            //this.Form.Show(new Seat_Form("13549473975", "是部电影", "001", "又是个影院", "001", 1, "周四", "2021-08-12 09:00:00", "1.2"));
-        }
-
-        private void button1_Press_1(object sender, EventArgs e)//任意门
-        {
-            //this.Form.Show(new Myblance("13549473975"));
-            //this.Form.Show(new Mymessage("13549473975"));
-            //this.Form.Show(new Myorder("13549473975"));
-            //this.Form.Show(new Alterpassword());
-            //this.Form.Show(new Myblance("13549473975"));
-            this.Form.ShowDialog(new addSession("0004", "004", DateTime.Now.ToString("yyyy-MM-dd"), "999"));
-        }
+       
     }
 }

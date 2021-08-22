@@ -34,11 +34,14 @@ namespace SmobilerAppTEST7._17
 
         public void showlabel(string a)
         {
-            string txt2 = "select Cname,Caddress from Cinema where Cno=" + a;
-            string database = "Movie_ticket";
-            DataSet name = Databaseconnect(database, txt2);
-            label1.Text = name.Tables[0].Rows[0][0].ToString();
-            label2.Text = name.Tables[0].Rows[0][1].ToString();
+
+                string txt2 = "select Cname,Caddress from Cinema where Cno=" + a;
+                string database = "Movie_ticket";
+                DataSet name = Databaseconnect(database, txt2);
+                label1.Text = name.Tables[0].Rows[0][0].ToString();
+                label2.Text = name.Tables[0].Rows[0][1].ToString();
+            
+            
         }
 
         public void setToolbarIndex(int i)

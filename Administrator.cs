@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿    using MySql.Data.MySqlClient;
 using Smobiler.Core;
 using Smobiler.Core.Controls;
 using System;
@@ -154,6 +154,10 @@ namespace SmobilerAppTEST7._17
             }
         }
 
+        public void setToolbarIndex(int i)
+        {
+            toolBar1.SelectedIndex = i;//底部栏默认选项
+        }
 
         private void toolBar1_ToolbarItemClick_1(object sender, ToolbarClickEventArgs e)
         {
