@@ -185,6 +185,9 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+
+                listView1.DataSource = today;
+                listView1.DataBind(); 
                 nothing1.Visible = true;
             }
         }
@@ -202,6 +205,8 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+                listView2.DataSource = tomorrow;
+                listView2.DataBind();
                 nothing2.Visible = true;
             }
            
@@ -220,6 +225,8 @@ namespace SmobilerAppTEST7._17
             }
             else
             {
+                listView3.DataSource = todayaftertomorrow;
+                listView3.DataBind();
                 nothing3.Visible = true;
             }
         }
