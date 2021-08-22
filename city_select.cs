@@ -40,8 +40,8 @@ namespace SmobilerAppTEST7._17
         {
             gps1.GetGps();//获取当前位置信息
             //连接address数据库，查出所有省份
-            string select = "SELECT Distinct province FROM address.region;";
-            string database = "address";
+            string select = "SELECT Distinct province FROM region;";
+            string database = "Movie_ticket";
             DataSet dataSet = Databaseconnect(database, select);
             //将表中数据导入选择框中
             int length = dataSet.Tables[0].Rows.Count;
@@ -67,8 +67,8 @@ namespace SmobilerAppTEST7._17
         private void picker1_SelectedIndexChanged(object sender, EventArgs e)//省份选择框的选项变化事件
         {
             //连接address数据库，查出对应省份的城市
-            string select = "SELECT city FROM address.region where province='" + picker1.SelectedItem + "'";
-            string database = "address";
+            string select = "SELECT city FROM region where province='" + picker1.SelectedItem + "'";
+            string database = "Movie_ticket";
             DataSet dataSet = Databaseconnect(database, select);
             //将表中数据导入选择框中
             int length = dataSet.Tables[0].Rows.Count;

@@ -35,7 +35,7 @@ namespace SmobilerAppTEST7._17
         {
             //加载电影信息
             toolBar1.SelectedIndex = 1;//底部栏默认选项
-            string select = "SELECT * FROM Movie_ticket.Movie";
+            string select = "SELECT * FROM Movie_ticket.Movie order by Mgrade DESC";
             string database = "Movie_ticket";
             DataSet dataSet = Databaseconnect(database, select);
             listView1.DataSource = dataSet;
@@ -94,7 +94,7 @@ namespace SmobilerAppTEST7._17
         private void listView1_Refresh(object sender, EventArgs e)//下拉刷新
         {
             listView1.Rows.Clear();
-            string select = "SELECT * FROM Movie_ticket.Movie";
+            string select = "SELECT * FROM Movie_ticket.Movie order by Mgrade DESC";
             string database = "Movie_ticket";
             DataSet dataSet = Databaseconnect(database, select);
             listView1.DataSource = dataSet;

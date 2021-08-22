@@ -97,7 +97,6 @@ namespace SmobilerAppTEST7._17
             this.image1.BorderRadius = 40;
             this.image1.Location = new System.Drawing.Point(0, 5);
             this.image1.Name = "image1";
-            this.image1.ResourceID = "./Cache/";
             this.image1.Size = new System.Drawing.Size(80, 80);
             // 
             // panel1
@@ -282,6 +281,7 @@ namespace SmobilerAppTEST7._17
             this.panel3,
             this.panel4,
             this.panel5});
+            this.Closed += new System.EventHandler(this.Mymessage_Closed);
             this.Load += new System.EventHandler(this.Mymessage_Load);
             this.Name = "Mymessage";
 
