@@ -14,6 +14,7 @@ namespace SmobilerAppTEST7._17
     partial class Movieincrease : Smobiler.Core.Controls.MobileForm
     {
         string name;
+        string Cno = "001";
         public Movieincrease() : base()
         {
             //This call is required by the SmobilerForm.
@@ -138,6 +139,12 @@ namespace SmobilerAppTEST7._17
             {
                 Toast(ex.Message);
             }
+        }
+
+
+        private void button2_Press(object sender, EventArgs e)
+        {
+            this.Form.Client.ReStart();
         }
     }
 }

@@ -31,8 +31,8 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
             this.listView2 = new Smobiler.Core.Controls.ListView();
             this.label1 = new Smobiler.Core.Controls.Label();
-            this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
+            this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
             // 
             // panel1
             // 
@@ -118,6 +118,18 @@ namespace SmobilerAppTEST7._17
             this.label1.Size = new System.Drawing.Size(84, 43);
             this.label1.Text = "label1";
             // 
+            // searchBox_Control
+            // 
+            this.searchBox_Control.BackColor = System.Drawing.Color.White;
+            this.searchBox_Control.Dock = System.Windows.Forms.DockStyle.Top;
+            this.searchBox_Control.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
+            this.searchBox_Control.Location = new System.Drawing.Point(0, 29);
+            this.searchBox_Control.Name = "searchBox_Control";
+            this.searchBox_Control.Size = new System.Drawing.Size(300, 46);
+            this.searchBox_Control.TextBox_Text = "";
+            this.searchBox_Control.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
+            this.searchBox_Control.Load += new System.EventHandler(this.searchBox_Control1_Load);
+            // 
             // toolBar1
             // 
             this.toolBar1.BackColor = System.Drawing.Color.White;
@@ -148,18 +160,6 @@ namespace SmobilerAppTEST7._17
             this.toolBar1.Name = "toolBar1";
             this.toolBar1.Size = new System.Drawing.Size(100, 50);
             this.toolBar1.ToolbarItemClick += new Smobiler.Core.Controls.ToolbarItemClickEventHandler(this.toolBar1_ToolbarItemClick_1);
-            // 
-            // searchBox_Control
-            // 
-            this.searchBox_Control.BackColor = System.Drawing.Color.White;
-            this.searchBox_Control.Dock = System.Windows.Forms.DockStyle.Top;
-            this.searchBox_Control.Layout = Smobiler.Core.Controls.LayoutPosition.Relative;
-            this.searchBox_Control.Location = new System.Drawing.Point(0, 29);
-            this.searchBox_Control.Name = "searchBox_Control";
-            this.searchBox_Control.Size = new System.Drawing.Size(300, 46);
-            this.searchBox_Control.TextBox_Text = "";
-            this.searchBox_Control.SearchButtonPress += new System.EventHandler(this.searchBox_Control1_SearchButtonPress);
-            this.searchBox_Control.Load += new System.EventHandler(this.searchBox_Control1_Load);
             // 
             // Administrator
             // 
