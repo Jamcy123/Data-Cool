@@ -63,7 +63,7 @@ namespace SmobilerAppTEST7._17
                         string[] gettime = datePicker1.BindDisplayValue.ToString().Split(' ', '/', ':');
                         string Time = gettime[3] + ":" + gettime[4];
                         string database = "movie_ticket";
-                        string sure = "select * from Projection where Cno='" + Cno + "'and Mno='" + Mno + "'and Phall=" + int.Parse(gethall.Text.Substring(0, 1)) +
+                        string sure = "select * from Projection where Cno='" + Cno + "'and Phall=" + int.Parse(gethall.Text.Substring(0, 1)) +
                             "  and  Ptime = '" + Pdate + " " + Time + "';";
                         DataSet data = Databaseconnect(database, sure);
                         if (data.Tables[0].Rows.Count > 0)
