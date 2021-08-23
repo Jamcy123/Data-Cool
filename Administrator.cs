@@ -148,7 +148,7 @@ namespace SmobilerAppTEST7._17
                     Show(sale, (obj, args) => { ShowForm(sale.ToolBarItemName); });
                     break;
                 case "cinema":
-                    Cinema cinema=new Cinema(Cno);
+                    Cinema cinema=new Cinema(Cno,Aid);
                     cinema.setToolbarIndex(2);
                     Show(cinema, (obj, args) => { ShowForm(cinema.ToolBarItemName); });
                     break;

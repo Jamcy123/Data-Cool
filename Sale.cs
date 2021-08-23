@@ -132,7 +132,7 @@ namespace SmobilerAppTEST7._17
                         string sql4 =
                         "select * from Movie_ticket.Sales " +
                         "where Cno='" + Cno + "'" +
-                        "order by values ASC;";
+                        "order by Money ASC;";
                         DataSet dataSet4 = Databaseconnect(database, sql4);
                         listView1.DataSource = dataSet4;
                         listView1.DataBind();
@@ -174,7 +174,7 @@ namespace SmobilerAppTEST7._17
                         string sql4 =
                         "select * from Movie_ticket.Sales " +
                         "where Cno='" + Cno + "'" +
-                        "order by values DESC;";
+                        "order by Money DESC;";
                         DataSet dataSet4 = Databaseconnect(database, sql4);
                         listView1.DataSource = dataSet4;
                         listView1.DataBind();
@@ -222,7 +222,7 @@ namespace SmobilerAppTEST7._17
                         string sql4 =
                         "select * from Movie_ticket.Sales " +
                         "where Cno='" + Cno + "'" +
-                        "order by values ASC;";
+                        "order by Money ASC;";
                         DataSet dataSet4 = Databaseconnect(database, sql4);
                         listView1.DataSource = dataSet4;
                         listView1.DataBind();
@@ -264,7 +264,7 @@ namespace SmobilerAppTEST7._17
                         string sql4 =
                         "select * from Movie_ticket.Sales " +
                         "where Cno='" + Cno + "'" +
-                        "order by values DESC;";
+                        "order by Money DESC;";
                         DataSet dataSet4 = Databaseconnect(database, sql4);
                         listView1.DataSource = dataSet4;
                         listView1.DataBind();

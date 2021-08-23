@@ -13,11 +13,11 @@ namespace SmobilerAppTEST7._17
     partial class Alterpassword : Smobiler.Core.Controls.MobileForm
     {
         string Uno;//用户号码
-        public Alterpassword() : base()
+        public Alterpassword(string a) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
-            Uno = "13549473975";
+            Uno = a;
             //Uno = this.Client.Session[0].ToString();****************************************************************
         }
 

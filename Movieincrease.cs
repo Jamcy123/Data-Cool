@@ -13,7 +13,7 @@ namespace SmobilerAppTEST7._17
 
     partial class Movieincrease : Smobiler.Core.Controls.MobileForm
     {
-        string name;
+        string name=null;
         string Cno = "001";
         public Movieincrease() : base()
         {
@@ -99,21 +99,28 @@ namespace SmobilerAppTEST7._17
                 Databaseconnect(database, insert);
                 string select = "select* from Movie where Mno='" + Mno.Text.Replace("'", "''") + "'";
                 DataSet dataSet = Databaseconnect(database, select);
-                if (dataSet.Tables[0].Rows.Count <= 0)
+                if(Mno.Text!=null&& Mname.Text != null&& Mlanguage.Text != null&&Mtype.Text!=null&&Mduration.Text!=null&&Mdetail.Text!=null&&name!=null)
                 {
-                    Toast("添加电影失败！请重新添加");
+                    if (dataSet.Tables[0].Rows.Count <= 0)
+                    {
+                        Toast("添加电影失败！请重新添加");
+                    }
+                    else
+                    {
+                        Toast("添加电影成功！");
+                        Mno.Text = "";
+                        Mname.Text = "";
+                        Mlanguage.Text = "";
+                        Mtype.Text = "";
+                        image1.ResourceID = "";
+                        Mduration.Text = "";
+                        Mdetail.Text = "";
+                        Mgrade.Text = "";
+                    }
                 }
                 else
                 {
-                    Toast("添加电影成功！");
-                    Mno.Text = "";
-                    Mname.Text = "";
-                    Mlanguage.Text = "";
-                    Mtype.Text = "";
-                    image1.ResourceID = "";
-                    Mduration.Text = "";
-                    Mdetail.Text = "";
-                    Mgrade.Text = "";
+                    Toast("请完善好所有电影信息之后，再进行添加！");
                 }
             }
         }
