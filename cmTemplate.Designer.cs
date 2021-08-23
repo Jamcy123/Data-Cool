@@ -81,7 +81,7 @@ namespace SmobilerAppTEST7._17
             // 
             this.Mtype_lbl.DataMember = "Mno";
             this.Mtype_lbl.DisplayMember = "Mtype";
-            this.Mtype_lbl.FontSize = 15F;
+            this.Mtype_lbl.FontSize = 14F;
             this.Mtype_lbl.Location = new System.Drawing.Point(101, 0);
             this.Mtype_lbl.Name = "Mtype_lbl";
             this.Mtype_lbl.Size = new System.Drawing.Size(97, 30);
