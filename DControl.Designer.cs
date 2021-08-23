@@ -93,7 +93,7 @@ namespace SmobilerAppTEST7._17
             this.Mgrade_lbl.DisplayMember = "Mgrade";
             this.Mgrade_lbl.FontSize = 14F;
             this.Mgrade_lbl.ForeColor = System.Drawing.Color.DarkOrange;
-            this.Mgrade_lbl.Location = new System.Drawing.Point(166, 31);
+            this.Mgrade_lbl.Location = new System.Drawing.Point(166, 34);
             this.Mgrade_lbl.Name = "Mgrade_lbl";
             this.Mgrade_lbl.Size = new System.Drawing.Size(50, 17);
             this.Mgrade_lbl.Text = "label4";
@@ -101,9 +101,9 @@ namespace SmobilerAppTEST7._17
             // Mtype_lbl
             // 
             this.Mtype_lbl.DisplayMember = "Mtype";
-            this.Mtype_lbl.Location = new System.Drawing.Point(166, 55);
+            this.Mtype_lbl.Location = new System.Drawing.Point(166, 51);
             this.Mtype_lbl.Name = "Mtype_lbl";
-            this.Mtype_lbl.Size = new System.Drawing.Size(76, 17);
+            this.Mtype_lbl.Size = new System.Drawing.Size(76, 26);
             this.Mtype_lbl.Text = "label5";
             // 
             // label1

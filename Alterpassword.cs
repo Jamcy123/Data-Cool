@@ -16,9 +16,8 @@ namespace SmobilerAppTEST7._17
         public Alterpassword() : base()
         {
             //This call is required by the SmobilerForm.
-            InitializeComponent();
-            Uno = "13549473975";
-            //Uno = this.Client.Session[0].ToString();****************************************************************
+            InitializeComponent();           
+            Uno = this.Client.Session[0].ToString();
         }
 
         private DataSet Databaseconnect(string dabatase, string sql)//数据库连接调用函数
