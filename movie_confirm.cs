@@ -47,16 +47,16 @@ namespace SmobilerAppTEST7._17
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
             string select1 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
-                "FROM movie_ticket.cinema,movie_ticket.projection" +
-                " where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "'; ";
+                "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.userinf" +
+                " where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and cinema.Ccity = userinf.Ucity and projection.Ptime like '" + DateTime.Now.ToString("yyyy-MM-dd") + "%' and projection.Ptime > '" + DateTime.Now.ToString() + "'; ";
 
             string select2 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
-                "FROM movie_ticket.cinema,movie_ticket.projection" +
-                " where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
+                "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.userinf" +
+                " where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and cinema.Ccity = userinf.Ucity and projection.Ptime like '" + DateTime.Now.AddDays(1).ToString("yyyy-MM-dd") + "%'; ";
 
             string select3 = "SELECT DISTINCT cinema.Cno,cinema.Cname,cinema.Caddress,projection.Mno,projection.Pprice " +
-                "FROM movie_ticket.cinema,movie_ticket.projection" +
-                " where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
+                "FROM movie_ticket.cinema,movie_ticket.projection,movie_ticket.userinf" +
+                " where projection.Mno = '" + movie_no + "' and projection.Cno = cinema.Cno and cinema.Ccity = userinf.Ucity and projection.Ptime like '" + DateTime.Now.AddDays(2).ToString("yyyy-MM-dd") + "%'; ";
 
             DataSet dataSet1 = Databaseconnect(database, select1);
             DataSet dataSet2 = Databaseconnect(database, select2);
