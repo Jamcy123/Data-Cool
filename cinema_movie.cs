@@ -43,7 +43,7 @@ namespace SmobilerAppTEST7._17
             Mname_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[1].ToString();
             Mlanguage_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[2].ToString();
             Mtype_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[3].ToString();
-            Mduration_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[5].ToString();
+            Mduration_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[5].ToString() + "分钟";
             Mgrade_lbl.Text = dataSet.Tables[0].Rows[0].ItemArray[7].ToString();
             Mpicadress_image.ResourceID = dataSet.Tables[0].Rows[0].ItemArray[4].ToString();
 
