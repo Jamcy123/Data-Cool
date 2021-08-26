@@ -101,7 +101,6 @@ namespace SmobilerAppTEST7._17
                 listView3.DataBind();
                 nothing3.Visible = true;
             }
-
         }
 
         private void title_Control1_ExitButtonpPress(object sender, EventArgs e)

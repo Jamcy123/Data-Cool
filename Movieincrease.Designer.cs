@@ -25,6 +25,7 @@ namespace SmobilerAppTEST7._17
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
             this.searchBox_Control = new SmobilerAppTEST7._17.SearchBox_Control();
             this.button2 = new Smobiler.Core.Controls.Button();
+            this.listView1 = new Smobiler.Core.Controls.ListView();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
             this.panel4 = new Smobiler.Core.Controls.Panel();
             this.button3 = new Smobiler.Core.Controls.Button();
@@ -40,7 +41,6 @@ namespace SmobilerAppTEST7._17
             this.Mgrade = new Smobiler.Core.Controls.TextBox();
             this.button1 = new Smobiler.Core.Controls.Button();
             this.camera1 = new Smobiler.Core.Controls.Camera();
-            this.listView1 = new Smobiler.Core.Controls.ListView();
             // 
             // panel1
             // 
@@ -96,6 +96,17 @@ namespace SmobilerAppTEST7._17
             this.button2.Size = new System.Drawing.Size(100, 35);
             this.button2.Text = "退出登录";
             this.button2.Press += new System.EventHandler(this.button2_Press);
+            // 
+            // listView1
+            // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.Location = new System.Drawing.Point(0, 73);
+            this.listView1.Name = "listView1";
+            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView1.RaiseRefresh = true;
+            this.listView1.Size = new System.Drawing.Size(300, 490);
+            this.listView1.TemplateControlName = "DControl";
+            this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
             // 
             // tabPageControl2
             // 
@@ -245,17 +256,6 @@ namespace SmobilerAppTEST7._17
             this.camera1.Name = "camera1";
             this.camera1.QualityMode = Smobiler.Core.Controls.ImageQualityMode.Custom;
             this.camera1.ImageCaptured += new Smobiler.Core.Controls.CameraOnlineCallBackHandler(this.camera1_ImageCaptured);
-            // 
-            // listView1
-            // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Location = new System.Drawing.Point(0, 73);
-            this.listView1.Name = "listView1";
-            this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView1.RaiseRefresh = true;
-            this.listView1.Size = new System.Drawing.Size(300, 490);
-            this.listView1.TemplateControlName = "DControl";
-            this.listView1.Refresh += new System.EventHandler(this.listView1_Refresh);
             // 
             // Movieincrease
             // 
