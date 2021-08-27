@@ -94,3 +94,50 @@
 对象名:“System.Net.Sockets.Socket”。 
 2021/08/23 14:56:43 [Server-1] Stoped 
 2021/08/23 14:56:43 [AutoSet-7] Stop 
+2021/08/23 21:28:34 [Server-1] Starting 
+2021/08/23 21:28:34 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/23 21:28:34 [Server-1] Started 
+2021/08/23 21:29:25 [TcpAccept-3] 192.168.10.8:42818 
+2021/08/23 21:29:25 [7704675e037b349e95175d2cb63d7871-192.168.10.8-8] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/23 21:31:36 [TcpAccept-14] 192.168.10.8:42918 
+2021/08/23 21:31:58 [TcpAccept-14] 192.168.10.8:42950 
+2021/08/23 21:31:58 [7704675e037b349e95175d2cb63d7871-192.168.10.8-17] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/23 21:32:59 [TcpAccept-9] 192.168.10.8:43156 
+2021/08/23 21:47:16 [TcpAccept-EX-17] 远程主机强迫关闭了一个现有的连接。 
+2021/08/23 21:47:16 [TcpAccept-8] 192.168.10.8:44096 
+2021/08/23 22:23:38 [Server-1] Starting 
+2021/08/23 22:23:38 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/23 22:23:38 [AutoSet-7] Start 
+2021/08/23 22:23:43 [TcpAccept-3] 192.168.10.8:46508 
+2021/08/23 22:23:44 [7704675e037b349e95175d2cb63d7871-192.168.10.8-10] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/23 22:24:23 [TcpAccept-12] 192.168.10.8:46586 
+2021/08/23 22:24:23 [7704675e037b349e95175d2cb63d7871-192.168.10.8-11] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/23 23:20:35 [Server-1] Starting 
+2021/08/23 23:20:35 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\github\XYZ\Data-Cool\bin\Debug
+        DefaultImagePath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\github\XYZ\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/23 23:20:35 [Server-1] Started 
+2021/08/23 23:22:34 [TcpAccept-3] 192.168.10.8:53278 
+2021/08/23 23:22:34 [7704675e037b349e95175d2cb63d7871-192.168.10.8-8] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"ELE-AL00","screenSize":{"width":1080,"height":2265},"density":3.0,"version":"6.3.1","coreVersion":"6.3.1","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 

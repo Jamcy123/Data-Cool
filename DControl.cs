@@ -13,6 +13,7 @@ namespace SmobilerAppTEST7._17
     //[System.ComponentModel.ToolboxItem(true)]
     partial class DControl : Smobiler.Core.Controls.MobileUserControl
     {
+        string Mno;
         public DControl() : base()
         {
             //This call is required by the SmobilerUserControl.
@@ -36,11 +37,15 @@ namespace SmobilerAppTEST7._17
             string Mname = Mname_lbl.Text;
             string del = "delete from Movie where Mname='" + Mname + "'" ;
             Databaseconnect(database, del);
+            string select= "select Mno from Movie where Mname='" + Mname + "'";
+            DataSet dataSet= Databaseconnect(database, select);
+            Mno = dataSet.Tables[0].Rows[0].ToString();
         }
 
         private void panel1_Press(object sender, EventArgs e)
         {
-
+            Movieinf movieinf = new Movieinf(Mno);
+            this.Form.Show(movieinf);
         }
     }
 }
