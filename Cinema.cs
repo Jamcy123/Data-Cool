@@ -12,11 +12,13 @@ namespace SmobilerAppTEST7._17
     partial class Cinema : Smobiler.Core.Controls.MobileForm
     {
         string Cno;
-        public Cinema(string a) : base()
+        string Uno;
+        public Cinema(string a,string b) : base()
         {
             //This call is required by the SmobilerForm.
             InitializeComponent();
             Cno = a;
+            Uno = b;
             showlabel(a);
         }
 

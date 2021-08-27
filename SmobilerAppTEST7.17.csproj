@@ -232,6 +232,12 @@
     <Compile Include="Movieincrease.Designer.cs">
       <DependentUpon>Movieincrease.cs</DependentUpon>
     </Compile>
+    <Compile Include="Movieinf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Movieinf.Designer.cs">
+      <DependentUpon>Movieinf.cs</DependentUpon>
+    </Compile>
     <Compile Include="movie_confirm.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -444,6 +450,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Movieincrease.resx">
       <DependentUpon>Movieincrease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movieinf.resx">
+      <DependentUpon>Movieinf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="movie_confirm.resx">
       <DependentUpon>movie_confirm.cs</DependentUpon>

@@ -13,7 +13,7 @@ namespace SmobilerAppTEST7._17
     //[System.ComponentModel.ToolboxItem(true)]
     partial class DelControl : Smobiler.Core.Controls.MobileUserControl
     {
-        
+        string Mno;
         public DelControl() : base()
         {
             //This call is required by the SmobilerUserControl.
@@ -39,7 +39,7 @@ namespace SmobilerAppTEST7._17
             string Mname = Mname_lbl.Text;
             string select = "select Mno from Movie where Mname ='" + Mname + "'";
             DataSet getMno = Databaseconnect(database, select);
-            string Mno = getMno.Tables[0].Rows[0][0].ToString();
+            Mno = getMno.Tables[0].Rows[0][0].ToString();
             string select1 = "select * from Pmessage where Cno='" + Cno + "' and Mno='" + Mno + "';";
             DataSet check = Databaseconnect(database, select1);
             if (check.Tables[0].Rows.Count <= 0)
@@ -56,7 +56,9 @@ namespace SmobilerAppTEST7._17
 
         private void panel1_Press(object sender, EventArgs e)
         {
-
+            Movieinf movieinf = new Movieinf(Mno);
+            this.Form.Show(movieinf);
+            
         }
 
         private void DelControl_Load(object sender, EventArgs e)

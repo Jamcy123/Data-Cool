@@ -152,7 +152,7 @@ namespace SmobilerAppTEST7._17
             // 
             // getvalues
             // 
-            this.getvalues.DisplayMember = "values";
+            this.getvalues.DisplayMember = "Money";
             this.getvalues.ForeColor = System.Drawing.Color.DarkRed;
             this.getvalues.Location = new System.Drawing.Point(188, 95);
             this.getvalues.Name = "getvalues";
