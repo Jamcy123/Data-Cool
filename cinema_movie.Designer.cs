@@ -181,7 +181,7 @@ namespace SmobilerAppTEST7._17
             // 
             // tabPageView1
             // 
-            this.tabPageView1.Border = new Smobiler.Core.Controls.Border(0F, 1F, 0F, 1F);
+            this.tabPageView1.Border = new Smobiler.Core.Controls.Border(0F, 1F, 0F, 0F);
             this.tabPageView1.BorderColor = System.Drawing.Color.LightGray;
             this.tabPageView1.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
             this.tabPageControl1,

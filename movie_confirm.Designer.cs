@@ -35,12 +35,12 @@ namespace SmobilerAppTEST7._17
             this.tabPageView1 = new Smobiler.Core.Controls.TabPageView();
             this.tabPageControl1 = new Smobiler.Core.Controls.TabPageControl();
             this.listView1 = new Smobiler.Core.Controls.ListView();
+            this.label5 = new Smobiler.Core.Controls.Label();
             this.tabPageControl2 = new Smobiler.Core.Controls.TabPageControl();
             this.listView2 = new Smobiler.Core.Controls.ListView();
+            this.label6 = new Smobiler.Core.Controls.Label();
             this.tabPageControl3 = new Smobiler.Core.Controls.TabPageControl();
             this.listView3 = new Smobiler.Core.Controls.ListView();
-            this.label5 = new Smobiler.Core.Controls.Label();
-            this.label6 = new Smobiler.Core.Controls.Label();
             this.label7 = new Smobiler.Core.Controls.Label();
             // 
             // title_Control1
@@ -186,45 +186,13 @@ namespace SmobilerAppTEST7._17
             // 
             // listView1
             // 
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(0, 10);
             this.listView1.Name = "listView1";
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.Size = new System.Drawing.Size(300, 323);
             this.listView1.TemplateControlName = "mcTemplate";
             this.listView1.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
-            // 
-            // tabPageControl2
-            // 
-            this.tabPageControl2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView2,
-            this.label6});
-            this.tabPageControl2.Name = "tabPageControl2";
-            // 
-            // listView2
-            // 
-            this.listView2.BorderColor = System.Drawing.Color.Transparent;
-            this.listView2.Location = new System.Drawing.Point(0, 10);
-            this.listView2.Name = "listView2";
-            this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView2.Size = new System.Drawing.Size(300, 274);
-            this.listView2.TemplateControlName = "mcTemplate";
-            this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
-            // 
-            // tabPageControl3
-            // 
-            this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
-            this.listView3,
-            this.label7});
-            this.tabPageControl3.Name = "tabPageControl3";
-            // 
-            // listView3
-            // 
-            this.listView3.Location = new System.Drawing.Point(0, 10);
-            this.listView3.Name = "listView3";
-            this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
-            this.listView3.Size = new System.Drawing.Size(300, 274);
-            this.listView3.TemplateControlName = "mcTemplate";
-            this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // label5
             // 
@@ -237,6 +205,24 @@ namespace SmobilerAppTEST7._17
             this.label5.Text = "暂无排片，敬请期待！";
             this.label5.Visible = false;
             // 
+            // tabPageControl2
+            // 
+            this.tabPageControl2.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.listView2,
+            this.label6});
+            this.tabPageControl2.Name = "tabPageControl2";
+            // 
+            // listView2
+            // 
+            this.listView2.BorderColor = System.Drawing.Color.Transparent;
+            this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView2.Location = new System.Drawing.Point(0, 10);
+            this.listView2.Name = "listView2";
+            this.listView2.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView2.Size = new System.Drawing.Size(300, 274);
+            this.listView2.TemplateControlName = "mcTemplate";
+            this.listView2.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
+            // 
             // label6
             // 
             this.label6.Bold = true;
@@ -247,6 +233,23 @@ namespace SmobilerAppTEST7._17
             this.label6.Size = new System.Drawing.Size(230, 64);
             this.label6.Text = "暂无排片，敬请期待！";
             this.label6.Visible = false;
+            // 
+            // tabPageControl3
+            // 
+            this.tabPageControl3.Controls.AddRange(new Smobiler.Core.Controls.MobileControl[] {
+            this.listView3,
+            this.label7});
+            this.tabPageControl3.Name = "tabPageControl3";
+            // 
+            // listView3
+            // 
+            this.listView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView3.Location = new System.Drawing.Point(0, 10);
+            this.listView3.Name = "listView3";
+            this.listView3.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
+            this.listView3.Size = new System.Drawing.Size(300, 274);
+            this.listView3.TemplateControlName = "mcTemplate";
+            this.listView3.RowBind += new Smobiler.Core.Controls.ListViewTemplateBindEventHandler(this.listView1_RowBind);
             // 
             // label7
             // 
