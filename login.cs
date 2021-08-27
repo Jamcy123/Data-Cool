@@ -303,7 +303,5 @@ namespace SmobilerAppTEST7._17
         {
             txtPassword.BorderColor = Color.WhiteSmoke;
         }
-
-       
     }
 }

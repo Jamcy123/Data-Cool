@@ -169,9 +169,7 @@ namespace SmobilerAppTEST7._17
         private void searchBox_Control1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        
+        }    
 
         private void listView1_RowBind(object sender, ListViewTemplateBindEventArgs e)
         {
@@ -182,6 +180,5 @@ namespace SmobilerAppTEST7._17
         {
             ((Label)e.Row.Control.Controls.Find("getCno")).Text = Cno;     
         }
-
     }
 }
