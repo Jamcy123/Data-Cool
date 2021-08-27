@@ -1,0 +1,43 @@
+2021/08/27 20:38:08 [Server-1] Starting 
+2021/08/27 20:38:08 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/27 20:38:08 [Server-1] Started 
+2021/08/27 20:38:08 [AutoSet-7] Start 
+2021/08/27 20:38:55 [WebSocketAccept-9] 192.168.2.220:59686 
+2021/08/27 20:39:36 [WebSocketAccept-9] 192.168.2.220:59705 
+2021/08/27 20:39:37 [WebSocketAccept-9] 192.168.2.220:59707 
+2021/08/27 20:40:20 [WebSocketAccept-9] 192.168.2.220:59719 
+2021/08/27 20:40:20 [c229ab53fcb43fd3abdd403f509ae3d5-192.168.2.220-15] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2208},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/27 20:40:41 [WebSocketAccept-13] 192.168.2.220:59730 
+2021/08/27 20:40:42 [c229ab53fcb43fd3abdd403f509ae3d5-192.168.2.220-14] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2208},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/27 20:42:00 [Server-1] Starting 
+2021/08/27 20:42:00 [Initial-1] Version: 631.16249, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug
+        DefaultImagePath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Image
+        DefaultAudioPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Audio
+        DefaultDocumentPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Document
+        DefaultUploadPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Upload
+        DefaultMediaPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Media
+        DefaultWebPath: D:\SombilerDesigner\Data-Cool-master\Data-Cool\bin\Debug\Resources\Web
+ 
+2021/08/27 20:42:01 [Server-1] Started 
+2021/08/27 20:42:01 [AutoSet-7] Start 
+2021/08/27 20:42:01 [WebSocketAccept-8] 192.168.2.220:59746 
+2021/08/27 20:42:01 [WebSocketAccept-8] 192.168.2.220:59748 
+2021/08/27 20:42:02 [WebSocketAccept-9] 192.168.2.220:59750 
+2021/08/27 20:42:09 [WebSocketAccept-8] 192.168.2.220:59753 
+2021/08/27 20:42:09 [c229ab53fcb43fd3abdd403f509ae3d5-192.168.2.220-3] {"deviceOS":"Android","deviceOSVersion":"10","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2208},"density":3.0,"version":"1.0.1","coreVersion":"6.3.1","autoBuild":true,"isCompany":false,"extraInfo":{"package_name":"com.shujuku.app","display_name":"数据酷酷酷课设","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN"]}} 
+2021/08/27 20:42:39 [WebSocketAccept-8] 192.168.2.220:59774 
+2021/08/27 20:43:07 [Server-1] Stoping 
+2021/08/27 20:43:07 [TcpAccept-EX-8] 无法访问已释放的对象。
+对象名:“System.Net.Sockets.Socket”。 
+2021/08/27 20:43:07 [c229ab53fcb43fd3abdd403f509ae3d5-1] Stop-StopServer-True-- 
+2021/08/27 20:43:08 [Server-1] Stoped 
+2021/08/27 20:43:08 [AutoSet-7] Stop 
