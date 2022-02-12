@@ -1,0 +1,4 @@
+环境搭建：https://www.smobiler.com/guide/devenv.aspx
+
+Windows上为Smobiler服务器端口添加防火墙出入口规则：https://www.smobiler.com/forum.php?mod=viewthread&tid=12&extra=page%3D1
+
